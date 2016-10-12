@@ -1,0 +1,13 @@
+.windMill{
+    position: absolute;
+    width: 180px;
+    height: 300px;
+    top: 2550px;
+    left: 720px;
+    z-index: 2;
+        
+    //-webkit-transform: rotateY(40deg); /* Chrome, Safari, Opera */
+    //transform: rotateY(90deg);
+    //-ms-transform: rotateY(90deg); /* IE 9 */
+/
+}
