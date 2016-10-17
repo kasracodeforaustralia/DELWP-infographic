@@ -7,7 +7,7 @@ $( document ).ready(function() {
     
     // Default width and height of the bg images
     var $bgWidth = 1920;
-    var $bgHeight = 10582;
+    var $bgHeight = 10835;
     
     
     // Current width and height of the bg images
@@ -19,9 +19,8 @@ $( document ).ready(function() {
     
     /* Calculate the difference between the defualt size of the gb images and the current size of them. then, scale the items based on that */
     
-    
-    //console.log($WidthPerc);
-    //console.log($HeightPerc);
+    console.log($WidthPerc);
+    console.log($HeightPerc);
     
     /* Initial styles for items */
 
@@ -38,7 +37,8 @@ $( document ).ready(function() {
         width: ($WidthPerc * 150)/100,
         height:($HeightPerc* 80)/100,
         left: ($winWidth  *(1) )/100,
-        top:  ($winHeight *(35.57) )/100,
+        //top:  ($winHeight *(35.57) )/100,
+        top:  ($winHeight *(36.7) )/100,
         opacity:0
     },0);   
     
@@ -69,7 +69,7 @@ $( window ).resize(function() {
     
     // Real width and height of the bg images
     var $bgWidth = 1920;
-    var $bgHeight = 10582;
+    var $bgHeight = 10835;
     
     
     // Responsive width and height of the bg images
@@ -95,7 +95,8 @@ $( window ).resize(function() {
         width: ($WidthPerc * 150)/100,
         height:($HeightPerc* 80)/100,
         left: ($winWidth  *(1) )/100,
-        top:  ($winHeight *(35.57) )/100
+        //top:  ($winHeight *(35.57) )/100
+        top:  ($winHeight *(36.7) )/100,
     },0); 
     
     /* Clouds */
