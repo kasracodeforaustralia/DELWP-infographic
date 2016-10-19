@@ -1,9 +1,24 @@
-.bg1{
+/* Toppest background images*/
+.bg4{
     width: 100%;
     height: auto;
 }
+.bg3{
+    width: 100%;
+    height: auto;
+    margin-top: -5px;
+}
+
 .bg2{
     width: 100%;
     height: auto;
     margin-top: -5px;
 }
+
+.bg1{
+    width: 100%;
+    height: auto;
+    margin-top: -5px;
+}
+
+
