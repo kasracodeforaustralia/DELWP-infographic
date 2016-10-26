@@ -2,7 +2,7 @@ $( document ).ready(function() {
     
     
     /* Scrolls to the bottom of the page */
-   // $('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
+   $('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
     
     /* Get width and height of the 2 bg images*/
     var $win = $(window);
@@ -52,7 +52,15 @@ $( document ).ready(function() {
     /* Fire default settings */
     /* Birds default settings */
 
-    
+    /* Whale 
+    $('#whale').animate({
+        width: ($WidthPerc * 150)/100,
+        height:($HeightPerc* 80)/100,
+        left: ($winWidth  *(1) )/100,
+        //top:  ($winHeight *(35.57) )/100
+        top:  ($winHeight *(36.7) )/100,
+    },0); */
+
     /* Default setting for Small devices */
     if($win < 578){
         
@@ -108,6 +116,14 @@ $( window ).resize(function() {
     /* Fire */
     /* Birds */
     
+    /* Whale 
+    $('#whale').animate({
+        width: ($WidthPerc * 150)/100,
+        height:($HeightPerc* 80)/100,
+        left: ($winWidth  *(1) )/100,
+        //top:  ($winHeight *(35.57) )/100
+        top:  ($winHeight *(36.7) )/100,
+    },0); */
 });
 
 
