@@ -1,3 +1,7 @@
+body {
+    margin: auto;
+}
+
 /* Toppest background images*/
 .bg4{
     width: 100%;
@@ -16,9 +20,12 @@
 }
 
 .bg1{
+
     width: 100%;
     height: auto;
     margin-top: -5px;
 }
 
-
+/*.bg1 > img {
+    background-image: url(../img/allinone-1.png);
+}
