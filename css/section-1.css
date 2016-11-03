@@ -9,12 +9,14 @@
 
 /* Whale */
 #whale {
-	top: 12460px; 
+	top: 13060px; 
 	right: 100px;
 	left: auto;
 	height: 131px;
 	width: 317px;
 	z-index: 2000;
+	/*transform: scale(0.4);
+	transform: rotate(35deg);*/
 }
 /* Scuba diver 1 */
 #scuba-1 {
@@ -23,10 +25,11 @@
 	height: 59px;
 	width: 221px;
 	left: auto;
-	-webkit-transform: rotate(35deg);
+	z-index: 2200;
+	/*-webkit-transform: rotate(35deg);
   -moz-transform: rotate(35deg);
   transform: rotate(35deg);
-  transform: scale(1);
+  transform: scale(1);*/
 }
 
 /* Scuba diver 2 */

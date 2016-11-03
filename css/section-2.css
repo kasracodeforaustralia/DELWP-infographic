@@ -1,0 +1,12 @@
+/* SECTION 2 FORESHORE Styles */
+
+/* boat */
+#boat {
+	top: 16409px;
+    right: 15%;
+	left: auto;
+	display: none;
+	height: 218px;
+	width: 133px;
+	z-index: 2000;
+}
