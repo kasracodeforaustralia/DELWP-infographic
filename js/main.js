@@ -62,8 +62,13 @@ $( document ).ready(function() {
        width: ($WidthPerc * 206)/100,
        height:($HeightPerc* 170)/100,
        
+<<<<<<< HEAD
         left: ($winWidth  *(48) )/100,
         top:  ($winHeight *(84.5) )/100
+=======
+        left: ($winWidth  *(46) )/100,
+        top:  ($winHeight *(84.3) )/100,
+>>>>>>> c354b474fbe28810b2832c3f9fbf915d49356a2a
     },0); 
 
     /* Whale */
@@ -74,6 +79,7 @@ $( document ).ready(function() {
         top:  ($winHeight *(98.4) )/100
     },0); 
 
+<<<<<<< HEAD
     /* Scuba-1 */
     $('#scuba-1').css({ 'width': '($WidthPerc * 221)/100', 
         'height':'($HeightPerc* 59)/100',
@@ -90,6 +96,8 @@ $( document ).ready(function() {
         'top':  '($winHeight *(96.5) )/100',
     },0); 
     
+=======
+>>>>>>> c354b474fbe28810b2832c3f9fbf915d49356a2a
     /* Default setting for Small devices */
     if($win < 578){
         
@@ -113,7 +121,7 @@ $( window ).resize(function() {
     
     // Current width and height of the bg images
     var $winWidth  = $('.bg1').width();
-    var $winHeight = $('.bg1').height() + $('.bg2').height() + $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
+    var $winHeight = $('.bg1').height() + $('.bg2').height()+ $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
     
     var $WidthPerc  = ($winWidth * 100) /$bgWidth ;
     var $HeightPerc = ($winHeight * 100)/$bgHeight; 
@@ -152,12 +160,21 @@ $( window ).resize(function() {
     
     //SECTION-3 CITY
     /* Tram */
+<<<<<<< HEAD
     $('#tram').animate({
        width: ($WidthPerc * 206)/100,
        height:($HeightPerc* 170)/100,
        
         left: ($winWidth  *(48) )/100,
         top:  ($winHeight *(84.5) )/100
+=======
+    $('#tram').css({
+       'width': '($WidthPerc * 186)/100',
+       'height': '($HeightPerc* 154)/100',
+       
+        'left': '($winWidth  *(46) )/100',
+        'top':  '($winHeight *(84.3) )/100',
+>>>>>>> c354b474fbe28810b2832c3f9fbf915d49356a2a
     },0); 
 
     //SECTION-2 FORESHORE
@@ -184,6 +201,7 @@ $( window ).resize(function() {
         'height':'($HeightPerc* 59)/100',
        
         'left': '($winWidth  *(80) )/100',
+<<<<<<< HEAD
         'top':  '($winHeight *(96.5) )/100',
     },0);  
     /* Scuba-2*/
@@ -193,6 +211,10 @@ $( window ).resize(function() {
         'left': '($winWidth  *(10) )/100',
         'top':  '($winHeight *(96.5) )/100',
     },0);  
+=======
+        'top':  '($winHeight *(95.7) )/100',
+    },0); 
+>>>>>>> c354b474fbe28810b2832c3f9fbf915d49356a2a
 });
 
 
