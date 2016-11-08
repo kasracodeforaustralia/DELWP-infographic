@@ -18,121 +18,119 @@ $(window).scroll(function(){
         var top = $win.scrollTop();
     
         var topPerc = (top * 100)/$winHeight;
-
     
-        console.log(topPerc);
-        //console.log("Win Width: " + $WidthPerc + " %");
-        //console.log("Win Height: " + $HeightPerc + " %");
-        //console.log("height: " + $winHeight);
+        var padTop = (1 * ($WidthPerc * cloudW)/100) ; // This calculation says, the big cloud should always have padding to top like 1.4 times of it's dynamic width value
+        
 
 
-        /* garbage truck */    
-        if (topPerc <= 1){
+        /* cloud setting */    
+        if (topPerc <= 0.5){
             $('.cloud').animate({
                 width: ($WidthPerc * cloudW)/100,
                 height:($WidthPerc * cloudH)/100,
                 
-                left: ($winWidth  *(80) )/100,
-                top:  ($winHeight *(2) )/100,        opacity:1
+                left: ($winWidth  *(78) )/100,
+                top:  (top + padTop),       
+                opacity:1
             },0);
-        }else if (topPerc > 1 && topPerc <= 2 ){
+        }else if (topPerc > 0.5 && topPerc <= 1 ){
             $('.cloud').animate({
                 width: ($WidthPerc * cloudW)/100,
                 height:($WidthPerc * cloudH)/100,
                 
-                left: ($winWidth  *(70) )/100,
-                top:  ($winHeight *(2.5) )/100,
+                left: ($winWidth  *(72) )/100,
+                top:  (top + padTop),
                 opacity:1
             },0); 
-        }else if (topPerc >2 && topPerc <= 3 ){
+        }else if (topPerc >1 && topPerc <= 1.5 ){
             $('.cloud').animate({
                 width: ($WidthPerc * cloudW)/100,
                 height:($WidthPerc * cloudH)/100,
                 
-                left: ($winWidth  *(60) )/100,
-                top:  ($winHeight *(3) )/100,
-                opacity:1
-            },0); 
-        }else if (topPerc >3 && topPerc <=4){
-             $('.cloud').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($WidthPerc * cloudH)/100,
-                 
-                left: ($winWidth  *(50) )/100,
-                top:  ($winHeight *(3.5) )/100,
-                opacity:1
-            },0); 
-        }/*else if (topPerc >35.6 && topPerc <=35.8){
-             $('.cloud').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($HeightPerc* cloudH)/100,
-                 
-                left: ($winWidth  *(16) )/100,
-                top:  ($winHeight *(37.57) )/100,
-                opacity:1
-            },0); 
-        }else if (topPerc >35.8 && topPerc <=36 ){
-             $('.cloud').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($HeightPerc* cloudH)/100,
-                 
-                left: ($winWidth  *(27) )/100,
-                top:  ($winHeight *(38.1) )/100,
-                opacity:1
-            },0); 
-        }else if (topPerc >36 && topPerc <=36.2 ){
-             $('.cloud').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($HeightPerc* cloudH)/100,
-                 
-                left: ($winWidth  *(38) )/100,
-                top:  ($winHeight *(38.62) )/100,
-                opacity:1
-            },0); 
-        }else if (topPerc >36.2 && topPerc <=36.4 ){
-             $('.cloud').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($HeightPerc* cloudH)/100,
-                 
-                left: ($winWidth  *(50) )/100,
-                top:  ($winHeight *(39.2) )/100,
-                opacity:1
-            },0); 
-        }else if (topPerc >36.4 && topPerc <=36.6 ){
-             $('.cloud').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($HeightPerc* cloudH)/100,
-                 
                 left: ($winWidth  *(65) )/100,
-                top:  ($winHeight *(39.93) )/100,
+                top:  (top + padTop),
                 opacity:1
             },0); 
-        }else if (topPerc >36.6 && topPerc <=36.8 ){
+        }else if (topPerc >1.5 && topPerc <= 2){
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($WidthPerc * cloudH)/100,
+                 
+                left: ($winWidth  *(58) )/100,
+                 top:  (top + padTop),
+                opacity:1
+            },0); 
+        }else if (topPerc >2 && topPerc <= 2.5){
              $('.cloud').animate({
                 width: ($WidthPerc * cloudW)/100,
                 height:($HeightPerc* cloudH)/100,
                  
-                left: ($winWidth  *(80) )/100,
-                top:  ($winHeight *(40.65) )/100,
+                left: ($winWidth  *(50) )/100,
+                 top:  (top + padTop),
                 opacity:1
             },0); 
-        }else if (topPerc >36.8 && topPerc <= 37 ){
+        }else if (topPerc > 2.5 && topPerc <=3 ){
              $('.cloud').animate({
                 width: ($WidthPerc * cloudW)/100,
                 height:($HeightPerc* cloudH)/100,
                  
-                left: ($winWidth  *(86.7) )/100,
-                top:  ($winHeight *(40.98) )/100,
+                left: ($winWidth  *(42) )/100,
+                 top:  (top + padTop),
                 opacity:1
             },0); 
-        }*/ else {
+        }else if (topPerc >3 && topPerc <= 3.5 ){
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($HeightPerc* cloudH)/100,
+                 
+                left: ($winWidth  *(36) )/100,
+                 top:  (top + padTop),
+                opacity:1
+            },0); 
+        }else if (topPerc > 3.5 && topPerc <= 4 ){
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($HeightPerc* cloudH)/100,
+                 
+                left: ($winWidth  *(28) )/100,
+                 top:  (top + padTop),
+                opacity:1
+            },0); 
+        }else if (topPerc > 4 && topPerc <= 4.5 ){
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($HeightPerc* cloudH)/100,
+                 
+                left: ($winWidth  *(20) )/100,
+                 top:  (top + padTop),
+                opacity:1
+            },0); 
+        }else if (topPerc > 4.5 && topPerc <= 5 ){
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($HeightPerc* cloudH)/100,
+                 
+                left: ($winWidth  *(12) )/100,
+                 top:  (top + padTop),
+                opacity:1
+            },0); 
+        }else if (topPerc > 5 && topPerc <= 5.5 ){
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($HeightPerc* cloudH)/100,
+                 
+                left: ($winWidth  *(0.5) )/100,
+                top:  (top + padTop),
+                opacity:1
+            },0); 
+        }else {
                 $('.cloud').animate({
                     width: ($WidthPerc * cloudW)/100,
                     height:($WidthPerc * cloudH)/100,
                  
                     left: ($winWidth  *(1) )/100,
-                    top:  ($winHeight *(4) )/100,
-                    opacity:1
+                    top:  (top + padTop),
+                    opacity:0
                 },0);
         }
 

@@ -14,7 +14,7 @@ $(window).scroll(function(){
         var $winHeight = $('.bg1').height() + $('.bg2').height() + $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
         
         var $WidthPerc  = ($winWidth * 100) /$bgWidth ;
-        var $HeightPerc = ($winHeight * 100) /$bgHeight;    
+        var $HeightPerc = ($winHeight * 100)/$bgHeight;    
         var top = $win.scrollTop();
     
         var topPerc = (top * 100)/$winHeight;
@@ -28,13 +28,10 @@ $(window).scroll(function(){
 
         /* garbage truck */    
         if (topPerc <= 35){
-            $('.garbageTruck').animate({
-                opacity:0
-            });
+            $('.garbageTruck').css("opacity", 0);
         }else if (topPerc > 35 && topPerc <= 35.2 ){
             $('.garbageTruck').animate({
                 width: ($WidthPerc * truckW)/100,
-                //height:($HeightPerc* 80)/100,
                 height:($WidthPerc * truckH)/100,
                 
                 left: ($winWidth  *(1) )/100,
@@ -123,9 +120,7 @@ $(window).scroll(function(){
                 opacity:1
             },0); 
         }else {
-            $('.garbageTruck').animate({
-                opacity:0
-            });
+            $('.garbageTruck').css("opacity", 0);
         }
 
         

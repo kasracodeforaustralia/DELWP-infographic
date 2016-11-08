@@ -1,7 +1,7 @@
 $( document ).ready(function() {
         
     /* Scrolls to the bottom of the page */
-  /* $('html,body').animate({scrollTop: document.body.scrollHeight},"fast"); */
+ // $('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
     
     /* Get width and height of the 2 bg images*/
     var $win = $(window);
@@ -23,7 +23,7 @@ $( document ).ready(function() {
     //console.log($HeightPerc);
     
     /* Initial styles for items */
-    
+
     /* Clouds default settings */
     var cloudW = 400;
     var cloudH = 250;
@@ -34,7 +34,85 @@ $( document ).ready(function() {
         left: ($winWidth  * (10)    )/100,
         top:  ($winHeight * (22) )/100,
         opacity: 1
+    },0);
+ 
+    $('.cloud2').animate({
+        width: (($WidthPerc * cloudW)/100) *40/100,
+        height:(($HeightPerc* cloudH)/100) *40/100,
+        
+        left: ($winWidth  * (10)    )/100,
+        top:  ($winHeight * (22) )/100,
+        opacity: 1
+    },0);    
+    
+    /* Kangaroo*/
+    
+    var kangarooW = 300;
+    var kangarooH =270;
+    
+    $('.kangaroo').animate({
+        width: ($WidthPerc * kangarooW)/100,
+        height:($HeightPerc* kangarooH)/100,
+        
+        left: ($winWidth  * (20)    )/100,
+        top:  ($winHeight * (21) )/100
     },0); 
+    
+     /* turbines default settings */
+
+    var turbineW = 200;
+    var turbineH = 400;
+    
+
+        /* -------  All turbines ------*/
+    $('#turbine1').animate({
+        width: ($WidthPerc * turbineW)/100,
+        height:($HeightPerc* turbineH)/100,
+        
+        left: ($winWidth  *(10) )/100,
+        top:  ($winHeight *(1.5) )/100
+    },0);       
+    $('#turbine2').animate({
+        width: ( (($WidthPerc * turbineW)/100) ) *60 /100,
+        height:( (($HeightPerc* turbineH)/100 ) * 60 /100),
+
+        left: ($winWidth  *(24) )/100,
+        top:  ($winHeight *(1.7) )/100
+    },0);
+    
+    $('#turbine3').animate({
+        width: ( (($WidthPerc * turbineW)/100) ) *190 /100,
+        height:( (($HeightPerc* turbineH)/100 ) *190 /100),
+
+        left: ($winWidth  *(30) )/100,
+        top:  ($winHeight *(1.6) )/100
+    },0);
+
+    $('#turbine4').animate({
+        width: ( (($WidthPerc * turbineW)/100) ) *140 /100,
+        height:( (($HeightPerc* turbineH)/100 ) *140 /100),
+
+        left: ($winWidth  *(50) )/100,
+        top:  ($winHeight *(2) )/100
+    },0);
+
+    $('#turbine5').animate({
+        width: ($WidthPerc * turbineW)/100,
+        height:($HeightPerc* turbineH)/100,
+
+        left: ($winWidth  *(60) )/100,
+        top:  ($winHeight *(1.5) )/100
+    },0);
+
+    $('#turbine6').animate({
+        width: ( (($WidthPerc * turbineW)/100) ) *120 /100,
+        height:( (($HeightPerc* turbineH)/100 ) *120 /100),
+
+        left: ($winWidth  *(70) )/100,
+        top:  ($winHeight *(1.8) )/100
+    },0);  
+    
+     /* turbines default settings end */   
     
     
     /* Flooding Sign default css */
@@ -45,10 +123,8 @@ $( document ).ready(function() {
         height:($HeightPerc* floodSingH)/100,
         
         left: ($winWidth  * (43)    )/100,
-        top:  ($winHeight * (27.75) )/100,
-        opacity: 1
+        top:  ($winHeight * (27.75) )/100
     },0);
-    
 
     /* Garbage Truck default css */
     var truckW = 260;
@@ -60,10 +136,10 @@ $( document ).ready(function() {
         
         left: ($winWidth  *(1) )/100,
         top:  ($winHeight *(35) )/100,
-        opacity: 0
+        opacity:0
     },0);   
-    
-    /* Wind Mill default css */
+
+    /* Windmill default settings */
     var windMillW = 350;
     var windMillH = 600;
     
@@ -74,8 +150,8 @@ $( document ).ready(function() {
         left: ($winWidth  *(60) )/100,
         top:  ($winHeight *(24.5) )/100,
         opacity: 1
-    },0);  
-    
+    },0); 
+
     
     /* cow default settings */
     var cowW = 95;
@@ -88,26 +164,52 @@ $( document ).ready(function() {
         left: ($winWidth  *(60) )/100,
         top:  ($winHeight *(26.5) )/100,
         opacity: 1
-    },0);    
-
+    },0); 
+    
     /* Tractor default settings */
     /* Bulldozer default settings */
     /* Bilbi default settings */
     /* Fire default settings */
     /* Birds default settings */
     
-    /* Whale */
-    var whaleW = 150;
-    var whaleH = 80;
-    
-    $('.whale').animate({
-        width: ($WidthPerc * whaleW)/100,
-        height:($HeightPerc* whaleH)/100,
-        
-        left: ($winWidth  *(90) )/100,
-        top:  ($winHeight *(99.4) )/100,
-        opacity:1
+    //SECTION-3 CITY
+    /* Tram */
+    $('#tram').animate({
+       width: ($WidthPerc * 206)/100,
+       height:($HeightPerc* 170)/100,
+       
+        left: ($winWidth  *(46) )/100,
+        top:  ($winHeight *(84.3) )/100
+
     },0); 
+
+    /* Whale */
+    $('#whale').animate({
+        width: ($WidthPerc * 317)/100,
+        height:($HeightPerc* 131)/100,
+
+        left: ($winWidth  *(80) )/100,
+        top:  ($winHeight *(98.4) )/100
+    },0); 
+
+
+    /* Scuba-1 */
+    $('#scuba-1').css({ 'width': '($WidthPerc * 221)/100', 
+        'height':'($HeightPerc* 59)/100',
+       
+        'left': '($winWidth  *(80) )/100',
+        'top':  '($winHeight *(95.7) )/100'
+    },0); 
+
+    
+    /* Scuba-2 */
+    $('#scuba-2').css({ 'width': '($WidthPerc * 291)/100', 
+        'height':'($HeightPerc* 225)/100',
+       
+        'left': '($winWidth  *(10) )/100',
+        'top':  '($winHeight *(95.7) )/100'
+    },0); 
+    
 
     /* Default setting for Small devices */
     if($win < 578){
@@ -117,12 +219,13 @@ $( document ).ready(function() {
 
 });
 
-/*###########################################*/
-/*#############-##-########-##-##############*/
-/*################---####---#################*/
-/*###################----####################*/
-/*####################--#####################*/
-/*###########################################*/
+
+/*### Separatoring .ready and .resize funcs ###*/
+/*##############-##-########-##-###############*/
+/*#################---####---##################*/
+/*####################----#####################*/
+/*#####################--######################*/
+/*#############################################*/
 
 
 /* Dynamic css for all items after resizing */
@@ -147,20 +250,76 @@ $( window ).resize(function() {
     
     /*  ---------------------------------- */
     /* Items dynamic settings */
+      
+     /* turbines default settings */
 
-    /* Clouds default settings */
-    /*
-    var cloudW = 400;
-    var cloudH = 250;
-    $('.cloud').animate({
-        width: ($WidthPerc * cloudW)/100,
-        height:($HeightPerc* cloudH)/100,
+    var turbineW = 200;
+    var turbineH = 400;
+    
+
+        /* -------  All turbines ------*/
+    $('#turbine1').animate({
+        width: ($WidthPerc * turbineW)/100,
+        height:($HeightPerc* turbineH)/100,
         
-        left: ($winWidth  * (-10)    )/100,
-        top:  ($winHeight * (22) )/100,
-        opacity: 1
+        left: ($winWidth  *(10) )/100,
+        top:  ($winHeight *(1.5) )/100
+    },0);       
+    $('#turbine2').animate({
+        width: ( (($WidthPerc * turbineW)/100) ) *60 /100,
+        height:( (($HeightPerc* turbineH)/100 ) * 60 /100),
+
+        left: ($winWidth  *(24) )/100,
+        top:  ($winHeight *(1.7) )/100
     },0);
-    */
+    
+    $('#turbine3').animate({
+        width: ( (($WidthPerc * turbineW)/100) ) *190 /100,
+        height:( (($HeightPerc* turbineH)/100 ) *190 /100),
+
+        left: ($winWidth  *(30) )/100,
+        top:  ($winHeight *(1.6) )/100
+    },0);
+
+    $('#turbine4').animate({
+        width: ( (($WidthPerc * turbineW)/100) ) *140 /100,
+        height:( (($HeightPerc* turbineH)/100 ) *140 /100),
+
+        left: ($winWidth  *(50) )/100,
+        top:  ($winHeight *(2) )/100
+    },0);
+
+    $('#turbine5').animate({
+        width: ($WidthPerc * turbineW)/100,
+        height:($HeightPerc* turbineH)/100,
+
+        left: ($winWidth  *(60) )/100,
+        top:  ($winHeight *(1.5) )/100
+    },0);
+
+    $('#turbine6').animate({
+        width: ( (($WidthPerc * turbineW)/100) ) *120 /100,
+        height:( (($HeightPerc* turbineH)/100 ) *120 /100),
+
+        left: ($winWidth  *(70) )/100,
+        top:  ($winHeight *(1.8) )/100
+    },0);  
+    
+     /* turbines default settings end */   
+    
+    /* Kangaroo*/
+    
+    var kangarooW = 300;
+    var kangarooH =270;
+    
+    $('.kangaroo').animate({
+        width: ($WidthPerc * kangarooW)/100,
+        height:($HeightPerc* kangarooH)/100,
+        
+        left: ($winWidth  * (20)    )/100,
+        top:  ($winHeight * (21) )/100
+    },0);
+    
     
     /* Flooding Sing */
     var floodSingW = 225;
@@ -170,10 +329,9 @@ $( window ).resize(function() {
         height:($HeightPerc* floodSingH)/100,
         
         left: ($winWidth  * (43)    )/100,
-        top:  ($winHeight * (27.75) )/100,
-        opacity: 1
+        top:  ($winHeight * (27.75) )/100
     },0); 
-    
+
     /* Garbage Truck */
     var truckW = 260;
     var truckH = 135;
@@ -182,11 +340,10 @@ $( window ).resize(function() {
         height:($HeightPerc* truckH)/100,
         
         left: ($winWidth  *(1) )/100,
-        top:  ($winHeight *(36.7) )/100,
-        opacity: 1
+        top:  ($winHeight *(36.7) )/100
     },0); 
-    
-    /* Wind Mill resize window css */
+
+    /* Wind Mill default css */
     var windMillW = 350;
     var windMillH = 600;
     
@@ -201,6 +358,10 @@ $( window ).resize(function() {
     
     /* cow default settings */
     var cowW = 95;
+    var cowH = 75;    
+    
+    /* cow default settings */
+    var cowW = 95;
     var cowH = 75;
     
     $('.cow').animate({
@@ -212,26 +373,59 @@ $( window ).resize(function() {
         opacity: 1
     },0);
     
-    /* Clouds */
+    
+
     /* Tractor */
     /* Bulldozer */
     /* Bilbi */
     /* Fire */
     /* Birds */
     
-    /* Whale */
-    var whaleW = 150;
-    var whaleH = 80;
-    
-    $('.whale').animate({
-        width: ($WidthPerc * whaleW)/100,
-        height:($HeightPerc* whaleH)/100,
-        
-        left: ($winWidth  *(90) )/100,
-        top:  ($winHeight *(99.4) )/100,
-        opacity:1
+    //SECTION-3 CITY
+    /* Tram */
+    $('#tram').animate({
+       width: ($WidthPerc * 206)/100,
+       height:($HeightPerc* 170)/100,
+       
+        left: ($winWidth  *(46) )/100,
+        top:  ($winHeight *(84.3) )/100
+},0); 
+
+    //SECTION-2 FORESHORE
+    /* Boat */
+    $('#boat').animate({
+       width: ($WidthPerc * 133)/100,
+       height:($HeightPerc* 218)/100,
+       
+        left: ($winWidth  *(70) )/100,
+        top:  ($winHeight *(90.6) )/100
     },0); 
+
+    //SECTION-1 SEA-BAY
+    /* Whale */
+    $('#whale').animate({
+        width: ($WidthPerc * 317)/100,
+        height:($HeightPerc* 131)/100,
+        left: ($winWidth  *(80) )/100,
+        top:  ($winHeight *(98.4) )/100
+    },0); 
+
+   /* Scuba-1 */
+    $('#scuba-1').css({ 'width': '($WidthPerc * 221)/100', 
+        'height':'($HeightPerc* 59)/100',
+       
+        'left': '($winWidth  *(80) )/100',
+        'top':  '($winHeight *(95.7) )/100'
+    },0); 
+
     
+    /* Scuba-2 */
+    $('#scuba-2').css({ 'width': '($WidthPerc * 291)/100', 
+        'height':'($HeightPerc* 225)/100',
+       
+        'left': '($winWidth  *(10) )/100',
+        'top':  '($winHeight *(95.7) )/100'
+    },0); 
     
 });
 
