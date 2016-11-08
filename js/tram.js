@@ -22,15 +22,10 @@ $(window).scroll(function(){
         console.log(topPerc);
 
 
-<<<<<<< HEAD
-        /* tram  */   
-        if ( topPerc >= 84.6 ){
-            $('#tram').css({'display':'block', 'opacity':'1', 'left': '($winWidth  * 42)/100', 'top':'($winHeight * 83.9)/100'});
-=======
-        /* whale   */ 
+        /* tram   */ 
         if ( topPerc >= 85.45 ){
             $('#tram').css({'display':'block', 'opacity':'1', 'left': '($winWidth  *(46) )/100', 'top':'($winHeight *(84.3) )/100'});
->>>>>>> c354b474fbe28810b2832c3f9fbf915d49356a2a
+
         } else  if ( 84.4 <= topPerc &&  topPerc < 84.6 ){ 
             $('#tram').css({'display': 'block'});
             $('#tram').animate({

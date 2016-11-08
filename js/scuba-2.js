@@ -32,7 +32,7 @@ $(window).scroll(function(){
                 width: ($WidthPerc * scuba2W)/100,
                 height:($WidthPerc * scuba2H)/100,
                 left: ($winWidth  *(10) )/100,
-                top:  ($winHeight *(96.5) )/100,
+                top:  ($winHeight *(95.7) )/100,
                 opacity: 0.4
  
             },0); 
