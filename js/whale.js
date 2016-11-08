@@ -25,7 +25,7 @@ $(window).scroll(function(){
 
         /* whale   */ 
         if (topPerc >= 95.0){
-            $('#whale').css({'display': 'none', 'transform':'scale(0.4)', 'left': '($winWidth  *(80) )/100', 'top':'($winHeight *(98.4) )/100'});
+            $('#whale').css({'display': 'none'});
         } else  if ( topPerc < 94.8  && topPerc >= 95.0 ){
             $('#whale').css({'display': 'block', 'transform':'scale(0.4)'});
             $('#whale').animate({

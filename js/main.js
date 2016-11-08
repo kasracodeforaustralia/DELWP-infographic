@@ -62,8 +62,8 @@ $( document ).ready(function() {
        width: ($WidthPerc * 186)/100,
        height:($HeightPerc* 154)/100,
        
-        left: ($winWidth  *(46) )/100,
-        top:  ($winHeight *(84.3) )/100,
+        left: ($winWidth  *(42) )/100,
+        top:  ($winHeight *(83.9) )/100,
     },0); 
 
     /* Whale 
@@ -74,6 +74,14 @@ $( document ).ready(function() {
         top:  ($winHeight *(94.7) )/100,
     },0); */
 
+    /* Scuba-1 */
+    $('#scuba-1').css({ 'width': '($WidthPerc * 221)/100', 
+        'height':'($HeightPerc* 59)/100',
+       
+        'left': '($winWidth  *(80) )/100',
+        'top':  '($winHeight *(96.5) )/100',
+    },0); 
+    
     /* Default setting for Small devices */
     if($win < 578){
         
@@ -97,7 +105,7 @@ $( window ).resize(function() {
     
     // Current width and height of the bg images
     var $winWidth  = $('.bg1').width();
-    var $winHeight = $('.bg1').height() + $('.bg2').height()+ $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
+    var $winHeight = $('.bg1').height() + $('.bg2').height() + $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
     
     var $WidthPerc  = ($winWidth * 100) /$bgWidth ;
     var $HeightPerc = ($winHeight * 100)/$bgHeight; 
@@ -135,13 +143,13 @@ $( window ).resize(function() {
     /* Birds */
     
     //SECTION-3 CITY
-    /* Tram */
-    $('#tram').css({
-       'width': '($WidthPerc * 186)/100',
-       'height': '($HeightPerc* 154)/100',
+    /* Tram 
+    $('#tram').animate({
+       width: ($WidthPerc * 186)/100,
+       height:($HeightPerc* 154)/100,
        
-        'left': '($winWidth  *(46) )/100',
-        'top':  '($winHeight *(84.3) )/100',
+        left: ($winWidth  *(42) )/100,
+        top:  ($winHeight *(83.9) )/100
     },0); 
 
     //SECTION-2 FORESHORE
@@ -168,7 +176,7 @@ $( window ).resize(function() {
         'height':'($HeightPerc* 59)/100',
        
         'left': '($winWidth  *(80) )/100',
-        'top':  '($winHeight *(95.7) )/100',
+        'top':  '($winHeight *(96.5) )/100',
     },0); 
 });
 
