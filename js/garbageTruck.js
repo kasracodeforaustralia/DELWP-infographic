@@ -32,7 +32,6 @@ $(window).scroll(function(){
         }else if (topPerc > 35 && topPerc <= 35.2 ){
             $('.garbageTruck').animate({
                 width: ($WidthPerc * truckW)/100,
-                //height:($HeightPerc* 80)/100,
                 height:($WidthPerc * truckH)/100,
                 
                 left: ($winWidth  *(1) )/100,
