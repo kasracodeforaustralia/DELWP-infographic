@@ -6,8 +6,8 @@ $(window).scroll(function(){
         // Real width and height of the bg images
         var $bgWidth = 1920;
         var $bgHeight = 18326;
-        var truckW = 260;
-        var truckH = 135;
+        var cloudW = 400;
+        var cloudH = 250;
 
         // Responsive width and height of the bg images
         var $winWidth  = $('.bg1').width();
@@ -27,105 +27,113 @@ $(window).scroll(function(){
 
 
         /* garbage truck */    
-        if (topPerc <= 35){
-            $('.garbageTruck').animate({
-                opacity:0
-            });
-        }else if (topPerc > 35 && topPerc <= 35.2 ){
-            $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                //height:($HeightPerc* 80)/100,
-                height:($WidthPerc * truckH)/100,
+        if (topPerc <= 1){
+            $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($WidthPerc * cloudH)/100,
                 
-                left: ($winWidth  *(1) )/100,
-                top:  ($winHeight *(36.85) )/100,
+                left: ($winWidth  *(80) )/100,
+                top:  ($winHeight *(2) )/100,        opacity:1
+            },0);
+        }else if (topPerc > 1 && topPerc <= 2 ){
+            $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($WidthPerc * cloudH)/100,
+                
+                left: ($winWidth  *(70) )/100,
+                top:  ($winHeight *(2.5) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >35.2 && topPerc <= 35.4 ){
-            $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($WidthPerc * truckH)/100,
+        }else if (topPerc >2 && topPerc <= 3 ){
+            $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($WidthPerc * cloudH)/100,
                 
-                left: ($winWidth  *(4) )/100,
-                top:  ($winHeight *(37) )/100,
+                left: ($winWidth  *(60) )/100,
+                top:  ($winHeight *(3) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >35.4 && topPerc <=35.6){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($WidthPerc * truckH)/100,
+        }else if (topPerc >3 && topPerc <=4){
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($WidthPerc * cloudH)/100,
                  
-                left: ($winWidth  *(10) )/100,
-                top:  ($winHeight *(37.29) )/100,
+                left: ($winWidth  *(50) )/100,
+                top:  ($winHeight *(3.5) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >35.6 && topPerc <=35.8){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($HeightPerc* truckH)/100,
+        }/*else if (topPerc >35.6 && topPerc <=35.8){
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($HeightPerc* cloudH)/100,
                  
                 left: ($winWidth  *(16) )/100,
                 top:  ($winHeight *(37.57) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >35.8 && topPerc <=36 ){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($HeightPerc* truckH)/100,
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($HeightPerc* cloudH)/100,
                  
                 left: ($winWidth  *(27) )/100,
                 top:  ($winHeight *(38.1) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >36 && topPerc <=36.2 ){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($HeightPerc* truckH)/100,
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($HeightPerc* cloudH)/100,
                  
                 left: ($winWidth  *(38) )/100,
                 top:  ($winHeight *(38.62) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >36.2 && topPerc <=36.4 ){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($HeightPerc* truckH)/100,
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($HeightPerc* cloudH)/100,
                  
                 left: ($winWidth  *(50) )/100,
                 top:  ($winHeight *(39.2) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >36.4 && topPerc <=36.6 ){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($HeightPerc* truckH)/100,
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($HeightPerc* cloudH)/100,
                  
                 left: ($winWidth  *(65) )/100,
                 top:  ($winHeight *(39.93) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >36.6 && topPerc <=36.8 ){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($HeightPerc* truckH)/100,
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($HeightPerc* cloudH)/100,
                  
                 left: ($winWidth  *(80) )/100,
                 top:  ($winHeight *(40.65) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >36.8 && topPerc <= 37 ){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($HeightPerc* truckH)/100,
+             $('.cloud').animate({
+                width: ($WidthPerc * cloudW)/100,
+                height:($HeightPerc* cloudH)/100,
                  
                 left: ($winWidth  *(86.7) )/100,
                 top:  ($winHeight *(40.98) )/100,
                 opacity:1
             },0); 
-        }else {
-            $('.garbageTruck').animate({
-                opacity:0
-            });
+        }*/ else {
+                $('.cloud').animate({
+                    width: ($WidthPerc * cloudW)/100,
+                    height:($WidthPerc * cloudH)/100,
+                 
+                    left: ($winWidth  *(1) )/100,
+                    top:  ($winHeight *(4) )/100,
+                    opacity:1
+                },0);
         }
 
         

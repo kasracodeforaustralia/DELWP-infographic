@@ -23,7 +23,20 @@ $( document ).ready(function() {
     //console.log($HeightPerc);
     
     /* Initial styles for items */
-
+    
+    /* Clouds default settings */
+    var cloudW = 400;
+    var cloudH = 250;
+    $('.cloud').animate({
+        width: ($WidthPerc * cloudW)/100,
+        height:($HeightPerc* cloudH)/100,
+        
+        left: ($winWidth  * (10)    )/100,
+        top:  ($winHeight * (22) )/100,
+        opacity: 1
+    },0); 
+    
+    
     /* Flooding Sign default css */
     var floodSingW = 225;
     var floodSingH = 245;
@@ -32,8 +45,10 @@ $( document ).ready(function() {
         height:($HeightPerc* floodSingH)/100,
         
         left: ($winWidth  * (43)    )/100,
-        top:  ($winHeight * (27.75) )/100
+        top:  ($winHeight * (27.75) )/100,
+        opacity: 1
     },0);
+    
 
     /* Garbage Truck default css */
     var truckW = 260;
@@ -45,25 +60,54 @@ $( document ).ready(function() {
         
         left: ($winWidth  *(1) )/100,
         top:  ($winHeight *(35) )/100,
-        opacity:0
+        opacity: 0
     },0);   
     
+    /* Wind Mill default css */
+    var windMillW = 350;
+    var windMillH = 600;
     
-    /* Clouds default settings */
+    $('.windMill').animate({
+        width: ($WidthPerc * windMillW)/100,
+        height:($HeightPerc* windMillH)/100,
+        
+        left: ($winWidth  *(60) )/100,
+        top:  ($winHeight *(24.5) )/100,
+        opacity: 1
+    },0);  
+    
+    
+    /* cow default settings */
+    var cowW = 95;
+    var cowH = 75;
+    
+    $('.cow').animate({
+        width: ($WidthPerc * cowW)/100,
+        height:($HeightPerc* cowH)/100,
+        
+        left: ($winWidth  *(60) )/100,
+        top:  ($winHeight *(26.5) )/100,
+        opacity: 1
+    },0);    
+
     /* Tractor default settings */
     /* Bulldozer default settings */
     /* Bilbi default settings */
     /* Fire default settings */
     /* Birds default settings */
-
-    /* Whale 
-    $('#whale').animate({
-        width: ($WidthPerc * 150)/100,
-        height:($HeightPerc* 80)/100,
-        left: ($winWidth  *(1) )/100,
-        //top:  ($winHeight *(35.57) )/100
-        top:  ($winHeight *(36.7) )/100,
-    },0); */
+    
+    /* Whale */
+    var whaleW = 150;
+    var whaleH = 80;
+    
+    $('.whale').animate({
+        width: ($WidthPerc * whaleW)/100,
+        height:($HeightPerc* whaleH)/100,
+        
+        left: ($winWidth  *(90) )/100,
+        top:  ($winHeight *(99.4) )/100,
+        opacity:1
+    },0); 
 
     /* Default setting for Small devices */
     if($win < 578){
@@ -72,6 +116,14 @@ $( document ).ready(function() {
     
 
 });
+
+/*###########################################*/
+/*#############-##-########-##-##############*/
+/*################---####---#################*/
+/*###################----####################*/
+/*####################--#####################*/
+/*###########################################*/
+
 
 /* Dynamic css for all items after resizing */
 $( window ).resize(function() {
@@ -95,6 +147,20 @@ $( window ).resize(function() {
     
     /*  ---------------------------------- */
     /* Items dynamic settings */
+
+    /* Clouds default settings */
+    /*
+    var cloudW = 400;
+    var cloudH = 250;
+    $('.cloud').animate({
+        width: ($WidthPerc * cloudW)/100,
+        height:($HeightPerc* cloudH)/100,
+        
+        left: ($winWidth  * (-10)    )/100,
+        top:  ($winHeight * (22) )/100,
+        opacity: 1
+    },0);
+    */
     
     /* Flooding Sing */
     var floodSingW = 225;
@@ -104,9 +170,10 @@ $( window ).resize(function() {
         height:($HeightPerc* floodSingH)/100,
         
         left: ($winWidth  * (43)    )/100,
-        top:  ($winHeight * (27.75) )/100
+        top:  ($winHeight * (27.75) )/100,
+        opacity: 1
     },0); 
-
+    
     /* Garbage Truck */
     var truckW = 260;
     var truckH = 135;
@@ -116,7 +183,34 @@ $( window ).resize(function() {
         
         left: ($winWidth  *(1) )/100,
         top:  ($winHeight *(36.7) )/100,
+        opacity: 1
     },0); 
+    
+    /* Wind Mill resize window css */
+    var windMillW = 350;
+    var windMillH = 600;
+    
+    $('.windMill').animate({
+        width: ($WidthPerc * windMillW)/100,
+        height:($HeightPerc* windMillH)/100,
+        
+        left: ($winWidth  *(60) )/100,
+        top:  ($winHeight *(24.5) )/100,
+        opacity: 1
+    },0);   
+    
+    /* cow default settings */
+    var cowW = 95;
+    var cowH = 75;
+    
+    $('.cow').animate({
+        width: ($WidthPerc * cowW)/100,
+        height:($HeightPerc* cowH)/100,
+        
+        left: ($winWidth  *(60) )/100,
+        top:  ($winHeight *(26.5) )/100,
+        opacity: 1
+    },0);
     
     /* Clouds */
     /* Tractor */
@@ -125,14 +219,20 @@ $( window ).resize(function() {
     /* Fire */
     /* Birds */
     
-    /* Whale 
-    $('#whale').animate({
-        width: ($WidthPerc * 150)/100,
-        height:($HeightPerc* 80)/100,
-        left: ($winWidth  *(1) )/100,
-        //top:  ($winHeight *(35.57) )/100
-        top:  ($winHeight *(36.7) )/100,
-    },0); */
+    /* Whale */
+    var whaleW = 150;
+    var whaleH = 80;
+    
+    $('.whale').animate({
+        width: ($WidthPerc * whaleW)/100,
+        height:($HeightPerc* whaleH)/100,
+        
+        left: ($winWidth  *(90) )/100,
+        top:  ($winHeight *(99.4) )/100,
+        opacity:1
+    },0); 
+    
+    
 });
 
 
