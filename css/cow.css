@@ -1,19 +1,21 @@
 .cow{
     position: absolute;
-    width: 60px;
-    height: 45px;
-    top: 3100px;
-    left: 1050px;
-    z-index: 2;
+    width: 95px;
+    height: 75px;
+    opacity: 0;
+    
+    //top: 3100px;
+    //left: 1050px;
+    //z-index: 2;
         
     -webkit-transform: rotateY(40deg); /* Chrome, Safari, Opera */
-    //transform: rotateY(90deg);
-    //-ms-transform: rotateY(90deg); /* IE 9 */
+    transform: rotateY(40deg);
+    -ms-transform: rotateY(40deg); /* IE 9 */
     
     
     //animation: cowMove 30s;
     //animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    //animation-iteration-count: infinite;
 }
 
 @keyframes cowMove{

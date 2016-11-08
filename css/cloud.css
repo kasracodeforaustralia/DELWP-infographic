@@ -2,8 +2,10 @@
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 1500px;
-    left: -250px;
+    opacity: 0;
+    
+    //top: 1500px;
+    //left: -250px;
     
     //animation: cloudMove 5s;
     //animation-timing-function: linear;
@@ -13,33 +15,6 @@
     from{ transform: translateX(0)}
     to{transform: translateX(1750px)}
     
-}
-
-.body{
-    text-align: center;
-}
-
-.main_container{
-    //position:absolute;
-
-    /*
-    text-align: center;
-    overflow-x: hidden;
-    align-items: center;    
-    -webkit-align-items: center;
-    justify-content: center;*/
-}
-
-.bg1{
-margin: 0;
-}   
-.bg2{
-    margin-top: -5px;
-}
-.invisibleBox{
-    position: fixed;
-    bottom: 1;
-    left:  900;
 }
 
 
