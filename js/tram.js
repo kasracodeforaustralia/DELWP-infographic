@@ -6,8 +6,8 @@ $(window).scroll(function(){
         // Real width and height of the bg images
         var $bgWidth = 1920;
         var $bgHeight = 18326;
-        var tramW = 186;
-        var tramH = 154;
+        var tramW = 206;
+        var tramH = 170;
 
         // Responsive width and height of the bg images
         var $winWidth  = $('.bg1').width();
