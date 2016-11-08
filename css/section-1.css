@@ -1,48 +1,42 @@
 /* ---- ALL ITEMS ---- */
 .item {
 	position: absolute;
-	top: 0;
-	left: 0;
+	/*top: 0;
+	left: 0;*/
 }
 
 /* SECTION 1 Styles */
 
 /* Whale */
-.whale {
-    position: absolute;
+#whale {
+	top: 13060px; 
+	right: 100px;
+	left: auto;
 	height: 131px;
 	width: 317px;
-    opacity: 0;
-	//z-index: 2000;
+	z-index: 2000;
 	/*transform: scale(0.4);
 	transform: rotate(35deg);*/
 }
-
 /* Scuba diver 1 */
 #scuba-1 {
-	//top: 12660px;
-	//right: 100px;
-	//height: 59px;
-	//width: 221px;
-	//left: auto;
-    opacity: 0;
-	//z-index: 2200;
-	/*-webkit-transform: rotate(35deg);
-  -moz-transform: rotate(35deg);
-  transform: rotate(35deg);
-  transform: scale(1);*/
+	/*top: 12660px;
+	right: 100px;*/
+	height: 59px;
+	width: 221px;
+	left: auto;
+	z-index: 2200;
 }
 
-
-/* Scuba diver 2 
+/* Scuba diver 2 */
 #scuba-2 {
-	top: 12560px;
-	left: 100px;
+	/*top: 12560px;
+	left: 100px;*/
 	height: 81px;
 	width: 196px;
     top: auto;
 } 
-*/
+
 /* Penguin */
 
 /* Message */
