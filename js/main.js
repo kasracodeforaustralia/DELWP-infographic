@@ -1,7 +1,7 @@
 $( document ).ready(function() {
         
     /* Scrolls to the bottom of the page */
-  $('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
+ // $('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
     
     /* Get width and height of the 2 bg images*/
     var $win = $(window);
@@ -62,23 +62,37 @@ $( document ).ready(function() {
        width: ($WidthPerc * 206)/100,
        height:($HeightPerc* 170)/100,
        
+<<<<<<< HEAD
+        left: ($winWidth  *(48) )/100,
+        top:  ($winHeight *(84.5) )/100
+=======
         left: ($winWidth  *(46) )/100,
         top:  ($winHeight *(84.3) )/100,
+>>>>>>> c354b474fbe28810b2832c3f9fbf915d49356a2a
     },0); 
 
     /* Whale */
     $('#whale').animate({
         width: ($WidthPerc * 317)/100,
         height:($HeightPerc* 131)/100,
+<<<<<<< HEAD
         left: ($winWidth  *(50) )/100,
         top:  ($winHeight *(94.7) )/100,
     },0); 
 
+=======
+        left: ($winWidth  *(80) )/100,
+        top:  ($winHeight *(98.4) )/100
+    },0); 
+
+<<<<<<< HEAD
+>>>>>>> master
     /* Scuba-1 */
     $('#scuba-1').css({ 'width': '($WidthPerc * 221)/100', 
         'height':'($HeightPerc* 59)/100',
        
         'left': '($winWidth  *(80) )/100',
+<<<<<<< HEAD
         'top':  '($winHeight *(95.7) )/100',
     },0); 
 
@@ -88,8 +102,21 @@ $( document ).ready(function() {
        
         'left': '($winWidth  *(10) )/100',
         'top':  '($winHeight *(95.7) )/100',
+=======
+        'top':  '($winHeight *(96.5) )/100',
+>>>>>>> master
     },0); 
 
+    /* Scuba-2 */
+    $('#scuba-2').css({ 'width': '($WidthPerc * 291)/100', 
+        'height':'($HeightPerc* 225)/100',
+       
+        'left': '($winWidth  *(10) )/100',
+        'top':  '($winHeight *(96.5) )/100',
+    },0); 
+    
+=======
+>>>>>>> c354b474fbe28810b2832c3f9fbf915d49356a2a
     /* Default setting for Small devices */
     if($win < 578){
         
@@ -140,7 +167,7 @@ $( window ).resize(function() {
         height:($HeightPerc* truckH)/100,
         
         left: ($winWidth  *(1) )/100,
-        top:  ($winHeight *(36.7) )/100,
+        top:  ($winHeight *(36.7) )/100
     },0); 
     
     /* Clouds */
@@ -152,12 +179,21 @@ $( window ).resize(function() {
     
     //SECTION-3 CITY
     /* Tram */
+<<<<<<< HEAD
+    $('#tram').animate({
+       width: ($WidthPerc * 206)/100,
+       height:($HeightPerc* 170)/100,
+       
+        left: ($winWidth  *(48) )/100,
+        top:  ($winHeight *(84.5) )/100
+=======
     $('#tram').css({
        'width': '($WidthPerc * 206)/100',
        'height': '($HeightPerc* 170)/100',
        
         'left': '($winWidth  *(46) )/100',
         'top':  '($winHeight *(84.3) )/100',
+>>>>>>> c354b474fbe28810b2832c3f9fbf915d49356a2a
     },0); 
 
     //SECTION-2 FORESHORE
@@ -167,25 +203,37 @@ $( window ).resize(function() {
        height:($HeightPerc* 218)/100,
        
         left: ($winWidth  *(70) )/100,
-        top:  ($winHeight *(90.6) )/100,
+        top:  ($winHeight *(90.6) )/100
     },0); 
 
     //SECTION-1 SEA-BAY
     /* Whale */
-    $('#whale').css({ 'width': '($WidthPerc * 317)/100', 
-        'height':'($HeightPerc* 131)/100',
-       
-        'left': '($winWidth  *(80) )/100',
-        'top':  '($winHeight *(95.7) )/100',
+    $('#whale').animate({
+        width: ($WidthPerc * 317)/100,
+        height:($HeightPerc* 131)/100,
+        left: ($winWidth  *(80) )/100,
+        top:  ($winHeight *(98.4) )/100
     },0); 
 
-    /* Scuba-1 */
+    /* Scuba-1*/
     $('#scuba-1').css({ 'width': '($WidthPerc * 221)/100', 
         'height':'($HeightPerc* 59)/100',
        
         'left': '($winWidth  *(80) )/100',
+<<<<<<< HEAD
+        'top':  '($winHeight *(96.5) )/100',
+    },0);  
+    /* Scuba-2*/
+    $('#scuba-2').css({ 'width': '($WidthPerc * 291)/100', 
+        'height':'($HeightPerc* 225)/100',
+       
+        'left': '($winWidth  *(10) )/100',
+        'top':  '($winHeight *(96.5) )/100',
+    },0);  
+=======
         'top':  '($winHeight *(95.7) )/100',
     },0); 
+<<<<<<< HEAD
     /* Scuba-2 */
     $('#scuba-1').css({ 'width': '($WidthPerc * 291)/100', 
         'height':'($HeightPerc* 225)/100',
@@ -193,6 +241,9 @@ $( window ).resize(function() {
         'left': '($winWidth  *(10) )/100',
         'top':  '($winHeight *(95.7) )/100',
     },0); 
+=======
+>>>>>>> c354b474fbe28810b2832c3f9fbf915d49356a2a
+>>>>>>> master
 });
 
 
