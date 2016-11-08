@@ -6,8 +6,8 @@ $(window).scroll(function(){
         // Real width and height of the bg images
         var $bgWidth = 1920;
         var $bgHeight = 18326;
-        var tramW = 186;
-        var tramH = 154;
+        var tramW = 206;
+        var tramH = 170;
 
         // Responsive width and height of the bg images
         var $winWidth  = $('.bg1').width();
@@ -22,9 +22,15 @@ $(window).scroll(function(){
         console.log(topPerc);
 
 
+<<<<<<< HEAD
+        /* tram  */   
+        if ( topPerc >= 84.6 ){
+            $('#tram').css({'display':'block', 'opacity':'1', 'left': '($winWidth  * 42)/100', 'top':'($winHeight * 83.9)/100'});
+=======
         /* whale   */ 
         if ( topPerc >= 85.45 ){
             $('#tram').css({'display':'block', 'opacity':'1', 'left': '($winWidth  *(46) )/100', 'top':'($winHeight *(84.3) )/100'});
+>>>>>>> c354b474fbe28810b2832c3f9fbf915d49356a2a
         } else  if ( 84.4 <= topPerc &&  topPerc < 84.6 ){ 
             $('#tram').css({'display': 'block'});
             $('#tram').animate({
