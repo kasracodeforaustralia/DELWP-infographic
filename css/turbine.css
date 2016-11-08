@@ -8,10 +8,10 @@
     //-ms-transform: rotateY(90deg); /* IE 9 */
     
 }
-/* +++++ Turbines listed from left to right +++++++ */
+/* +++++ Turbines listed from left to right +++++++ 
 #turbine1{
-    width: 225px;
-    height: 400px;
+    width: 100px;
+    height: 180px;
     top: 100px;
     left: 50px;   
 }
@@ -39,3 +39,5 @@
     top: 160px;
     left: 1500px;    
 }
+
+*/
