@@ -75,17 +75,36 @@ $( document ).ready(function() {
     $('#whale').animate({
         width: ($WidthPerc * 317)/100,
         height:($HeightPerc* 131)/100,
+<<<<<<< HEAD
+        left: ($winWidth  *(50) )/100,
+        top:  ($winHeight *(94.7) )/100,
+    },0); 
+
+=======
         left: ($winWidth  *(80) )/100,
         top:  ($winHeight *(98.4) )/100
     },0); 
 
 <<<<<<< HEAD
+>>>>>>> master
     /* Scuba-1 */
     $('#scuba-1').css({ 'width': '($WidthPerc * 221)/100', 
         'height':'($HeightPerc* 59)/100',
        
         'left': '($winWidth  *(80) )/100',
+<<<<<<< HEAD
+        'top':  '($winHeight *(95.7) )/100',
+    },0); 
+
+    /* Scuba-2 */
+    $('#scuba-1').css({ 'width': '($WidthPerc * 291)/100', 
+        'height':'($HeightPerc* 225)/100',
+       
+        'left': '($winWidth  *(10) )/100',
+        'top':  '($winHeight *(95.7) )/100',
+=======
         'top':  '($winHeight *(96.5) )/100',
+>>>>>>> master
     },0); 
 
     /* Scuba-2 */
@@ -169,8 +188,8 @@ $( window ).resize(function() {
         top:  ($winHeight *(84.5) )/100
 =======
     $('#tram').css({
-       'width': '($WidthPerc * 186)/100',
-       'height': '($HeightPerc* 154)/100',
+       'width': '($WidthPerc * 206)/100',
+       'height': '($HeightPerc* 170)/100',
        
         'left': '($winWidth  *(46) )/100',
         'top':  '($winHeight *(84.3) )/100',
@@ -214,7 +233,17 @@ $( window ).resize(function() {
 =======
         'top':  '($winHeight *(95.7) )/100',
     },0); 
+<<<<<<< HEAD
+    /* Scuba-2 */
+    $('#scuba-1').css({ 'width': '($WidthPerc * 291)/100', 
+        'height':'($HeightPerc* 225)/100',
+       
+        'left': '($winWidth  *(10) )/100',
+        'top':  '($winHeight *(95.7) )/100',
+    },0); 
+=======
 >>>>>>> c354b474fbe28810b2832c3f9fbf915d49356a2a
+>>>>>>> master
 });
 
 
