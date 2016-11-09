@@ -27,72 +27,27 @@ $(window).scroll(function(){
 
 
         /* garbage truck */    
-        if (topPerc <= 35){
+        if (topPerc <= 30){
             $('.garbageTruck').css("opacity", 0);
-        }else if (topPerc > 35 && topPerc <= 35.2 ){
+        }else if (topPerc > 30 && topPerc <= 31 ){
             $('.garbageTruck').animate({
                 width: ($WidthPerc * truckW)/100,
-                height:($WidthPerc * truckH)/100,
-                
-                left: ($winWidth  *(1) )/100,
-                top:  ($winHeight *(36.80) )/100,
+                height:($HeightPerc* truckH)/100,
+                 
+                left: ($winWidth  *(85.9) )/100,
+                top:  ($winHeight *(40.88) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >35.2 && topPerc <= 35.4 ){
+        }else if (topPerc >31 && topPerc <= 32 ){ 
             $('.garbageTruck').animate({
                 width: ($WidthPerc * truckW)/100,
-                height:($WidthPerc * truckH)/100,
-                
-                left: ($winWidth  *(4) )/100,
-                top:  ($winHeight *(36.95) )/100,
-                opacity:1
-            },0); 
-        }else if (topPerc >35.4 && topPerc <=35.6){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($WidthPerc * truckH)/100,
-                 
-                left: ($winWidth  *(10) )/100,
-                top:  ($winHeight *(37.24) )/100,
-                opacity:1
-            },0); 
-        }else if (topPerc >35.6 && topPerc <=35.8){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
                 height:($HeightPerc* truckH)/100,
                  
-                left: ($winWidth  *(16) )/100,
-                top:  ($winHeight *(37.52) )/100,
+                left: ($winWidth  *(80) )/100,
+                top:  ($winHeight *(40.60) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >35.8 && topPerc <=36 ){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($HeightPerc* truckH)/100,
-                 
-                left: ($winWidth  *(27) )/100,
-                top:  ($winHeight *(38.05) )/100,
-                opacity:1
-            },0); 
-        }else if (topPerc >36 && topPerc <=36.2 ){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($HeightPerc* truckH)/100,
-                 
-                left: ($winWidth  *(38) )/100,
-                top:  ($winHeight *(38.58) )/100,
-                opacity:1
-            },0); 
-        }else if (topPerc >36.2 && topPerc <=36.4 ){
-             $('.garbageTruck').animate({
-                width: ($WidthPerc * truckW)/100,
-                height:($HeightPerc* truckH)/100,
-                 
-                left: ($winWidth  *(50) )/100,
-                top:  ($winHeight *(39.15) )/100,
-                opacity:1
-            },0); 
-        }else if (topPerc >36.4 && topPerc <=36.6 ){
+        }else if (topPerc >32 && topPerc <=33){
              $('.garbageTruck').animate({
                 width: ($WidthPerc * truckW)/100,
                 height:($HeightPerc* truckH)/100,
@@ -101,22 +56,67 @@ $(window).scroll(function(){
                 top:  ($winHeight *(39.88) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >36.6 && topPerc <=36.8 ){
+        }else if (topPerc >33 && topPerc <=34){
              $('.garbageTruck').animate({
                 width: ($WidthPerc * truckW)/100,
                 height:($HeightPerc* truckH)/100,
                  
-                left: ($winWidth  *(80) )/100,
-                top:  ($winHeight *(40.60) )/100,
+                left: ($winWidth  *(50) )/100,
+                top:  ($winHeight *(39.15) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >36.8 && topPerc <= 37 ){
+        }else if (topPerc >34 && topPerc <=35 ){
              $('.garbageTruck').animate({
                 width: ($WidthPerc * truckW)/100,
                 height:($HeightPerc* truckH)/100,
                  
-                left: ($winWidth  *(85.9) )/100,
-                top:  ($winHeight *(40.88) )/100,
+                left: ($winWidth  *(38) )/100,
+                top:  ($winHeight *(38.58) )/100,
+                opacity:1
+            },0); 
+        }else if (topPerc >35 && topPerc <=36 ){
+             $('.garbageTruck').animate({
+                width: ($WidthPerc * truckW)/100,
+                height:($HeightPerc* truckH)/100,
+                 
+                left: ($winWidth  *(27) )/100,
+                top:  ($winHeight *(38.05) )/100,
+                opacity:1
+            },0); 
+        }else if (topPerc >36 && topPerc <=37 ){
+             $('.garbageTruck').animate({
+                width: ($WidthPerc * truckW)/100,
+                height:($HeightPerc* truckH)/100,
+                 
+                left: ($winWidth  *(16) )/100,
+                top:  ($winHeight *(37.52) )/100,
+                opacity:1
+            },0); 
+        }else if (topPerc >38 && topPerc <=39 ){
+             $('.garbageTruck').animate({
+                width: ($WidthPerc * truckW)/100,
+                height:($WidthPerc * truckH)/100,
+                 
+                left: ($winWidth  *(10) )/100,
+                top:  ($winHeight *(37.24) )/100,
+                opacity:1
+            },0); 
+        }else if (topPerc >39 && topPerc <=40 ){
+             $('.garbageTruck').animate({
+                width: ($WidthPerc * truckW)/100,
+                height:($WidthPerc * truckH)/100,
+                
+                left: ($winWidth  *(4) )/100,
+                top:  ($winHeight *(36.95) )/100,
+                opacity:1
+            },0); 
+        }else if (topPerc >40 && topPerc <= 41 ){
+             $('.garbageTruck').animate({
+                width: ($WidthPerc * truckW)/100,
+                height:($WidthPerc * truckH)/100,
+                
+                left: ($winWidth  *(1) )/100,
+                top:  ($winHeight *(36.80) )/100,
                 opacity:1
             },0); 
         }else {
