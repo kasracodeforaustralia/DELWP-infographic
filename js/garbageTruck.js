@@ -35,7 +35,7 @@ $(window).scroll(function(){
                 height:($WidthPerc * truckH)/100,
                 
                 left: ($winWidth  *(1) )/100,
-                top:  ($winHeight *(36.85) )/100,
+                top:  ($winHeight *(36.80) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >35.2 && topPerc <= 35.4 ){
@@ -44,7 +44,7 @@ $(window).scroll(function(){
                 height:($WidthPerc * truckH)/100,
                 
                 left: ($winWidth  *(4) )/100,
-                top:  ($winHeight *(37) )/100,
+                top:  ($winHeight *(36.95) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >35.4 && topPerc <=35.6){
@@ -53,7 +53,7 @@ $(window).scroll(function(){
                 height:($WidthPerc * truckH)/100,
                  
                 left: ($winWidth  *(10) )/100,
-                top:  ($winHeight *(37.29) )/100,
+                top:  ($winHeight *(37.24) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >35.6 && topPerc <=35.8){
@@ -62,7 +62,7 @@ $(window).scroll(function(){
                 height:($HeightPerc* truckH)/100,
                  
                 left: ($winWidth  *(16) )/100,
-                top:  ($winHeight *(37.57) )/100,
+                top:  ($winHeight *(37.52) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >35.8 && topPerc <=36 ){
@@ -71,7 +71,7 @@ $(window).scroll(function(){
                 height:($HeightPerc* truckH)/100,
                  
                 left: ($winWidth  *(27) )/100,
-                top:  ($winHeight *(38.1) )/100,
+                top:  ($winHeight *(38.05) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >36 && topPerc <=36.2 ){
@@ -80,7 +80,7 @@ $(window).scroll(function(){
                 height:($HeightPerc* truckH)/100,
                  
                 left: ($winWidth  *(38) )/100,
-                top:  ($winHeight *(38.62) )/100,
+                top:  ($winHeight *(38.58) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >36.2 && topPerc <=36.4 ){
@@ -89,7 +89,7 @@ $(window).scroll(function(){
                 height:($HeightPerc* truckH)/100,
                  
                 left: ($winWidth  *(50) )/100,
-                top:  ($winHeight *(39.2) )/100,
+                top:  ($winHeight *(39.15) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >36.4 && topPerc <=36.6 ){
@@ -98,7 +98,7 @@ $(window).scroll(function(){
                 height:($HeightPerc* truckH)/100,
                  
                 left: ($winWidth  *(65) )/100,
-                top:  ($winHeight *(39.93) )/100,
+                top:  ($winHeight *(39.88) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >36.6 && topPerc <=36.8 ){
@@ -107,7 +107,7 @@ $(window).scroll(function(){
                 height:($HeightPerc* truckH)/100,
                  
                 left: ($winWidth  *(80) )/100,
-                top:  ($winHeight *(40.65) )/100,
+                top:  ($winHeight *(40.60) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >36.8 && topPerc <= 37 ){
@@ -115,8 +115,8 @@ $(window).scroll(function(){
                 width: ($WidthPerc * truckW)/100,
                 height:($HeightPerc* truckH)/100,
                  
-                left: ($winWidth  *(86.7) )/100,
-                top:  ($winHeight *(40.98) )/100,
+                left: ($winWidth  *(85.9) )/100,
+                top:  ($winHeight *(40.88) )/100,
                 opacity:1
             },0); 
         }else {

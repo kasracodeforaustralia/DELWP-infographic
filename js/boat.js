@@ -18,7 +18,6 @@ $(window).scroll(function(){
         //var top = $win.scrollTop(); //where the scroll is
     
         var topPerc = ($win.scrollTop() * 100)/$winHeight; //changeto a percentage value based on screen size percentage change
-        console.log(topPerc);
 
 
         /* whale   */ 

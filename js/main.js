@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-        
+    
     /* Scrolls to the bottom of the page */
  // $('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
     
@@ -153,18 +153,7 @@ $( document ).ready(function() {
     },0); 
 
     
-    /* cow default settings */
-    var cowW = 95;
-    var cowH = 75;
-    
-    $('.cow').animate({
-        width: ($WidthPerc * cowW)/100,
-        height:($HeightPerc* cowH)/100,
-        
-        left: ($winWidth  *(60) )/100,
-        top:  ($winHeight *(26.5) )/100,
-        opacity: 1
-    },0); 
+
     
     /* Tractor default settings */
     /* Bulldozer default settings */
@@ -179,7 +168,8 @@ $( document ).ready(function() {
        height:($HeightPerc* 170)/100,
        
         left: ($winWidth  *(46) )/100,
-        top:  ($winHeight *(84.3) )/100
+        top:  ($winHeight *(84.3) )/100,
+        opacity:0
 
     },0); 
 
@@ -355,24 +345,6 @@ $( window ).resize(function() {
         top:  ($winHeight *(24.5) )/100,
         opacity: 1
     },0);   
-    
-    /* cow default settings */
-    var cowW = 95;
-    var cowH = 75;    
-    
-    /* cow default settings */
-    var cowW = 95;
-    var cowH = 75;
-    
-    $('.cow').animate({
-        width: ($WidthPerc * cowW)/100,
-        height:($HeightPerc* cowH)/100,
-        
-        left: ($winWidth  *(60) )/100,
-        top:  ($winHeight *(26.5) )/100,
-        opacity: 1
-    },0);
-    
     
 
     /* Tractor */
