@@ -178,11 +178,22 @@ $( document ).ready(function() {
        width: ($WidthPerc * 206)/100,
        height:($HeightPerc* 170)/100,
        
-        left: ($winWidth  *(46) )/100,
-        top:  ($winHeight *(84.3) )/100
+        left: ($winWidth  *(48) )/100,
+        top:  ($winHeight *(84.5) )/100
 
     },0); 
 
+    //SECTION-2 FORESHORE
+    /* Boat */
+    $('#boat').animate({
+       width: ($WidthPerc * 133)/100,
+       height:($HeightPerc* 218)/100,
+       
+        left: ($winWidth  *(70) )/100,
+        top:  ($winHeight *(90.6) )/100
+    },0); 
+
+    //SECTION-1 SEA/BAY
     /* Whale */
     $('#whale').animate({
         width: ($WidthPerc * 317)/100,
@@ -194,20 +205,20 @@ $( document ).ready(function() {
 
 
     /* Scuba-1 */
-    $('#scuba-1').css({ 'width': '($WidthPerc * 221)/100', 
-        'height':'($HeightPerc* 59)/100',
-       
-        'left': '($winWidth  *(80) )/100',
-        'top':  '($winHeight *(95.7) )/100'
+    $('#scuba-1').animate({ 
+        width: ($WidthPerc * 221)/100, 
+        height:($HeightPerc* 59)/100,
+        left: ($winWidth  *(80) )/100,
+        top:  ($winHeight *(95.7) )/100
     },0); 
 
     
     /* Scuba-2 */
-    $('#scuba-2').css({ 'width': '($WidthPerc * 291)/100', 
-        'height':'($HeightPerc* 225)/100',
-       
-        'left': '($winWidth  *(10) )/100',
-        'top':  '($winHeight *(95.7) )/100'
+    $('#scuba-2').animate({ 
+        width: ($WidthPerc * 291)/100, 
+        height: ($HeightPerc* 225)/100,
+        left: ($winWidth  *(5) )/100,
+        top:  ($winHeight *(98.5) )/100
     },0); 
     
 
@@ -387,8 +398,8 @@ $( window ).resize(function() {
        width: ($WidthPerc * 206)/100,
        height:($HeightPerc* 170)/100,
        
-        left: ($winWidth  *(46) )/100,
-        top:  ($winHeight *(84.3) )/100
+        left: ($winWidth  *(48) )/100,
+        top:  ($winHeight *(84.5) )/100
 },0); 
 
     //SECTION-2 FORESHORE
@@ -410,21 +421,21 @@ $( window ).resize(function() {
         top:  ($winHeight *(98.4) )/100
     },0); 
 
-   /* Scuba-1 */
-    $('#scuba-1').css({ 'width': '($WidthPerc * 221)/100', 
-        'height':'($HeightPerc* 59)/100',
-       
-        'left': '($winWidth  *(80) )/100',
-        'top':  '($winHeight *(95.7) )/100'
+    /* Scuba-1 */
+    $('#scuba-1').animate({ 
+        width: ($WidthPerc * 221)/100, 
+        height:($HeightPerc* 59)/100,
+        left: ($winWidth  *(80) )/100,
+        top:  ($winHeight *(95.7) )/100
     },0); 
 
     
     /* Scuba-2 */
-    $('#scuba-2').css({ 'width': '($WidthPerc * 291)/100', 
-        'height':'($HeightPerc* 225)/100',
-       
-        'left': '($winWidth  *(10) )/100',
-        'top':  '($winHeight *(95.7) )/100'
+    $('#scuba-2').animate({ 
+        width: ($WidthPerc * 291)/100, 
+        height: ($HeightPerc* 225)/100,
+        left: ($winWidth  *(5) )/100,
+        top:  ($winHeight *(98.5) )/100
     },0); 
     
 });

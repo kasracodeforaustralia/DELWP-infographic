@@ -103,7 +103,7 @@ $(window).scroll(function(){
          width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
                 left: ($winWidth  *(48.5) )/100,
-                top:  ($winHeight *(97) )/100,
+                top:  ($winHeight *(96.8) )/100,
                 opacity: 1
             }, 0); 
         }else if ( 93.2 <= topPerc &&  topPerc < 93.4 ){
@@ -112,7 +112,7 @@ $(window).scroll(function(){
          width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
                 left: ($winWidth  *(44.5) )/100,
-                top:  ($winHeight *(97) )/100,
+                top:  ($winHeight *(96.6) )/100,
                 opacity: 1
             }, 0);
         }else if ( 93.0 <= topPerc &&  topPerc < 93.2 ){
@@ -121,7 +121,7 @@ $(window).scroll(function(){
          width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
                 left: ($winWidth  *(40.5) )/100,
-                top:  ($winHeight *(97) )/100,
+                top:  ($winHeight *(96.6) )/100,
                 opacity: 1
             }, 0);
         }else if (topPerc < 95.0) {

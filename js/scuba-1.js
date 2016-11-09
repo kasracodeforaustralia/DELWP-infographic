@@ -25,15 +25,15 @@ $(window).scroll(function(){
 
         /* scuba-1   */ 
         if (topPerc >= 95.0){
-            $('#scuba-1').css({'display': 'none', 'transform':'scale(0.4)', 'left': '($winWidth  *(80) )/100', 'top':'($winHeight *(95.4) )/100'});
+            $('#scuba-1').css({'display': 'none', 'transform':'scale(0.4)', 'left': '($winWidth  *(80) )/100', 'top':'($winHeight *(95.7) )/100'});
         } else  if ( topPerc < 94.8  && topPerc >= 95.0 ){
             $('#scuba-1').css({'display': 'block', 'transform':'scale(0.4)'});
             $('#scuba-1').animate({
                 width: ($WidthPerc * scuba1W)/100,
                 height:($WidthPerc * scuba1H)/100,
                 left: ($winWidth  *(80) )/100,
-                top:  ($winHeight *(95.4) )/100,
-                opacity: 0.4
+                top:  ($winHeight *(95.7) )/100,
+                opacity: 0.2
  
             },0); 
             
@@ -42,9 +42,9 @@ $(window).scroll(function(){
             $('#scuba-1').animate({
        width: ($WidthPerc * scuba1W)/100,
                 height:($WidthPerc * scuba1H)/100,
-                left: ($winWidth  *(75.5) )/100,
-                top:  ($winHeight *(95.6) )/100,
-                opacity: 0.5,
+                left: ($winWidth  *(76.5) )/100,
+                top:  ($winHeight *(95.9) )/100,
+                opacity: 0.4,
                 start: function(){
                     $( this ).css({'transform':'scale(0.5) rotate(15deg)'});
                 }
@@ -55,8 +55,8 @@ $(window).scroll(function(){
              $('#scuba-1').animate({
       width: ($WidthPerc * scuba1W)/100,
                 height:($WidthPerc * scuba1H)/100,
-                left: ($winWidth  *(70) )/100,
-                top:  ($winHeight *(95.6) )/100,
+                left: ($winWidth  *(72) )/100,
+                top:  ($winHeight *(96.2) )/100,
                 opacity:0.7
             }, 0); 
             
@@ -65,8 +65,8 @@ $(window).scroll(function(){
              $('#scuba-1').animate({
      width: ($WidthPerc * scuba1W)/100,
                 height:($WidthPerc * scuba1H)/100,
-                left: ($winWidth  *(65.5) )/100,
-                top:  ($winHeight *(95.4) )/100,
+                left: ($winWidth  *(68.5) )/100,
+                top:  ($winHeight *(96.4) )/100,
                 opacity:0.8
             }, 0); 
            
@@ -75,8 +75,8 @@ $(window).scroll(function(){
              $('#scuba-1').animate({
          width: ($WidthPerc * scuba1W)/100,
                 height:($WidthPerc * scuba1H)/100,
-                left: ($winWidth  *(60) )/100,
-                top:  ($winHeight *(95.2) )/100,
+                left: ($winWidth  *(63) )/100,
+                top:  ($winHeight *(96.6) )/100,
                 opacity: 0.9
             }, 0); 
         }else if ( 93.8 <= topPerc &&  topPerc < 94.0 ){
@@ -84,8 +84,8 @@ $(window).scroll(function(){
              $('#scuba-1').animate({
          width: ($WidthPerc * scuba1W)/100,
                 height:($WidthPerc * scuba1H)/100,
-                left: ($winWidth  *(55.5) )/100,
-                top:  ($winHeight *(95.2) )/100,
+                left: ($winWidth  *(60.5) )/100,
+                top:  ($winHeight *(96.8) )/100,
                 opacity: 1
             }, 0); 
         }else if ( 93.6 <= topPerc &&  topPerc < 93.8 ){
@@ -93,7 +93,7 @@ $(window).scroll(function(){
              $('#scuba-1').animate({
          width: ($WidthPerc * scuba1W)/100,
                 height:($WidthPerc * scuba1H)/100,
-                left: ($winWidth  *(52.5) )/100,
+                left: ($winWidth  *(56.5) )/100,
                 top:  ($winHeight *(97) )/100,
                 opacity: 1
             }, 0); 
@@ -102,11 +102,11 @@ $(window).scroll(function(){
              $('#scuba-1').animate({
          width: ($WidthPerc * scuba1W)/100,
                 height:($WidthPerc * scuba1H)/100,
-                left: ($winWidth  *(48.5) )/100,
-                top:  ($winHeight *(97) )/100,
+                left: ($winWidth  *(52.5) )/100,
+                top:  ($winHeight *(96.8) )/100,
                 opacity: 1
             }, 0); 
-        }else if ( 93.2 <= topPerc &&  topPerc < 93.4 ){
+        }/*else if ( 93.2 <= topPerc &&  topPerc < 93.4 ){
             $('#scuba-1').css({'transform':'rotate(-8deg)'});
              $('#scuba-1').animate({
          width: ($WidthPerc * scuba1W)/100,
@@ -124,7 +124,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(97) )/100,
                 opacity: 1
             }, 0);
-        }else if (topPerc < 95.0) {
+        }*/else if (topPerc < 95.0) {
             $('#scuba-1').css("display", 'block');
         }
 
