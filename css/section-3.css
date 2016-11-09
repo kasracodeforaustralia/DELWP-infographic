@@ -3,7 +3,24 @@
 /* Tram */
 #tram {
 	/*top: 10852px; 
-	left: 640px;
-	height: 154px;
-	width: 186px;*/
+	left: 640px;*/
+	height: 170px;
+	width: 206px;
 }
+
+/* Car1 */
+#car1 {
+	/*top: 10852px; 
+	left: 640px;*/
+	height: 170px;
+	width: 206px;
+}
+
+/* Building */
+#building {
+	/*top: 10852px; 
+	left: 640px;*/
+	height: 170px;
+	width: 206px;
+}
+
