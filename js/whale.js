@@ -6,8 +6,8 @@ $(window).scroll(function(){
         // Real width and height of the bg images
         var $bgWidth = 1920;
         var $bgHeight = 18326;
-        var whaleW = 317;
-        var whaleH = 131;
+        var whaleW = 832;
+        var whaleH = 425;
 
         // Responsive width and height of the bg images
         var $winWidth  = $('.bg1').width();
@@ -25,13 +25,13 @@ $(window).scroll(function(){
 
         /* whale   */ 
         if (topPerc >= 95.0){
-            $('#whale').css({'display': 'none', 'transform':'scale(0.4)', 'left': '($winWidth  *(80) )/100', 'top':'($winHeight *(98.4) )/100'});
+            $('#whale').css({'display': 'none', 'transform':'scale(0.4)', 'left': '($winWidth  *(75) )/100', 'top':'($winHeight *(98.4) )/100'});
         } else  if ( topPerc < 94.8  && topPerc >= 95.0 ){
             $('#whale').css({'display': 'block', 'transform':'scale(0.4)'});
             $('#whale').animate({
                 width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
-                left: ($winWidth  *(80) )/100,
+                left: ($winWidth  *(75) )/100,
                 top:  ($winHeight *(98.4) )/100,
                 opacity: 0.4
  
@@ -42,7 +42,7 @@ $(window).scroll(function(){
             $('#whale').animate({
        width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
-                left: ($winWidth  *(75.5) )/100,
+                left: ($winWidth  *(70) )/100,
                 top:  ($winHeight *(98.2) )/100,
                 opacity: 0.5,
                 start: function(){
@@ -55,7 +55,7 @@ $(window).scroll(function(){
              $('#whale').animate({
       width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
-                left: ($winWidth  *(70) )/100,
+                left: ($winWidth  *(68) )/100,
                 top:  ($winHeight *(97.6) )/100,
                 opacity:0.7
             }, 0); 
@@ -65,7 +65,7 @@ $(window).scroll(function(){
              $('#whale').animate({
      width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
-                left: ($winWidth  *(65.5) )/100,
+                left: ($winWidth  *(64.5) )/100,
                 top:  ($winHeight *(97.4) )/100,
                 opacity:0.8
             }, 0); 
@@ -84,12 +84,12 @@ $(window).scroll(function(){
              $('#whale').animate({
          width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
-                left: ($winWidth  *(55.5) )/100,
+                left: ($winWidth  *(56.5) )/100,
                 top:  ($winHeight *(97) )/100,
                 opacity: 1
             }, 0); 
         }else if ( 93.6 <= topPerc &&  topPerc < 93.8 ){
-            $('#whale').css({'transform':'rotate(-5deg)'});
+            $('#whale').css({'transform':'scale(0.8) rotate(-5deg)'});
              $('#whale').animate({
          width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
@@ -98,21 +98,21 @@ $(window).scroll(function(){
                 opacity: 1
             }, 0); 
         }else if ( 93.4 <= topPerc &&  topPerc < 93.6 ){
-            $('#whale').css({'transform':'rotate(5deg)'});
+            $('#whale').css({'transform':'scale(0.6) rotate(5deg)'});
              $('#whale').animate({
          width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
                 left: ($winWidth  *(48.5) )/100,
-                top:  ($winHeight *(97) )/100,
+                top:  ($winHeight *(96.8) )/100,
                 opacity: 1
             }, 0); 
-        }else if ( 93.2 <= topPerc &&  topPerc < 93.4 ){
+        }/*else if ( 93.2 <= topPerc &&  topPerc < 93.4 ){
             $('#whale').css({'transform':'rotate(-8deg)'});
              $('#whale').animate({
          width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
                 left: ($winWidth  *(44.5) )/100,
-                top:  ($winHeight *(97) )/100,
+                top:  ($winHeight *(96.6) )/100,
                 opacity: 1
             }, 0);
         }else if ( 93.0 <= topPerc &&  topPerc < 93.2 ){
@@ -121,10 +121,19 @@ $(window).scroll(function(){
          width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
                 left: ($winWidth  *(40.5) )/100,
-                top:  ($winHeight *(97) )/100,
+                top:  ($winHeight *(96.6) )/100,
                 opacity: 1
             }, 0);
-        }else if (topPerc < 95.0) {
+        }else if ( 92.9 <= topPerc &&  topPerc < 93.0 ){
+            $('#whale').css({'transform':'rotate(5deg)'});
+             $('#whale').animate({
+         width: ($WidthPerc * whaleW)/100,
+                height:($WidthPerc * whaleH)/100,
+                left: ($winWidth  *(36.5) )/100,
+                top:  ($winHeight *(96.6) )/100,
+                opacity: 1
+            }, 0);
+        }*/else if (topPerc < 95.0) {
             $('#whale').css("display", 'block');
         }
 
