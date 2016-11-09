@@ -2,11 +2,8 @@
     position: absolute;
     width: 350px;
     height: 600px;
-    opacity: 0;
-    
-    //top: 2550px;
-    //left: 720px;
-    //z-index: 2;
+
+    z-index: 75;
         
     //-webkit-transform: rotateY(40deg); /* Chrome, Safari, Opera */
     //transform: rotateY(90deg);

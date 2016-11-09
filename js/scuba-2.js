@@ -22,6 +22,7 @@ $(window).scroll(function(){
         console.log(topPerc);
 
 
+
         /* scuba-2   */ 
         if (topPerc >= 94.8){
             $('#scuba-2').css({'display': 'none', 'transform':'scale(1)', 'left': '($winWidth  *(5) )/100', 'top':  '($winHeight *(98.5) )/100'});
