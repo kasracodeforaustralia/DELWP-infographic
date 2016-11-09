@@ -51,7 +51,7 @@ $(window).scroll(function(){
              $('#tram').animate({
      width: ($WidthPerc * tramW)/100,
                 height: ($WidthPerc * tramH)/100,
-                left: ($winWidth  *(54.2))/100,
+                left: ($winWidth  *(54.5))/100,
                 top:  ($winHeight *(84.1) )/100,
                 
             }, 0); 
@@ -61,7 +61,7 @@ $(window).scroll(function(){
              $('#tram').animate({
     width: ($WidthPerc * tramW)/100,
                 height: ($WidthPerc * tramH)/100,
-                left: ($winWidth  *(59) )/100,
+                left: ($winWidth  *(58) )/100,
                 top:  ($winHeight *(83.9) )/100,
                 
             }, 0); 
@@ -80,7 +80,7 @@ $(window).scroll(function(){
              $('#tram').animate({
     width: ($WidthPerc * tramW)/100,
                 height: ($WidthPerc * tramH)/100,
-                left: ($winWidth  *(64.2) )/100,
+                left: ($winWidth  *(64.5) )/100,
                 top:  ($winHeight *(83.5) )/100,
                 
             }, 0); 
@@ -98,7 +98,7 @@ $(window).scroll(function(){
              $('#tram').animate({
     width: ($WidthPerc * tramW)/100,
                 height: ($WidthPerc * tramH)/100,
-                left: ($winWidth  *(69.2) )/100,
+                left: ($winWidth  *(69.5) )/100,
                 top:  ($winHeight *(83.2) )/100,
                 
             }, 0); 

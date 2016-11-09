@@ -182,6 +182,24 @@ $( document ).ready(function() {
         top:  ($winHeight *(84.5) )/100
 
     },0); 
+    
+    /* Car2 */
+    $('#car2').animate({
+       width: ($WidthPerc * 149)/100,
+       height:($HeightPerc* 86)/100,
+       
+        left: ($winWidth  *(8) )/100,
+        top:  ($winHeight *(78.5) )/100
+    },0); 
+    
+    /* Church */
+    $('#church').animate({
+       width: ($WidthPerc * 921)/100,
+       height:($HeightPerc* 755)/100,
+ 
+        left: ($winWidth  *(churchTop) )/100,
+        top:  ($winHeight *(churchLeft) )/100
+    },0);
 
     //SECTION-2 FORESHORE
     /* Boat */
@@ -196,18 +214,18 @@ $( document ).ready(function() {
     //SECTION-1 SEA/BAY
     /* Whale */
     $('#whale').animate({
-        width: ($WidthPerc * 317)/100,
-        height:($HeightPerc* 131)/100,
+        width: ($WidthPerc * 832)/100,
+        height:($HeightPerc* 425)/100,
 
-        left: ($winWidth  *(80) )/100,
+        left: ($winWidth  *(75) )/100,
         top:  ($winHeight *(98.4) )/100
     },0); 
 
 
-    /* Scuba-1 */
-    $('#scuba-1').animate({ 
-        width: ($WidthPerc * 221)/100, 
-        height:($HeightPerc* 59)/100,
+    /* whaleNet */
+    $('#whaleNet').animate({ 
+        width: ($WidthPerc * whaleNetW)/100, 
+        height:($HeightPerc* whaleNetH)/100,
         left: ($winWidth  *(80) )/100,
         top:  ($winHeight *(95.7) )/100
     },0); 
@@ -215,8 +233,10 @@ $( document ).ready(function() {
     
     /* Scuba-2 */
     $('#scuba-2').animate({ 
-        width: ($WidthPerc * 291)/100, 
-        height: ($HeightPerc* 225)/100,
+      //  width: ($WidthPerc * 291)/100, 
+     //   height: ($HeightPerc* 225)/100,
+        width: ($WidthPerc * 221)/100, 
+        height: ($HeightPerc* 170)/100,
         left: ($winWidth  *(5) )/100,
         top:  ($winHeight *(98.5) )/100
     },0); 
@@ -400,7 +420,25 @@ $( window ).resize(function() {
        
         left: ($winWidth  *(48) )/100,
         top:  ($winHeight *(84.5) )/100
-},0); 
+    },0); 
+
+    /* Car2 */
+    $('#car2').animate({
+       width: ($WidthPerc * 149)/100,
+       height:($HeightPerc* 86)/100,
+       
+        left: ($winWidth  *(8) )/100,
+        top:  ($winHeight *(78.5) )/100
+    },0); 
+    
+    /* Church */
+    $('#church').animate({
+       width: ($WidthPerc * 921)/100,
+       height:($HeightPerc* 755)/100,
+       
+        left: ($winWidth  *(churchTop) )/100,
+        top:  ($winHeight *(churchLeft) )/100
+    },0);
 
     //SECTION-2 FORESHORE
     /* Boat */
@@ -415,16 +453,16 @@ $( window ).resize(function() {
     //SECTION-1 SEA-BAY
     /* Whale */
     $('#whale').animate({
-        width: ($WidthPerc * 317)/100,
-        height:($HeightPerc* 131)/100,
-        left: ($winWidth  *(80) )/100,
+        width: ($WidthPerc * 832)/100,
+        height:($HeightPerc* 425)/100,
+        left: ($winWidth  *(75) )/100,
         top:  ($winHeight *(98.4) )/100
     },0); 
 
-    /* Scuba-1 */
-    $('#scuba-1').animate({ 
-        width: ($WidthPerc * 221)/100, 
-        height:($HeightPerc* 59)/100,
+    /* whaleNet */
+    $('#whaleNet').animate({ 
+        width: ($WidthPerc * whaleNetW)/100, 
+        height:($HeightPerc* whaleNetH)/100,
         left: ($winWidth  *(80) )/100,
         top:  ($winHeight *(95.7) )/100
     },0); 
@@ -432,8 +470,10 @@ $( window ).resize(function() {
     
     /* Scuba-2 */
     $('#scuba-2').animate({ 
-        width: ($WidthPerc * 291)/100, 
-        height: ($HeightPerc* 225)/100,
+       //  width: ($WidthPerc * 291)/100, 
+     //   height: ($HeightPerc* 225)/100,
+        width: ($WidthPerc * 221)/100, 
+        height: ($HeightPerc* 170)/100,
         left: ($winWidth  *(5) )/100,
         top:  ($winHeight *(98.5) )/100
     },0); 

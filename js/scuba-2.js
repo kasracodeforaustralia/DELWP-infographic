@@ -6,8 +6,8 @@ $(window).scroll(function(){
         // Real width and height of the bg images
         var $bgWidth = 1920;
         var $bgHeight = 18326;
-        var scuba2W = 291;
-        var scuba2H = 225;
+        var scuba2W = 221;
+        var scuba2H = 170;
 
         // Responsive width and height of the bg images
         var $winWidth  = $('.bg1').width();

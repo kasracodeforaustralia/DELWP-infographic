@@ -18,8 +18,8 @@
 	/*transform: scale(0.4);
 	transform: rotate(35deg);*/
 }
-/* Scuba diver 1 */
-#scuba-1 {
+/* WhaleNet */
+#whaleNet {
 	/*top: 12660px;
 	right: 100px;*/
 	height: 59px;
@@ -28,7 +28,7 @@
 	z-index: 2200;
 }
 
-/* Scuba diver 2 */
+/* Scuba diver */
 #scuba-2 {
 	/*top: 12560px;
 	left: 100px;*/
