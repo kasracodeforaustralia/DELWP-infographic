@@ -169,6 +169,15 @@ $( document ).ready(function() {
         top:  ($winHeight *(car2Top) )/100
     },0); 
     
+     /* bus */
+    $('#bus').animate({
+       width: ($WidthPerc * busW)/100,
+       height:($HeightPerc* busH)/100,
+       
+        left: ($winWidth  *(busLeft) )/100,
+        top:  ($winHeight *(busTop) )/100
+    },0); 
+    
     /* Church */
     $('#church').animate({
        width: ($WidthPerc * 921)/100,
@@ -373,6 +382,15 @@ $( window ).resize(function() {
        
         left: ($winWidth  *(car2Left) )/100,
         top:  ($winHeight *(car2Top) )/100
+    },0); 
+
+    /* bus */
+    $('#bus').animate({
+       width: ($WidthPerc * busW)/100,
+       height:($HeightPerc* busH)/100,
+       
+        left: ($winWidth  *(busLeft) )/100,
+        top:  ($winHeight *(busTop) )/100
     },0); 
     
     /* Church */
