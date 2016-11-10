@@ -1,23 +1,26 @@
+
 // SECTION 3 CITY
       /* Tram */
-      var tramW = 206;
-      var tramH = 170;
+      var tramW = 366;
+      var tramH = 328;
+      var tramTop = 83.7;
+      var tramLeft = 45;
 
       /* Church */
       var churchTop = -15;
       var churchLeft = 79.0;
 
             /* Car 2 */
-            var car2W = 149;
-            var car2H = 86;
-            var car2Top = 78.4;
-            var car2Left = -2;
+            var car2W = 189;
+            var car2H = 109;
+            var car2Top = 79.1;
+            var car2Left = 14;
 
             /* Bus */
-            var busW = 587;
-            var busH = 335;
-            var busTop = 88.4;
-            var busLeft = 42;
+            var busW = 577;
+            var busH = 329;
+            var busTop = 80.05;
+            var busLeft = 44;
 
 
 //SECTION 1 SEA/BAY

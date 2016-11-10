@@ -155,8 +155,8 @@ $( document ).ready(function() {
        height:($HeightPerc* tramH)/100,
        
 
-        left: ($winWidth  *(48) )/100,
-        top:  ($winHeight *(84.5) )/100,
+        left: ($winWidth  *(tramLeft) )/100,
+        top:  ($winHeight *(tramTop) )/100,
 
     },0); 
     
@@ -177,7 +177,7 @@ $( document ).ready(function() {
         left: ($winWidth  *(busLeft) )/100,
         top:  ($winHeight *(busTop) )/100
     },0); 
-    
+
     /* Church */
     $('#church').animate({
        width: ($WidthPerc * 921)/100,
@@ -371,8 +371,8 @@ $( window ).resize(function() {
        width: ($WidthPerc * tramW)/100,
        height:($HeightPerc* tramH)/100,
        
-        left: ($winWidth  *(48) )/100,
-        top:  ($winHeight *(84.5) )/100
+        left: ($winWidth  *(tramLeft) )/100,
+        top:  ($winHeight *(tramTop) )/100
     },0); 
 
     /* Car2 */
