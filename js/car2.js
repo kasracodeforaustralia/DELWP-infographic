@@ -18,10 +18,10 @@ $(window).scroll(function(){
  
 
         /* car2   */ 
-        if ( topPerc >= 77.6 ){
+        if ( topPerc >= 81.2 ){
             $('#car2').css({'display':'block', 'left': '($winWidth  *(car2Left) )/100', 'top':'($winHeight *(car2Top) )/100'});
 
-        } else  if ( 77.4 <= topPerc &&  topPerc < 77.6 ){ 
+        } else  if ( 81.0 <= topPerc &&  topPerc < 81.2 ){ 
             $('#car2').css({'display': 'block'});
             $('#car2').animate({
                 width: ($WidthPerc * car2W)/100,
@@ -31,70 +31,70 @@ $(window).scroll(function(){
                 
             },0); 
             
-        }else if ( 77.2 <= topPerc &&  topPerc < 77.4 ){
+        }else if ( 80.8 <= topPerc &&  topPerc < 81.0 ){
            $('#car2').css({'display': 'block'});
             $('#car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
-                left: ($winWidth  *(51) )/100,
-                top:  ($winHeight *(84.3) )/100,
+                left: ($winWidth  *(4) )/100,
+                top:  ($winHeight *(78.6) )/100,
                 
             }, 0); 
             
-        }else if ( 77.0 <= topPerc &&  topPerc < 77.2 ){
+        }else if ( 80.6 <= topPerc &&  topPerc < 80.8 ){
              $('#car2').css({'display': 'block'});
              $('#car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
-                left: ($winWidth  *(54.5))/100,
-                top:  ($winHeight *(84.1) )/100,
+                left: ($winWidth  *(8))/100,
+                top:  ($winHeight *(78.7) )/100,
                 
             }, 0); 
             
-        } else if ( 76.8 <= topPerc &&  topPerc < 77.0 ){
+        } else if ( 80.4 <= topPerc &&  topPerc < 80.6 ){
            $('#car2').css({'display': 'block'});
              $('#car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
-                left: ($winWidth  *(58) )/100,
-                top:  ($winHeight *(83.9) )/100,
+                left: ($winWidth  *(10) )/100,
+                top:  ($winHeight *(78.8) )/100,
                 
             }, 0); 
            
-        }else if ( 83.4 <= topPerc &&  topPerc < 83.6 ){
+        }else if ( 80.2 <= topPerc &&  topPerc < 80.4 ){
            $('#car2').css({'display': 'block'});
              $('#car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
-                left: ($winWidth  *(61) )/100,
-                top:  ($winHeight *(83.7) )/100,
+                left: ($winWidth  *(14) )/100,
+                top:  ($winHeight *(79.0) )/100,
                 
             }, 0); 
-        }else if ( 83.2 <= topPerc &&  topPerc < 83.4 ){
+        }else if ( 80.0 <= topPerc &&  topPerc < 80.2 ){
            $('#car2').css({'display': 'block'});
              $('#car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
-                left: ($winWidth  *(64.5) )/100,
-                top:  ($winHeight *(83.5) )/100,
+                left: ($winWidth  *(17) )/100,
+                top:  ($winHeight *(79.2) )/100,
                 
             }, 0); 
-        }else if ( 83.0 <= topPerc &&  topPerc < 83.2 ){
+        }else if ( 80.8 <= topPerc &&  topPerc < 80.0 ){
            $('#car2').css({'display': 'block'});
              $('#car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
-                left: ($winWidth  *(68) )/100,
-                top:  ($winHeight *(83.3) )/100,
+                left: ($winWidth  *(20) )/100,
+                top:  ($winHeight *(79.4) )/100,
                 
             }, 0); 
-        }else if ( 82.8 <= topPerc &&  topPerc < 83.0 ){
+        }else if ( 80.6 <= topPerc &&  topPerc < 80.8 ){
            $('#car2').css({'display': 'block'});
              $('#car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
-                left: ($winWidth  *(69.5) )/100,
-                top:  ($winHeight *(83.2) )/100,
+                left: ($winWidth  *(24) )/100,
+                top:  ($winHeight *(79.6) )/100,
                 
             }, 0); 
         } else if (topPerc < 82.8) {
