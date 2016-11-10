@@ -45,19 +45,6 @@ $( document ).ready(function() {
         opacity: 1
     },0);    
     
-    /* Kangaroo*/
-    
-    var kangarooW = 300;
-    var kangarooH =270;
-    
-    $('.kangaroo').animate({
-        width: ($WidthPerc * kangarooW)/100,
-        height:($HeightPerc* kangarooH)/100,
-        
-        left: ($winWidth  * (20)    )/100,
-        top:  ($winHeight * (21) )/100
-    },0); 
-    
      /* turbines default settings */
 
     var turbineW = 200;
@@ -325,20 +312,7 @@ $( window ).resize(function() {
     },0);  
     
      /* turbines default settings end */   
-    
-    /* Kangaroo*/
-    
-    var kangarooW = 300;
-    var kangarooH =270;
-    
-    $('.kangaroo').animate({
-        width: ($WidthPerc * kangarooW)/100,
-        height:($HeightPerc* kangarooH)/100,
-        
-        left: ($winWidth  * (20)    )/100,
-        top:  ($winHeight * (21) )/100
-    },0);
-    
+
     
     /* Flooding Sing */
     var floodSingW = 225;
