@@ -14,24 +14,19 @@
 	left: auto;
 	height: 131px;
 	width: 317px;
-	z-index: 2000;
-	/*transform: scale(0.4);
-	transform: rotate(35deg);*/
+	z-index: 2100;
 }
+
 /* WhaleNet */
 #whaleNet {
-	/*top: 12660px;
-	right: 100px;*/
 	height: 59px;
 	width: 221px;
 	left: auto;
-	z-index: 2200;
+	z-index: 2000;
 }
 
 /* Scuba diver */
 #scuba-2 {
-	/*top: 12560px;
-	left: 100px;*/
 	height: 81px;
 	width: 196px;
     top: auto;

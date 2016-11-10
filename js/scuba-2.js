@@ -1,13 +1,10 @@
 $(window).scroll(function(){
-//$(window).on('scroll', function){
-//$win.on('scroll', function(){
         var $win = $(window);
 
         // Real width and height of the bg images
         var $bgWidth = 1920;
         var $bgHeight = 18326;
-        var scuba2W = 221;
-        var scuba2H = 170;
+       
 
         // Responsive width and height of the bg images
         var $winWidth  = $('.bg1').width();
@@ -106,7 +103,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(96.8) )/100,
                 opacity: 1
             }, 0); 
-        }/*else if ( 92.6 <= topPerc &&  topPerc < 92.8 ){
+        }else if ( 92.6 <= topPerc &&  topPerc < 92.8 ){
             $('#scuba-2').css({'transform':'rotate(-8deg)'});
              $('#scuba-2').animate({
          width: ($WidthPerc * scuba2W)/100,
@@ -115,7 +112,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(97.4) )/100,
                 opacity: 1
             }, 0);
-        }else if ( 92.4 <= topPerc &&  topPerc < 92.6 ){
+        }/*else if ( 92.4 <= topPerc &&  topPerc < 92.6 ){
             $('#scuba-2').css({'transform':'rotate(5deg)'});
              $('#scuba-2').animate({
          width: ($WidthPerc * scuba2W)/100,
