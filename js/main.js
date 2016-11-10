@@ -164,22 +164,22 @@ $( document ).ready(function() {
     //SECTION-3 CITY
     /* Tram */
     $('#tram').animate({
-       width: ($WidthPerc * 206)/100,
-       height:($HeightPerc* 170)/100,
+       width: ($WidthPerc * tramW)/100,
+       height:($HeightPerc* tramH)/100,
        
 
-        left: ($winWidth  *(46) )/100,
-        top:  ($winHeight *(84.3) )/100,
+        left: ($winWidth  *(48) )/100,
+        top:  ($winHeight *(84.5) )/100,
 
     },0); 
     
     /* Car2 */
     $('#car2').animate({
-       width: ($WidthPerc * 149)/100,
-       height:($HeightPerc* 86)/100,
+       width: ($WidthPerc * car2W)/100,
+       height:($HeightPerc* car2H)/100,
        
-        left: ($winWidth  *(8) )/100,
-        top:  ($winHeight *(78.5) )/100
+        left: ($winWidth  *(car2Left) )/100,
+        top:  ($winHeight *(car2Top) )/100
     },0); 
     
     /* Church */
@@ -204,8 +204,8 @@ $( document ).ready(function() {
     //SECTION-1 SEA/BAY
     /* Whale */
     $('#whale').animate({
-        width: ($WidthPerc * 832)/100,
-        height:($HeightPerc* 425)/100,
+        width: ($WidthPerc * whaleW)/100,
+        height:($HeightPerc* whaleH)/100,
 
         left: ($winWidth  *(75) )/100,
         top:  ($winHeight *(98.4) )/100
@@ -223,10 +223,8 @@ $( document ).ready(function() {
     
     /* Scuba-2 */
     $('#scuba-2').animate({ 
-      //  width: ($WidthPerc * 291)/100, 
-     //   height: ($HeightPerc* 225)/100,
-        width: ($WidthPerc * 221)/100, 
-        height: ($HeightPerc* 170)/100,
+        width: ($WidthPerc * scuba2W)/100, 
+        height: ($HeightPerc* scuba2H)/100,
         left: ($winWidth  *(5) )/100,
         top:  ($winHeight *(98.5) )/100
     },0); 
@@ -387,8 +385,8 @@ $( window ).resize(function() {
     //SECTION-3 CITY
     /* Tram */
     $('#tram').animate({
-       width: ($WidthPerc * 206)/100,
-       height:($HeightPerc* 170)/100,
+       width: ($WidthPerc * tramW)/100,
+       height:($HeightPerc* tramH)/100,
        
         left: ($winWidth  *(48) )/100,
         top:  ($winHeight *(84.5) )/100
@@ -396,11 +394,11 @@ $( window ).resize(function() {
 
     /* Car2 */
     $('#car2').animate({
-       width: ($WidthPerc * 149)/100,
-       height:($HeightPerc* 86)/100,
+       width: ($WidthPerc * car2W)/100,
+       height:($HeightPerc* car2H)/100,
        
-        left: ($winWidth  *(8) )/100,
-        top:  ($winHeight *(78.5) )/100
+        left: ($winWidth  *(car2Left) )/100,
+        top:  ($winHeight *(car2Top) )/100
     },0); 
     
     /* Church */
@@ -425,8 +423,8 @@ $( window ).resize(function() {
     //SECTION-1 SEA-BAY
     /* Whale */
     $('#whale').animate({
-        width: ($WidthPerc * 832)/100,
-        height:($HeightPerc* 425)/100,
+        width: ($WidthPerc * whaleW)/100,
+        height:($HeightPerc* whaleH)/100,
         left: ($winWidth  *(75) )/100,
         top:  ($winHeight *(98.4) )/100
     },0); 
@@ -442,10 +440,8 @@ $( window ).resize(function() {
     
     /* Scuba-2 */
     $('#scuba-2').animate({ 
-       //  width: ($WidthPerc * 291)/100, 
-     //   height: ($HeightPerc* 225)/100,
-        width: ($WidthPerc * 221)/100, 
-        height: ($HeightPerc* 170)/100,
+        width: ($WidthPerc * scuba2W)/100, 
+        height: ($HeightPerc* scuba2H)/100,
         left: ($winWidth  *(5) )/100,
         top:  ($winHeight *(98.5) )/100
     },0); 
