@@ -1,5 +1,6 @@
 body {
     margin: auto;
+    overflow-x: hidden;
 }
 
 /* Toppest background images*/
@@ -26,6 +27,7 @@ body {
     margin-top: -5px;
 }
 
-/*.bg1 > img {
-    background-image: url(../img/allinone-1.png);
+/* ---- ALL ITEMS ---- */
+.item {
+    position: absolute;
 }

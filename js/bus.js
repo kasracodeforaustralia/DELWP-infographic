@@ -106,6 +106,15 @@ $(window).scroll(function(){
                 top:  ($winHeight *(81.6) )/100,
                 
             }, 0); 
+        } else if ( 79.2 <= topPerc &&  topPerc < 79.4 ){
+           $('#bus').css({'display': 'block'});
+             $('#bus').animate({
+                width: ($WidthPerc * busW)/100,
+                height: ($WidthPerc * busH)/100,
+                left: ($winWidth  *(80) )/100,
+                top:  ($winHeight *(81.8) )/100,
+                
+            }, 0); 
         } else if (topPerc < 79.4) {
             $('#bus').css({ 'display':'block', 'opacity':'1' });
         }
