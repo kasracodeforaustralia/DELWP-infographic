@@ -6,26 +6,12 @@ $( document ).ready(function() {
     $.keyframe.debug = true;    
 
     
-    /* Get width and height of the 2 bg images*/
-    var $win = $(window);
-    
-    // Default width and height of the bg images
-    var $bgWidth = 1920;
-    var $bgHeight = 18326;    
-    
-    // Current width and height of the bg images
-    var $winWidth  = $('.bg1').width();
-    var $winHeight = $('.bg1').height() + $('.bg2').height()+ $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
-    
-    var $WidthPerc  = ($winWidth * 100) /$bgWidth ;
-    var $HeightPerc = ($winHeight * 100)/$bgHeight;
-    //var top = $win.scrollTop();
+    // Responsive width and height of the bg images
+    var $winWidth   = winWidth();
+    var $winHeight  = winHeight();
+    var $WidthPerc  = WidthPerc();
+    var $HeightPerc = HeightPerc();
 
-    
-    
-    /* cow default settings */
-    var cowW = 95;
-    var cowH = 75;    
     
     /*  defining keyframes for cow */
     
@@ -124,22 +110,12 @@ $( window ).resize(function() {
     $.keyframe.debug = true;    
 
     
-    /* Get width and height of the 2 bg images*/
-    var $win = $(window);
-    
-    // Default width and height of the bg images
-    var $bgWidth = 1920;
-    var $bgHeight = 18326;    
-    
-    // Current width and height of the bg images
-    var $winWidth  = $('.bg1').width();
-    var $winHeight = $('.bg1').height() + $('.bg2').height()+ $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
-    
-    var $WidthPerc  = ($winWidth * 100) /$bgWidth ;
-    var $HeightPerc = ($winHeight * 100)/$bgHeight;  
-    /* cow default settings */
-    var cowW = 95;
-    var cowH = 75;    
+    // Responsive width and height of the bg images
+    var $winWidth   = winWidth();
+    var $winHeight  = winHeight();
+    var $WidthPerc  = WidthPerc();
+    var $HeightPerc = HeightPerc(); 
+
     
     /*  defining keyframes for cow */
     

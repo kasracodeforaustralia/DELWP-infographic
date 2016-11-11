@@ -1,26 +1,57 @@
+$( document ).ready(function() {
+    
+    /* Get width and height of the 2 bg images */
+    //var $win = $(window);
+      
+    
+    // Current width and height of the bg images
+    var $winWidth   = winWidth();
+    var $winHeight  = winHeight();
+    
+    var $WidthPerc  = WidthPerc();
+    var $HeightPerc = HeightPerc();
+    var topPerc     = topPercfunc();
+
+    /* Clouds default settings  */
+    $('.cloud').animate({
+        width: ($WidthPerc * cloudW)/100,
+        height:($HeightPerc* cloudH)/100,
+        
+        left: ($winWidth  * (10)    )/100,
+        top:  ($winHeight * (5) )/100,
+        opacity: 1
+    },0); 
+    
+  });
+
+
+/*### Separatoring .ready and .resize funcs ###*/
+/*################## ##### ####################*/
+/*###############  #### ####  #################*/
+/*############## ## ######## ## ###############*/
+/*#################   ####   ##################*/
+/*####################    #####################*/
+/*#####################  ######################*/
+/*#############################################*/
+
+
+
 $(window).scroll(function(){
-//$(window).on('scroll', function){
-//$win.on('scroll', function(){
+        
         var $win = $(window);
 
-        // Real width and height of the bg images
-        var $bgWidth = 1920;
-        var $bgHeight = 18326;
-        var cloudW = 400;
-        var cloudH = 250;
-
         // Responsive width and height of the bg images
-        var $winWidth  = $('.bg1').width();
-        var $winHeight = $('.bg1').height() + $('.bg2').height() + $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
-        
-        var $WidthPerc  = ($winWidth * 100) /$bgWidth ;
-        var $HeightPerc = ($winHeight * 100) /$bgHeight;    
+        var $winWidth   = winWidth();
+        var $winHeight  = winHeight();
+        var $WidthPerc  = WidthPerc();
+        var $HeightPerc = HeightPerc();
+        var topPerc     = topPercfunc();
+    
         var top = $win.scrollTop();
     
-        var topPerc = (top * 100)/$winHeight;
-    
         var padTop = (1 * ($WidthPerc * cloudW)/100) ; // This calculation says, the big cloud should always have padding to top like 1.4 times of it's dynamic width value
-        
+        //console.log("padTop is: " +padTop);
+        //console.log("padTop1 is: " +padTop1);
 
 
         /* cloud setting */    

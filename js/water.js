@@ -8,10 +8,7 @@ $( document ).ready(function() {
     
     /* Get width and height of the 2 bg images*/
     var $win = $(window);
-    
-    // Default width and height of the bg images
-    var $bgWidth = 1920;
-    var $bgHeight = 18326;    
+      
     
     // Current width and height of the bg images
     var $winWidth  = $('.bg1').width();
@@ -66,11 +63,7 @@ $( window ).resize(function() {
     
     /* Get width and height of the 2 bg images*/
     var $win = $(window);
-    
-    // Default width and height of the bg images
-    var $bgWidth = 1920;
-    var $bgHeight = 18326;    
-    
+
     // Current width and height of the bg images
     var $winWidth  = $('.bg1').width();
     var $winHeight = $('.bg1').height() + $('.bg2').height()+ $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
