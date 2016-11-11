@@ -1,6 +1,5 @@
 $(window).scroll(function(){
-//$(window).on('scroll', function){
-//$win.on('scroll', function(){
+
         var $win = $(window);
 
         // Real width and height of the bg images
@@ -13,11 +12,10 @@ $(window).scroll(function(){
         
         var $WidthPerc  = ($winWidth * 100) /$bgWidth ;
         var $HeightPerc = ($winHeight * 100)/$bgHeight;    
-        //var top = $win.scrollTop(); //where the scroll is
-    
-        var topPerc = ($win.scrollTop() * 100)/$winHeight; //changeto a percentage value based on screen size percentage change
+            
+        var topPerc = ($win.scrollTop() * 100)/$winHeight;
 
-        /* whale   */ 
+        /* whale */ 
         if (topPerc >= 95.0){
             $('#whale').css({'display': 'none', 'transform':'scale(0.3)', 'left': '($winWidth  *(75) )/100', 'top':'($winHeight *(98.4) )/100'});
         } else  if ( topPerc < 94.8  && topPerc >= 95.0 ){

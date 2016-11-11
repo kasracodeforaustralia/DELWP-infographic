@@ -31,3 +31,32 @@
 	width: 755px;
 }
 
+/* flags-building */
+#flags-building {
+	z-index: 1000;
+}
+
+/* arts-centre */
+#arts-centre {
+	z-index: 1000;
+}
+
+/* ab-flag */
+#ab-flag {
+	z-index: 1100;
+}
+
+/* au-flag */
+#au-flag {
+	z-index: 1100;
+}
+
+/* building */
+#building {
+	z-index: 1100;
+}
+
+/* truck1 */
+#truck1 {
+	z-index: 1000;
+}
