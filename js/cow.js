@@ -2,7 +2,7 @@ $( document ).ready(function() {
     
     /* Detecting CSS animation support */
     var supportedFlag = $.keyframe.isSupported();
-    /* Enable debugging to the console */  
+    /* Enable debugging to the console   */
     $.keyframe.debug = true;    
 
     
@@ -82,13 +82,13 @@ $.keyframe.define([{
         }
     
     }]);
-    
+    /*
     $('.water').playKeyframe({
         name: 'waterColor',
         duration: '0.3s',
         iterationCount: 'infinite'
     });    
-    
+    */
     
     
 });

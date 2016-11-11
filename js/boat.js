@@ -6,9 +6,7 @@ $(window).scroll(function(){
         // Real width and height of the bg images
         var $bgWidth = 1920;
         var $bgHeight = 18326;
-        var boatW = 133;
-        var boatH = 218;
-
+        
         // Responsive width and height of the bg images
         var $winWidth  = $('.bg1').width();
         var $winHeight = $('.bg1').height() + $('.bg2').height() + $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
@@ -28,8 +26,8 @@ $(window).scroll(function(){
             $('#boat').animate({
                 width: ($WidthPerc * boatW)/100,
                 height:($WidthPerc * boatH)/100,
-                left: ($winWidth  *(72.0) )/100,
-                top:  ($winHeight *(90.6) )/100,
+                left: ($winWidth  * boatLeft )/100,
+                top:  ($winHeight * boatTop )/100
                 
             },0); 
             

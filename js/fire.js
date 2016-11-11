@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     
-    
+    var $win = $(window);
     // Responsive width and height of the bg images
     var $winWidth   = winWidth();
     var $winHeight  = winHeight();
