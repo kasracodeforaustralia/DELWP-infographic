@@ -18,59 +18,6 @@ $( document ).ready(function() {
     //console.log($HeightPerc);
     
     /* Initial styles for items */
-
-    
-
-        /* -------  All turbines ------*/
-    $('#turbine1').animate({
-        width: ($WidthPerc * turbineW)/100,
-        height:($HeightPerc* turbineH)/100,
-        
-        left: ($winWidth  *(10) )/100,
-        top:  ($winHeight *(1.5) )/100
-    },0);       
-    $('#turbine2').animate({
-        width: ( (($WidthPerc * turbineW)/100) ) *60 /100,
-        height:( (($HeightPerc* turbineH)/100 ) * 60 /100),
-
-        left: ($winWidth  *(24) )/100,
-        top:  ($winHeight *(1.7) )/100
-    },0);
-    
-    $('#turbine3').animate({
-        width: ( (($WidthPerc * turbineW)/100) ) *190 /100,
-        height:( (($HeightPerc* turbineH)/100 ) *190 /100),
-
-        left: ($winWidth  *(30) )/100,
-        top:  ($winHeight *(1.6) )/100
-    },0);
-
-    $('#turbine4').animate({
-        width: ( (($WidthPerc * turbineW)/100) ) *140 /100,
-        height:( (($HeightPerc* turbineH)/100 ) *140 /100),
-
-        left: ($winWidth  *(50) )/100,
-        top:  ($winHeight *(2) )/100
-    },0);
-
-    $('#turbine5').animate({
-        width: ($WidthPerc * turbineW)/100,
-        height:($HeightPerc* turbineH)/100,
-
-        left: ($winWidth  *(60) )/100,
-        top:  ($winHeight *(1.5) )/100
-    },0);
-
-    $('#turbine6').animate({
-        width: ( (($WidthPerc * turbineW)/100) ) *120 /100,
-        height:( (($HeightPerc* turbineH)/100 ) *120 /100),
-
-        left: ($winWidth  *(70) )/100,
-        top:  ($winHeight *(1.8) )/100
-    },0);  
-    
-     /* turbines default settings end */   
-    
     
     /* Flooding Sign default css  */
     $('.floodSign').animate({
@@ -340,59 +287,8 @@ $( window ).resize(function() {
     var $HeightPerc = HeightPerc(); 
     
     /*  ---------------------------------- */
-    /* Items dynamic settings */
+    /* Items dynamic settings */  
       
-
-        /* -------  All turbines ------*/
-    $('#turbine1').animate({
-        width: ($WidthPerc * turbineW)/100,
-        height:($HeightPerc* turbineH)/100,
-        
-        left: ($winWidth  *(10) )/100,
-        top:  ($winHeight *(1.5) )/100
-    },0);       
-    $('#turbine2').animate({
-        width: ( (($WidthPerc * turbineW)/100) ) *60 /100,
-        height:( (($HeightPerc* turbineH)/100 ) * 60 /100),
-
-        left: ($winWidth  *(24) )/100,
-        top:  ($winHeight *(1.7) )/100
-    },0);
-    
-    $('#turbine3').animate({
-        width: ( (($WidthPerc * turbineW)/100) ) *190 /100,
-        height:( (($HeightPerc* turbineH)/100 ) *190 /100),
-
-        left: ($winWidth  *(30) )/100,
-        top:  ($winHeight *(1.6) )/100
-    },0);
-
-    $('#turbine4').animate({
-        width: ( (($WidthPerc * turbineW)/100) ) *140 /100,
-        height:( (($HeightPerc* turbineH)/100 ) *140 /100),
-
-        left: ($winWidth  *(50) )/100,
-        top:  ($winHeight *(2) )/100
-    },0);
-
-    $('#turbine5').animate({
-        width: ($WidthPerc * turbineW)/100,
-        height:($HeightPerc* turbineH)/100,
-
-        left: ($winWidth  *(60) )/100,
-        top:  ($winHeight *(1.5) )/100
-    },0);
-
-    $('#turbine6').animate({
-        width: ( (($WidthPerc * turbineW)/100) ) *120 /100,
-        height:( (($HeightPerc* turbineH)/100 ) *120 /100),
-
-        left: ($winWidth  *(70) )/100,
-        top:  ($winHeight *(1.8) )/100
-    },0);  
-    
-     /* turbines default settings end */   
-
     /* Flooding Sign default css  */
     $('.floodSign').animate({
         width: ($WidthPerc * floodSingW)/100,

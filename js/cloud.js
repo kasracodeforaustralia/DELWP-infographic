@@ -49,7 +49,7 @@ $(window).scroll(function(){
     
         var top = $win.scrollTop();
     
-        var padTop = (1 * ($WidthPerc * cloudW)/100) ; // This calculation says, the big cloud should always have padding to top like 1.4 times of it's dynamic width value
+        var padTop = (0.45 * ($WidthPerc * cloudW)/100) ; // This calculation says, the big cloud should always have padding to top like 1.4 times of it's dynamic width value
         //console.log("padTop is: " +padTop);
         //console.log("padTop1 is: " +padTop1);
 
