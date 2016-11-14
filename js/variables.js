@@ -169,38 +169,38 @@
    var busTop = 80.05;
    var busLeft = 44;
 
-//SECTION 2 FORESHORE
+   //SECTION 2 FORESHORE
 
-    /* Boat */
-    var boatW = 133;
-    var boatH = 218;
-    var boatTop = 90.6;
-    var boatLeft = 80.05;
+   /* Boat */
+   var boatW = 133;
+   var boatH = 218;
+   var boatTop = 90.6;
+   var boatLeft = 80.05;
 
-//SECTION 1 SEA/BAY
-    /* Whale */
-    var whaleW = 802;
-    var whaleH = 409;
-    var whaleTop = 98.4;
-    var whaleLeft = 75;
+   //SECTION 1 SEA/BAY
+   /* Whale */
+   var whaleW = 802;
+   var whaleH = 409;
+   var whaleTop = 98.4;
+   var whaleLeft = 75;
 
-    /* whaleNet */
-    var whaleNetW = 499;
-    var whaleNetH = 333;
-    var whaleNetTop = 95.7;
-    var whaleNetLeft = 80;
+   /* whaleNet */
+   var whaleNetW = 499;
+   var whaleNetH = 333;
+   var whaleNetTop = 95.7;
+   var whaleNetLeft = 80;
 
-    /* Scuba */
-    var scuba2W = 221;
-    var scuba2H = 170;
-    var scuba2Top = 98.5;
-    var scuba2Left = 5;
+   /* Scuba */
+   var scuba2W = 221;
+   var scuba2H = 170;
+   var scuba2Top = 98.5;
+   var scuba2Left = 5;
 
-    /* Seal */
-    var sealW = 435;
-    var sealH = 267;
-    var sealTop = 96.6;
-    var sealLeft = -10;
+   /* Seal */
+   var sealW = 435;
+   var sealH = 267;
+   var sealTop = 96.6;
+   var sealLeft = -10;
 
 /* ------------------------------------- */
 

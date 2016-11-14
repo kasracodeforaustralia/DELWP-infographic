@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     
     /* Scrolls to the bottom of the page */
-    $('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
+    //$('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
     
     /* Get width and height of the 2 bg images */
     // Responsive width and height of the bg images

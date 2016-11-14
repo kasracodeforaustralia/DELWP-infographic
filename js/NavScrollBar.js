@@ -1,9 +1,6 @@
 $( document ).ready(function() {
     
-    /* Get width and height of the 2 bg images */
-    //var $win = $(window);
-      
-    
+
     // Current width and height of the bg images
     var $winWidth   = winWidth();
     var $winHeight  = winHeight();
@@ -12,37 +9,49 @@ $( document ).ready(function() {
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();
     
-    var $curWinHei = (window).height;
     
-    // get the current map width and height
-    var mapWidth  = $winWidth  *2 /100
-    var mapheight = $winHeight *3 /100
-    
-    
-    // The top position of the Scroll bar (which is 35% fixed from the top of the window) is calculated
-    var TopOfTheScrollBar = (topPerc*winHeight() )/100;
-    // This is where the BLACK BOX should be placed on top of the scroll bar
-    
-    var backBoxPos = TopOfTheScrollBar + mapheight;
-    
-    /* Scroll Bar Navigation default settings  */
-    $('.NavScrollBar').animate({
-        width: mapWidth,
-        height:mapheight//,
+    if ($winWidth < 500){
+        $('.NavScrollBar').css({
+            //opacity:0
+            display: 'none'
+        });
+        $('.PosOnScrollBar').css({
+            //opacity:0
+            display: 'none'
+        });
         
-       //left: '3%',
-        //top:  '35%'
-    },0); 
-    
-    /* Box on the scroll bar default settings  */
-    $('.PosOnScrollBar').animate({
-        width: ($winWidth  *4 /100),
-        height:($winWidth  *4 /100),
         
-        left: '1.27%',
-        top:  backBoxPos
-    },0);
+    }else{
+        // get the current map width and height
+        var mapWidth  = $winWidth  *4 /100;
+        var mapheight = $winHeight *3 /100;
+
+        // Finds the offset of the scroll bar to move the black box based on that
+        var NavScrollBarOffset = $('.NavScrollBar').offset();
+        var NavScrollBarOffsetTop = NavScrollBarOffset.top;
+        var NavScrollBarOffsetLeft= NavScrollBarOffset.left;    
+
+
+        /* Scroll Bar Navigation default settings  */
+        $('.NavScrollBar').animate({
+            opacity:0.7,
+            width: mapWidth,
+            height:mapheight
+        },0); 
+
+        /* Box on the scroll bar default settings  */
+        $('.PosOnScrollBar').animate({
+            opacity:0.6,
+            width: ($winWidth  *3 /100),
+            height:($winWidth  *2.3 /100),
+
+            left: NavScrollBarOffsetLeft - (1/3*mapWidth),
+            top:  NavScrollBarOffsetTop + ( mapheight * topPerc/100)
+        },0);
+           
+    }
     
+ 
     
   });
 
@@ -56,12 +65,8 @@ $( document ).ready(function() {
 /*#####################  ######################*/
 /*#############################################*/
 
-
+/*
 $( window ).resize(function() {
-    
-    /* Get width and height of the bg images */
-    //var $win = $(window);
-      
     
     // Current width and height of the bg images
     var $winWidth   = winWidth();
@@ -70,41 +75,37 @@ $( window ).resize(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();
-
-    var $curWinHei = (window).height;
     
     // get the current map width and height
-    var mapWidth  = $winWidth  *2 /100
-    var mapheight = $winHeight *3 /100
+    var mapWidth  = $winWidth  *4 /100;
+    var mapheight = $winHeight *3 /100;
     
-    // The top position of the Scroll bar (which is 35% fixed from the top of the window) is calculated
-    
-    var TopOfTheScrollBar = (topPerc*winHeight() )/100;
-    // This is where the BLACK BOX should be placed on top of the scroll bar
-    
-    var backBoxPos = TopOfTheScrollBar + mapheight;
+    // Finds the offset of the scroll bar to move the black box based on that
+    var NavScrollBarOffset = $('.NavScrollBar').offset();
+    var NavScrollBarOffsetTop = NavScrollBarOffset.top;
+    var NavScrollBarOffsetLeft= NavScrollBarOffset.left;    
+
     
     /* Scroll Bar Navigation default settings  */
+/*
     $('.NavScrollBar').animate({
         width: mapWidth,
-        height:mapheight//,
+        height:mapheight
+    },0); 
+       
+    /* Box on the scroll bar default settings  */
+/*
+    $('.PosOnScrollBar').animate({
+        width: ($winWidth  *3 /100),
+        height:($winWidth  *2 /100),
         
-       //left: '3%',
-        //top:  '35%'
+        left: NavScrollBarOffsetLeft - (1/3*mapWidth),
+        top:  NavScrollBarOffsetTop + ( mapheight * topPerc/100)
     },0); 
     
-    /* Box on the scroll bar default settings  */
-    $('.PosOnScrollBar').animate({
-        width: ($winWidth  *4 /100),
-        height:($winWidth  *4 /100),
-        
-        left: '1.27%',
-        top:  backBoxPos
-    },0);
-    
-    //console.log("top: " + TopOfTheScrollBar);    
+    //alert("testing: " + mapheight)
   });
-
+*/
 
 /*### Separatoring .ready and .resize funcs ###*/
 /*################## ##### ####################*/
@@ -119,158 +120,60 @@ $( window ).resize(function() {
 
 $(window).scroll(function(){
         
-        var $win = $(window);
+    var $win = $(window);
 
-        // Responsive width and height of the bg images
-        var $winWidth   = winWidth();
-        var $winHeight  = winHeight();
+    // Responsive width and height of the bg images
+    var $winWidth   = winWidth();
+    var $winHeight  = winHeight();
+
+    if ($winWidth < 500){
+        $('.NavScrollBar').css({
+            //opacity:0
+            display: 'none'
+        });
+        $('.PosOnScrollBar').css({
+            //opacity:0
+            display: 'none'
+        });
+        
+        
+    }else{    
         var $WidthPerc  = WidthPerc();
         var $HeightPerc = HeightPerc();
         var topPerc     = topPercfunc();
-    
-        var $curWinHei = (window).height;
 
         // get the current map width and height
-        var mapWidth  = $winWidth  *2 /100
-        var mapheight = $winHeight *3 /100
+        var mapWidth  = $winWidth  *2 /100;
+        var mapheight = $winHeight *3 /100;
 
-        // The top position of the Scroll bar (which is 35% fixed from the top of the window) is calculated
+        // Finds the offset of the scroll bar to move the black box based on that
+        var NavScrollBarOffset = $('.NavScrollBar').position();
+        var NavScrollBarOffsetTop = NavScrollBarOffset.top;
+        var NavScrollBarOffsetLeft= NavScrollBarOffset.left;    
 
-        var TopOfTheScrollBar = (topPerc*winHeight() )/100;
-        // This is where the BLACK BOX should be placed on top of the scroll bar
-
-        var backBoxPos = TopOfTheScrollBar + mapheight;
 
         /* Scroll Bar Navigation default settings  */
+        //$('.NavScrollBar').css({ display: 'inline'},0);
         $('.NavScrollBar').animate({
+            opacity:0.7,
+            
             width: mapWidth,
-            height:mapheight//,
-
-           //left: '3%',
-            //top:  '35%'
+            height:mapheight
         },0); 
 
-        /* Box on the scroll bar default settings  */
+        /* Box on the scroll bar dynamic changes  */
+       // $('.PosOnScrollBar').css({ display: 'block'},0);
         $('.PosOnScrollBar').animate({
+            opacity:0.6,
+            //display: 'block',
             width: ($winWidth  *4 /100),
-            height:($winWidth  *4 /100),
+            height:($winWidth  *2.3 /100),
 
-            left: '1.27%',
-            top:  backBoxPos
+            left: NavScrollBarOffsetLeft - (1/3*mapWidth),
+            top:  NavScrollBarOffsetTop + ( mapheight * topPerc/100)
         },0);   
 
-        /*  setting */   
-
-/*
-        if (topPerc <= 0.5){
-            $('.NavScrollBar').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($WidthPerc * cloudH)/100,
-                
-                left: ($winWidth  *(78) )/100,
-                top:  (top + padTop),       
-                opacity:1
-            },0);
-        }else if (topPerc > 0.5 && topPerc <= 1 ){
-            $('.NavScrollBar').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($WidthPerc * cloudH)/100,
-                
-                left: ($winWidth  *(72) )/100,
-                top:  (top + padTop),
-                opacity:1
-            },0); 
-        }else if (topPerc >1 && topPerc <= 1.5 ){
-            $('.NavScrollBar').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($WidthPerc * cloudH)/100,
-                
-                left: ($winWidth  *(65) )/100,
-                top:  (top + padTop),
-                opacity:1
-            },0); 
-        }else if (topPerc >1.5 && topPerc <= 2){
-             $('.NavScrollBar').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($WidthPerc * cloudH)/100,
-                 
-                left: ($winWidth  *(58) )/100,
-                 top:  (top + padTop),
-                opacity:1
-            },0); 
-        }else if (topPerc >2 && topPerc <= 2.5){
-             $('.NavScrollBar').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($HeightPerc* cloudH)/100,
-                 
-                left: ($winWidth  *(50) )/100,
-                 top:  (top + padTop),
-                opacity:1
-            },0); 
-        }else if (topPerc > 2.5 && topPerc <=3 ){
-             $('.NavScrollBar').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($HeightPerc* cloudH)/100,
-                 
-                left: ($winWidth  *(42) )/100,
-                 top:  (top + padTop),
-                opacity:1
-            },0); 
-        }else if (topPerc >3 && topPerc <= 3.5 ){
-             $('.NavScrollBar').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($HeightPerc* cloudH)/100,
-                 
-                left: ($winWidth  *(36) )/100,
-                 top:  (top + padTop),
-                opacity:1
-            },0); 
-        }else if (topPerc > 3.5 && topPerc <= 4 ){
-             $('.NavScrollBar').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($HeightPerc* cloudH)/100,
-                 
-                left: ($winWidth  *(28) )/100,
-                 top:  (top + padTop),
-                opacity:1
-            },0); 
-        }else if (topPerc > 4 && topPerc <= 4.5 ){
-             $('.NavScrollBar').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($HeightPerc* cloudH)/100,
-                 
-                left: ($winWidth  *(20) )/100,
-                 top:  (top + padTop),
-                opacity:1
-            },0); 
-        }else if (topPerc > 4.5 && topPerc <= 5 ){
-             $('.NavScrollBar').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($HeightPerc* cloudH)/100,
-                 
-                left: ($winWidth  *(12) )/100,
-                 top:  (top + padTop),
-                opacity:1
-            },0); 
-        }else if (topPerc > 5 && topPerc <= 5.5 ){
-             $('.NavScrollBar').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($HeightPerc* cloudH)/100,
-                 
-                left: ($winWidth  *(0.5) )/100,
-                top:  (top + padTop),
-                opacity:1
-            },0); 
-        }else {
-                $('.NavScrollBar').animate({
-                    width: ($WidthPerc * cloudW)/100,
-                    height:($WidthPerc * cloudH)/100,
-                 
-                    left: ($winWidth  *(1) )/100,
-                    top:  (top + padTop),
-                    opacity:0
-                },0);
-        }
-*/
+        // console.log("map top position: " + NavScrollBarOffsetTop);
+    }
         
     });
