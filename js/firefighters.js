@@ -7,14 +7,17 @@ $( document ).ready(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
     
-    /* fire default css */    
-    $('.fire').animate({
-        width: ($WidthPerc * fireW)/100,
-        height:($HeightPerc* fireH)/100,
+    /* fire default css */
+    
+    /* Firefighters default css  */
+    $('.firefighters').animate({
+        width: (($WidthPerc * firefightersW)/100)*130/100 ,
+        height:(($HeightPerc* firefightersH)/100)*130/100,
         
-        left: ($winWidth  * (18)    )/100,
-        top:  ($winHeight * (17.45) )/100
-    },0);    
+        left: ($winWidth  * (9) )/100,
+        top:  ($winHeight * (20.2) )/100
+    },0);
+       
     
 });
 
@@ -37,13 +40,14 @@ $( window ).resize(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc(); 
 
-    /* fire default css */
-    $('.fire').animate({
-        width: ($WidthPerc * fireW)/100,
-        height:($HeightPerc* fireH)/100,
+    /* Firefighters default css  */
+    $('.firefighters').animate({
+        width: (($WidthPerc * firefightersW)/100)*130/100 ,
+        height:(($HeightPerc* firefightersH)/100)*130/100,
         
-        left: ($winWidth  * (18)    )/100,
-        top:  ($winHeight * (17.45) )/100
-    },0); 
+        left: ($winWidth  * (9) )/100,
+        top:  ($winHeight * (20.2) )/100
+    },0);
+    
     
 });

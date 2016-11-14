@@ -48,7 +48,7 @@ $(window).scroll(function(){
     
     var top = $win.scrollTop();
 
-    var padTop = (1.4 * ($WidthPerc * cloud2W)/100) ; // This calculation says, the small cloud should always have padding to top like 1.4 times of it's dynamic width value
+    var padTop = (0.85 * ($WidthPerc * cloud2W)/100) ; // This calculation says, the small cloud should always have padding to top like 1.4 times of it's dynamic width value
 
 
 
