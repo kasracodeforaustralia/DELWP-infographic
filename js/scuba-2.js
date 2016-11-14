@@ -1,35 +1,22 @@
 $(window).scroll(function(){
-        var $win = $(window);
-
-        // Real width and height of the bg images
-        var $bgWidth = 1920;
-        var $bgHeight = 18326;
-       
-
-        // Responsive width and height of the bg images
-        var $winWidth  = $('.bg1').width();
-        var $winHeight = $('.bg1').height() + $('.bg2').height() + $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
         
-        var $WidthPerc  = ($winWidth * 100) /$bgWidth ;
-        var $HeightPerc = ($winHeight * 100)/$bgHeight;    
-        //var top = $win.scrollTop(); //where the scroll is
-    
-        var topPerc = ($win.scrollTop() * 100)/$winHeight; //changeto a percentage value based on screen size percentage change
-       
-        console.log(topPerc);
-
-
+        // Responsive width and height of the bg images
+        var $winWidth   = winWidth();
+        var $winHeight  = winHeight();
+        var $WidthPerc  = WidthPerc();
+        var $HeightPerc = HeightPerc();
+        var topPerc     = topPercfunc();
 
         /* scuba-2   */ 
         if (topPerc >= 94.8){
-            $('#scuba-2').css({'display': 'none', 'transform':'scale(1)', 'left': '($winWidth  *(5) )/100', 'top':  '($winHeight *(98.5) )/100'});
+            $('#scuba-2').css({'display': 'none', 'transform':'scale(1)', 'left': '($winWidth * scuba2Left )/100', 'top':  '($winHeight * scuba2Top )/100'});
         } else  if ( topPerc < 94.6  && topPerc >= 94.8 ){
             $('#scuba-2').css({'display': 'block', 'transform':'scale(1)'});
             $('#scuba-2').animate({
                 width: ($WidthPerc * scuba2W)/100,
                 height:($WidthPerc * scuba2H)/100,
-                left: ($winWidth  *(5) )/100,
-                top:  ($winHeight *(98.5) )/100,
+                left: ($winWidth  * scuba2Left )/100,
+                top:  ($winHeight * scuba2Top )/100,
                 opacity: 1
  
             },0); 

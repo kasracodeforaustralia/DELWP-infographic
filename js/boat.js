@@ -1,24 +1,13 @@
 $(window).scroll(function(){
-//$(window).on('scroll', function){
-//$win.on('scroll', function(){
-        var $win = $(window);
-
-        // Real width and height of the bg images
-        var $bgWidth = 1920;
-        var $bgHeight = 18326;
-        
-        // Responsive width and height of the bg images
-        var $winWidth  = $('.bg1').width();
-        var $winHeight = $('.bg1').height() + $('.bg2').height() + $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
-        
-        var $WidthPerc  = ($winWidth * 100) /$bgWidth ;
-        var $HeightPerc = ($winHeight * 100)/$bgHeight;    
-        //var top = $win.scrollTop(); //where the scroll is
     
-        var topPerc = ($win.scrollTop() * 100)/$winHeight; //changeto a percentage value based on screen size percentage change
+// Responsive width and height of the bg images
+        var $winWidth   = winWidth();
+        var $winHeight  = winHeight();
+        var $WidthPerc  = WidthPerc();
+        var $HeightPerc = HeightPerc();
+        var topPerc     = topPercfunc();
 
-
-        /* whale   */ 
+        /* boat   */ 
         if ( topPerc >= 91.8 ){
             $('#boat').css({'display':'none', 'opacity':'1'});
         } else  if ( topPerc >= 91.6  &&  topPerc < 91.8 ){

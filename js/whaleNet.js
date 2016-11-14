@@ -1,32 +1,22 @@
 $(window).scroll(function(){
-        //var $win = $(window);
-
-        // Real width and height of the bg images
-        var $bgWidth = 1920;
-        var $bgHeight = 18326;
-       
-        // Responsive width and height of the bg images
-        var $winWidth  = $('.bg1').width();
-        var $winHeight = $('.bg1').height() + $('.bg2').height() + $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
         
-        var $WidthPerc  = ($winWidth * 100) /$bgWidth ;
-        var $HeightPerc = ($winHeight * 100)/$bgHeight;    
-        //var top = $win.scrollTop(); //where the scroll is
-    
-        var topPerc = ($(window).scrollTop() * 100)/$winHeight; //changeto a percentage value based on screen size percentage change
-        console.log(topPerc);
-
+        // Responsive width and height of the bg images
+        var $winWidth   = winWidth();
+        var $winHeight  = winHeight();
+        var $WidthPerc  = WidthPerc();
+        var $HeightPerc = HeightPerc();
+        var topPerc     = topPercfunc();
 
         /* whaleNet   */ 
         if (topPerc >= 95.5){
-            $('#whaleNet').css({'display': 'none', 'transform':'scale(0.4)', 'left': '($winWidth  *(80) )/100', 'top':'($winHeight *(95.7) )/100'});
+            $('#whaleNet').css({'display': 'none', 'transform':'scale(0.4)', 'left': '($winWidth * whaleNetLeft )/100', 'top':'($winHeight * whaleNetTop )/100'});
         } else  if ( topPerc < 95.3  && topPerc >= 95.5 ){
             $('#whaleNet').css({'display': 'block', 'transform':'scale(0.4)'});
             $('#whaleNet').animate({
                 width: ($WidthPerc * whaleNetW)/100,
                 height:($WidthPerc * whaleNetH)/100,
-                left: ($winWidth  *(80) )/100,
-                top:  ($winHeight *(95.7) )/100,
+                left: ($winWidth  * whaleNetTop )/100,
+                top:  ($winHeight * whaleNetLeft )/100,
                 opacity: 0.2
  
             },0); 

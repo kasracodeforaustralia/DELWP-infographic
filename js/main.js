@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     
-    /* Scrolls to the bottom of the page 
- // $('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
+    /* Scrolls to the bottom of the page */
+    $('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
     
     /* Get width and height of the 2 bg images */
     // Responsive width and height of the bg images
@@ -16,6 +16,25 @@ $( document ).ready(function() {
     
     //console.log($WidthPerc);
     //console.log($HeightPerc);
+
+   
+   /*$('.lazy').Lazy(//); 
+   {
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        threshold: 100,
+        appendScroll: $(window),
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }, 
+        beforeLoad: function(element){
+              console.log('image "' + stripTime(element.data('src')) + '" is about to be loaded');
+          },
+          afterLoad: function(element) {
+              console.log('image "' + stripTime(element.data('src')) + '" was loaded successfully');
+          }
+    });*/
+   
     
     /* Initial styles for items */
     
@@ -56,7 +75,17 @@ $( document ).ready(function() {
     
     /* Birds default settings */
     
-    //SECTION-4 
+    //SECTION-5 
+     /* train */
+    $('#train').css({'transform': 'rotate(-1deg)'});
+    $('#train').animate({
+       width: ($WidthPerc * trainW)/100,
+       height:($HeightPerc* trainH)/100,
+       
+        left: ($winWidth  * trainLeft)/100,
+        top:  ($winHeight * trainTop)/100
+    },0);
+
     /* truck1 */
     $('#truck1').animate({
        width: ($WidthPerc * truck1W)/100,
@@ -242,8 +271,8 @@ $( document ).ready(function() {
         width: ($WidthPerc * whaleW)/100,
         height:($HeightPerc* whaleH)/100,
 
-        left: ($winWidth  *(75) )/100,
-        top:  ($winHeight *(98.4) )/100
+        left: ($winWidth  * whaleLeft )/100,
+        top:  ($winHeight * whaleTop )/100
     },0); 
 
 
@@ -251,8 +280,8 @@ $( document ).ready(function() {
     $('#whaleNet').animate({ 
         width: ($WidthPerc * whaleNetW)/100, 
         height:($HeightPerc* whaleNetH)/100,
-        left: ($winWidth  *(80) )/100,
-        top:  ($winHeight *(95.7) )/100
+        left: ($winWidth  * whaleNetTop )/100,
+        top:  ($winHeight * whaleNetLeft )/100
     },0); 
 
     
@@ -260,8 +289,16 @@ $( document ).ready(function() {
     $('#scuba-2').animate({ 
         width: ($WidthPerc * scuba2W)/100, 
         height: ($HeightPerc* scuba2H)/100,
-        left: ($winWidth  *(5) )/100,
-        top:  ($winHeight *(98.5) )/100
+        left: ($winWidth  * scuba2Left )/100,
+        top:  ($winHeight * scuba2Top )/100
+    },0); 
+
+    /* Seal */
+    $('#seal').animate({ 
+        width: ($WidthPerc * sealW)/100, 
+        height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * sealLeft )/100,
+        top:  ($winHeight * sealTop )/100
     },0); 
     
 
@@ -285,6 +322,24 @@ $( document ).ready(function() {
 /* Dynamic css for all items after resizing */
 $( window ).resize(function() {
   
+
+   /*$('.lazy').Lazy(//); 
+   {
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        threshold: 100,
+        appendScroll: $(window),
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }, 
+        beforeLoad: function(element){
+              console.log('image "' + stripTime(element.data('src')) + '" is about to be loaded');
+          },
+          afterLoad: function(element) {
+              console.log('image "' + stripTime(element.data('src')) + '" was loaded successfully');
+          }
+    });*/
+   
     /*  ---------------------------------- */
     /* Get width and height of the 2 bg images */
     // Responsive width and height of the bg images
@@ -332,6 +387,16 @@ $( window ).resize(function() {
     /* Birds */
     
     //SECTION-5
+    /* train */
+    $('#train').css({'transform': 'rotate(-1deg)'});
+    $('#train').animate({
+       width: ($WidthPerc * trainW)/100,
+       height:($HeightPerc* trainH)/100,
+       
+        left: ($winWidth  * trainLeft)/100,
+        top:  ($winHeight * trainTop)/100
+    },0);
+
     /* truck1 */
     $('#truck1').animate({
        width: ($WidthPerc * truck1W)/100,
@@ -513,16 +578,16 @@ $( window ).resize(function() {
     $('#whale').animate({
         width: ($WidthPerc * whaleW)/100,
         height:($HeightPerc* whaleH)/100,
-        left: ($winWidth  *(75) )/100,
-        top:  ($winHeight *(98.4) )/100
+        left: ($winWidth  * whaleLeft )/100,
+        top:  ($winHeight * whaleTop )/100
     },0); 
 
     /* whaleNet */
     $('#whaleNet').animate({ 
         width: ($WidthPerc * whaleNetW)/100, 
         height:($HeightPerc* whaleNetH)/100,
-        left: ($winWidth  *(80) )/100,
-        top:  ($winHeight *(95.7) )/100
+        left: ($winWidth  * whaleNetTop )/100,
+        top:  ($winHeight * whaleNetLeft )/100
     },0); 
 
     
@@ -530,10 +595,17 @@ $( window ).resize(function() {
     $('#scuba-2').animate({ 
         width: ($WidthPerc * scuba2W)/100, 
         height: ($HeightPerc* scuba2H)/100,
-        left: ($winWidth  *(5) )/100,
-        top:  ($winHeight *(98.5) )/100
+        left: ($winWidth  * scuba2Left )/100,
+        top:  ($winHeight * scuba2Top )/100
     },0); 
     
+    /* Seal */
+    $('#seal').animate({ 
+        width: ($WidthPerc * sealW)/100, 
+        height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * sealLeft )/100,
+        top:  ($winHeight * sealTop )/100
+    },0); 
 });
 
 

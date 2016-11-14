@@ -3,10 +3,13 @@
 	<head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Responsive Infographic</title>
+    	<title>DELWP Infographic</title>
         
         <!-- ***** Kasra: Jquery includes -->
         <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- Lazy load for images -->
+        <script type="text/javascript" src="js/jquery.lazy-master/jquery.lazy-master/jquery.lazy.min.js"></script>
+        <script type="text/javascript" src="js/jquery.lazy-master/jquery.lazy-master/jquery.lazy.plugins.min.js"></script>
         <!-- Plugin for adding keyframes -->
         <script src="js/jquery.keyframes.min.js"></script>
         
@@ -14,8 +17,9 @@
 
         <!-- Main js: on ready, load, resize, scrol events are controled here-->
         <script src="js/variables.js"></script>
-        
         <script src="js/main.js"></script>
+
+        <!-- Animates items -->
         <script src="js/cloud.js"></script>
         <script src="js/cloud2.js"></script>
         <script src="js/turbines.js"></script>
@@ -29,6 +33,8 @@
         <script src="js/water.js"></script>
         
         <!-- SECTION 4 INNER CITY -->
+        <script src="js/train.js"></script>
+        <script src="js/truck1.js"></script>
         <script src="js/car1.js"></script>
         
         <!-- SECTION 3 CITY -->
@@ -43,13 +49,11 @@
         <script src="js/whale.js"></script>
         <script src="js/whaleNet.js"></script>
         <script src="js/scuba-2.js"></script>
-        
+        <script src="js/seal.js"></script>
+
         <!-- Scroll Bar Navigation -->
         <script src="js/NavScrollBar.js"></script>
         <!--script src="js/PosOnScrollBar.js"></script-->
-        
-        
-        
         
         <!--++++++++++ -->
 
@@ -57,25 +61,17 @@
         
         <!--Main Css: body & bg imgs-->
         <link href="css/main.css" rel="stylesheet" type="text/css">
-        <!-- Include itemes css files-->
+        <!-- Include items css files SECTION 7/8/9-->
         <link href="css/turbine.css" rel="stylesheet" type="text/css">
         <link href="css/cloud.css" rel="stylesheet" type="text/css">
         <link href="css/cloud2.css" rel="stylesheet" type="text/css">
-    
         <link href="css/firefighters.css" rel="stylesheet" type="text/css">
         <link href="css/fire.css" rel="stylesheet" type="text/css">
         <link href="css/kangaroo.css" rel="stylesheet" type="text/css">
-        
         <link href="css/garbageTruck.css" rel="stylesheet" type="text/css">
-        
-        <link href="css/bulldozer.css" rel="stylesheet" type="text/css">
-        
         <link href="css/cow.css" rel="stylesheet" type="text/css"> 
-
         <link href="css/floodSign.css" rel="stylesheet" type="text/css">
-
         <link href="css/windMill.css" rel="stylesheet" type="text/css">
-        
         <link href="css/water.css" rel="stylesheet" type="text/css">
         <!--<link href="css/tractor.css" rel="stylesheet" type="text/css"> -->
         <!--00000 -->
@@ -87,16 +83,12 @@
         <!-- SECTION 1 SEA/BAY -->
         <link href="css/section-1.css" rel="stylesheet" type="text/css">
         <!-- -->
-        
-        <!-- Scroll Bar Navigation css -->
+<!-- Scroll Bar Navigation css -->
         <link href="css/NavScrollBar.css" rel="stylesheet" type="text/css">
         <link href="css/PosOnScrollBar.css" rel="stylesheet" type="text/css">
-        
-        
-
    	</head>
   	<body>
-        
+ 
         <div class="main_container" id="aaa">
             <div >
                 <img  class="bg4" src="img/allinone-4.png">
@@ -118,42 +110,31 @@
         <!-- Animated items -->
         <div> <img class="cloud" src="img/section-789/Cloud.png"></div>
         <div> <img class="cloud2" src="img/section-789/Cloud.png"></div>
+   
         <!-- ######### turbines  ########-->
         <div><img  class="turbine" id="turbine1" src="img/section-789/gifs/turbine.gif"> </div>
-        
         <div><img  class="turbine" id="turbine2" src="img/section-789/gifs/turbine.gif"> </div>
-        
         <div><img  class="turbine" id="turbine3" src="img/section-789/gifs/turbine.gif"> </div>
-        
         <div><img  class="turbine" id="turbine4" src="img/section-789/gifs/turbine.gif"> </div>
-        
         <div><img  class="turbine" id="turbine5" src="img/section-789/gifs/turbine.gif"> </div>
-        
         <div><img  class="turbine" id="turbine6" src="img/section-789/gifs/turbine.gif"> </div>
               
         <!-- ######### turbines end ########-->
         
         <div><img  class="firefighters" src="img/section-789/Firefighters.png"> </div> 
-        
         <div><img  class="fire" src="img/section-789/gifs/fire.gif" ></div>
-        
         <div><img  class="kangaroo" src="img/section-789/gifs/kangaroo.gif" ></div>
-        
-        <div> <img class="garbageTruck" src="img/section-789/garbagetruck.png"></div>
-        
-        <div> <img class="bulldozer" src="img/section-789/bulldozer.png"></div>
-        
+        <div> <img class="garbageTruck" src="img/section-789/garbagetruck.png"></div> 
         <div><img  class="floodSign" src="img/section-789/gifs/floodSign.gif"> </div>
-        
         <div><img  class="windMill" src="img/section-789/gifs/windMill.gif" ></div>
-        
         <div><img  class="cow" src="img/section-789/cow.png" ></div> 
         
         <!-- SECTION 5 OUTER SUBURBS/ URBAN -->
-        <img class="item" id="truck1" src="img/section-5/truck1.png">
+        <img class="item" id="train" src="img/section-5/train.png">
         <img class="item" id="mcg" src="img/section-5/mcg.gif">
-        <!--img class="item" id="building-three" src="img/section-5/building-three.png">
-        <img class="item" id="building-two" src="img/section-5/building-two.gif"-->
+        <img class="item" id="truck1" src="img/section-5/truck1.png">
+        <img class="item" id="building-three" src="img/section-5/building-three.png">
+        <img class="item" id="building-two" src="img/section-5/building-two.gif">
         <img class="item" id="building" src="img/section-5/building.gif">
        
         <!-- SECTION 4 INNER CITY/ INDUSTRIAL -->
@@ -167,8 +148,8 @@
                 
         <!-- SECTION 3 CITY -->
         <img class="item" id="arts-centre" src="img/section-3/arts-centre.gif">
-        <img class="item" id="eureka-tower" src="img/section-3/eureka.gif">
-        <img class="item" id="tram" src="img/section-3/tram.png">
+        <img id="eureka-tower" class="item lazy" src="img/section-3/eureka.gif">
+        <img id="tram" class="item lazy" src="img/section-3/tram.png">
         <img class="item" id="car2" src="img/section-3/car2.png">
         <img class="item" id="bus" src="img/section-3/bus.png">
         <img class="item" id="church" src="img/section-3/church.png">
@@ -180,7 +161,7 @@
         <img class="item" id="whale" src="img/section-1/whale.gif">
         <img class="item" id="whaleNet" src="img/section-1/whaleNet.png">
         <img class="item" id="scuba-2" src="img/section-1/scuba.gif">
-        
+        <img class="item" id="seal" src="img/section-1/seal.gif">
         
         <!--************************ -->
         <!--************************ -->
@@ -198,16 +179,4 @@
 
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
 
