@@ -44,9 +44,16 @@ $( document ).ready(function() {
 
     
     /* Tractor default settings */
+    
     /* Bulldozer default settings */
-    /* Bilbi default settings */
-    /* Fire default settings */
+    $('.bulldozer').animate({
+       width: ( ($WidthPerc * bulldozerW)/100)*150/100,
+       height:( ($HeightPerc* bulldozerH)/100)*150/100,
+       
+       left: ($winWidth  *(75) )/100,
+       top:  ($winHeight *(41.3) )/100
+    },0);
+    
     /* Birds default settings */
     
     //SECTION-4 
@@ -313,10 +320,15 @@ $( window ).resize(function() {
     },0);   
     
 
-    /* Tractor */
-    /* Bulldozer */
-    /* Bilbi */
-    /* Fire */
+    /* Bulldozer default settings */
+    $('.bulldozer').animate({
+       width: ( ($WidthPerc * bulldozerW)/100)*150/100,
+       height:( ($HeightPerc* bulldozerH)/100)*150/100,
+       
+       left: ($winWidth  *(75) )/100,
+       top:  ($winHeight *(41.3) )/100
+    },0);
+    
     /* Birds */
     
     //SECTION-5

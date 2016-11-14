@@ -34,6 +34,10 @@
    var garbagetruckW = 260;
    var garbagetruckH = 135;
 
+   /* Bulldozer */
+   var bulldozerW = 167;
+   var bulldozerH = 129;
+
    /* Kangaroo */
    var kangarooW = 300;
    var kangarooH =270;

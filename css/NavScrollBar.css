@@ -1,0 +1,10 @@
+.NavScrollBar{
+    position: fixed;
+    top:35%;
+    left: 2%;    
+    background-color: darkorange;
+    border-radius: 5px;
+    border-style: solid;
+    opacity: 0.8;
+    z-index: 81;
+}
