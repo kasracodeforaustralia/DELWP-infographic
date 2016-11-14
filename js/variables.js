@@ -40,10 +40,16 @@
 
 
 // SECTION 5 OUTER SUBRUBS/ URBAN
+      /* Train */
+      var trainW = 796;
+      var trainH = 528;
+      var trainTop = 57.99;
+      var trainLeft = -8;
+
       /* Truck 1 */
       var truck1W = 226;
       var truck1H = 172;
-      var truck1Top = 67.55;
+      var truck1Top = 67.58;
       var truck1Left = -2;
 
       /* mcg */
@@ -152,24 +158,36 @@
 
 //SECTION 2 FORESHORE
 
-      /* Boat */
-      var boatW = 133;
-      var boatH = 218;
-      var boatTop = 90.6;
-      var boatLeft = 80.05;
+    /* Boat */
+    var boatW = 133;
+    var boatH = 218;
+    var boatTop = 90.6;
+    var boatLeft = 80.05;
 
 //SECTION 1 SEA/BAY
-            /* Whale */
+    /* Whale */
     var whaleW = 802;
     var whaleH = 409;
+    var whaleTop = 98.4;
+    var whaleLeft = 75;
 
     /* whaleNet */
     var whaleNetW = 499;
     var whaleNetH = 333;
+    var whaleNetTop = 95.7;
+    var whaleNetLeft = 80;
 
     /* Scuba */
     var scuba2W = 221;
     var scuba2H = 170;
+    var scuba2Top = 98.5;
+    var scuba2Left = 5;
+
+    /* Seal */
+    var sealW = 435;
+    var sealH = 267;
+    var sealTop = 96.6;
+    var sealLeft = -10;
 
 /* ------------------------------------- */
 

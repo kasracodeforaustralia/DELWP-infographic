@@ -1,21 +1,11 @@
 $(window).scroll(function(){
 
-        var $win = $(window);
-
-        // Real width and height of the bg images
-        var $bgWidth = 1920;
-        var $bgHeight = 18326;
-        
         // Responsive width and height of the bg images
-        var $winWidth  = $('.bg1').width();
-        var $winHeight = $('.bg1').height() + $('.bg2').height() + $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
-        
-        var $WidthPerc  = ($winWidth * 100) /$bgWidth ;
-        var $HeightPerc = ($winHeight * 100)/$bgHeight;    
-        //var top = $win.scrollTop(); //where the scroll is
-    
-        var topPerc = ($win.scrollTop() * 100)/$winHeight; //changeto a percentage value based on screen size percentage change
- 
+        var $winWidth   = winWidth();
+        var $winHeight  = winHeight();
+        var $WidthPerc  = WidthPerc();
+        var $HeightPerc = HeightPerc();
+        var topPerc     = topPercfunc();
 
         /* bus   */ 
         if ( topPerc >= 81.2 ){
@@ -115,7 +105,25 @@ $(window).scroll(function(){
                 top:  ($winHeight *(81.8) )/100,
                 
             }, 0); 
-        } else if (topPerc < 79.4) {
+        } else if ( 79.0 <= topPerc &&  topPerc < 79.2 ){
+           $('#bus').css({'display': 'block'});
+             $('#bus').animate({
+                width: ($WidthPerc * busW)/100,
+                height: ($WidthPerc * busH)/100,
+                left: ($winWidth  *(84) )/100,
+                top:  ($winHeight *(82.0) )/100,
+                
+            }, 0); 
+        } else if ( 78.8 <= topPerc &&  topPerc < 79.0 ){
+           $('#bus').css({'display': 'block'});
+             $('#bus').animate({
+                width: ($WidthPerc * busW)/100,
+                height: ($WidthPerc * busH)/100,
+                left: ($winWidth  *(88) )/100,
+                top:  ($winHeight *(82.2) )/100,
+                
+            }, 0); 
+        } else if (topPerc < 78.8) {
             $('#bus').css({ 'display':'block', 'opacity':'1' });
         }
 
