@@ -1,30 +1,22 @@
 $(window).scroll(function(){
 
-        var $win = $(window);
-
-        // Real width and height of the bg images
-        var $bgWidth = 1920;
-        var $bgHeight = 18326;
-        
         // Responsive width and height of the bg images
-        var $winWidth  = $('.bg1').width();
-        var $winHeight = $('.bg1').height() + $('.bg2').height() + $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
-        
-        var $WidthPerc  = ($winWidth * 100) /$bgWidth ;
-        var $HeightPerc = ($winHeight * 100)/$bgHeight;    
-            
-        var topPerc = ($win.scrollTop() * 100)/$winHeight;
+        var $winWidth   = winWidth();
+        var $winHeight  = winHeight();
+        var $WidthPerc  = WidthPerc();
+        var $HeightPerc = HeightPerc();
+        var topPerc     = topPercfunc();
 
         /* whale */ 
         if (topPerc >= 95.0){
-            $('#whale').css({'display': 'none', 'transform':'scale(0.3)', 'left': '($winWidth  *(75) )/100', 'top':'($winHeight *(98.4) )/100'});
+            $('#whale').css({'display': 'none', 'transform':'scale(0.3)', 'left': '($winWidth * whaleLeft)/100', 'top':'($winHeight *(whaleTop) )/100'});
         } else  if ( topPerc < 94.8  && topPerc >= 95.0 ){
             $('#whale').css({'display': 'block', 'transform':'scale(0.3)'});
             $('#whale').animate({
                 width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
-                left: ($winWidth  *(75))/100,
-                top:  ($winHeight *(98.4))/100,
+                left: ($winWidth  *(whaleLeft))/100,
+                top:  ($winHeight *(whaleTop))/100,
                 opacity: 0.4
  
             },0); 
