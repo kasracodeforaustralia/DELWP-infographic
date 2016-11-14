@@ -16,6 +16,25 @@ $( document ).ready(function() {
     
     //console.log($WidthPerc);
     //console.log($HeightPerc);
+
+   
+   /*$('.lazy').Lazy(//); 
+   {
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        threshold: 100,
+        appendScroll: $(window),
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }, 
+        beforeLoad: function(element){
+              console.log('image "' + stripTime(element.data('src')) + '" is about to be loaded');
+          },
+          afterLoad: function(element) {
+              console.log('image "' + stripTime(element.data('src')) + '" was loaded successfully');
+          }
+    });*/
+   
     
     /* Initial styles for items */
     
@@ -296,6 +315,24 @@ $( document ).ready(function() {
 /* Dynamic css for all items after resizing */
 $( window ).resize(function() {
   
+
+   /*$('.lazy').Lazy(//); 
+   {
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        threshold: 100,
+        appendScroll: $(window),
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }, 
+        beforeLoad: function(element){
+              console.log('image "' + stripTime(element.data('src')) + '" is about to be loaded');
+          },
+          afterLoad: function(element) {
+              console.log('image "' + stripTime(element.data('src')) + '" was loaded successfully');
+          }
+    });*/
+   
     /*  ---------------------------------- */
     /* Get width and height of the 2 bg images */
     // Responsive width and height of the bg images
