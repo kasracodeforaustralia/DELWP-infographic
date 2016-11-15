@@ -25,13 +25,13 @@ $( document ).ready(function() {
     $(".muteAll").click(function(){
         $(".muteAll").css({ display: 'none' }); 
         $(".speaker").css({ display: 'block' });
-        muteAll = 1; 
+        muteAll = 0; 
     });
 
     $(".speaker").click(function(){
         $(".speaker").css({ display: 'none' });
         $(".muteAll").css({ display: 'block' });
-        muteAll = 0; 
+        muteAll = 1; 
     });
     
   });
