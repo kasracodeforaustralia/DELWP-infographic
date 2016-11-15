@@ -6,6 +6,10 @@
    var $bgWidth = 1920;
    var $bgHeight = 18326;  
 
+   /* Birds */
+   var birdsW = 1920;
+   var birdsH = 360;
+
    /* Cloud */
    var cloudW = 400;
    var cloudH = 250;
@@ -209,6 +213,11 @@
    var sealH = 267;
    var sealTop = 96.6;
    var sealLeft = -10;
+
+
+/*iiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
+var muteAll = 1;
+/*iiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
 
 /* ------------------------------------- */
 
