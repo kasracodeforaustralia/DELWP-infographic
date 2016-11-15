@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     /* Scrolls to the bottom of the page */
-    $('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
+    //$('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
     
     /* Get width and height of the 2 bg images */
     // Responsive width and height of the bg images
@@ -63,9 +63,16 @@ $(document).ready(function() {
 
     
     /* Tractor default settings */
+    
     /* Bulldozer default settings */
-    /* Bilbi default settings */
-    /* Fire default settings */
+    $('.bulldozer').animate({
+       width: ( ($WidthPerc * bulldozerW)/100)*150/100,
+       height:( ($HeightPerc* bulldozerH)/100)*150/100,
+       
+       left: ($winWidth  *(75) )/100,
+       top:  ($winHeight *(41.3) )/100
+    },0);
+    
     /* Birds default settings */
     
     //SECTION-5 
@@ -407,10 +414,15 @@ $( window ).resize(function() {
     },0);   
     
 
-    /* Tractor */
-    /* Bulldozer */
-    /* Bilbi */
-    /* Fire */
+    /* Bulldozer default settings */
+    $('.bulldozer').animate({
+       width: ( ($WidthPerc * bulldozerW)/100)*150/100,
+       height:( ($HeightPerc* bulldozerH)/100)*150/100,
+       
+       left: ($winWidth  *(75) )/100,
+       top:  ($winHeight *(41.3) )/100
+    },0);
+    
     /* Birds */
     
     //SECTION-5
