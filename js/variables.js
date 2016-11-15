@@ -211,20 +211,29 @@
    var sealLeft = -10;
 
     /* msg-1 */
-    var msg1Top = 95.8;
-    var msg1Left = 48;
+    var msg1Top = 96.4;
+    var msg1Left = 42;
 
     /* dot-1 */
     var dot1Top = 96.8;
     var dot1Left = 40;
 
-     /* msg-2 */
-    var msg2Top = 95.8;
-    var msg2Left = 48;
+    /* msg-2 */
+    var msg2Top = 93.2;
+    var msg2Left = 14;
 
     /* dot-2 */
     var dot2Top = 92.8;
     var dot2Left = 18;
+
+    /* msg-3 */
+    var msg3Top = 94.0;
+    var msg3Left = 44;
+
+    /* dot-3 */
+    var dot3Top = 93.4;
+    var dot3Left = 44;
+
 
 
 /* ------------------------------------- */

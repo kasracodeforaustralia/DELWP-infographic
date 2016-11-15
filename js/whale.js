@@ -22,19 +22,17 @@ $(window).scroll(function(){
             },0); 
             
         }else if (  94.6 <= topPerc &&  topPerc < 94.8){
+            $('#whale').css({'display': 'block', 'transform':'scale(0.4) rotate(15deg)'});
             $('#whale').animate({
                 width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
                 left: ($winWidth  *(70) )/100,
                 top:  ($winHeight *(98.2) )/100,
-                opacity: 0.5,
-                start: function(){
-                    $( this ).css({'transform':'scale(0.4) rotate(15deg)'});
-                }
+                opacity: 0.5
             }, 0); 
             
         }else if (  94.4 <= topPerc &&  topPerc < 94.6 ){
-             $('#whale').css({'transform':'scale(0.5) rotate(5deg)'});
+             $('#whale').css({'display': 'block', 'transform':'scale(0.5) rotate(5deg)'});
              $('#whale').animate({
       width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
@@ -44,7 +42,7 @@ $(window).scroll(function(){
             }, 0); 
             
         } else if ( 94.2 <= topPerc &&  topPerc < 94.4 ){
-              $('#whale').css({'transform':'scale(0.6) rotate(-10deg)'});
+              $('#whale').css({'display': 'block', 'transform':'scale(0.6) rotate(-10deg)'});
              $('#whale').animate({
      width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
@@ -54,7 +52,7 @@ $(window).scroll(function(){
             }, 0); 
            
         }else if ( 94.0 <= topPerc &&  topPerc < 94.2 ){
-            $('#whale').css({'transform':'scale(0.75) rotate(5deg)'});
+            $('#whale').css({'display': 'block', 'transform':'scale(0.75) rotate(5deg)'});
              $('#whale').animate({
          width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
@@ -63,7 +61,7 @@ $(window).scroll(function(){
                 opacity: 0.9
             }, 0); 
         }else if ( 93.8 <= topPerc &&  topPerc < 94.0 ){
-            $('#whale').css({'transform':'scale(0.6) rotate(2deg)'});
+            $('#whale').css({'display': 'block', 'transform':'scale(0.6) rotate(2deg)'});
              $('#whale').animate({
          width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
@@ -72,7 +70,7 @@ $(window).scroll(function(){
                 opacity: 1
             }, 0); 
         }else if ( 93.6 <= topPerc &&  topPerc < 93.8 ){
-            $('#whale').css({'transform':'scale(0.5) rotate(-5deg)'});
+            $('#whale').css({'display': 'block', 'transform':'scale(0.5) rotate(-5deg)'});
              $('#whale').animate({
          width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
@@ -81,7 +79,7 @@ $(window).scroll(function(){
                 opacity: 1
             }, 0); 
         }else if ( 93.4 <= topPerc &&  topPerc < 93.6 ){
-            $('#whale').css({'transform':'scale(0.4) rotate(5deg)'});
+            $('#whale').css({'display': 'block', 'transform':'scale(0.4) rotate(5deg)'});
              $('#whale').animate({
          width: ($WidthPerc * whaleW)/100,
                 height:($WidthPerc * whaleH)/100,
@@ -89,35 +87,8 @@ $(window).scroll(function(){
                 top:  ($winHeight *(96.8) )/100,
                 opacity: 1
             }, 0); 
-        }/*else if ( 93.2 <= topPerc &&  topPerc < 93.4 ){
-            $('#whale').css({'transform':'rotate(-8deg)'});
-             $('#whale').animate({
-         width: ($WidthPerc * whaleW)/100,
-                height:($WidthPerc * whaleH)/100,
-                left: ($winWidth  *(44.5) )/100,
-                top:  ($winHeight *(96.6) )/100,
-                opacity: 1
-            }, 0);
-        }else if ( 93.0 <= topPerc &&  topPerc < 93.2 ){
-            $('#whale').css({'transform':'rotate(5deg)'});
-             $('#whale').animate({
-         width: ($WidthPerc * whaleW)/100,
-                height:($WidthPerc * whaleH)/100,
-                left: ($winWidth  *(40.5) )/100,
-                top:  ($winHeight *(96.6) )/100,
-                opacity: 1
-            }, 0);
-        }else if ( 92.9 <= topPerc &&  topPerc < 93.0 ){
-            $('#whale').css({'transform':'rotate(5deg)'});
-             $('#whale').animate({
-         width: ($WidthPerc * whaleW)/100,
-                height:($WidthPerc * whaleH)/100,
-                left: ($winWidth  *(36.5) )/100,
-                top:  ($winHeight *(96.6) )/100,
-                opacity: 1
-            }, 0);
-        }*/else if (topPerc < 95.0) {
-            $('#whale').css("display", 'block');
+        } else if (topPerc < 93.4) {
+            $('#whale').css({'display': 'block'});
         }
 
         
