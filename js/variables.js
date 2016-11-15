@@ -50,13 +50,21 @@
    var floodSingW = 225;
    var floodSingH = 245;
 
+   /* bike */
+   var bikeW = 52;
+   var bikeH = 67;
 
-// SECTION 5 OUTER SUBRUBS/ URBAN
-    /* Train */
-    var trainW = 796;
-    var trainH = 528;
-    var trainTop = 57.99;
-    var trainLeft = -8;
+   /* White car - the one is infront of the bicycle */
+   var whiteCarW = 121;
+   var whiteCarH = 68;
+
+
+   // SECTION 5 OUTER SUBRUBS/ URBAN
+   /* Train */
+   var trainW = 796;
+   var trainH = 528;
+   var trainTop = 57.99;
+   var trainLeft = -8;
 
    /* Truck 1 */
    var truck1W = 226;
