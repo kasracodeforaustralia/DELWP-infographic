@@ -5,15 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<title>DELWP Infographic</title>
         
-        <!-- ***** Kasra: Jquery includes -->
-        <script src="http://code.jquery.com/jquery.js"></script>
-        <!-- Lazy load for images -->
+        <!-- ***** Jquery includes -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Lazy load for images >
         <script type="text/javascript" src="js/jquery.lazy-master/jquery.lazy-master/jquery.lazy.min.js"></script>
-        <script type="text/javascript" src="js/jquery.lazy-master/jquery.lazy-master/jquery.lazy.plugins.min.js"></script>
+        <script type="text/javascript" src="js/jquery.lazy-master/jquery.lazy-master/jquery.lazy.plugins.min.js"></script-->
         <!-- Plugin for adding keyframes -->
         <script src="js/jquery.keyframes.min.js"></script>
         
-        <!--+++++ Kasra: Animation Jauery includes -->
+        <!--+++++ Animation Jauery includes -->
 
         <!-- Main js: on ready, load, resize, scrol events are controled here-->
         <script src="js/variables.js"></script>
@@ -50,15 +50,18 @@
         <script src="js/whaleNet.js"></script>
         <script src="js/scuba-2.js"></script>
         <script src="js/seal.js"></script>
-
+        <script src="js/msg-section1.js"></script>
         
         
         <!--++++++++++ -->
 
-        <!--00000 Kasra: Css includes-->
+       <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:400,600,700" rel="stylesheet">
+
+        <!--00000 Css includes-->
         
         <!--Main Css: body & bg imgs-->
         <link href="css/main.css" rel="stylesheet" type="text/css">
+       
         <!-- Include items css files SECTION 7/8/9-->
         <link href="css/turbine.css" rel="stylesheet" type="text/css">
         <link href="css/cloud.css" rel="stylesheet" type="text/css">
@@ -144,8 +147,8 @@
                 
         <!-- SECTION 3 CITY -->
         <img class="item" id="arts-centre" src="img/section-3/arts-centre.gif">
-        <img id="eureka-tower" class="item lazy" src="img/section-3/eureka.gif">
-        <img id="tram" class="item lazy" src="img/section-3/tram.png">
+        <img id="eureka-tower" class="item" src="img/section-3/eureka.gif">
+        <img id="tram" class="item" src="img/section-3/tram.png">
         <img class="item" id="car2" src="img/section-3/car2.png">
         <img class="item" id="bus" src="img/section-3/bus.png">
         <img class="item" id="church" src="img/section-3/church.png">
@@ -153,13 +156,38 @@
         <!-- SECTION 2 FORESHORE -->   
         <img class="item" id="boat" src="img/section-2/boat.png">
 
-        <!-- SECTION 1 SEA/BAY -->
+        <!-- ////////////////////////////////// SECTION 1 SEA/BAY \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
         <img class="item" id="whale" src="img/section-1/whale.gif">
         <img class="item" id="whaleNet" src="img/section-1/whaleNet.png">
         <img class="item" id="scuba-2" src="img/section-1/scuba.gif">
         <img class="item" id="seal" src="img/section-1/seal.gif">
 
+        <!-- SECTION 1 MESSAGES -->
+        <!--div class="holder" id="dot-3">
+              <div class="dot"></div>
+              <div class="pulse"></div>
+        </div>
+        <div id="msg-3"><p>Managing environmental water to support healthy waterways</p></div-->
+
+        <div class="holder" id="dot-2">
+              <div class="dot"></div>
+              <div class="pulse"></div>
+        </div>
+        <!--div id="msg-2"><p>Restoring beaches and protecting coasts</p></div-->
+
+        <!-- MSG 1 -->
+        <div class="holder" id="dot-1">
+              <div class="dot"></div>
+              <div class="pulse"></div>
+        </div>
+        <div class="msg" id="msg-1" style="display: none;">
+            <p>Helping whales, seals and dolphins in distress</p>
+            <a>See more about this project HERE</a>
+        </div>
+
         <!--div class="water"><div-->
 
+
+        
     </body>
 </html>

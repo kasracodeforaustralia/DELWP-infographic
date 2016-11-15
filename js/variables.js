@@ -198,6 +198,23 @@
     var sealTop = 96.6;
     var sealLeft = -10;
 
+    /* msg-1 */
+    var msg1Top = 95.8;
+    var msg1Left = 48;
+
+    /* dot-1 */
+    var dot1Top = 96.8;
+    var dot1Left = 40;
+
+     /* msg-2 */
+    var msg2Top = 95.8;
+    var msg2Left = 48;
+
+    /* dot-2 */
+    var dot2Top = 92.8;
+    var dot2Left = 18;
+
+
 /* ------------------------------------- */
 
 /* functions for dynamic variables */
