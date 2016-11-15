@@ -12,7 +12,7 @@ $(window).scroll(function(){
         /* dot 1 */ 
         if (topPerc >= 93.6){
             $('#dot-1').css({'display': 'none', 'left': '($winWidth * dot1Left)/100', 'top':'($winHeight *(dot1Top) )/100'});
-            $('#dot-2').css({'display': 'none', 'left': '($winWidth * dot2Left)/100', 'top':'($winHeight *(dot2Top) )/100'});
+            //$('#dot-2').css({'display': 'none', 'left': '($winWidth * dot2Left)/100', 'top':'($winHeight *(dot2Top) )/100'});
         } else  if ( 93.4 <= topPerc &&  topPerc < 93.6 ){
             $('#dot-1').css({'display': 'block'});
             $('#dot-1').animate({
@@ -26,7 +26,7 @@ $(window).scroll(function(){
             },0); 
         } else if ( 91.4 <= topPerc &&  topPerc < 91.6 ){
             $('#dot-1').css("display", 'block');
-            $('#dot-2').css({'display': 'block'});
+          /*  $('#dot-2').css({'display': 'block'});
             $('#dot-2').animate({
                 //width: ($WidthPerc * sealW)/100,
                 //height:($WidthPerc * sealH)/100,
@@ -35,14 +35,17 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot2Top )/100,
                 
  
-            },0); 
+            },0); */
         }
 
         else if (topPerc < 93.6) {
             $('#dot-1').css("display", 'block');
         }
-
-        
+$('#dot-1').click(function(){
+        console.log("spmeone is here...");
+            $('#msg-1').toggle("slow");
+        });
+       
 });
 
 
