@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
     
     /* Scrolls to the bottom of the page */
     //$('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
@@ -16,7 +16,7 @@ $( document ).ready(function() {
     
     //console.log($WidthPerc);
     //console.log($HeightPerc);
-
+    
    
    /*$('.lazy').Lazy(//); 
    {
@@ -300,7 +300,46 @@ $( document ).ready(function() {
         left: ($winWidth  * sealLeft )/100,
         top:  ($winHeight * sealTop )/100
     },0); 
-    
+
+    /* dot-1 */
+    $('#dot-1').animate({ 
+       // width: ($WidthPerc * sealW)/100, 
+       // height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * dot1Left )/100,
+        top:  ($winHeight * dot1Top )/100
+    },0); 
+
+     /* msg-1 */
+    $('#msg-1').animate({ 
+       // width: ($WidthPerc * sealW)/100, 
+       // height: ($HeightPerc* sealH)/100,
+
+        left: ($winWidth  * msg1Left )/100,
+        top:  ($winHeight * msg1Top )/100
+    },0); 
+
+   /*$('#dot-1').click(function(){
+        console.log("spmeone is here...");
+            $('#msg-1').toggle("slow");
+        });
+
+    /* dot-2 
+    $('#dot-2').animate({ 
+       // width: ($WidthPerc * sealW)/100, 
+       // height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * dot2Left )/100,
+        top:  ($winHeight * dot2Top )/100
+    },0); 
+
+     /* msg-2 
+    $('#msg-2').animate({ 
+       // width: ($WidthPerc * sealW)/100, 
+       // height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * msg2Left )/100,
+        top:  ($winHeight * msg2Top )/100
+    },0); */
+
+
 
     /* Default setting for Small devices */
     if($win < 578){
@@ -606,6 +645,44 @@ $( window ).resize(function() {
         left: ($winWidth  * sealLeft )/100,
         top:  ($winHeight * sealTop )/100
     },0); 
+
+    /* dot-1 */
+    $('#dot-1').animate({ 
+       // width: ($WidthPerc * sealW)/100, 
+       // height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * dot1Left )/100,
+        top:  ($winHeight * dot1Top )/100
+    },0); 
+
+     /* msg-1 */
+    $('#msg-1').animate({ 
+       // width: ($WidthPerc * sealW)/100, 
+       // height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * msg1Left )/100,
+        top:  ($winHeight * msg1Top )/100
+    },0); 
+
+/*$('#dot-1').click(function(){
+        console.log("spmeone is here...");
+            $('#msg-1').toggle("slow");
+        });
+
+    /* dot-2 
+    $('#dot-2').animate({ 
+       // width: ($WidthPerc * sealW)/100, 
+       // height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * dot2Left )/100,
+        top:  ($winHeight * dot2Top )/100
+    },0); 
+
+     /* msg-2 
+    $('#msg-2').animate({ 
+       // width: ($WidthPerc * sealW)/100, 
+       // height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * msg2Left )/100,
+        top:  ($winHeight * msg2Top )/100
+    },0); */
+    
 });
 
 
