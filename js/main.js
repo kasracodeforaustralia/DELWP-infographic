@@ -301,6 +301,8 @@ $(document).ready(function() {
         top:  ($winHeight * sealTop )/100
     },0); 
 
+//////////MESSAGES ////////////////////
+
     /* dot-1 */
     $('#dot-1').animate({ 
        // width: ($WidthPerc * sealW)/100, 
@@ -318,12 +320,12 @@ $(document).ready(function() {
         top:  ($winHeight * msg1Top )/100
     },0); 
 
-   /*$('#dot-1').click(function(){
-        console.log("spmeone is here...");
+   $('#dot-1').click(function(){
+       
             $('#msg-1').toggle("slow");
         });
 
-    /* dot-2 
+    /* dot-2 */
     $('#dot-2').animate({ 
        // width: ($WidthPerc * sealW)/100, 
        // height: ($HeightPerc* sealH)/100,
@@ -331,15 +333,41 @@ $(document).ready(function() {
         top:  ($winHeight * dot2Top )/100
     },0); 
 
-     /* msg-2 
+     /* msg-2 */
     $('#msg-2').animate({ 
        // width: ($WidthPerc * sealW)/100, 
        // height: ($HeightPerc* sealH)/100,
         left: ($winWidth  * msg2Left )/100,
         top:  ($winHeight * msg2Top )/100
-    },0); */
+    },0); 
 
+    $('#dot-2').click(function(){
+        
+            $('#msg-2').toggle("slow");
+    });
 
+ /* dot-3 */
+    $('#dot-3').animate({ 
+       // width: ($WidthPerc * sealW)/100, 
+       // height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * dot3Left )/100,
+        top:  ($winHeight * dot3Top )/100
+    },0); 
+
+     /* msg-3 */
+    $('#msg-3').animate({ 
+       // width: ($WidthPerc * sealW)/100, 
+       // height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * msg3Left )/100,
+        top:  ($winHeight * msg3Top )/100
+    },0); 
+    
+    $('#dot-3').click(function(){
+        
+            $('#msg-3').toggle("slow");
+    });
+
+//////////////////////////////////////////////////////
 
     /* Default setting for Small devices */
     if($win < 578){
@@ -662,12 +690,8 @@ $( window ).resize(function() {
         top:  ($winHeight * msg1Top )/100
     },0); 
 
-/*$('#dot-1').click(function(){
-        console.log("spmeone is here...");
-            $('#msg-1').toggle("slow");
-        });
-
-    /* dot-2 
+    
+    /* dot-2 */
     $('#dot-2').animate({ 
        // width: ($WidthPerc * sealW)/100, 
        // height: ($HeightPerc* sealH)/100,
@@ -675,20 +699,28 @@ $( window ).resize(function() {
         top:  ($winHeight * dot2Top )/100
     },0); 
 
-     /* msg-2 
+     /* msg-2 */
     $('#msg-2').animate({ 
        // width: ($WidthPerc * sealW)/100, 
        // height: ($HeightPerc* sealH)/100,
         left: ($winWidth  * msg2Left )/100,
         top:  ($winHeight * msg2Top )/100
-    },0); */
+    },0); 
+
+     /* dot-3 */
+    $('#dot-3').animate({ 
+       // width: ($WidthPerc * sealW)/100, 
+       // height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * dot3Left )/100,
+        top:  ($winHeight * dot3Top )/100
+    },0); 
+
+     /* msg-3 */
+    $('#msg-3').animate({ 
+       // width: ($WidthPerc * sealW)/100, 
+       // height: ($HeightPerc* sealH)/100,
+        left: ($winWidth  * msg3Left )/100,
+        top:  ($winHeight * msg3Top )/100
+    },0); 
     
 });
-
-
-
-
-
-
-
-

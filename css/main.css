@@ -50,31 +50,30 @@ img.lazy {
 /* Message */
 .msg {
         position: absolute;
-        padding: 10px;
-        width: 500px;
+        padding: 10px 15px;
+        max-width: 450px;
         background-color: #ffffff;
         opacity: 0.8;
         border-radius: 10px;
-        border: #ececec 1px solid;
+        border: #e49758 2px solid;
 }
 
 .msg p {
-    margin: 5px 10px;
+    margin: 0px;
     font-size: 20px;    
 }
 
 .msg a {
+   
     text-align: right;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #cdcdcd;
+    float: right;
     font-size: 14px;  
 }
 
 .msg a:hover {
-    
-    color: #ffffff;
-   
-}
+    color: #acacac;
+ }
 
 /* Shiny dots */
 .holder {
@@ -106,7 +105,7 @@ img.lazy {
     left: -10px;
     z-index: 1;
     opacity: 0;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 .pulse {
@@ -121,6 +120,7 @@ img.lazy {
     position: absolute;
     left: 15px;
     top: 15px;
+    cursor: pointer;
 }
 
 @-moz-keyframes pulse {
