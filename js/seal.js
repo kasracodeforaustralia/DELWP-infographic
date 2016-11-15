@@ -89,34 +89,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(97.2) )/100,
                 opacity: 1
             }, 0); 
-        }/*else if ( 93.2 <= topPerc &&  topPerc < 93.4 ){
-            $('#seal').css({'transform':'rotate(-8deg)'});
-             $('#seal').animate({
-         width: ($WidthPerc * sealW)/100,
-                height:($WidthPerc * sealH)/100,
-                left: ($winWidth  *(44.5) )/100,
-                top:  ($winHeight *(96.6) )/100,
-                opacity: 1
-            }, 0);
-        }else if ( 93.0 <= topPerc &&  topPerc < 93.2 ){
-            $('#seal').css({'transform':'rotate(5deg)'});
-             $('#seal').animate({
-         width: ($WidthPerc * sealW)/100,
-                height:($WidthPerc * sealH)/100,
-                left: ($winWidth  *(40.5) )/100,
-                top:  ($winHeight *(96.6) )/100,
-                opacity: 1
-            }, 0);
-        }else if ( 92.9 <= topPerc &&  topPerc < 93.0 ){
-            $('#seal').css({'transform':'rotate(5deg)'});
-             $('#seal').animate({
-         width: ($WidthPerc * sealW)/100,
-                height:($WidthPerc * sealH)/100,
-                left: ($winWidth  *(36.5) )/100,
-                top:  ($winHeight *(96.6) )/100,
-                opacity: 1
-            }, 0);
-        }*/else if (topPerc < 95.0) {
+        } else if (topPerc < 95.0) {
             $('#seal').css("display", 'block');
         }
 
