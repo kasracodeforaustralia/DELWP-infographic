@@ -26,16 +26,29 @@
         
         if (muteAll == 0){
             if (topPerc <= 1.42){
-                //audio["birds-sound"].play(); 
-                audio["birds-sound-2"].play();
-                //muteAll = 1;
+                if (birds_sound_flag == 0){
+                    //audio["birds-sound"].play(); 
+                    audio["birds-sound-2"].play();
+                    //muteAll = 1;
+                    birds_sound_flag = 1;
+                }
             }else if (topPerc >22 && topPerc <= 25){
-                audio["cattleSheep-sound"].play();
-                //audio["cattleCow-sound"].play();
-                //muteAll = 1;
+                if (cattle_sound_flag == 0){
+                    audio["cattleSheep-sound"].play();
+                    //audio["cattleCow-sound"].play();
+                    //muteAll = 1;
+                    cattle_sound_flag = 1;
+                }
             }else if (topPerc >90){
-                audio["whale-sound"].play();
-                //muteAll = 1;
+                if (whale_sound_flag == 0){
+                    audio["whale-sound"].play();
+                    //muteAll = 1;
+                    whale_sound_flag = 1;
+                }
+            }else{
+                birds_sound_flag  = 0;
+                cattle_sound_flag = 0;
+                whale_sound_flag  = 0;
             }
         }
 

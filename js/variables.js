@@ -43,8 +43,9 @@
    var bulldozerH = 129;
 
    /* Kangaroo */
-   var kangarooW = 300;
-   var kangarooH =270;
+   var kangarooW        = 240;
+   var kangarooH        = 200;
+   var kangarookidScale = 50;  // the kid is 30% smaller
 
    /* initial size for turbines */
    var turbineW = 200;
@@ -217,7 +218,12 @@
 
 
     /*iiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
-    var muteAll = 1;
+    // flag to mute all sound effects - default = 1 = mute
+    var muteAll = 1; 
+    // Setting flags to prevent replaying the sound
+    var whale_sound_flag   = 0;
+    var cattle_sound_flag  = 0; 
+    var birds_sound_flag   = 0;
     /*iiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
 
     /* msg-1 */
