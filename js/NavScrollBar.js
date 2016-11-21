@@ -12,7 +12,7 @@ $( document ).ready(function() {
     
     if ($winWidth < 500){
         $('.NavScrollBar').css({display: 'none' });
-        $('.PosOnScrollBar').css({display: 'none'});
+        $('.slider').css({display: 'none'});
          
     }else{
         // set the current map width and height
@@ -25,7 +25,7 @@ $( document ).ready(function() {
         var NavScrollBarOffsetLeft= NavScrollBarOffset.left;    
 
         $('.NavScrollBar').css({display: 'block' });
-        $('.PosOnScrollBar').css({display: 'block'});
+        $('.slider').css({display: 'block'});
         
         /* Scroll Bar Navigation default settings  */
         $('.NavScrollBar').animate({
@@ -35,7 +35,7 @@ $( document ).ready(function() {
         },0); 
 
         /* Box on the scroll bar default settings  */
-        $('.PosOnScrollBar').animate({
+        $('.slider').animate({
             opacity:0.6,
             width: ($winWidth  *4 /100),
             height:($winWidth  *2.3 /100),
@@ -46,7 +46,42 @@ $( document ).ready(function() {
            
     }
     
- 
+    $('.slider').draggable({ 
+       containment: ".NavScrollBar",
+       axis: "y"
+    });
+    
+    
+
+      
+  
+    $('.slider').mousedown(function() {
+        isDragging = true;
+
+     })
+    .mousemove(function() {
+        if (isDragging == true){
+            //console.log("slider: " + $('.slider').position().top);
+            
+            
+           // SliderPosPrec = ( ( $('.slider').position().top -NavScrollBarOffsetTop) * 100/ (mapheight) ) ;
+            
+            //console.log("slider percentage: " + SliderPosPrec);       
+            
+            //$(window).scrollTop(SliderPosPrec * $winHeight/100);
+        }
+    })
+    .mouseup(function() {
+            SliderPosPrec = ( ( $('.slider').position().top -NavScrollBarOffsetTop) * 100/ (mapheight) ) ;
+            
+            console.log("slider percentage: " + SliderPosPrec);       
+            
+            $(window).scrollTop(SliderPosPrec * $winHeight/100);
+        isDragging = false;
+    });   
+    
+    
+    
     
   });
 
@@ -82,13 +117,13 @@ $( window ).resize(function() {
     
     if ($winWidth < 500){
         $('.NavScrollBar').css({display: 'none' });
-        $('.PosOnScrollBar').css({display: 'none'});
+        $('.slider').css({display: 'none'});
          
     }else{
     
         /* Scroll Bar Navigation default settings  */
         $('.NavScrollBar').css({display: 'block' });
-        $('.PosOnScrollBar').css({display: 'block'});
+        $('.slider').css({display: 'block'});
         
         $('.NavScrollBar').animate({ 
             width: mapWidth,
@@ -97,7 +132,7 @@ $( window ).resize(function() {
 
         /* Box on the scroll bar default settings */
 
-        $('.PosOnScrollBar').animate({
+        $('.slider').animate({
                 opacity:0.6,
                 width: ($winWidth  *4 /100),
                 height:($winWidth  *2.3 /100),
@@ -134,7 +169,7 @@ $(window).scroll(function(){
 
     if ($winWidth < 500){
         $('.NavScrollBar').css({display: 'none'});
-        $('.PosOnScrollBar').css({display: 'none'});
+        $('.slider').css({display: 'none'});
         
         
     }else{    
@@ -154,7 +189,7 @@ $(window).scroll(function(){
 
         /* Scroll Bar Navigation default settings  */
         $('.NavScrollBar').css({display: 'block'});
-        $('.PosOnScrollBar').css({display: 'block'});
+        $('.slider').css({display: 'block'});
         
         $('.NavScrollBar').animate({
             opacity:0.7,
@@ -164,8 +199,8 @@ $(window).scroll(function(){
         },0); 
 
         /* Box on the scroll bar dynamic changes  */
-       // $('.PosOnScrollBar').css({ display: 'block'},0);
-        $('.PosOnScrollBar').animate({
+       // $('.slider').css({ display: 'block'},0);
+        $('.slider').animate({
             opacity:0.6,
             //display: 'block',
             width: ($winWidth  *4 /100),
@@ -177,5 +212,7 @@ $(window).scroll(function(){
 
         // console.log("map top position: " + NavScrollBarOffsetTop);
     }
+      
+    
         
-    });
+ });

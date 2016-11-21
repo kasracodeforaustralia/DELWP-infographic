@@ -1,0 +1,9 @@
+.footyPlayers{
+    position: absolute;
+    z-index: 75;
+}
+
+.footy{
+    position: absolute;
+    z-index: 76;
+}

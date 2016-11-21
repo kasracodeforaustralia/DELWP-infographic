@@ -34,20 +34,27 @@ $( document ).ready(function() {
         muteAll = 1; 
     });
     
+    /* feedback Button default settings  */
+    $('.feedbackBtn').animate({
+        
+        left: ($winWidth  * 85  /100),
+        top:  ($winHeight * (0.5) )/100
+    },0);     
+    
   });
 
 $(window).scroll(function(){
         
-        var $win = $(window);
+    var $win = $(window);
 
-        // Responsive width and height of the bg images
-        var $winWidth   = winWidth();
-        var $winHeight  = winHeight();
-        var $WidthPerc  = WidthPerc();
-        var $HeightPerc = HeightPerc();
-        var topPerc     = topPercfunc();
-    
-        var top = $win.scrollTop();
+    // Responsive width and height of the bg images
+    var $winWidth   = winWidth();
+    var $winHeight  = winHeight();
+    var $WidthPerc  = WidthPerc();
+    var $HeightPerc = HeightPerc();
+    var topPerc     = topPercfunc();
+
+    var top = $win.scrollTop();
         
 
     $('.muteAll').animate({ 
@@ -60,6 +67,12 @@ $(window).scroll(function(){
         top:  (top + ($win.height()*90/ 100) )
     },0);    
 
+    /* feedback Button default settings  */
+    $('.feedbackBtn').animate({
+        
+        left: ($winWidth  * 85  /100),
+        top:  (top + ($win.height()*0.5/ 100) )
+    },0);      
     
 });
 

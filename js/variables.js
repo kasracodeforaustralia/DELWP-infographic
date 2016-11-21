@@ -42,10 +42,20 @@
    var bulldozerW = 167;
    var bulldozerH = 129;
 
-   /* Kangaroo */
+   /* Kangaroos variables */
    var kangarooW        = 240;
    var kangarooH        = 200;
    var kangarookidScale = 50;  // the kid is 30% smaller
+
+   // this is kind of changing keyframe starting poiny for kangaroo kids to look diff together and their parent
+   var image = new Image();
+   image.src ='img/section-789/gifs/kangaroo1.gif';
+   var frameCha1 = 1;
+
+   var image2 = new Image();
+   image2.src ='img/section-789/gifs/kangaroo2.gif';
+   var frameCha2 = 1;
+
 
    /* initial size for turbines */
    var turbineW = 200;
@@ -54,6 +64,13 @@
    /* Flooding Sign */
    var floodSingW = 225;
    var floodSingH = 245;
+
+  /* footy players and footy sizes*/
+   var footyPlayersW = 500;
+   var footyPlayersH = 333;
+   var footyW = 58;
+   var footyH = 51;
+
 
    /* bike */
    var bikeW = 52;
@@ -251,6 +268,10 @@
     var dot3Left = 44;
 
 
+
+    var SliderPosPrec = 0;
+    
+    var isDragging = false;
 
 /* ------------------------------------- */
 

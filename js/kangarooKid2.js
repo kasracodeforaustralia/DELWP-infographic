@@ -15,6 +15,15 @@ $( document ).ready(function() {
         opacity:1
     },0);       
     
+
+    //$(function(){
+        var image = new Image();
+        image.src ='img/section-789/gifs/kangaroo1.gif';
+        //$('.kangarookid2').click(function(){
+          // $(this).attr('src',image.src);
+        //});
+    //}); 
+    
 });
 
 /*### Separatoring .ready and .resize funcs ###*/
@@ -53,9 +62,8 @@ $(window).scroll(function(){
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();    
-        
     
-    /* kangarookid2 truck */ 
+    /* kangarookid2  */ 
 
     //alert("win width is: " + winWidth());
 
@@ -144,6 +152,12 @@ $(window).scroll(function(){
             opacity:1
         },0); 
     }else if (topPerc >13 && topPerc <= 14 ){
+        /* This if statement changes the rhythm of the kangaroo kid animation  */ 
+        if (frameCha2 == 1){
+           $('.kangarookid2').attr('src',image2.src);
+            frameCha2=0;
+        }
+        /* ----------------------------------- */
          $('.kangarookid2').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
@@ -154,8 +168,8 @@ $(window).scroll(function(){
         },0); 
     }else if (topPerc >20){
         $('.kangarookid2').css("opacity", 0);
-    }
-
+    }   
+    
         
 });
     

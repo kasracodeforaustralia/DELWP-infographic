@@ -152,7 +152,13 @@ $(window).scroll(function(){
             top:  ($winHeight *(14.4) )/100,
             opacity:1
         },0); 
-    }else if (topPerc >20){
+    }else if (topPerc >14 && topPerc <= 15 ){
+        /* This if statement changes the rhythm of the kangaroo kid animation  */ 
+        if (frameCha1 == 1){
+           $('.kangarookid1').attr('src',image.src);
+            frameCha1 =0;
+        }    
+    }else if (topPerc >20){        
         $('.kangarookid1').css("opacity", 0);
     }
 
