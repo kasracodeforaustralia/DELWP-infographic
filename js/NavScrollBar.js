@@ -51,33 +51,24 @@ $( document ).ready(function() {
        axis: "y"
     });
     
-    
-
-      
-  
+   /*
     $('.slider').mousedown(function() {
         isDragging = true;
 
      })
     .mousemove(function() {
         if (isDragging == true){
-            //console.log("slider: " + $('.slider').position().top);
-            
-            
-           // SliderPosPrec = ( ( $('.slider').position().top -NavScrollBarOffsetTop) * 100/ (mapheight) ) ;
-            
-            //console.log("slider percentage: " + SliderPosPrec);       
-            
-            //$(window).scrollTop(SliderPosPrec * $winHeight/100);
         }
-    })
-    .mouseup(function() {
-            SliderPosPrec = ( ( $('.slider').position().top -NavScrollBarOffsetTop) * 100/ (mapheight) ) ;
-            
-            console.log("slider percentage: " + SliderPosPrec);       
-            
-            $(window).scrollTop(SliderPosPrec * $winHeight/100);
-        isDragging = false;
+    }) */
+    
+    $('.slider').mouseup(function() {
+        
+        /* This calclate the position of the 
+        slider on scroll bar in terms of percentage */
+        SliderPosPrec = ( ( $('.slider').position().top -NavScrollBarOffsetTop) * 100/ mapheight ) ;
+
+        $(window).scrollTop(SliderPosPrec * $winHeight/100);
+        //isDragging = false;
     });   
     
     

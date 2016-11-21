@@ -106,11 +106,20 @@
    var buildingTop = 69.75;
    var buildingLeft = 11;
 
+   var buildingIMG = new Image();
+   buildingIMG.src ='img/section-5/building.gif';
+   var buildingFlag  =1;
+        
+
    /* building-two */
    var building2W = 431;
    var building2H = 934;
    var building2Top = 66.75;
    var building2Left = 27;
+
+   var building2IMG = new Image();
+   building2IMG.src ='img/section-5/building-two.gif';
+   var building2Flag =1;
 
    /* building-three */
    var building3W = 404;
@@ -149,12 +158,21 @@
    var apartblockH = 422;
    var apartblockTop = 73.0;
    var apartblockLeft = -5.3;
+   
+   var apartmentBlockIMG = new Image();
+   apartmentBlockIMG.src ='img/section-4/apartment-block.gif';
+   var apartmentBlockFlag =1;
 
    /* glass-building */
    var glassbldngW = 589;
    var glassbldngH = 586;
    var glassbldngTop = 73.5;
    var glassbldngLeft = 27.3;
+
+   var glassBuildingIMG = new Image();
+   glassBuildingIMG.src ='img/section-4/glass-building.gif';
+   var glassBuildingFlag  =1;
+
 
    /* solar-building */
    var solarbldngW = 392;
@@ -173,6 +191,10 @@
    var eurekaH = 1087;
    var eurekaTop = 75;
    var eurekaLeft = 79;
+
+   var eurekaIMG = new Image();
+   eurekaIMG.src ='img/section-3/eureka.gif';
+   var eurekaFlag = 1;
 
    // SECTION 3 CITY
    /* Tram */
