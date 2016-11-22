@@ -84,13 +84,13 @@ $(document).ready(function() {
         top:  ($winHeight * tentTop)/100
     },0);
 
-    /* campfire */
-    $('#campfire').animate({
-       width: ($WidthPerc * campfireW)/100,
-       height:($HeightPerc* campfireH)/100,
+    /* firecamp */
+    $('#firecamp').animate({
+       width: ($WidthPerc * firecampW)/100,
+       height:($HeightPerc* firecampH)/100,
        
-        left: ($winWidth  * campfireLeft)/100,
-        top:  ($winHeight * campfireTop)/100
+        left: ($winWidth  * firecampLeft)/100,
+        top:  ($winHeight * firecampTop)/100
     },0);
 
 
@@ -974,13 +974,13 @@ $( window ).resize(function() {
         top:  ($winHeight * tentTop)/100
     },0);
 
-    /* campfire */
-    $('#campfire').animate({
-       width: ($WidthPerc * campfireW)/100,
-       height:($HeightPerc* campfireH)/100,
+    /* firecamp */
+    $('#firecamp').animate({
+       width: ($WidthPerc * firecampW)/100,
+       height:($HeightPerc* firecampH)/100,
        
-        left: ($winWidth  * campfireLeft)/100,
-        top:  ($winHeight * campfireTop)/100
+        left: ($winWidth  * firecampLeft)/100,
+        top:  ($winHeight * firecampTop)/100
     },0);
 
 
