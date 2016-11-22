@@ -21,14 +21,14 @@
   /* Tent */
    var tentW = 383;
    var tentH = 276;
-   var tentTop = 9.2;
-   var tentLeft = 46;
+   var tentTop = 8.6;
+   var tentLeft = 42;
 
-  /* Campfire */
-   var campfireW = 138;
-   var campfireH = 159;
-   var campfireTop = 10;
-   var campfireLeft = 45;
+  /* firecamp */
+   var firecampW = 78;
+   var firecampH = 90;
+   var firecampTop = 10;
+   var firecampLeft = 48;
 
    /* Windmill  */
    var windMillW = 350;
@@ -201,16 +201,16 @@
    var solarbldngLeft = 56.5;
      
    /* arts-centre */
-   var artcW = 809;
-   var artcH = 1109;
-   var artcTop = 74.2;
-   var artcLeft = 37;
+   var artcW = 736;
+   var artcH = 1009;
+   var artcTop = 74.4;
+   var artcLeft = 36;
       
    /* eureka-tower */
-   var eurekaW = 311;
-   var eurekaH = 1087;
-   var eurekaTop = 75;
-   var eurekaLeft = 79;
+   var eurekaW = 368;
+   var eurekaH = 1287;
+   var eurekaTop = 73.8;
+   var eurekaLeft = 76;
 
    var eurekaIMG = new Image();
    eurekaIMG.src ='img/section-3/eureka.gif';
@@ -314,8 +314,8 @@
     
 
     /* msg-4 */
-    var msg4Top = 80.2;
-    var msg4Left = 8;
+    var msg4Top = 79.8;
+    var msg4Left = 19;
 
     /* dot-4 */
     var dot4Top = 79.8;
@@ -333,7 +333,7 @@
 
      /* msg-6 */
     var msg6Top = 75.9;
-    var msg6Left = 44;
+    var msg6Left = 54;
 
     /* dot-6 */
     var dot6Top = 75.5;
@@ -341,30 +341,30 @@
 
 
      /* msg-7 */
-    var msg7Top = 73.9;
-    var msg7Left = 8;
+    var msg7Top = 73.1;
+    var msg7Left = 12;
 
     /* dot-7 */
-    var dot7Top = 73.5;
-    var dot7Left = 10;
+    var dot7Top = 73.3;
+    var dot7Left = 8;
 
 
      /* msg-8 */
-    var msg8Top = 71.9;
-    var msg8Left = 8;
+    var msg8Top = 71.2;
+    var msg8Left = 27;
 
     /* dot-8 */
-    var dot8Top = 71.5;
-    var dot8Left = 10;
+    var dot8Top = 71.4;
+    var dot8Left = 23.2;
 
 
      /* msg-9 */
-    var msg9Top = 64.9;
-    var msg9Left = 13;
+    var msg9Top = 65.8;
+    var msg9Left = 44;
 
     /* dot-9 */
-    var dot9Top = 64.5;
-    var dot9Left = 15;
+    var dot9Top = 66.0;
+    var dot9Left = 40;
 
 
      /* msg-10 */
