@@ -113,7 +113,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(80.72) )/100,
                 
             }, 0); 
-        } else if ( 77.2 <= topPerc &&  topPerc < 77.4 ){
+        }/* else if ( 77.2 <= topPerc &&  topPerc < 77.4 ){
            $('#car2').css({'display': 'block'});
              $('#car2').animate({
                 width: ($WidthPerc * car2W)/100,
@@ -140,7 +140,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(81.32) )/100,
                 
             }, 0); 
-        } else if (topPerc < 76.8) {
+        }*/ else if (topPerc < 77.4) {
             $('#car2').css({ 'display':'block', 'opacity':'1' });
         }
 
