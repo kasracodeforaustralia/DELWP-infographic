@@ -25,7 +25,7 @@ $(window).scroll(function(){
             },0); 
         } else if ( 91.4 <= topPerc &&  topPerc < 91.6 ){
             $('#dot-1').css("display", 'block');
-
+            $('#msg-1').css("display", 'none');
             $('#dot-2').css({'display': 'block'});
             $('#dot-2').animate({
                 //width: ($WidthPerc * sealW)/100,

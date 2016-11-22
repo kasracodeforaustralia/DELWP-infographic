@@ -79,22 +79,24 @@
    var mcgLeft = 8;
 
    /* building */
-   var buildingW = 400;
-   var buildingH = 500;
-   var buildingTop = 69.75;
-   var buildingLeft = 11;
+   var buildingW = 648;
+   var buildingH = 735;
+   var buildingTop = 68.75;
+   var buildingLeft = 7;
 
    /* building-two */
    var building2W = 431;
    var building2H = 934;
    var building2Top = 66.75;
    var building2Left = 27;
+   
 
    /* building-three */
    var building3W = 404;
    var building3H = 606;
    var building3Top = 67.70;
    var building3Left = 15;
+   
 
 
 // SECTION 4 INNER CITY/ INDUSTRIAL
@@ -156,7 +158,7 @@
    /* Tram */
    var tramW = 366;
    var tramH = 328;
-   var tramTop = 83.7;
+   var tramTop = 83.75;
    var tramLeft = 45;
 
    /* Church */
@@ -177,7 +179,7 @@
    var busTop = 80.05;
    var busLeft = 44;
 
-   //SECTION 2 FORESHORE
+  //SECTION 2 FORESHORE
 
    /* Boat */
    var boatW = 133;
@@ -189,7 +191,7 @@
    /* Whale */
    var whaleW = 802;
    var whaleH = 409;
-   var whaleTop = 98.4;
+   var whaleTop = 97.8;
    var whaleLeft = 75;
 
    /* whaleNet */
@@ -210,31 +212,231 @@
    var sealTop = 96.6;
    var sealLeft = -10;
 
+//////    MESSAGES     ////////////////
+
     /* msg-1 */
-    var msg1Top = 96.4;
-    var msg1Left = 42;
+    var msg1Top = 96.2;
+    var msg1Left = 38;
 
     /* dot-1 */
     var dot1Top = 96.8;
     var dot1Left = 40;
 
+   
     /* msg-2 */
-    var msg2Top = 93.2;
+    var msg2Top = 92.4;
     var msg2Left = 14;
 
     /* dot-2 */
     var dot2Top = 92.8;
     var dot2Left = 18;
 
+   
     /* msg-3 */
-    var msg3Top = 94.0;
+    var msg3Top = 92.8;
     var msg3Left = 44;
 
     /* dot-3 */
     var dot3Top = 93.4;
     var dot3Left = 44;
+    
+
+    /* msg-4 */
+    var msg4Top = 80.2;
+    var msg4Left = 8;
+
+    /* dot-4 */
+    var dot4Top = 79.8;
+    var dot4Left = 15;
+
+    
+    /* msg-5 */
+    var msg5Top = 75.8;
+    var msg5Left = 14;
+
+    /* dot-5 */
+    var dot5Top = 75.4;
+    var dot5Left = 16;
 
 
+     /* msg-6 */
+    var msg6Top = 75.9;
+    var msg6Left = 44;
+
+    /* dot-6 */
+    var dot6Top = 75.5;
+    var dot6Left = 68;
+
+
+     /* msg-7 */
+    var msg7Top = 73.9;
+    var msg7Left = 8;
+
+    /* dot-7 */
+    var dot7Top = 73.5;
+    var dot7Left = 10;
+
+
+     /* msg-8 */
+    var msg8Top = 71.9;
+    var msg8Left = 8;
+
+    /* dot-8 */
+    var dot8Top = 71.5;
+    var dot8Left = 10;
+
+
+     /* msg-9 */
+    var msg9Top = 64.9;
+    var msg9Left = 13;
+
+    /* dot-9 */
+    var dot9Top = 64.5;
+    var dot9Left = 15;
+
+
+     /* msg-10 */
+    var msg10Top = 59.5;
+    var msg10Left = 48;
+
+    /* dot-10 */
+    var dot10Top = 59.1;
+    var dot10Left = 50;
+
+
+     /* msg-11 */
+    var msg11Top = 54.6;
+    var msg11Left = 58;
+
+    /* dot-11 */
+    var dot11Top = 54.9;
+    var dot11Left = 54;
+
+
+     /* msg-12 */
+    var msg12Top = 52.7;
+    var msg12Left = 48;
+
+    /* dot-12 */
+    var dot12Top = 52.3;
+    var dot12Left = 50;
+
+
+     /* msg-13 */
+    var msg13Top = 46.3;
+    var msg13Left = 56;
+
+    /* dot-13 */
+    var dot13Top = 46.4;
+    var dot13Left = 52;
+
+
+     /* msg-14 */
+    var msg14Top = 40.3;
+    var msg14Left = 52;
+
+    /* dot-14 */
+    var dot14Top = 40.4;
+    var dot14Left = 48;
+
+
+    /* msg-15 */
+    var msg15Top = 36.6;
+    var msg15Left = 62;
+
+    /* dot-15 */
+    var dot15Top = 36.8;
+    var dot15Left = 58;
+
+
+   /* msg-16 */
+    var msg16Top = 30.0;
+    var msg16Left = 62;
+
+    /* dot-16 */
+    var dot16Top = 29.6;
+    var dot16Left = 62;
+
+
+    /* msg-17 */
+    var msg17Top = 28.8;
+    var msg17Left = 20;
+
+    /* dot-17 */
+    var dot17Top = 28.8;
+    var dot17Left = 48;
+
+
+    /* msg-18 */
+    var msg18Top = 23.8;
+    var msg18Left = 30;
+
+    /* dot-18 */
+    var dot18Top = 24.0;
+    var dot18Left = 66;
+
+
+     /* msg-19 */
+    var msg19Top = 22.2;
+    var msg19Left = 34;
+
+    /* dot-19 */
+    var dot19Top = 21.8;
+    var dot19Left = 38;
+
+
+      /* msg-20 */
+    var msg20Top = 16.2;
+    var msg20Left = 54;
+
+    /* dot-20 */
+    var dot20Top = 16.9;
+    var dot20Left = 58;
+
+
+    /* msg-21 */
+    var msg21Top = 13.6;
+    var msg21Left = 20;
+
+    /* dot-21 */
+    var dot21Top = 13.2;
+    var dot21Left = 44;
+
+
+    /* msg-22 */
+    var msg22Top = 10.4;
+    var msg22Left = 62;
+
+    /* dot-22 */
+    var dot22Top = 10.0;
+    var dot22Left = 64;
+
+
+     /* msg-23 */
+    var msg23Top = 7.0;
+    var msg23Left = 46;
+
+    /* dot-23 */
+    var dot23Top = 7.4;
+    var dot23Left = 42;
+
+
+     /* msg-24 */
+    var msg24Top = 3.8;
+    var msg24Left = 38;
+
+    /* dot-24 */
+    var dot24Top = 3.4;
+    var dot24Left = 42;
+
+
+      /* msg-25 */
+    var msg25Top = 0.2;
+    var msg25Left = 58;
+
+    /* dot-25 */
+    var dot25Top = 0.4;
+    var dot25Left = 54;
 
 /* ------------------------------------- */
 

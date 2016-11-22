@@ -27,7 +27,7 @@ $(window).scroll(function(){
       width: ($WidthPerc * tramW)/100,
                 height: ($WidthPerc * tramH)/100,
                 left: ($winWidth  *(48.1) )/100,
-                top:  ($winHeight *(83.5) )/100,
+                top:  ($winHeight *(83.55) )/100,
                 
             }, 0); 
             
@@ -47,7 +47,7 @@ $(window).scroll(function(){
     width: ($WidthPerc * tramW)/100,
                 height: ($WidthPerc * tramH)/100,
                 left: ($winWidth  *(55.1) )/100,
-                top:  ($winHeight *(83.1) )/100,
+                top:  ($winHeight *(83.15) )/100,
                 
             }, 0); 
            
@@ -57,7 +57,7 @@ $(window).scroll(function(){
     width: ($WidthPerc * tramW)/100,
                 height: ($WidthPerc * tramH)/100,
                 left: ($winWidth  *(58.2) )/100,
-                top:  ($winHeight *(82.9) )/100,
+                top:  ($winHeight *(82.95) )/100,
                 
             }, 0); 
         }else if ( 83.2 <= topPerc &&  topPerc < 83.4 ){
@@ -66,7 +66,7 @@ $(window).scroll(function(){
     width: ($WidthPerc * tramW)/100,
                 height: ($WidthPerc * tramH)/100,
                 left: ($winWidth  *(61.8) )/100,
-                top:  ($winHeight *(82.7) )/100,
+                top:  ($winHeight *(82.75) )/100,
                 
             }, 0); 
         }/*else if ( 83.0 <= topPerc &&  topPerc < 83.2 ){
