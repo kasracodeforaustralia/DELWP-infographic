@@ -14,7 +14,7 @@ $( document ).ready(function() {
         
         left: ($winWidth  *(1) )/100,
         top:  ($winHeight *(35) )/100,
-        opacity:0
+        opacity:1
     },0);
     
 });
@@ -70,9 +70,9 @@ $(window).scroll(function(){
 
 
         /* garbage truck */    
-        if (topPerc <= 30){
+        if (topPerc <= 31){
             $('.garbageTruck').css("opacity", 0);
-        }else if (topPerc > 30 && topPerc <= 31 ){
+        }else if (topPerc > 31 && topPerc <= 32 ){
             $('.garbageTruck').animate({
                 width: ($WidthPerc * garbagetruckW)/100,
                 height:($HeightPerc* garbagetruckH)/100,
@@ -81,7 +81,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(40.88) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >31 && topPerc <= 32 ){ 
+        }else if (topPerc >32 && topPerc <= 33 ){ 
             $('.garbageTruck').animate({
                 width: ($WidthPerc * garbagetruckW)/100,
                 height:($HeightPerc* garbagetruckH)/100,
@@ -90,7 +90,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(40.60) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >32 && topPerc <=33){
+        }else if (topPerc >33 && topPerc <=34){
              $('.garbageTruck').animate({
                 width: ($WidthPerc * garbagetruckW)/100,
                 height:($HeightPerc* garbagetruckH)/100,
@@ -99,7 +99,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(39.88) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >33 && topPerc <=34){
+        }else if (topPerc >34 && topPerc <=35){
              $('.garbageTruck').animate({
                 width: ($WidthPerc * garbagetruckW)/100,
                 height:($HeightPerc* garbagetruckH)/100,
@@ -108,7 +108,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(39.15) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >34 && topPerc <=35 ){
+        }else if (topPerc >35 && topPerc <=36 ){
              $('.garbageTruck').animate({
                 width: ($WidthPerc * garbagetruckW)/100,
                 height:($HeightPerc* garbagetruckH)/100,
@@ -117,7 +117,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(38.58) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >35 && topPerc <=36 ){
+        }else if (topPerc >36 && topPerc <=37 ){
              $('.garbageTruck').animate({
                 width: ($WidthPerc * garbagetruckW)/100,
                 height:($HeightPerc* garbagetruckH)/100,
@@ -126,7 +126,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(38.05) )/100,
                 opacity:1
             },0); 
-        }else if (topPerc >36 && topPerc <=37 ){
+        }else if (topPerc >37 && topPerc <=38 ){
              $('.garbageTruck').animate({
                 width: ($WidthPerc * garbagetruckW)/100,
                 height:($HeightPerc* garbagetruckH)/100,
@@ -162,7 +162,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(36.80) )/100,
                 opacity:1
             },0); 
-        }else {
+        }else if (topPerc >41 ){
             $('.garbageTruck').css("opacity", 0);
         }
 
