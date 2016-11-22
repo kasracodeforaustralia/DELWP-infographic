@@ -56,6 +56,11 @@
 	z-index: 60;
 }
 
+/* building */
+#sold-sign {
+	z-index: 70;
+}
+
 /* truck1 
 #truck1 {
 	z-index: 900;

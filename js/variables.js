@@ -18,6 +18,18 @@
    var cloud2H = 250;
    var smallCloud = 60; // make the cloud X% smaller than the big cloud
 
+  /* Tent */
+   var tentW = 383;
+   var tentH = 276;
+   var tentTop = 9.2;
+   var tentLeft = 46;
+
+  /* Campfire */
+   var campfireW = 138;
+   var campfireH = 159;
+   var campfireTop = 10;
+   var campfireLeft = 45;
+
    /* Windmill  */
    var windMillW = 350;
    var windMillH = 600;
@@ -110,6 +122,12 @@
    buildingIMG.src ='img/section-5/building.gif';
    var buildingFlag  =1;
         
+  /* sold-sign */
+   var soldsignW = 274;
+   var soldsignH = 255;
+   var soldsignTop = 71.15;
+   var soldsignLeft = 11;
+
 
    /* building-two */
    var building2W = 431;
