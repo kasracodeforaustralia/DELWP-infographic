@@ -75,6 +75,25 @@ $(document).ready(function() {
     
     /* Birds default settings */
     
+    /* tent */
+   $('#tent').animate({
+       width: ($WidthPerc * tentW)/100,
+       height:($HeightPerc* tentH)/100,
+       
+        left: ($winWidth  * tentLeft)/100,
+        top:  ($winHeight * tentTop)/100
+    },0);
+
+    /* campfire */
+    $('#campfire').animate({
+       width: ($WidthPerc * campfireW)/100,
+       height:($HeightPerc* campfireH)/100,
+       
+        left: ($winWidth  * campfireLeft)/100,
+        top:  ($winHeight * campfireTop)/100
+    },0);
+
+
     //SECTION-5 
      /* train */
     $('#train').css({'transform': 'rotate(-1deg)'});
@@ -111,6 +130,15 @@ $(document).ready(function() {
        
         left: ($winWidth  * buildingLeft)/100,
         top:  ($winHeight * buildingTop)/100
+    },0);
+
+    /* sold-ign */
+    $('#sold-sign').animate({
+       width: ($WidthPerc * soldsignW)/100,
+       height:($HeightPerc* soldsignH)/100,
+       
+        left: ($winWidth  * soldsignLeft)/100,
+        top:  ($winHeight * soldsignTop)/100
     },0);
 
     /* building-two */
@@ -937,6 +965,25 @@ $( window ).resize(function() {
     
     /* Birds */
     
+    /* tent */
+   $('#tent').animate({
+       width: ($WidthPerc * tentW)/100,
+       height:($HeightPerc* tentH)/100,
+       
+        left: ($winWidth  * tentLeft)/100,
+        top:  ($winHeight * tentTop)/100
+    },0);
+
+    /* campfire */
+    $('#campfire').animate({
+       width: ($WidthPerc * campfireW)/100,
+       height:($HeightPerc* campfireH)/100,
+       
+        left: ($winWidth  * campfireLeft)/100,
+        top:  ($winHeight * campfireTop)/100
+    },0);
+
+
     //SECTION-5
     /* train */
     $('#train').css({'transform': 'rotate(-1deg)'});
@@ -973,6 +1020,15 @@ $( window ).resize(function() {
        
         left: ($winWidth  * buildingLeft)/100,
         top:  ($winHeight * buildingTop)/100
+    },0);
+
+       /* sold-ign */
+    $('#sold-sign').animate({
+       width: ($WidthPerc * soldsignW)/100,
+       height:($HeightPerc* soldsignH)/100,
+       
+        left: ($winWidth  * soldsignLeft)/100,
+        top:  ($winHeight * soldsignTop)/100
     },0);
 
     /* building-two */
