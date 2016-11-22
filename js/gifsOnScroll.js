@@ -16,9 +16,11 @@ $(window).scroll(function(){
     /* eureka-tower */
     if (topPerc <= 65){
         eurekaFlag =1;
+        
     }else if (topPerc > 70 && topPerc <= 77 ){
         if (eurekaFlag == 1){
            $('#eureka-tower').attr('src',eurekaIMG.src);
+          
            eurekaFlag =0;
         }
     }else if (topPerc > 77 ){
