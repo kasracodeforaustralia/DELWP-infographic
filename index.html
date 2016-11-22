@@ -8,9 +8,11 @@
         
         <!-- ***** Jquery includes -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!--script src="https://code.jquery.com/jquery-1.12.4.js"></script-->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        
         <!-- Lazy load for images >
-        <script type="text/javascript" src="js/jquery.lazy-master/jquery.lazy-master/jquery.lazy.min.js"></script>
-        <script type="text/javascript" src="js/jquery.lazy-master/jquery.lazy-master/jquery.lazy.plugins.min.js"></script-->
+       
         <!-- Plugin for adding keyframes -->
         <script src="js/jquery.keyframes.min.js"></script>
         
@@ -19,7 +21,8 @@
         <!-- Main js: on ready, load, resize, scrol events are controled here-->
         <script src="js/variables.js"></script>
         <script src="js/main.js"></script>
-
+       
+        <script src="js/sounds.js"></script>
         
 
         <!--++++++++++ -->
@@ -32,6 +35,7 @@
         <link href="css/main.css" rel="stylesheet" type="text/css">
        
         <!-- Include items css files SECTION 7/8/9-->
+        <link href="css/birds.css" rel="stylesheet" type="text/css">
         <link href="css/turbine.css" rel="stylesheet" type="text/css">
         <link href="css/cloud.css" rel="stylesheet" type="text/css">
         <link href="css/cloud2.css" rel="stylesheet" type="text/css">
@@ -39,6 +43,7 @@
         <link href="css/fire.css" rel="stylesheet" type="text/css">
         <link href="css/kangaroo.css" rel="stylesheet" type="text/css">
         <link href="css/bulldozer.css" rel="stylesheet" type="text/css">
+        <link href="css/footyPlayers.css" rel="stylesheet" type="text/css">
         <link href="css/garbageTruck.css" rel="stylesheet" type="text/css">
         <link href="css/cow.css" rel="stylesheet" type="text/css"> 
         <link href="css/floodSign.css" rel="stylesheet" type="text/css">
@@ -46,6 +51,7 @@
         <link href="css/water.css" rel="stylesheet" type="text/css">
         <link href="css/bike.css" rel="stylesheet" type="text/css">
         <link href="css/whiteCar.css" rel="stylesheet" type="text/css">
+        <link href="css/muteAll.css" rel="stylesheet" type="text/css">
         <!--<link href="css/tractor.css" rel="stylesheet" type="text/css"> -->
         <!--00000 -->
 
@@ -59,7 +65,7 @@
 
         <!-- Scroll Bar Navigation css -->
         <link href="css/NavScrollBar.css" rel="stylesheet" type="text/css">
-        <link href="css/PosOnScrollBar.css" rel="stylesheet" type="text/css" >
+        <link href="css/slider.css" rel="stylesheet" type="text/css" >
 
    	</head>
   	<body>
@@ -87,25 +93,34 @@
         <div> <img class="cloud2" src="img/section-789/Cloud.png"></div>
    
         <!-- ######### turbines  ########-->
+        <div><img  class="birds" src="img/section-789/gifs/birds.gif"> </div>
         <div><img  class="turbine" id="turbine1" src="img/section-789/gifs/turbine.gif"> </div>
         <div><img  class="turbine" id="turbine2" src="img/section-789/gifs/turbine.gif"> </div>
         <div><img  class="turbine" id="turbine3" src="img/section-789/gifs/turbine.gif"> </div>
         <div><img  class="turbine" id="turbine4" src="img/section-789/gifs/turbine.gif"> </div>
         <div><img  class="turbine" id="turbine5" src="img/section-789/gifs/turbine.gif"> </div>
-        <div><img  class="turbine" id="turbine6" src="img/section-789/gifs/turbine.gif"> </div>
-              
+        <div><img  class="turbine" id="turbine6" src="img/section-789/gifs/turbine.gif"> </div>      
         <!-- ######### turbines end ########-->
         
         <div><img  class="firefighters" src="img/section-789/Firefighters.png"> </div> 
         <div><img  class="fire" src="img/section-789/gifs/fire.gif" ></div>
+        
         <div><img  class="kangaroo" src="img/section-789/gifs/kangaroo.gif" ></div>
+        <div><img  class="kangarookid1" src="img/section-789/gifs/kangaroo.gif" ></div>
+        <div><img  class="kangarookid2" src="img/section-789/gifs/kangaroo2.gif" ></div>
+        
+        <div> <img class="footyPlayers" src="img/section-789/footyPlayers.png"></div>
+        <div> <img class="footy" src="img/section-789/footy.png"></div>
         <div> <img class="garbageTruck" src="img/section-789/garbagetruck.png"></div>
         <div> <img class="bulldozer" src="img/section-789/bulldozer.png"></div>
         <div> <img class="bike" src="img/section-789/bike.png"></div>
         <div> <img class="whiteCar" src="img/section-789/whiteCar.png"></div>
         <div><img  class="floodSign" src="img/section-789/gifs/floodSign.gif"> </div>
         <div><img  class="windMill" src="img/section-789/gifs/windMill.gif" ></div>
-        <div><img  class="cow" src="img/section-789/cow.png" ></div> 
+        <div><img  class="cow" src="img/section-789/cow.png" ></div>
+        <div><img  class="muteAll" src="img/muteAll.png"> </div>
+        <div><img  class="speaker" src="img/speaker.png"> </div>
+        <div><a href="https://docs.google.com/a/codeforaustralia.org/forms/d/1umMp1Wl6GntNrGOj57ObkgSK-3kbniLquhmmCs9bjpM/edit?ts=582b8a25"><img  class="feedbackBtn" src="img/FeedbackBtn.png"> </a></div>
         
         <!-- SECTION 5 OUTER SUBURBS/ URBAN -->
         <img class="item" id="train" src="img/section-5/train.png">
@@ -403,7 +418,7 @@
         
         <div style="background-color: black;"-->
             <img class="NavScrollBar" src="img/map.png">
-            <div class="PosOnScrollBar"></div>
+            <div class="slider"></div>
         </div>
         <!-- NAVIGATION Scroll Bar - end -->
 
@@ -445,7 +460,6 @@
         
         <!-- Scroll Bar Navigation -->
         <script src="js/NavScrollBar.js"></script>
-
         
     </body>
 </html>

@@ -76,8 +76,8 @@ $(window).scroll(function(){
                 width: ( ($WidthPerc * bikeW)/100)*120/100,
                 height:( ($HeightPerc* bikeH)/100)*120/100,
                  
-                left: ($winWidth  *(42) )/100,
-                top:  ($winHeight *(50.1) )/100,
+                left: ($winWidth  *(27) )/100,
+                top:  ($winHeight *(49.43) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >38 && topPerc <= 39 ){ 
@@ -85,8 +85,8 @@ $(window).scroll(function(){
                 width: ( ($WidthPerc * bikeW)/100)*120/100,
                 height:( ($HeightPerc* bikeH)/100)*120/100,
                  
-                left: ($winWidth  *(39) )/100,
-                top:  ($winHeight *(49.95) )/100,
+                left: ($winWidth  *(25) )/100,
+                top:  ($winHeight *(49.35) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >39 && topPerc <=40){
@@ -94,8 +94,8 @@ $(window).scroll(function(){
                 width: ( ($WidthPerc * bikeW)/100)*120/100,
                 height:( ($HeightPerc* bikeH)/100)*120/100,
                  
-                left: ($winWidth  *(36) )/100,
-                top:  ($winHeight *(49.85) )/100,
+                left: ($winWidth  *(23) )/100,
+                top:  ($winHeight *(49.2) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >40 && topPerc <=41){
@@ -103,8 +103,8 @@ $(window).scroll(function(){
                 width: ( ($WidthPerc * bikeW)/100)*120/100,
                 height:( ($HeightPerc* bikeH)/100)*120/100,
                  
-                left: ($winWidth  *(33) )/100,
-                top:  ($winHeight *(49.7) )/100,
+                left: ($winWidth  *(21) )/100,
+                top:  ($winHeight *(49.12) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >41 && topPerc <=42 ){
@@ -112,8 +112,8 @@ $(window).scroll(function(){
                 width: ( ($WidthPerc * bikeW)/100)*120/100,
                 height:( ($HeightPerc* bikeH)/100)*120/100,
                  
-                left: ($winWidth  *(30) )/100,
-                top:  ($winHeight *(49.6) )/100,
+                left: ($winWidth  *(19) )/100,
+                top:  ($winHeight *(49.03) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >42 && topPerc <=43 ){
@@ -121,8 +121,8 @@ $(window).scroll(function(){
                 width: ( ($WidthPerc * bikeW)/100)*120/100,
                 height:( ($HeightPerc* bikeH)/100)*120/100,
                  
-                left: ($winWidth  *(27) )/100,
-                top:  ($winHeight *(49.45) )/100,
+                left: ($winWidth  *(17) )/100,
+                top:  ($winHeight *(48.94) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >43 && topPerc <=44 ){
@@ -130,8 +130,8 @@ $(window).scroll(function(){
                 width: ( ($WidthPerc * bikeW)/100)*120/100,
                 height:( ($HeightPerc* bikeH)/100)*120/100,
                  
-                left: ($winWidth  *(24) )/100,
-                top:  ($winHeight *(49.3) )/100,
+                left: ($winWidth  *(15) )/100,
+                top:  ($winHeight *(48.85) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >44 && topPerc <=45 ){
@@ -139,8 +139,8 @@ $(window).scroll(function(){
                 width: ( ($WidthPerc * bikeW)/100)*120/100,
                 height:( ($HeightPerc* bikeH)/100)*120/100,
                  
-                left: ($winWidth  *(21) )/100,
-                top:  ($winHeight *(49.15) )/100,
+                left: ($winWidth  *(13) )/100,
+                top:  ($winHeight *(48.76) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >45 && topPerc <=46 ){
@@ -148,8 +148,8 @@ $(window).scroll(function(){
                 width: ( ($WidthPerc * bikeW)/100)*120/100,
                 height:( ($HeightPerc* bikeH)/100)*120/100,
                 
-                left: ($winWidth  *(18) )/100,
-                top:  ($winHeight *(49.05) )/100,
+                left: ($winWidth  *(11) )/100,
+                top:  ($winHeight *(48.68) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >46 && topPerc <= 47 ){
@@ -157,8 +157,8 @@ $(window).scroll(function(){
                 width: ( ($WidthPerc * bikeW)/100)*120/100,
                 height:( ($HeightPerc* bikeH)/100)*120/100,
                 
-                left: ($winWidth  *(15) )/100,
-                top:  ($winHeight *(48.9) )/100,
+                left: ($winWidth  *(9) )/100,
+                top:  ($winHeight *(48.58) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >47 && topPerc <= 48 ){
@@ -166,8 +166,8 @@ $(window).scroll(function(){
                 width: ( ($WidthPerc * bikeW)/100)*120/100,
                 height:( ($HeightPerc* bikeH)/100)*120/100,
                 
-                left: ($winWidth  *(10) )/100,
-                top:  ($winHeight *(48.7) )/100,
+                left: ($winWidth  *(7) )/100,
+                top:  ($winHeight *(48.51) )/100,
                 opacity:1
             },0); 
         }else if (topPerc >48 && topPerc <= 49 ){

@@ -1,0 +1,16 @@
+.muteAll{
+    position: absolute;
+    z-index: 81;
+}
+.speaker{
+    position: absolute;
+    display: none;
+    z-index: 81;
+}
+.feedbackBtn{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    opacity: 0.7;
+    z-index: 85;
+}

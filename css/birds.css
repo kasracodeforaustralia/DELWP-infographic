@@ -1,0 +1,7 @@
+.birds{
+    position: absolute;
+    width: 1920;
+    height:  360;
+    z-index: 80;
+    display: none;
+}

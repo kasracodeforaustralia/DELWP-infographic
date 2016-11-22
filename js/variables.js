@@ -6,6 +6,10 @@
    var $bgWidth = 1920;
    var $bgHeight = 18326;  
 
+   /* Birds */
+   var birdsW = 1920;
+   var birdsH = 360;
+
    /* Cloud */
    var cloudW = 400;
    var cloudH = 250;
@@ -38,9 +42,20 @@
    var bulldozerW = 167;
    var bulldozerH = 129;
 
-   /* Kangaroo */
-   var kangarooW = 300;
-   var kangarooH =270;
+   /* Kangaroos variables */
+   var kangarooW        = 240;
+   var kangarooH        = 200;
+   var kangarookidScale = 50;  // the kid is 30% smaller
+
+   // this is kind of changing keyframe starting poiny for kangaroo kids to look diff together and their parent
+   var image = new Image();
+   image.src ='img/section-789/gifs/kangaroo1.gif';
+   var frameCha1 = 1;
+
+   var image2 = new Image();
+   image2.src ='img/section-789/gifs/kangaroo2.gif';
+   var frameCha2 = 1;
+
 
    /* initial size for turbines */
    var turbineW = 200;
@@ -49,6 +64,13 @@
    /* Flooding Sign */
    var floodSingW = 225;
    var floodSingH = 245;
+
+  /* footy players and footy sizes*/
+   var footyPlayersW = 500;
+   var footyPlayersH = 333;
+   var footyW = 58;
+   var footyH = 51;
+
 
    /* bike */
    var bikeW = 52;
@@ -84,12 +106,21 @@
    var buildingTop = 68.75;
    var buildingLeft = 7;
 
+   var buildingIMG = new Image();
+   buildingIMG.src ='img/section-5/building.gif';
+   var buildingFlag  =1;
+        
+
    /* building-two */
    var building2W = 431;
    var building2H = 934;
    var building2Top = 66.75;
    var building2Left = 27;
    
+
+   var building2IMG = new Image();
+   building2IMG.src ='img/section-5/building-two.gif';
+   var building2Flag =1;
 
    /* building-three */
    var building3W = 404;
@@ -129,12 +160,21 @@
    var apartblockH = 422;
    var apartblockTop = 73.0;
    var apartblockLeft = -5.3;
+   
+   var apartmentBlockIMG = new Image();
+   apartmentBlockIMG.src ='img/section-4/apartment-block.gif';
+   var apartmentBlockFlag =1;
 
    /* glass-building */
    var glassbldngW = 589;
    var glassbldngH = 586;
    var glassbldngTop = 73.5;
    var glassbldngLeft = 27.3;
+
+   var glassBuildingIMG = new Image();
+   glassBuildingIMG.src ='img/section-4/glass-building.gif';
+   var glassBuildingFlag  =1;
+
 
    /* solar-building */
    var solarbldngW = 392;
@@ -153,6 +193,10 @@
    var eurekaH = 1087;
    var eurekaTop = 75;
    var eurekaLeft = 79;
+
+   var eurekaIMG = new Image();
+   eurekaIMG.src ='img/section-3/eureka.gif';
+   var eurekaFlag = 1;
 
    // SECTION 3 CITY
    /* Tram */
@@ -211,6 +255,16 @@
    var sealH = 267;
    var sealTop = 96.6;
    var sealLeft = -10;
+
+    /* ////////////////////////////////////////////// */
+    // flag to mute all sound effects - default = 1 = mute
+    var muteAll = 1; 
+    // Setting flags to prevent replaying the sound
+    var whale_sound_flag   = 0;
+    var cattle_sound_flag  = 0; 
+    var birds_sound_flag   = 0;
+    /* ////////////////////////////////////////////// */
+
 
 //////    MESSAGES     ////////////////
 
@@ -437,6 +491,10 @@
     /* dot-25 */
     var dot25Top = 0.4;
     var dot25Left = 54;
+
+    var SliderPosPrec = 0;
+    
+    var isDragging = false;
 
 /* ------------------------------------- */
 

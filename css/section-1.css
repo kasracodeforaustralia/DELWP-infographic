@@ -7,7 +7,7 @@
 	left: auto;
 	height: 131px;
 	width: 317px;
-	z-index: 2100;
+	z-index: 80;
 }
 
 /* WhaleNet */
@@ -15,7 +15,7 @@
 	height: 59px;
 	width: 221px;
 	left: auto;
-	z-index: 2000;
+	z-index: 79;
 }
 
 /* Scuba diver */
