@@ -27,7 +27,7 @@
   /* firecamp */
    var firecampW = 78;
    var firecampH = 90;
-   var firecampTop = 10;
+   var firecampTop = 10.1;
    var firecampLeft = 48;
 
    /* Windmill  */
@@ -274,6 +274,7 @@
    var sealTop = 96.6;
    var sealLeft = -10;
 
+
     /* ////////////////////////////////////////////// */
     // flag to mute all sound effects - default = 1 = mute
     var muteAll = 1; 
@@ -386,11 +387,11 @@
 
 
      /* msg-12 */
-    var msg12Top = 52.7;
-    var msg12Left = 48;
+    var msg12Top = 51.6;
+    var msg12Left = 54;
 
     /* dot-12 */
-    var dot12Top = 52.3;
+    var dot12Top = 51.8;
     var dot12Left = 50;
 
 
@@ -449,12 +450,12 @@
 
 
      /* msg-19 */
-    var msg19Top = 22.2;
-    var msg19Left = 34;
+    var msg19Top = 19.0;
+    var msg19Left = 38;
 
     /* dot-19 */
-    var dot19Top = 21.8;
-    var dot19Left = 38;
+    var dot19Top = 19.2;
+    var dot19Left = 34;
 
 
       /* msg-20 */
@@ -485,12 +486,12 @@
 
 
      /* msg-23 */
-    var msg23Top = 7.0;
-    var msg23Left = 46;
+    var msg23Top = 6.6;
+    var msg23Left = 56;
 
     /* dot-23 */
-    var dot23Top = 7.4;
-    var dot23Left = 42;
+    var dot23Top = 6.8;
+    var dot23Left = 52;
 
 
      /* msg-24 */

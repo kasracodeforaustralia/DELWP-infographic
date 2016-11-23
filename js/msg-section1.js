@@ -27,6 +27,12 @@ $(window).scroll(function(){
             $('#dot-13').css({'display': 'none', 'left': '($winWidth * dot13Left)/100', 'top':'($winHeight *(dot13Top) )/100'});
             $('#dot-14').css({'display': 'none', 'left': '($winWidth * dot14Left)/100', 'top':'($winHeight *(dot14Top) )/100'});
             $('#dot-15').css({'display': 'none', 'left': '($winWidth * dot15Left)/100', 'top':'($winHeight *(dot15Top) )/100'});
+            $('#dot-16').css({'display': 'none', 'left': '($winWidth * dot16Left)/100', 'top':'($winHeight *(dot16Top) )/100'});
+            $('#dot-17').css({'display': 'none', 'left': '($winWidth * dot17Left)/100', 'top':'($winHeight *(dot17Top) )/100'});
+            $('#dot-18').css({'display': 'none', 'left': '($winWidth * dot18Left)/100', 'top':'($winHeight *(dot18Top) )/100'});
+            $('#dot-19').css({'display': 'none', 'left': '($winWidth * dot19Left)/100', 'top':'($winHeight *(dot19Top) )/100'});
+            $('#dot-20').css({'display': 'none', 'left': '($winWidth * dot20Left)/100', 'top':'($winHeight *(dot20Top) )/100'});
+            $('#dot-21').css({'display': 'none', 'left': '($winWidth * dot21Left)/100', 'top':'($winHeight *(dot21Top) )/100'});
         } else  if ( 93.4 <= topPerc &&  topPerc < 93.6 ){
             $('#dot-1').css({'display': 'block'});
             $('.bg1').css({'opacity':'0.6', 'filter': 'grayscale(1)'});
@@ -72,7 +78,7 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot4Top )/100
             },0); 
 
-        }  else if (75.6 <= topPerc &&  topPerc < 75.8) {
+        }  else if (74.4 <= topPerc &&  topPerc < 74.8) {
             $('#msg-4').css("display", 'none');
             
         } else if ( 74.0 <= topPerc &&  topPerc < 74.2 ){
@@ -167,7 +173,7 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot12Top )/100
             },0);
 
-        } else if ( 47.6 <= topPerc &&  topPerc < 47.8 ) {
+        } else if ( 46.6 <= topPerc &&  topPerc < 46.8 ) {
             $('#msg-12').css("display", 'none');
             
         } else if ( 44.4 <= topPerc &&  topPerc < 44.6 ){
@@ -212,6 +218,111 @@ $(window).scroll(function(){
         } else if ( 32.0 <= topPerc &&  topPerc < 32.2 ) {
             $('#msg-15').css("display", 'none');
             
+        } else if ( 26.6 <= topPerc &&  topPerc < 26.8 ){
+            
+            $('#dot-16').css({'display': 'block'});
+            $('#dot-16').animate({
+                //width: ($WidthPerc * sealW)/100,
+                //height:($WidthPerc * sealH)/100,
+                
+                left: ( $winWidth  * dot16Left )/100,
+                top:  ( $winHeight * dot16Top )/100
+            },0);
+
+            $('#dot-17').css({'display': 'block'});
+            $('#dot-17').animate({
+                //width: ($WidthPerc * sealW)/100,
+                //height:($WidthPerc * sealH)/100,
+                
+                left: ( $winWidth  * dot17Left )/100,
+                top:  ( $winHeight * dot17Top )/100
+            },0);
+
+        } else if ( 23.6 <= topPerc &&  topPerc < 23.8 ) {
+            $('#msg-16').css("display", 'none');
+            $('#msg-17').css("display", 'none');
+        } else if ( 22.6 <= topPerc &&  topPerc < 22.8 ){
+            
+            $('#dot-18').css({'display': 'block'});
+            $('#dot-18').animate({
+                //width: ($WidthPerc * sealW)/100,
+                //height:($WidthPerc * sealH)/100,
+                
+                left: ( $winWidth  * dot18Left )/100,
+                top:  ( $winHeight * dot18Top )/100
+            },0);
+
+        } else if ( 19.8 <= topPerc &&  topPerc < 20.0 ){
+            
+            $('#dot-19').css({'display': 'block'});
+            $('#dot-19').animate({
+                //width: ($WidthPerc * sealW)/100,
+                //height:($WidthPerc * sealH)/100,
+                
+                left: ( $winWidth  * dot19Left )/100,
+                top:  ( $winHeight * dot19Top )/100
+            },0);
+
+        } else if ( 18.6 <= topPerc &&  topPerc < 18.8 ) {
+            $('#msg-18').css("display", 'none');
+            
+        } else if ( 15.8 <= topPerc &&  topPerc < 16.0 ){
+            
+            $('#dot-20').css({'display': 'block'});
+            $('#dot-20').animate({
+                //width: ($WidthPerc * sealW)/100,
+                //height:($WidthPerc * sealH)/100,
+                
+                left: ( $winWidth  * dot20Left )/100,
+                top:  ( $winHeight * dot20Top )/100
+            },0);
+
+        } else if ( 14.3 <= topPerc &&  topPerc < 14.5 ) {
+            $('#msg-19').css("display", 'none');
+            
+        } else if ( 11.2 <= topPerc &&  topPerc < 11.4 ) {
+            $('#msg-20').css("display", 'none');
+            $('#dot-21').css({'display': 'block'});
+            $('#dot-21').animate({
+                //width: ($WidthPerc * sealW)/100,
+                //height:($WidthPerc * sealH)/100,
+                
+                left: ( $winWidth  * dot21Left )/100,
+                top:  ( $winHeight * dot21Top )/100
+            },0);
+        } else if ( 8.8 <= topPerc &&  topPerc < 9.0 ){
+            $('#msg-21').css("display", 'none');
+            $('#dot-22').css({'display': 'block'});
+            $('#dot-22').animate({
+                //width: ($WidthPerc * sealW)/100,
+                //height:($WidthPerc * sealH)/100,
+                
+                left: ( $winWidth  * dot22Left )/100,
+                top:  ( $winHeight * dot22Top )/100
+            },0);
+
+        } else if ( 4.8 <= topPerc &&  topPerc < 5.0 ){
+            $('#msg-22').css("display", 'none');
+            $('#dot-23').css({'display': 'block'});
+            $('#dot-23').animate({
+                //width: ($WidthPerc * sealW)/100,
+                //height:($WidthPerc * sealH)/100,
+                
+                left: ( $winWidth  * dot23Left )/100,
+                top:  ( $winHeight * dot23Top )/100
+            },0);
+
+        } else if ( 1.8 <= topPerc &&  topPerc < 2.0 ){
+            $('#msg-23').css("display", 'none');
+            $('#dot-24').css({'display': 'block'});
+            $('#dot-24').animate({
+                //width: ($WidthPerc * sealW)/100,
+                //height:($WidthPerc * sealH)/100,
+                
+                left: ( $winWidth  * dot24Left )/100,
+                top:  ( $winHeight * dot24Top )/100
+            },0);
+
         } else if (topPerc < 93.6) {
             $('#dot-1').css("display", 'block');
             //$('#dot-1').css("display", 'block');
