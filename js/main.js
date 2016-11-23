@@ -878,7 +878,13 @@ $(document).ready(function() {
             $('#msg-25').toggle("slow");
     });
 
-
+     /* Welcome Div */
+    $('#welcomeDiv').animate({
+        backgroundColor: '#006666',
+        width: $winWidth,
+        height:($winHeight* 7)/100,
+        marginTop: '-5px'
+    },0); 
 //////////////////////////////////////////////////////
 
     /* Default setting for Small devices */
@@ -1745,4 +1751,12 @@ $( window ).resize(function() {
             $('#msg-25').toggle("slow");
     });
 
+     /* Welcome Div */
+    $('#welcomeDiv').animate({
+        backgroundColor: '#006666',
+        width: $winWidth,
+        height:($winHeight* 7)/100,
+        marginTop: '-5px'
+    },0);     
+    
 });
