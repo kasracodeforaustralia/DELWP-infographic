@@ -511,9 +511,15 @@
     var dot25Top = 0.4;
     var dot25Left = 54;
 
-    var SliderPosPrec = 0;
+    /*feadback and speaker/mute buttons size*/ 
+    var feadbackW = 250;
+    var feadbackH = 100;
+    var speakerW  = 80;
+    var speakerH  = 80;
+    var muteW     = 80;
+    var muteH     = 80;
     
-    var isDragging = false;
+    
 
 /* ------------------------------------- */
 

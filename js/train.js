@@ -6,7 +6,6 @@ $(window).scroll(function(){
         var $WidthPerc  = WidthPerc();
         var $HeightPerc = HeightPerc();
         var topPerc     = topPercfunc();
-        console.log(topPerc);
 
         /* train   */ 
         if ( topPerc >= 59.8 ){
