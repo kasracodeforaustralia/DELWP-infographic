@@ -18,7 +18,7 @@ $(document).ready(function() {
     //console.log($HeightPerc);
     
    $("img.lazy").show().lazyload({
-        threshold : 200,
+        //threshold : 50,
         effect : "fadeIn"
    });
    /*$('.lazy').Lazy(//); 
