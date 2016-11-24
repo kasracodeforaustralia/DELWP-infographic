@@ -4,7 +4,9 @@
 
 // Default width and height of the bg images
    var $bgWidth = 1920;
-   var $bgHeight = 18326;  
+   //var $bgHeight = 18326; 
+
+   var $bgHeight = 16103;  
 
    /* Birds */
    var birdsW = 1920;
