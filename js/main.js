@@ -17,7 +17,10 @@ $(document).ready(function() {
     //console.log($WidthPerc);
     //console.log($HeightPerc);
     
-   //$("img.lazy").lazyload();
+   $("img.lazy").show().lazyload({
+        threshold : 200,
+        effect : "fadeIn"
+   });
    /*$('.lazy').Lazy(//); 
    {
         scrollDirection: 'vertical',
