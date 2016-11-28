@@ -1,0 +1,13 @@
+.garbageTruck{
+    position: absolute;
+    width: 260px;
+    height: 135px;
+    z-index: 2;
+    //top: 3720px;
+    //left: -250px;
+
+    
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(5deg);
+}

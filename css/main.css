@@ -13,28 +13,16 @@ h1, h2, h3, h4 {
 
 
 /* Toppest background images*/
-.bg4{
+.bg14{
     width: 100%;
     height: auto;
 }
-.bg3{
-    width: 100%;
-    height: auto;
-    margin-top: -5px;
-}
-
-.bg2{
+.bg{
     width: 100%;
     height: auto;
     margin-top: -5px;
 }
 
-.bg1{
-
-    width: 100%;
-    height: auto;
-    margin-top: -5px;
-}
 
 /* ---- ALL ITEMS ---- */
 .item {
@@ -42,9 +30,9 @@ h1, h2, h3, h4 {
 }
 
 img.lazy {
-        width: 700px; 
-        height: 467px; 
-        display: block;
+        //width: 700px; 
+        //height: 467px; 
+        //display: block;
     }
 
 /* Message */

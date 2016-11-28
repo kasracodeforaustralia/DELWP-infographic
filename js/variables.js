@@ -4,9 +4,9 @@
 
 // Default width and height of the bg images
    var $bgWidth = 1920;
-   //var $bgHeight = 18326; 
+   var $bgHeight = 18326; 
 
-   var $bgHeight = 16103;  
+   //var $bgHeight = 16103;
 
    /* Birds */
    var birdsW = 1920;
@@ -536,7 +536,20 @@ function winWidth(){
 /* This func returns the scalled/dynamic height 
 of the background image */
 function winHeight(){
-    var $winHeight  = $('.bg1').height() + $('.bg2').height() + $('.bg3').height() + $('.bg4').height() + 5; // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
+    var $winHeight  = $('.bg1').height() 
+    + $('.bg2').height() 
+    + $('.bg3').height() 
+    + $('.bg4').height() 
+    + $('.bg5').height()
+    + $('.bg6').height()
+    + $('.bg7').height()
+    + $('.bg8').height()
+    + $('.bg9').height()
+    + $('.bg10').height()
+    + $('.bg11').height()
+    + $('.bg12').height()
+    + $('.bg13').height()
+    + $('.bg14').height(); // This 5 pixel is added because I don't know why the height of the bg images are 5 pixel less!!
     
     return $winHeight;
 }

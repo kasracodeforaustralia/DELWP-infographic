@@ -1,8 +1,9 @@
 $(document).ready(function() {
     
     /* Scrolls to the bottom of the page */
-    $('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
+    //$('html,body').animate({scrollTop: document.body.scrollHeight},0);
     
+    //$("html, body").animate({ scrollTop: $(body).height() }, 0);
     /* Get width and height of the 2 bg images */
     // Responsive width and height of the bg images
     var $win = $(window);
@@ -15,10 +16,10 @@ $(document).ready(function() {
     /* Calculate the difference between the defualt size of the gb images and the current size of them. then, scale the items based on that */
     
     //console.log($WidthPerc);
-    //console.log($HeightPerc);
+    
     
    $("img.lazy").show().lazyload({
-        //threshold : 50,
+        threshold : 800,
         effect : "fadeIn"
    });
    /*$('.lazy').Lazy(//); 
@@ -896,6 +897,11 @@ $(document).ready(function() {
     }
     
 
+    $("body, html").animate({
+        scrollTop: 20000
+    }, 400)    
+    
+    
 });
 
 

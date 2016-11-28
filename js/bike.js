@@ -68,7 +68,10 @@ $(window).scroll(function(){
         var $HeightPerc = HeightPerc();
         var topPerc     = topPercfunc();
 
-     
+        console.log("page height: " + $HeightPerc);
+    
+    
+    
         if (topPerc <= 37){
             $('.bike').css("opacity", 0);
         }else if (topPerc > 37 && topPerc <= 38 ){
