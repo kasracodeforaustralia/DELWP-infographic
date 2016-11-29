@@ -41,6 +41,9 @@ var cloud2Flag          = 1;
 var floodSingFlag       = 1;
 var windMillFlag        = 1;
 var kangarooFlag        = 1;
+var kangarookid1Flag    = 1;
+var kangarookid2Flag    = 1;
+
 
 /* Birds */
 var birdsW = 1920;
@@ -74,6 +77,10 @@ var windMillH = 600;
 var kangarooW        = 240;
 var kangarooH        = 200;
 var kangarookidScale = 50;  // the kid is 30% smaller
+
+
+
+
 
 /* ------------------------------------- */
 
