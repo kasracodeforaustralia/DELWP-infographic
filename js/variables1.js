@@ -38,6 +38,9 @@ var birdsFlag           = 1;
 var turbineFlag         = 1;
 var cloudFlag           = 1;
 var cloud2Flag          = 1;
+var floodSingFlag       = 1;
+var windMillFlag        = 1;
+var kangarooFlag        = 1;
 
 /* Birds */
 var birdsW = 1920;
@@ -59,6 +62,18 @@ var smallCloud = 60; // make the cloud X% smaller than the big cloud
 var garbagetruckW = 260;
 var garbagetruckH = 135;
 
+/* Flooding Sign */
+var floodSingW = 225;
+var floodSingH = 245;
+
+/* Windmill  */
+var windMillW = 350;
+var windMillH = 600;
+
+/* Kangaroos variables */
+var kangarooW        = 240;
+var kangarooH        = 200;
+var kangarookidScale = 50;  // the kid is 30% smaller
 
 /* ------------------------------------- */
 

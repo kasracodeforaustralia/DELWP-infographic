@@ -9,10 +9,8 @@ $(window).scroll(function(){
 
     
     if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && garbageTruckFlag == 1 ){
-        //if (garbageTruckFlag == 1){ 
-            loadIMG('.garbageTruckPH','img/section-789/garbagetruck.png','garbageTruck');
-            garbageTruckFlag = 0;
-       // }
+        loadIMG('.garbageTruckPH','img/section-789/garbagetruck.png','garbageTruck');
+        garbageTruckFlag = 0;
     }
 
 

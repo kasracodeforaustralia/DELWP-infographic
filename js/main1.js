@@ -23,9 +23,46 @@ $(document).ready(function() {
 
 
 $(window).scroll(function(){
-   
+    var $win = $(window);
     
-    console.log("PHs height: "+winHeight());
+    var $winWidth   = winWidth();
+    var $winHeight  = winHeight();
+    var $WidthPerc  = WidthPerc();
+    var $HeightPerc = HeightPerc();
+    
+    
+    /* Loads flood sing when reach bg 10*/ 
+    if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && floodSingFlag == 1 ){
+            loadIMG('.floodSignPH','img/section-789/gifs/floodSign.gif','floodSign');
+            floodSingFlag = 0;
+        }    
+
+    /* Flooding Sign default css  */
+    $('.floodSign').animate({
+        width: ($WidthPerc * floodSingW)/100,
+        height:($HeightPerc* floodSingH)/100,
+        
+        left: ($winWidth  * (43)    )/100,
+        top:  ($winHeight * (27.75) )/100
+        
+    },0);
+   
+    /* Loads wind mill when reach bg 10*/ 
+    if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && windMillFlag == 1 ){
+            loadIMG('.windMillPH','img/section-789/gifs/windMill.gif','windMill');
+            windMillFlag = 0;
+        }    
+
+    $('.windMill').animate({
+        width: ($WidthPerc * windMillW)/100,
+        height:($HeightPerc* windMillH)/100,
+        
+        left: ($winWidth  *(60) )/100,
+        top:  ($winHeight *(24.5) )/100
+    },0);     
+    
+    
+    //console.log("garbageTruckFlag: "+garbageTruckFlag);
     //console.log("win height: " + $(window).height());
     //console.log("bg4Flag scroll: " + bg4Flag);
     //console.log("body height/2: " + $('body').height()/2);
