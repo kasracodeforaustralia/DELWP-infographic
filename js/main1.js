@@ -22,7 +22,6 @@ $(document).ready(function() {
 
 
 
-
 $(window).scroll(function(){
     var $win = $(window);
     

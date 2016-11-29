@@ -43,6 +43,9 @@ var windMillFlag        = 1;
 var kangarooFlag        = 1;
 var kangarookid1Flag    = 1;
 var kangarookid2Flag    = 1;
+var bikeFlag            = 1;
+var whiteCarFlag        = 1;
+
 
 
 /* Birds */
@@ -78,7 +81,13 @@ var kangarooW        = 240;
 var kangarooH        = 200;
 var kangarookidScale = 50;  // the kid is 30% smaller
 
+/* bike */
+var bikeW = 52;
+var bikeH = 67;
 
+/* White car - the one is infront of the bicycle */
+var whiteCarW = 121;
+var whiteCarH = 68;
 
 
 
