@@ -7,7 +7,7 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();
 
-    console.log("topPerc: " + topPerc);
+    //console.log("topPerc: " + topPerc);
     
     
     if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && garbageTruckFlag == 1 ){

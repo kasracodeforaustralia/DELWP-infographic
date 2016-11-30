@@ -8,9 +8,9 @@ $(window).scroll(function(){
         var topPerc     = topPercfunc();
 
         /* whaleNet   */ 
-        if (topPerc >= 95.5){
+        if (topPerc >= 95.9){
             $('#whaleNet').css({'display': 'none', 'transform':'scale(0.4)', 'left': '($winWidth * whaleNetLeft )/100', 'top':'($winHeight * whaleNetTop )/100'});
-        } else  if ( topPerc < 95.3  && topPerc >= 95.5 ){
+        } else  if ( topPerc < 95.7  && topPerc >= 95.9 ){
             $('#whaleNet').css({'display': 'block', 'transform':'scale(0.4)'});
             $('#whaleNet').animate({
                 width: ($WidthPerc * whaleNetW)/100,
@@ -21,7 +21,7 @@ $(window).scroll(function(){
  
             },0); 
             
-        }else if (  95.1 <= topPerc &&  topPerc < 95.3){
+        }else if (  95.5 <= topPerc &&  topPerc < 95.7){
             $('#whaleNet').animate({
                 width: ($WidthPerc * whaleNetW)/100,
                 height:($WidthPerc * whaleNetH)/100,
@@ -33,7 +33,7 @@ $(window).scroll(function(){
                 }
             }, 0); 
             
-        }else if (  94.8 <= topPerc &&  topPerc < 95.1 ){
+        }else if (  95.3 <= topPerc &&  topPerc < 95.5 ){
              $('#whaleNet').css({'transform':'scale(0.6) rotate(5deg)'});
              $('#whaleNet').animate({
       width: ($WidthPerc * whaleNetW)/100,
@@ -43,7 +43,7 @@ $(window).scroll(function(){
                 opacity:0.7
             }, 0); 
             
-        } else if ( 94.6 <= topPerc &&  topPerc < 94.8 ){
+        } else if ( 95.1 <= topPerc &&  topPerc < 95.3 ){
               $('#whaleNet').css({'transform':'scale(0.8) rotate(-10deg)'});
              $('#whaleNet').animate({
      width: ($WidthPerc * whaleNetW)/100,
@@ -53,7 +53,7 @@ $(window).scroll(function(){
                 opacity:0.8
             }, 0); 
            
-        }else if ( 94.4 <= topPerc &&  topPerc < 94.6 ){
+        }else if ( 94.9 <= topPerc &&  topPerc < 95.1 ){
             $('#whaleNet').css({'transform':'scale(0.9) rotate(5deg)'});
              $('#whaleNet').animate({
          width: ($WidthPerc * whaleNetW)/100,
@@ -62,7 +62,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(96.6) )/100,
                 opacity: 0.9
             }, 0); 
-        }else if ( 94.2 <= topPerc &&  topPerc < 94.4 ){
+        }else if ( 94.7 <= topPerc &&  topPerc < 94.9 ){
             $('#whaleNet').css({'transform':'scale(1) rotate(2deg)'});
              $('#whaleNet').animate({
          width: ($WidthPerc * whaleNetW)/100,
@@ -71,7 +71,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(96.8) )/100,
                 opacity: 1
             }, 0); 
-        }else if ( 94.0 <= topPerc &&  topPerc < 94.2 ){
+        }else if ( 94.5 <= topPerc &&  topPerc < 94.7 ){
             $('#whaleNet').css({'transform':'rotate(-5deg)'});
              $('#whaleNet').animate({
          width: ($WidthPerc * whaleNetW)/100,
@@ -80,7 +80,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(97) )/100,
                 opacity: 1
             }, 0); 
-        }else if ( 93.8 <= topPerc &&  topPerc < 94.0 ){
+        }else if ( 94.3 <= topPerc &&  topPerc < 94.5 ){
             $('#whaleNet').css({'transform':'rotate(5deg)'});
              $('#whaleNet').animate({
          width: ($WidthPerc * whaleNetW)/100,
@@ -89,7 +89,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(96.8) )/100,
                 opacity: 1
             }, 0); 
-        }else if ( 93.6 <= topPerc &&  topPerc < 93.8 ){
+        }else if ( 94.1 <= topPerc &&  topPerc < 94.3 ){
             $('#whaleNet').css({'transform':'rotate(-8deg)'});
              $('#whaleNet').animate({
          width: ($WidthPerc * whaleNetW)/100,
@@ -98,7 +98,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(97) )/100,
                 opacity: 1
             }, 0);
-        }else if ( 93.4 <= topPerc &&  topPerc < 93.6 ){
+        }else if ( 93.9 <= topPerc &&  topPerc < 94.1 ){
             $('#whaleNet').css({'transform':'rotate(5deg)'});
              $('#whaleNet').animate({
          width: ($WidthPerc * whaleNetW)/100,
@@ -107,7 +107,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(97) )/100,
                 opacity: 1
             }, 0);
-        }else if (topPerc < 95.5) {
+        }else if (topPerc < 95.9) {
             $('#whaleNet').css("display", 'block');
         }
 

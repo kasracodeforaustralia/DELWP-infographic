@@ -1,41 +1,50 @@
 * {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
-    line-height: 1.4;
-}
-body {
-    margin: auto;
-    overflow-x: hidden;
+   
 }
 h1, h2, h3, h4 {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
 
 /* Toppest background images*/
-.bg14{
-    width: 100%;
-    height: auto;
-}
 .bg{
     width: 100%;
     height: auto;
-    margin-top: -5px;
+    //border: solid red;
 }
 
 
-/* ---- ALL ITEMS ---- */
+.bg4s7{
+    width: 100%;
+    height: auto;
+    margin-top: -1px;
+}
+
+.defLoadedBgs{
+    width: 100%;
+    height: auto;
+    margin-top: -4px;
+}
+
+
+/* ---------------------------- ALL ITEMS --------------------------------- */
 .item {
     position: absolute;
 }
 
-img.lazy {
-        //width: 700px; 
-        //height: 467px; 
-        //display: block;
-    }
+/*.tramPH, .churchPH {
+    top: 10659px;
+    left: 333px;
+}*/
 
-/* Message */
+
+/* ------------------------------- MESSAGES ------------------------------------ */
 .msg {
     position: absolute;
     padding: 10px 15px;
@@ -64,7 +73,8 @@ img.lazy {
     color: #acacac;
  }
 
-/* Shiny dots */
+
+/* ------------------------------- DOTS FOR MESSAGES ------------------------------------ */
 .holder {
     margin: 10px auto;
     width: 50px;
@@ -157,3 +167,5 @@ img.lazy {
     opacity: 0.0;
  }
 }    
+
+

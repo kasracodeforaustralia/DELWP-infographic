@@ -32,7 +32,7 @@ var bg12Flag = 1;
 var bg13Flag = 1;
 var bg14Flag = 1;
 
-// Load flags for items
+/* ----------------------------------- Load flags for items ----------------------------------*/
 var garbageTruckFlag    = 1;
 var birdsFlag           = 1;
 var turbineFlag         = 1;
@@ -47,11 +47,15 @@ var bikeFlag            = 1;
 var whiteCarFlag        = 1;
 var fireFlag            = 1;
 var fireFightersFlag    = 1;
+
 var tramFlag            = 1;
+var buildingsFlag       = 1;
+var busFlag             = 1;
+var car2Flag            = 1;
+var buildingsFlag       = 1;
 
 
-
-
+/* --------------------------- ITEMS ----------------------------------------- */
 
 /* Birds */
 var birdsW = 1920;
@@ -102,6 +106,26 @@ var bikeH = 67;
 var whiteCarW = 121;
 var whiteCarH = 68;
 
+/* Church */
+var churchW = 921;
+var churchH = 755;
+var churchLeft = -15;
+var churchTop = 79.0;
+var buildingsCounter=0;
+
+/* Car 2 */
+var car2W = 189;
+var car2H = 109;
+var car2Top = 78.9;
+var car2Left = 10;
+var car2Counter=0;
+
+/* Bus */
+var busW = 577;
+var busH = 329;
+var busTop = 80.05;
+var busLeft = 44;
+var busCounter=0;
 
 /* Tram */
 var tramW = 366;
@@ -110,8 +134,40 @@ var tramTop = 83.75;
 var tramLeft = 45;
 var tramCounter=0;
 
+  //SECTION 2 FORESHORE
 
-/* ------------------------------------- */
+   /* Boat */
+   var boatW = 133;
+   var boatH = 218;
+   var boatTop = 90.6;
+   var boatLeft = 80.05;
+
+   //SECTION 1 SEA/BAY
+   /* Whale */
+   var whaleW = 802;
+   var whaleH = 409;
+   var whaleTop = 97.8;
+   var whaleLeft = 75;
+
+   /* whaleNet */
+   var whaleNetW = 499;
+   var whaleNetH = 333;
+   var whaleNetTop = 95.7;
+   var whaleNetLeft = 80;
+
+   /* Scuba */
+   var scuba2W = 221;
+   var scuba2H = 170;
+   var scuba2Top = 98.5;
+   var scuba2Left = 5;
+
+   /* Seal */
+   var sealW = 435;
+   var sealH = 267;
+   var sealTop = 96.6;
+   var sealLeft = -10;
+
+/* ----------------------------------------------------------------- */
 
 /* functions for dynamic variables */
 
@@ -185,22 +241,3 @@ function loadIMG(objName,IMGurl,className){
        
     return false;    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
