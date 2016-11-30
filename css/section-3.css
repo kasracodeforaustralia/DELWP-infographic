@@ -1,11 +1,8 @@
 /* SECTION 3 CITY styles */
 
 /* Tram */
-#tram {
-	/*top: 10852px; 
-	left: 640px;*/
-	height: 170px;
-	width: 206px;
+.tram {
+	position: absolute;
 }
 
 /* Car1 */

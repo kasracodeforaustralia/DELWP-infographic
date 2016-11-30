@@ -2,28 +2,18 @@
 
 /* Whale */
 #whale {
-	top: 13060px; 
-	right: 100px;
-	left: auto;
-	height: 131px;
-	width: 317px;
 	z-index: 80;
 }
 
 /* WhaleNet */
 #whaleNet {
-	height: 59px;
-	width: 221px;
-	left: auto;
 	z-index: 79;
 }
 
 /* Scuba diver */
 #scuba-2 {
-	height: 81px;
-	width: 196px;
-    top: auto;
+	z-index: 79;
 } 
 
-/* Penguin */
+
 
