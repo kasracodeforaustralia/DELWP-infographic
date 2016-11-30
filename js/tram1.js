@@ -7,15 +7,16 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();
 
+    
+    /* tramCounter is to ignore the first hit of the scrollTop with $('.bg2PH').position().top) */
 
     if ( ($(window).scrollTop() <=$('.bg2PH').position().top) && tramFlag == 1 && tramCounter == 2){
         loadIMG('.tramPH','img/section-3/tram.png','tram');
         tramFlag = 0;
-    }    
-    if ($(window).scrollTop() <=$('.bg2PH').position().top){
+    }else if ($(window).scrollTop() <= $('.bg2PH').position().top){
         tramCounter++;
-        //alert(tramCounter);
     }
+    
     
         /* tram   */ 
     if ( topPerc >= 84.4 ){
