@@ -9,7 +9,7 @@ $(window).scroll(function(){
     
     if ( ($(window).scrollTop() <= $('.bg2PH').position().top) && buildingsFlag == 1 ){
 
-        loadIMG('.churchPH','img/section-3/church.png','church');
+        loadIMG('.churchPH','img/section-3/church.png','item church');
 
         /*loadIMG('.turbine2PH','img/section-789/gifs/turbine.gif','turbine turbine2');
 
@@ -23,10 +23,14 @@ $(window).scroll(function(){
         buildingsFlag = 0;        
         
     }
+    if ($(window).scrollTop() <=$('.bg2PH').position().top){
+        buildingsCounter++;
+        
+    }
 
     /* ---------------- BUILDINGS ---------------- */
 
-    /***** building ******/
+    /***** building ******
     $('#building').animate({
        width: ($WidthPerc * buildingW)/100,
        height:($HeightPerc* buildingH)/100,
@@ -35,7 +39,7 @@ $(window).scroll(function(){
         top:  ($winHeight * buildingTop)/100
     },0);
 
-    /********** sold-ign **********/
+    /********** sold-ign **********
     $('#sold-sign').animate({
        width: ($WidthPerc * soldsignW)/100,
        height:($HeightPerc* soldsignH)/100,
@@ -44,7 +48,7 @@ $(window).scroll(function(){
         top:  ($winHeight * soldsignTop)/100
     },0);
 
-    /*********** building-two ************/
+    /*********** building-two ************
     $('#building-two').animate({
        width: ($WidthPerc * building2W)/100,
        height:($HeightPerc* building2H)/100,
@@ -54,7 +58,7 @@ $(window).scroll(function(){
     },0);
     $('#building-two').css({'transform': 'rotate(-3deg)'});
 
-    /********* building-three ************/
+    /********* building-three ***********
     $('#building-three').animate({
        width: ($WidthPerc * building3W)/100,
        height:($HeightPerc* building3H)/100,
@@ -63,7 +67,7 @@ $(window).scroll(function(){
         top:  ($winHeight * building3Top)/100
     },0);
 
- /* flags-building */
+ /* flags-building 
     $('#flags-building').animate({
        width: ($WidthPerc * flgbuildingW)/100,
        height:($HeightPerc* flgbuildingH)/100,
@@ -75,7 +79,7 @@ $(window).scroll(function(){
     },0);
     $('#flags-building').css({'transform': 'rotate(-2deg)'});
    
-    /* ab-flag */
+    /* ab-flag 
     $('#ab-flag').animate({
        width: ($WidthPerc * abflagW)/100,
        height:($HeightPerc* abflagH)/100,
@@ -84,7 +88,7 @@ $(window).scroll(function(){
         top:  ($winHeight * abflagTop )/100        
     },0);
 
-   /* au-flag */
+   /* au-flag 
     $('#au-flag').animate({
        width: ($WidthPerc * auflagW)/100,
        height:($HeightPerc* auflagH)/100,
@@ -93,7 +97,7 @@ $(window).scroll(function(){
         top:  ($winHeight * auflagTop )/100        
     },0);
 
-   /* apartment-block */
+   /* apartment-block 
     $('#apartment-block').animate({
        width: ($WidthPerc * apartblockW)/100,
        height:($HeightPerc* apartblockH)/100,
@@ -102,7 +106,7 @@ $(window).scroll(function(){
         top:  ($winHeight *(apartblockTop) )/100
     },0);
 
-    /* glass-building */
+    /* glass-building 
     $('#glass-building').animate({
        width: ($WidthPerc * glassbldngW)/100,
        height:($HeightPerc* glassbldngH)/100,
@@ -111,7 +115,7 @@ $(window).scroll(function(){
         top:  ($winHeight * glassbldngTop )/100
     },0);
 
-    /* solar-building */
+    /* solar-building 
     $('#solar-building').animate({
        width: ($WidthPerc * solarbldngW)/100,
        height:($HeightPerc* solarbldngH)/100,
@@ -120,7 +124,7 @@ $(window).scroll(function(){
         top:  ($winHeight * solarbldngTop )/100
     },0);
 
-    /* eureka-tower */
+    /* eureka-tower 
     $('#eureka-tower').animate({
        width: ($WidthPerc * eurekaW)/100,
        height:($HeightPerc* eurekaH)/100,

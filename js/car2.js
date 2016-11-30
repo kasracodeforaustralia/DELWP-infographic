@@ -7,12 +7,21 @@ $(window).scroll(function(){
         var $HeightPerc = HeightPerc();
         var topPerc     = topPercfunc();
 
+        if ( ($(window).scrollTop() <=$('.bg2PH').position().top) && car2Flag == 1 && car2Counter == 2){
+        loadIMG('.car2PH','img/section-3/car2.png','item car2');
+        car2Flag = 0;
+    }    
+    if ($(window).scrollTop() <=$('.bg2PH').position().top){
+        car2Counter++;
+        
+    }
+
         /* car2 animation  */ 
         if ( topPerc >= 79.6 ){
-            $('#car2').css({'display':'block', 'left': '($winWidth  *(car2Left) )/100', 'top':'($winHeight *(car2Top) )/100'});
+            $('.car2').css({'display':'block', 'left': '($winWidth  *(car2Left) )/100', 'top':'($winHeight *(car2Top) )/100'});
         } else  if ( 79.4 <= topPerc &&  topPerc < 79.6 ){ 
-            $('#car2').css({'display': 'block'});
-            $('#car2').animate({
+            $('.car2').css({'display': 'block'});
+            $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(car2Left) )/100, 
@@ -20,8 +29,8 @@ $(window).scroll(function(){
                 
             },0); 
         }else  if ( 79.2 <= topPerc &&  topPerc < 79.4 ){ 
-            $('#car2').css({'display': 'block'});
-            $('#car2').animate({
+            $('.car2').css({'display': 'block'});
+            $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(14) )/100, 
@@ -29,8 +38,8 @@ $(window).scroll(function(){
                 
             },0); 
         } else  if ( 79.0 <= topPerc &&  topPerc < 79.2 ){ 
-            $('#car2').css({'display': 'block'});
-            $('#car2').animate({
+            $('.car2').css({'display': 'block'});
+            $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(18) )/100, 
@@ -39,8 +48,8 @@ $(window).scroll(function(){
             },0); 
             
         }else if ( 78.8 <= topPerc &&  topPerc < 79.0 ){
-           $('#car2').css({'display': 'block'});
-            $('#car2').animate({
+           $('.car2').css({'display': 'block'});
+            $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(22) )/100,
@@ -49,8 +58,8 @@ $(window).scroll(function(){
             }, 0); 
             
         }else if ( 78.6 <= topPerc &&  topPerc < 78.8 ){
-             $('#car2').css({'display': 'block'});
-             $('#car2').animate({
+             $('.car2').css({'display': 'block'});
+             $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(26))/100,
@@ -59,8 +68,8 @@ $(window).scroll(function(){
             }, 0); 
             
         } else if ( 78.4 <= topPerc &&  topPerc < 78.6 ){
-           $('#car2').css({'display': 'block'});
-             $('#car2').animate({
+           $('.car2').css({'display': 'block'});
+             $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(30) )/100,
@@ -69,8 +78,8 @@ $(window).scroll(function(){
             }, 0); 
            
         }else if ( 78.2 <= topPerc &&  topPerc < 78.4 ){
-           $('#car2').css({'display': 'block'});
-             $('#car2').animate({
+           $('.car2').css({'display': 'block'});
+             $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(34) )/100,
@@ -78,8 +87,8 @@ $(window).scroll(function(){
                 
             }, 0); 
         }else if ( 78.0 <= topPerc &&  topPerc < 78.2 ){
-           $('#car2').css({'display': 'block'});
-             $('#car2').animate({
+           $('.car2').css({'display': 'block'});
+             $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(38) )/100,
@@ -87,8 +96,8 @@ $(window).scroll(function(){
                 
             }, 0); 
         }else if ( 77.8 <= topPerc &&  topPerc < 78.0 ){
-           $('#car2').css({'display': 'block'});
-             $('#car2').animate({
+           $('.car2').css({'display': 'block'});
+             $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(42) )/100,
@@ -96,8 +105,8 @@ $(window).scroll(function(){
                 
             }, 0); 
         }else if ( 77.6 <= topPerc &&  topPerc < 77.8 ){
-           $('#car2').css({'display': 'block'});
-             $('#car2').animate({
+           $('.car2').css({'display': 'block'});
+             $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(46) )/100,
@@ -105,8 +114,8 @@ $(window).scroll(function(){
                 
             }, 0); 
         } else if ( 77.4 <= topPerc &&  topPerc < 77.6 ){
-           $('#car2').css({'display': 'block'});
-             $('#car2').animate({
+           $('.car2').css({'display': 'block'});
+             $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(50) )/100,
@@ -114,8 +123,8 @@ $(window).scroll(function(){
                 
             }, 0); 
         }/* else if ( 77.2 <= topPerc &&  topPerc < 77.4 ){
-           $('#car2').css({'display': 'block'});
-             $('#car2').animate({
+           $('.car2').css({'display': 'block'});
+             $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(54) )/100,
@@ -123,8 +132,8 @@ $(window).scroll(function(){
                 
             }, 0); 
         } else if ( 77.0 <= topPerc &&  topPerc < 77.2 ){
-           $('#car2').css({'display': 'block'});
-             $('#car2').animate({
+           $('.car2').css({'display': 'block'});
+             $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(58) )/100,
@@ -132,8 +141,8 @@ $(window).scroll(function(){
                 
             }, 0); 
         } else if ( 76.8 <= topPerc &&  topPerc < 77.0 ){
-           $('#car2').css({'display': 'block'});
-             $('#car2').animate({
+           $('.car2').css({'display': 'block'});
+             $('.car2').animate({
                 width: ($WidthPerc * car2W)/100,
                 height: ($WidthPerc * car2H)/100,
                 left: ($winWidth  *(62) )/100,
@@ -141,7 +150,7 @@ $(window).scroll(function(){
                 
             }, 0); 
         }*/ else if (topPerc < 77.4) {
-            $('#car2').css({ 'display':'block', 'opacity':'1' });
+            $('.car2').css({ 'display':'block', 'opacity':'1' });
         }
 
         
