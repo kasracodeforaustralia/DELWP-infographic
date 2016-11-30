@@ -13,7 +13,7 @@ $(document).ready(function() {
     $('#welcomeDiv').animate({
         backgroundColor: '#006666',
         width: $winWidth,
-        height:($winHeight* 15)/100,
+        height:($winHeight* 30)/100,
         marginTop: '-5px'
     },0); 
     
