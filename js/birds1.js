@@ -10,15 +10,13 @@ $(window).scroll(function(){
 
     
     if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && birdsFlag == 1 ){
-        //if (garbageTruckFlag == 1){ 
-            loadIMG('.birdsPH','img/section-789/gifs/birds.gif','birds');
-            birdsFlag = 0;
-       // }
+        loadIMG('.birdsPH','img/section-789/gifs/birds.gif','birds');
+        birdsFlag = 0;
     }
     
      
     if (topPerc <= 1.42){
-        $('.birds').css({display: 'block' })
+        $('.birds').show();
         $('.birds').animate({
             width: ($WidthPerc * birdsW)/100,
             height:($HeightPerc* birdsH)/100,
@@ -27,8 +25,7 @@ $(window).scroll(function(){
             top:  ($winHeight *(0) )/100
         },0);            
     }else if (topPerc >1.42){
-        $('.birds').css({display: 'none' });
-
+         $('.birds').hide();
     }
 });
     

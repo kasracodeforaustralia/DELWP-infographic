@@ -26,8 +26,7 @@ $(window).scroll(function(){
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
 
             left: ($winWidth  *(82) )/100,
-            top:  (top + padTop),       
-            opacity:1
+            top:  (top + padTop)
         },0);
     }else if (topPerc >0.5 && topPerc <= 1){
          $('.cloud2').animate({
@@ -35,8 +34,7 @@ $(window).scroll(function(){
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
 
             left: ($winWidth  *(72) )/100,
-             top:  (top + padTop),
-            opacity:1
+             top:  (top + padTop)
         },0); 
     }else if (topPerc >1 && topPerc <= 1.5){
          $('.cloud2').animate({
@@ -44,8 +42,7 @@ $(window).scroll(function(){
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
 
             left: ($winWidth  *(62) )/100,
-             top:  (top + padTop),
-            opacity:1
+             top:  (top + padTop)
         },0); 
     }else if (topPerc >1.5 && topPerc <= 2){
          $('.cloud2').animate({
@@ -53,8 +50,7 @@ $(window).scroll(function(){
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
 
             left: ($winWidth  *(52) )/100,
-             top:  (top + padTop),
-            opacity:1
+             top:  (top + padTop)
         },0); 
     }else if (topPerc >2 && topPerc <= 2.5){
          $('.cloud2').animate({
@@ -62,8 +58,7 @@ $(window).scroll(function(){
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
 
             left: ($winWidth  *(42) )/100,
-             top:  (top + padTop),
-            opacity:1
+             top:  (top + padTop)
         },0); 
     }else if (topPerc > 2.5 && topPerc <=3 ){
          $('.cloud2').animate({
@@ -71,8 +66,7 @@ $(window).scroll(function(){
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
 
             left: ($winWidth  *(32) )/100,
-             top:  (top + padTop),
-            opacity:1
+             top:  (top + padTop)
         },0); 
     }else if (topPerc >3 && topPerc <= 3.5 ){
          $('.cloud2').animate({
@@ -80,8 +74,7 @@ $(window).scroll(function(){
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
 
             left: ($winWidth  *(22) )/100,
-             top:  (top + padTop),
-            opacity:1
+            top:  (top + padTop)
         },0); 
     }else if (topPerc > 3.5 && topPerc <= 4 ){
          $('.cloud2').animate({
@@ -89,26 +82,25 @@ $(window).scroll(function(){
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
 
             left: ($winWidth  *(12) )/100,
-             top:  (top + padTop),
-            opacity:1
+            top:  (top + padTop)
         },0); 
     }else if (topPerc > 4 && topPerc <= 4.5 ){
-         $('.cloud2').animate({
-            width: (($WidthPerc * cloud2W)/100) *smallCloud/100,
-            height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
-
-            left: ($winWidth  *(1) )/100,
-             top:  (top + padTop),
-            opacity:1
-        },0); 
-    }else {
+        $('.cloud2').show();
         $('.cloud2').animate({
             width: (($WidthPerc * cloud2W)/100) *smallCloud/100,
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
 
-                left: ($winWidth  *(1) )/100,
-                top:  (top + padTop),
-                opacity:0
+            left: ($winWidth  *(1) )/100,
+            top:  (top + padTop)
+        },0); 
+    }else {
+        $('.cloud2').hide();
+        $('.cloud2').animate({
+            width: (($WidthPerc * cloud2W)/100) *smallCloud/100,
+            height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
+
+            left: ($winWidth  *(1) )/100,
+            top:  (top + padTop)
         },0);
     }
 

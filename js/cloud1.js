@@ -31,8 +31,7 @@ $(window).scroll(function(){
             height:($WidthPerc * cloudH)/100,
 
             left: ($winWidth  *(78) )/100,
-            top:  (top + padTop),       
-            opacity:1
+            top:  (top + padTop)
         },0);
     }else if (topPerc > 0.5 && topPerc <= 1 ){
         $('.cloud').animate({
@@ -40,8 +39,7 @@ $(window).scroll(function(){
             height:($WidthPerc * cloudH)/100,
 
             left: ($winWidth  *(72) )/100,
-            top:  (top + padTop),
-            opacity:1
+            top:  (top + padTop)
         },0); 
     }else if (topPerc >1 && topPerc <= 1.5 ){
         $('.cloud').animate({
@@ -49,8 +47,7 @@ $(window).scroll(function(){
             height:($WidthPerc * cloudH)/100,
 
             left: ($winWidth  *(65) )/100,
-            top:  (top + padTop),
-            opacity:1
+            top:  (top + padTop)
         },0); 
     }else if (topPerc >1.5 && topPerc <= 2){
          $('.cloud').animate({
@@ -58,8 +55,7 @@ $(window).scroll(function(){
             height:($WidthPerc * cloudH)/100,
 
             left: ($winWidth  *(58) )/100,
-             top:  (top + padTop),
-            opacity:1
+            top:  (top + padTop)
         },0); 
     }else if (topPerc >2 && topPerc <= 2.5){
          $('.cloud').animate({
@@ -67,8 +63,7 @@ $(window).scroll(function(){
             height:($HeightPerc* cloudH)/100,
 
             left: ($winWidth  *(50) )/100,
-             top:  (top + padTop),
-            opacity:1
+            top:  (top + padTop)
         },0); 
     }else if (topPerc > 2.5 && topPerc <=3 ){
          $('.cloud').animate({
@@ -76,8 +71,7 @@ $(window).scroll(function(){
             height:($HeightPerc* cloudH)/100,
 
             left: ($winWidth  *(42) )/100,
-             top:  (top + padTop),
-            opacity:1
+             top:  (top + padTop)
         },0); 
     }else if (topPerc >3 && topPerc <= 3.5 ){
          $('.cloud').animate({
@@ -85,8 +79,7 @@ $(window).scroll(function(){
             height:($HeightPerc* cloudH)/100,
 
             left: ($winWidth  *(36) )/100,
-             top:  (top + padTop),
-            opacity:1
+            top:  (top + padTop)
         },0); 
     }else if (topPerc > 3.5 && topPerc <= 4 ){
          $('.cloud').animate({
@@ -94,8 +87,7 @@ $(window).scroll(function(){
             height:($HeightPerc* cloudH)/100,
 
             left: ($winWidth  *(28) )/100,
-             top:  (top + padTop),
-            opacity:1
+             top:  (top + padTop)
         },0); 
     }else if (topPerc > 4 && topPerc <= 4.5 ){
          $('.cloud').animate({
@@ -103,8 +95,7 @@ $(window).scroll(function(){
             height:($HeightPerc* cloudH)/100,
 
             left: ($winWidth  *(20) )/100,
-             top:  (top + padTop),
-            opacity:1
+             top:  (top + padTop)
         },0); 
     }else if (topPerc > 4.5 && topPerc <= 5 ){
          $('.cloud').animate({
@@ -112,28 +103,50 @@ $(window).scroll(function(){
             height:($HeightPerc* cloudH)/100,
 
             left: ($winWidth  *(12) )/100,
-             top:  (top + padTop),
-            opacity:1
+             top:  (top + padTop)
         },0); 
     }else if (topPerc > 5 && topPerc <= 5.5 ){
-         $('.cloud').animate({
+        $('.cloud').show();
+        $('.cloud').animate({
             width: ($WidthPerc * cloudW)/100,
             height:($HeightPerc* cloudH)/100,
 
             left: ($winWidth  *(0.5) )/100,
-            top:  (top + padTop),
-            opacity:1
+            top:  (top + padTop)
         },0); 
     }else {
-            $('.cloud').animate({
-                width: ($WidthPerc * cloudW)/100,
-                height:($WidthPerc * cloudH)/100,
+        $('.cloud').hide();
+        $('.cloud').animate({
+            width: ($WidthPerc * cloudW)/100,
+            height:($WidthPerc * cloudH)/100,
 
-                left: ($winWidth  *(1) )/100,
-                top:  (top + padTop),
-                opacity:0
-            },0);
+            left: ($winWidth  *(1) )/100,
+            top:  (top + padTop)
+        },0);
     }
 
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

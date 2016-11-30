@@ -14,8 +14,9 @@ $(window).scroll(function(){
     }    
 
     if (topPerc <= 37){
-        $('.bike').css("opacity", 0);
+        $('.bike').hide();
     }else if (topPerc > 37 && topPerc <= 38 ){
+        $('.bike').show();
         $('.bike').animate({
             width: ( ($WidthPerc * bikeW)/100)*120/100,
             height:( ($HeightPerc* bikeH)/100)*120/100,
@@ -115,7 +116,8 @@ $(window).scroll(function(){
             opacity:1
         },0); 
     }else if (topPerc >48 && topPerc <= 49 ){
-         $('.bike').animate({
+        $('.bike').show(); 
+        $('.bike').animate({
             width: ( ($WidthPerc * bikeW)/100)*120/100,
             height:( ($HeightPerc* bikeH)/100)*120/100,
 
@@ -124,7 +126,7 @@ $(window).scroll(function(){
             opacity:1
         },0); 
     }else if (topPerc >49){
-        //$('.bike').css("opacity", 0);
+        $('.bike').hide();
     }
 
         

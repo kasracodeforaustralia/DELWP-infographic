@@ -14,9 +14,10 @@ $(window).scroll(function(){
     }
 
     if (topPerc <= 37){
-        //$('.whiteCar').css("opacity", 0);
+        $('.whiteCar').hide();
     }else if (topPerc >39 && topPerc <=40){
-         $('.whiteCar').animate({
+        $('.whiteCar').show();
+        $('.whiteCar').animate({
             width: ( ($WidthPerc * whiteCarW)/100)*120/100,
             height:( ($HeightPerc* whiteCarH)/100)*120/100,
 
@@ -97,7 +98,8 @@ $(window).scroll(function(){
             opacity:1
         },0); 
     }else if (topPerc >48 && topPerc <= 49 ){
-         $('.whiteCar').animate({
+        $('.whiteCar').show();
+        $('.whiteCar').animate({
             width: ( ($WidthPerc * whiteCarW)/100)*140/100,
             height:( ($HeightPerc* whiteCarH)/100)*140/100,
 
@@ -106,7 +108,7 @@ $(window).scroll(function(){
             opacity:1
         },0); 
     }else if (topPerc >49){
-        //$('.whiteCar').css("opacity", 0);
+        $('.whiteCar').hide();
     }
 
         
