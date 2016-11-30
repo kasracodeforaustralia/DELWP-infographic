@@ -9,7 +9,7 @@ $(window).scroll(function(){
 
     
     if ( ($(window).scrollTop() <=$('.bg5PH').position().top) && whiteCarFlag == 1 ){
-        loadIMG('.whiteCarPH','img/section-789/whiteCar.png','whiteCar');
+        loadIMG('.whiteCarPH','img/section-789/whiteCar.png','whiteCar item');
         whiteCarFlag = 0;
     }
 

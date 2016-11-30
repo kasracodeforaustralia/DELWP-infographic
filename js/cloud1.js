@@ -13,7 +13,7 @@ $(window).scroll(function(){
 
     if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && cloudFlag == 1 ){
 
-        loadIMG('.cloudPH','img/section-789/Cloud.png','cloud');
+        loadIMG('.cloudPH','img/section-789/Cloud.png','cloud item');
         cloudFlag = 0;
     }
 

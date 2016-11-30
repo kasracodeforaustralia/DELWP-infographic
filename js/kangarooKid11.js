@@ -11,7 +11,7 @@ $(window).scroll(function(){
         
     
     if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && kangarookid1Flag == 1 ){
-        loadIMG('.kangarookid1PH','img/section-789/gifs/kangaroo1.gif','kangarookid1');
+        loadIMG('.kangarookid1PH','img/section-789/gifs/kangaroo1.gif','kangarookid1 item');
         kangarookid1Flag = 0;
         
         // this is kind of changing keyframe starting poiny for kangaroo kids to look diff together and their parent

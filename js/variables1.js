@@ -33,6 +33,10 @@ var bg13Flag = 1;
 var bg14Flag = 1;
 
 /* ----------------------------------- Load flags for items ----------------------------------*/
+
+var footyPlayersFlag    = 1;
+var footyFlag           = 1;
+var bulldozerFlag       = 1;
 var garbageTruckFlag    = 1;
 var birdsFlag           = 1;
 var turbineFlag         = 1;
@@ -72,6 +76,17 @@ var cloudH = 250;
 var cloud2W = 400;
 var cloud2H = 250;
 var smallCloud = 60; // make the cloud X% smaller than the big cloud
+
+
+/* footy players and footy sizes*/
+var footyPlayersW = 500;
+var footyPlayersH = 333;
+var footyW = 58;
+var footyH = 51;
+
+/* Bulldozer */
+var bulldozerW = 167;
+var bulldozerH = 129;
 
 /* Garbage Truck */
 var garbagetruckW = 260;

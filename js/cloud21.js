@@ -15,7 +15,7 @@ $(window).scroll(function(){
 
     if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && cloud2Flag == 1 ){
 
-        loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2');
+        loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item');
         cloud2Flag = 0;
     }
 

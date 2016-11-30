@@ -11,7 +11,7 @@ $(window).scroll(function(){
     
     
     if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && kangarookid2Flag == 1 ){
-        loadIMG('.kangarookid2PH','img/section-789/gifs/kangaroo2.gif','kangarookid2');
+        loadIMG('.kangarookid2PH','img/section-789/gifs/kangaroo2.gif','kangarookid2 item');
         kangarookid2Flag = 0;
 
         kang2IMG.src ='img/section-789/gifs/kangaroo2.gif';
