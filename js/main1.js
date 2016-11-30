@@ -61,6 +61,22 @@ $(window).scroll(function(){
         top:  ($winHeight *(24.5) )/100
     },0);     
     
+  
+    /* Loads fire when reach bg 9*/ 
+    if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && fireFlag == 1 ){
+            loadIMG('.firePH','img/section-789/gifs/fire.gif','fire');
+            fireFlag = 0;
+        }    
+    
+    $('.fire').animate({
+        width: ($WidthPerc * fireW)/100,
+        height:($HeightPerc* fireH)/100,
+        
+        left: ($winWidth  * (18)    )/100,
+        top:  ($winHeight * (17.45) )/100
+    },0);
+  
+
     
     //console.log("garbageTruckFlag: "+garbageTruckFlag);
     //console.log("win height: " + $(window).height());

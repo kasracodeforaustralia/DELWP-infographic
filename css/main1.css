@@ -23,3 +23,7 @@ body {
     height: auto;
     margin-top: -4px;
 }
+
+.tram{
+    position: absolute;
+}

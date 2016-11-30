@@ -45,6 +45,10 @@ var kangarookid1Flag    = 1;
 var kangarookid2Flag    = 1;
 var bikeFlag            = 1;
 var whiteCarFlag        = 1;
+var fireFlag            = 1;
+var tramFlag            = 1;
+
+
 
 
 
@@ -76,6 +80,10 @@ var floodSingH = 245;
 var windMillW = 350;
 var windMillH = 600;
 
+/* fire default css */
+var fireW = 1200;
+var fireH = 1000;
+
 /* Kangaroos variables */
 var kangarooW        = 240;
 var kangarooH        = 200;
@@ -89,6 +97,13 @@ var bikeH = 67;
 var whiteCarW = 121;
 var whiteCarH = 68;
 
+
+/* Tram */
+var tramW = 366;
+var tramH = 328;
+var tramTop = 83.75;
+var tramLeft = 45;
+var tramCounter=0;
 
 
 /* ------------------------------------- */
