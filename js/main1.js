@@ -111,8 +111,8 @@ $(window).scroll(function(){
   
     /* Loads fire when reach bg 9*/ 
     if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && fireFlag == 1 ){
-            loadIMG('.firePH','img/section-789/gifs/fire.gif','fire');
-            fireFlag = 0;
+        loadIMG('.firePH','img/section-789/gifs/fire.gif','fire');
+        fireFlag = 0;
         }    
     
     $('.fire').animate({
@@ -122,7 +122,22 @@ $(window).scroll(function(){
         left: ($winWidth  * (18)    )/100,
         top:  ($winHeight * (17.45) )/100
     },0);
+    
   
+   /* Loads fireFighters when reach bg 9*/ 
+    if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && fireFightersFlag == 1 ){
+        loadIMG('.firefightersPH','img/section-789/Firefighters.png','firefighters');
+        fireFightersFlag = 0;
+    }    
+    
+    $('.firefighters').animate({
+        width: (($WidthPerc * firefightersW)/100)*130/100 ,
+        height:(($HeightPerc* firefightersH)/100)*130/100,
+        
+        left: ($winWidth  * (9) )/100,
+        top:  ($winHeight * (20.2) )/100
+    },0);
+    
 
    //console.log("PHs height: "+ winHeight());
     console.log("topPerc: "+ topPercfunc());
