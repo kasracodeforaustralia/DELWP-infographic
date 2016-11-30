@@ -1,28 +1,171 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+   
+}
+h1, h2, h3, h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
 body {
-    margin: auto;
+    margin: 0;
     overflow-x: hidden;
 }
 
-
-
 /* Toppest background images*/
-.bg14{
-    width: 100%;
-    height: auto;
-}
 .bg{
     width: 100%;
     height: auto;
-    margin-top: -5px;
+    //border: solid red;
 }
 
 
+.bg4s7{
+    width: 100%;
+    height: auto;
+    margin-top: -1px;
+}
+
+.defLoadedBgs{
+    width: 100%;
+    height: auto;
+    margin-top: -4px;
+}
 
 
-img.lazy {
-        //width: 700px; 
-        //height: 467px; 
-        //display: block;
-    }
+/* ---------------------------- ALL ITEMS --------------------------------- */
+.item {
+    position: absolute;
+}
+
+/*.tramPH, .churchPH {
+    top: 10659px;
+    left: 333px;
+}*/
+
+
+/* ------------------------------- MESSAGES ------------------------------------ */
+.msg {
+    position: absolute;
+    padding: 10px 15px;
+    max-width: 450px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    border-radius: 10px;
+    border: #e49758 2px solid;
+    z-index: 100;
+}
+
+.msg p {
+    margin: 0px;
+    font-size: 20px;    
+}
+
+.msg a {
+   
+    text-align: right;
+    font-family: 'Source Sans Pro', sans-serif;
+    float: right;
+    font-size: 14px;  
+}
+
+.msg a:hover {
+    color: #acacac;
+ }
+
+
+/* ------------------------------- DOTS FOR MESSAGES ------------------------------------ */
+.holder {
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 250px;
+    left: 680px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.dot {
+    border: 10px solid #e49758;
+    background: transparent;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: pulse 2s ease-out;
+    -moz-animation: pulse 2s ease-out;
+    animation: pulse 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.pulse {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #dd7c2c;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #dd7c2c;
+    z-index: 10;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+@-moz-keyframes pulse {
+ 0% {
+    -moz-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -moz-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -moz-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -moz-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -moz-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+@-webkit-keyframes "pulse" {
+ 0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -webkit-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0;
+ }
+}    
+
 
