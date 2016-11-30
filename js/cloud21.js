@@ -53,7 +53,8 @@ $(window).scroll(function(){
              top:  (top + padTop)
         },0); 
     }else if (topPerc >2 && topPerc <= 2.5){
-         $('.cloud2').animate({
+        $('.cloud2').show();
+        $('.cloud2').animate({
             width: (($WidthPerc * cloud2W)/100) *smallCloud/100,
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
 
@@ -77,7 +78,8 @@ $(window).scroll(function(){
             top:  (top + padTop)
         },0); 
     }else if (topPerc > 3.5 && topPerc <= 4 ){
-         $('.cloud2').animate({
+        $('.cloud2').show(); 
+        $('.cloud2').animate({
             width: (($WidthPerc * cloud2W)/100) *smallCloud/100,
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
 

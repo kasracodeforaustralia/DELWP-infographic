@@ -31,6 +31,7 @@ $(window).scroll(function(){
             top:  ($winHeight *(15.4) )/100
         },0); 
     }else if (topPerc >5 && topPerc <= 6 ){
+        $('.kangarookid2').show();
         $('.kangarookid2').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($WidthPerc * kangarooH)/100)*kangarookidScale/100,
@@ -47,7 +48,8 @@ $(window).scroll(function(){
             top:  ($winHeight *(15.3) )/100
         },0); 
     }else if (topPerc >7 && topPerc <=8){
-         $('.kangarookid2').animate({
+        $('.kangarookid2').show();
+        $('.kangarookid2').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:( ($HeightPerc* kangarooH)/100)*kangarookidScale/100,
 
@@ -87,7 +89,12 @@ $(window).scroll(function(){
             top:  ($winHeight *(15.7) )/100
         },0); 
     }else if (topPerc >12 && topPerc <=13 ){
-         $('.kangarookid2').animate({
+        $('.kangarookid2').show();
+        if (frameCha2 == 1){
+           $('.kangarookid2').attr('src',kang2IMG.src);
+            frameCha2=0;
+        }
+        $('.kangarookid2').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
 

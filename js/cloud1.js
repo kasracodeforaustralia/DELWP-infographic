@@ -26,6 +26,7 @@ $(window).scroll(function(){
 
     /* cloud setting */    
     if (topPerc <= 0.5){
+        $('.cloud').show();
         $('.cloud').animate({
             width: ($WidthPerc * cloudW)/100,
             height:($WidthPerc * cloudH)/100,
@@ -34,6 +35,7 @@ $(window).scroll(function(){
             top:  (top + padTop)
         },0);
     }else if (topPerc > 0.5 && topPerc <= 1 ){
+        $('.cloud').show();
         $('.cloud').animate({
             width: ($WidthPerc * cloudW)/100,
             height:($WidthPerc * cloudH)/100,
@@ -98,7 +100,8 @@ $(window).scroll(function(){
              top:  (top + padTop)
         },0); 
     }else if (topPerc > 4.5 && topPerc <= 5 ){
-         $('.cloud').animate({
+        $('.cloud').show();
+        $('.cloud').animate({
             width: ($WidthPerc * cloudW)/100,
             height:($HeightPerc* cloudH)/100,
 

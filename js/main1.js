@@ -139,15 +139,9 @@ $(window).scroll(function(){
     },0);
     
 
-   //console.log("PHs height: "+ winHeight());
-    console.log("topPerc: "+ topPercfunc());
-    console.log("bg2 top: "+ $('.bg2PH').position().top);
-    console.log ("scroll top: "+ $(window).scrollTop());
-
-    //console.log("win height: " + $(window).height());
-    //console.log("bg4Flag scroll: " + bg4Flag);
-    //console.log("body height/2: " + $('body').height()/2);
-    //console.log("All backgrounds: " + AllBgs);
-    //console.log("scroll Top: " + $(window).scrollTop());
-    //console.log("position: " + ($('.bg4PH').offset().top) );    
+    //console.log("PHs height: "+ winHeight());
+    //console.log("topPerc: "+ topPercfunc());
+    //console.log("bg2 top: "+ $('.bg2PH').position().top);
+    //console.log ("scroll top: "+ $(window).scrollTop());
+   
 });

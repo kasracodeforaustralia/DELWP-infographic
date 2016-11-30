@@ -26,6 +26,7 @@ $(window).scroll(function(){
             top:  ($winHeight *(13.9) )/100
         },0); 
     }else if (topPerc >5 && topPerc <= 6 ){
+        $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
@@ -50,6 +51,7 @@ $(window).scroll(function(){
             top:  ($winHeight *(14.3) )/100
         },0); 
     }else if (topPerc >8 && topPerc <=9 ){
+         $('.kangaroo').show();
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
@@ -82,7 +84,8 @@ $(window).scroll(function(){
             top:  ($winHeight *(14.4) )/100
         },0); 
     }else if (topPerc >12 && topPerc <=13 ){
-         $('.kangaroo').animate({
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 

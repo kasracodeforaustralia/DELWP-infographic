@@ -19,10 +19,12 @@ $(window).scroll(function(){
 
         /* bus   */ 
         if ( topPerc >= 81.2 ){
-            $('.bus').css({'display':'block', 'left': '($winWidth * busLeft )/100', 'top':'($winHeight * busTop )/100'});
+            $('.bus').hide();
+            //$('.bus').css({'display':'block', 'left': '($winWidth * busLeft )/100', 'top':'($winHeight * busTop )/100'});
 
         } else  if ( 81.0 <= topPerc &&  topPerc < 81.2 ){ 
-            $('.bus').css({'display': 'block'});
+            $('.bus').show();
+            //$('.bus').css({'display': 'block'});
             $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
                 height: ($WidthPerc * busH)/100,
@@ -32,7 +34,8 @@ $(window).scroll(function(){
             },0); 
             
         }else if ( 80.8 <= topPerc &&  topPerc < 81.0 ){
-           $('.bus').css({'display': 'block'});
+            $('.bus').show();
+            //$('.bus').css({'display': 'block'});
             $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
                 height: ($WidthPerc * busH)/100,
@@ -42,7 +45,7 @@ $(window).scroll(function(){
             }, 0); 
             
         }else if ( 80.6 <= topPerc &&  topPerc < 80.8 ){
-             $('.bus').css({'display': 'block'});
+             //$('.bus').css({'display': 'block'});
              $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
                 height: ($WidthPerc * busH)/100,
@@ -52,7 +55,7 @@ $(window).scroll(function(){
             }, 0); 
             
         } else if ( 80.4 <= topPerc &&  topPerc < 80.6 ){
-           $('.bus').css({'display': 'block'});
+            //$('.bus').css({'display': 'block'});
              $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
                 height: ($WidthPerc * busH)/100,
@@ -62,7 +65,7 @@ $(window).scroll(function(){
             }, 0); 
            
         }else if ( 80.2 <= topPerc &&  topPerc < 80.4 ){
-           $('.bus').css({'display': 'block'});
+           //$('.bus').css({'display': 'block'});
              $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
                 height: ($WidthPerc * busH)/100,
@@ -71,7 +74,7 @@ $(window).scroll(function(){
                 
             }, 0); 
         }else if ( 80.0 <= topPerc &&  topPerc < 80.2 ){
-           $('.bus').css({'display': 'block'});
+           //$('.bus').css({'display': 'block'});
              $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
                 height: ($WidthPerc * busH)/100,
@@ -80,7 +83,8 @@ $(window).scroll(function(){
                 
             }, 0); 
         }else if ( 79.8 <= topPerc &&  topPerc < 80.0 ){
-           $('.bus').css({'display': 'block'});
+             $('.bus').show();
+             //$('.bus').css({'display': 'block'});
              $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
                 height: ($WidthPerc * busH)/100,
@@ -134,7 +138,8 @@ $(window).scroll(function(){
                 
             }, 0); 
         }*/ else if (topPerc < 79.8) {
-            $('.bus').css({ 'display':'block', 'opacity':'1' });
+                $('.bus').show();
+                //$('.bus').css({ 'display':'block', 'opacity':'1' });
         }
 
         

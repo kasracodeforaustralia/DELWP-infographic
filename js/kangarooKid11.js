@@ -24,7 +24,7 @@ $(window).scroll(function(){
     if (topPerc <= 0.2){
         $('.kangarookid1').hide();
     }else if (topPerc > 4 && topPerc <= 5 ){
-        $('.kangarookid1').shpw();
+        $('.kangarookid1').show();
         $('.kangarookid1').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:( ($WidthPerc * kangarooH)/100)*kangarookidScale/100,
@@ -33,6 +33,7 @@ $(window).scroll(function(){
             top:  ($winHeight *(13.8) )/100
         },0); 
     }else if (topPerc >5 && topPerc <= 6 ){
+        $('.kangarookid1').show();
         $('.kangarookid1').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($WidthPerc * kangarooH)/100)*kangarookidScale/100,
@@ -41,7 +42,8 @@ $(window).scroll(function(){
             top:  ($winHeight *(13.5) )/100
         },0); 
     }else if (topPerc >6 && topPerc <=7){
-         $('.kangarookid1').animate({
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($WidthPerc * kangarooH)/100)*kangarookidScale/100,
 
@@ -73,7 +75,8 @@ $(window).scroll(function(){
             top:  ($winHeight *(14.2) )/100
         },0); 
     }else if (topPerc >10 && topPerc <=11 ){
-         $('.kangarookid1').animate({
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
 
@@ -81,6 +84,10 @@ $(window).scroll(function(){
             top:  ($winHeight *(14.4) )/100
         },0); 
     }else if (topPerc >11 && topPerc <=12 ){
+         if (frameCha1 == 1){
+            $('.kangarookid1').attr('src',kang1IMG.src);
+            frameCha1 =0;
+         } 
          $('.kangarookid1').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
@@ -97,7 +104,8 @@ $(window).scroll(function(){
             top:  ($winHeight *(14.2) )/100
         },0); 
     }else if (topPerc >13 && topPerc <= 14 ){
-         $('.kangarookid1').animate({
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
 
