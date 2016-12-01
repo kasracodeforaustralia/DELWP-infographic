@@ -38,10 +38,12 @@ body {
     position: absolute;
 }
 
-/*.tramPH, .churchPH {
-    top: 10659px;
-    left: 333px;
-}*/
+.au-flag, .ab-flag, .sold-sign {
+    z-index: 20;
+}
+ .flags-building {
+    z-index: 10;
+ }
 
 
 /* ------------------------------- MESSAGES ------------------------------------ */

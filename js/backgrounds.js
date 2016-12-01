@@ -53,10 +53,8 @@ $(document).ready(function() {
     }).addClass('bg');     
     
 
-/* This takes user to the bottom of the page*/    
-    $("body, html").animate({
-        scrollTop: 20000
-    }, 400);
+/* This takes user to the bottom of the page  */  
+    $("body, html").animate({ scrollTop: 20000 }, 400); 
     
     
     

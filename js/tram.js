@@ -14,14 +14,14 @@ $(window).scroll(function(){
     }    
     if ($(window).scrollTop() <=$('.bg2PH').position().top){
         tramCounter++;
-        console.log("tramcounter: "+tramCounter);
+        
     }
     
         /* tram   */ 
-    if ( topPerc >= 84.0 ){
+    if ( topPerc >= 86.0 ){
         $('.tram').css({'display':'block', 'opacity':'1', 'left': '($winWidth  *(48) )/100', 'top':'($winHeight *(tramTop) )/100'});
 
-    } else  if ( 83.8 <= topPerc &&  topPerc < 84.0 ){ 
+    } else  if ( 84.0 <= topPerc &&  topPerc < 86.0){ 
         $('.tram').css({'display': 'block'});
         $('.tram').animate({
             width: ($WidthPerc * tramW)/100,
@@ -31,7 +31,7 @@ $(window).scroll(function(){
 
         },0); 
 
-    }else if ( 83.6 <= topPerc &&  topPerc < 83.8 ){
+    } else if ( 83.8 <= topPerc &&  topPerc < 84.0 ){
        $('.tram').css({'display': 'block'});
         $('.tram').animate({
   width: ($WidthPerc * tramW)/100,
@@ -41,7 +41,7 @@ $(window).scroll(function(){
 
         }, 0); 
 
-    }else if ( 83.4 <= topPerc &&  topPerc < 83.6 ){
+    }else if ( 83.6 <= topPerc &&  topPerc < 83.8 ){
          $('.tram').css({'display': 'block'});
          $('.tram').animate({
  width: ($WidthPerc * tramW)/100,
@@ -51,7 +51,7 @@ $(window).scroll(function(){
 
         }, 0); 
 
-    } else if ( 83.2 <= topPerc &&  topPerc < 83.4 ){
+    } else if ( 83.4 <= topPerc &&  topPerc < 83.6 ){
        $('.tram').css({'display': 'block'});
          $('.tram').animate({
 width: ($WidthPerc * tramW)/100,
@@ -61,7 +61,7 @@ width: ($WidthPerc * tramW)/100,
 
         }, 0); 
 
-    }else if ( 83.0 <= topPerc &&  topPerc < 83.2 ){
+    }else if ( 83.2 <= topPerc &&  topPerc < 83.4 ){
        $('.tram').css({'display': 'block'});
          $('.tram').animate({
 width: ($WidthPerc * tramW)/100,
@@ -70,7 +70,7 @@ width: ($WidthPerc * tramW)/100,
             top:  ($winHeight *(82.95) )/100,
 
         }, 0); 
-    }else if ( 82.8 <= topPerc &&  topPerc < 83.0 ){
+    }else if ( 83.0 <= topPerc &&  topPerc < 83.2 ){
        $('.tram').css({'display': 'block'});
          $('.tram').animate({
 width: ($WidthPerc * tramW)/100,
@@ -79,7 +79,7 @@ width: ($WidthPerc * tramW)/100,
             top:  ($winHeight *(82.75) )/100,
 
         }, 0); 
-    } else if (topPerc < 82.8) {
+    } else if (topPerc < 83.0) {
         $('.tram').css({ 'display':'block', 'opacity':'1' });
     }
 

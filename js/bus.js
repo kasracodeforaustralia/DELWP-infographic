@@ -18,10 +18,10 @@ $(window).scroll(function(){
 
 
         /* bus   */ 
-        if ( topPerc >= 81.2 ){
+        if ( topPerc >= 80.8 ){
             $('.bus').css({'display':'block', 'left': '($winWidth * busLeft )/100', 'top':'($winHeight * busTop )/100'});
 
-        } else  if ( 81.0 <= topPerc &&  topPerc < 81.2 ){ 
+        } else  if ( 80.6 <= topPerc &&  topPerc < 80.8 ){ 
             $('.bus').css({'display': 'block'});
             $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
@@ -31,7 +31,7 @@ $(window).scroll(function(){
                 
             },0); 
             
-        }else if ( 80.8 <= topPerc &&  topPerc < 81.0 ){
+        }else if ( 80.4 <= topPerc &&  topPerc < 80.6 ){
            $('.bus').css({'display': 'block'});
             $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
@@ -41,7 +41,7 @@ $(window).scroll(function(){
                 
             }, 0); 
             
-        }else if ( 80.6 <= topPerc &&  topPerc < 80.8 ){
+        }else if ( 80.2 <= topPerc &&  topPerc < 80.4 ){
              $('.bus').css({'display': 'block'});
              $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
@@ -51,7 +51,7 @@ $(window).scroll(function(){
                 
             }, 0); 
             
-        } else if ( 80.4 <= topPerc &&  topPerc < 80.6 ){
+        } else if ( 80.0 <= topPerc &&  topPerc < 80.2 ){
            $('.bus').css({'display': 'block'});
              $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
@@ -61,7 +61,7 @@ $(window).scroll(function(){
                 
             }, 0); 
            
-        }else if ( 80.2 <= topPerc &&  topPerc < 80.4 ){
+        }else if ( 79.8 <= topPerc &&  topPerc < 80.0 ){
            $('.bus').css({'display': 'block'});
              $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
@@ -70,7 +70,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(80.8) )/100,
                 
             }, 0); 
-        }else if ( 80.0 <= topPerc &&  topPerc < 80.2 ){
+        }else if ( 79.6 <= topPerc &&  topPerc < 79.8 ){
            $('.bus').css({'display': 'block'});
              $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
@@ -79,7 +79,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(81.0) )/100,
                 
             }, 0); 
-        }else if ( 79.8 <= topPerc &&  topPerc < 80.0 ){
+        }else if ( 79.4 <= topPerc &&  topPerc < 79.6 ){
            $('.bus').css({'display': 'block'});
              $('.bus').animate({
                 width: ($WidthPerc * busW)/100,
@@ -133,7 +133,7 @@ $(window).scroll(function(){
                 top:  ($winHeight *(82.2) )/100,
                 
             }, 0); 
-        }*/ else if (topPerc < 79.8) {
+        }*/ else if (topPerc < 79.4) {
             $('.bus').css({ 'display':'block', 'opacity':'1' });
         }
 
