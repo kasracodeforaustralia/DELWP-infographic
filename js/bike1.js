@@ -9,13 +9,14 @@ $(window).scroll(function(){
 
     
     if ( ($(window).scrollTop() <=$('.bg5PH').position().top) && bikeFlag == 1 ){
-        loadIMG('.bikePH','img/section-789/bike.png','bike');
+        loadIMG('.bikePH','img/section-789/bike.png','bike item');
         bikeFlag = 0;
     }    
 
     if (topPerc <= 37){
-        $('.bike').css("opacity", 0);
+        $('.bike').hide();
     }else if (topPerc > 37 && topPerc <= 38 ){
+        $('.bike').show();
         $('.bike').animate({
             width: ( ($WidthPerc * bikeW)/100)*120/100,
             height:( ($HeightPerc* bikeH)/100)*120/100,
@@ -115,7 +116,8 @@ $(window).scroll(function(){
             opacity:1
         },0); 
     }else if (topPerc >48 && topPerc <= 49 ){
-         $('.bike').animate({
+        $('.bike').show(); 
+        $('.bike').animate({
             width: ( ($WidthPerc * bikeW)/100)*120/100,
             height:( ($HeightPerc* bikeH)/100)*120/100,
 
@@ -124,7 +126,7 @@ $(window).scroll(function(){
             opacity:1
         },0); 
     }else if (topPerc >49){
-        //$('.bike').css("opacity", 0);
+        $('.bike').hide();
     }
 
         

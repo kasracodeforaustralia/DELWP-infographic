@@ -9,13 +9,7 @@ $(document).ready(function() {
     var $HeightPerc = HeightPerc();
     
     
-    /* Welcome Div */
-    $('#welcomeDiv').animate({
-        backgroundColor: '#006666',
-        width: $winWidth,
-        height:($winHeight* 15)/100,
-        marginTop: '-5px'
-    },0); 
+
     
     //SECTION-2 FORESHORE
     /* Boat 
@@ -77,10 +71,22 @@ $(window).scroll(function(){
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
     
+ 
+    if( welcomeFlag ==1){
+        /* Welcome Div */
+        $('#welcomeDiv').animate({
+            backgroundColor: '#006666',
+            width: $winWidth,
+            height:($winHeight* 30)/100,
+            marginTop: '-5px'
+        },0);         
+       welcomeFlag = 0; 
+    }
+    
     
     /* Loads flood sing when reach bg 10*/ 
     if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && floodSingFlag == 1 ){
-            loadIMG('.floodSignPH','img/section-789/gifs/floodSign.gif','floodSign');
+            loadIMG('.floodSignPH','img/section-789/gifs/floodSign.gif','floodSign item');
             floodSingFlag = 0;
         }    
 
@@ -96,7 +102,7 @@ $(window).scroll(function(){
    
     /* Loads wind mill when reach bg 10*/ 
     if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && windMillFlag == 1 ){
-            loadIMG('.windMillPH','img/section-789/gifs/windMill.gif','windMill');
+            loadIMG('.windMillPH','img/section-789/gifs/windMill.gif','windMill item');
             windMillFlag = 0;
         }    
 
@@ -106,12 +112,11 @@ $(window).scroll(function(){
         
         left: ($winWidth  *(60) )/100,
         top:  ($winHeight *(24.5) )/100
-    },0);     
-    
-  
+    },0); 
+ 
     /* Loads fire when reach bg 9*/ 
     if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && fireFlag == 1 ){
-        loadIMG('.firePH','img/section-789/gifs/fire.gif','fire');
+        loadIMG('.firePH','img/section-789/gifs/fire.gif','fire item');
         fireFlag = 0;
         }    
     
@@ -126,7 +131,7 @@ $(window).scroll(function(){
   
    /* Loads fireFighters when reach bg 9*/ 
     if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && fireFightersFlag == 1 ){
-        loadIMG('.firefightersPH','img/section-789/Firefighters.png','firefighters');
+        loadIMG('.firefightersPH','img/section-789/Firefighters.png','firefighters item');
         fireFightersFlag = 0;
     }    
     
@@ -138,16 +143,43 @@ $(window).scroll(function(){
         top:  ($winHeight * (20.2) )/100
     },0);
     
+ 
+    
+    /* Loads footy Players when reach bg 8*/ 
+    if ( ($(window).scrollTop() <=$('.bg8PH').position().top) && footyPlayersFlag == 1 ){
+            loadIMG('.footyPlayersPH','img/section-789/footyPlayers.png','footyPlayers item');
+            footyPlayersFlag = 0;
+        }      
+    
+    $('.footyPlayers').animate({
+        width: (($WidthPerc * footyPlayersW)/100)*130/100 ,
+        height:(($HeightPerc* footyPlayersH)/100)*130/100,
+        
+        left: ($winWidth  * (35) )/100,
+        top:  ($winHeight * (34.2) )/100
+    },0);      
+    
+    
+   /* Loads buldozer when reach bg 7*/ 
+    if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && bulldozerFlag == 1 ){
+        loadIMG('.bulldozerPH','img/section-789/bulldozer.png','bulldozer item');
+        bulldozerFlag = 0;
+    }    
+    
+    $('.bulldozer').animate({
+       width: ( ($WidthPerc * bulldozerW)/100)*150/100,
+       height:( ($HeightPerc* bulldozerH)/100)*150/100,
+       
+       left: ($winWidth  *(75) )/100,
+       top:  ($winHeight *(41.3) )/100
+    },0);  
+    
+
 
    //console.log("PHs height: "+ winHeight());
     console.log("topPerc: "+ topPercfunc());
    /* console.log("bg2 top: "+ $('.bg2PH').position().top);
     console.log ("scroll top: "+ $(window).scrollTop());*/
 
-    //console.log("win height: " + $(window).height());
-    //console.log("bg4Flag scroll: " + bg4Flag);
-    //console.log("body height/2: " + $('body').height()/2);
-    //console.log("All backgrounds: " + AllBgs);
-    //console.log("scroll Top: " + $(window).scrollTop());
-    //console.log("position: " + ($('.bg4PH').offset().top) );    
+    
 });

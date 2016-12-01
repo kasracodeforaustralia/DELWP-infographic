@@ -1,15 +1,9 @@
 .cow{
     position: absolute;
     z-index: 72;
-    //top: 350%;
-    //left: 65%;
     
     -webkit-transform: rotateY(40deg); /* Chrome, Safari, Opera */
     transform: rotateY(40deg);
     -ms-transform: rotateY(40deg); /* IE 9 */
-    
-    
-    //animation: cowMove 30s;
-    //animation-timing-function: linear;
-    //animation-iteration-count: infinite;
+
 }

@@ -11,7 +11,7 @@ $(window).scroll(function(){
     
     
     if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && garbageTruckFlag == 1 ){
-        loadIMG('.garbageTruckPH','img/section-789/garbagetruck.png','garbageTruck');
+        loadIMG('.garbageTruckPH','img/section-789/garbagetruck.png','garbageTruck item');
         garbageTruckFlag = 0;
     }
 

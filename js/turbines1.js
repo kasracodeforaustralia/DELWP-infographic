@@ -9,17 +9,17 @@ $(window).scroll(function(){
     
     if ( ($(window).scrollTop() <= $('.bg10PH').position().top) && turbineFlag == 1 ){
 
-        loadIMG('.turbine1PH','img/section-789/gifs/turbine.gif','turbine turbine1');
+        loadIMG('.turbine1PH','img/section-789/gifs/turbine.gif','turbine turbine1 item');
 
-        loadIMG('.turbine2PH','img/section-789/gifs/turbine.gif','turbine turbine2');
+        loadIMG('.turbine2PH','img/section-789/gifs/turbine.gif','turbine turbine2 item');
 
-        loadIMG('.turbine3PH','img/section-789/gifs/turbine.gif','turbine turbine3');
+        loadIMG('.turbine3PH','img/section-789/gifs/turbine.gif','turbine turbine3 item');
         
-        loadIMG('.turbine4PH','img/section-789/gifs/turbine.gif','turbine turbine4');
+        loadIMG('.turbine4PH','img/section-789/gifs/turbine.gif','turbine turbine4 item');
         
-        loadIMG('.turbine5PH','img/section-789/gifs/turbine.gif','turbine turbine5');
+        loadIMG('.turbine5PH','img/section-789/gifs/turbine.gif','turbine turbine5 item');
         
-        loadIMG('.turbine6PH','img/section-789/gifs/turbine.gif','turbine turbine6');
+        loadIMG('.turbine6PH','img/section-789/gifs/turbine.gif','turbine turbine6 item');
         turbineFlag = 0;        
         
     }
