@@ -9,13 +9,7 @@ $(document).ready(function() {
     var $HeightPerc = HeightPerc();
     
     
-    /* Welcome Div */
-    $('#welcomeDiv').animate({
-        backgroundColor: '#006666',
-        width: $winWidth,
-        height:($winHeight* 30)/100,
-        marginTop: '-5px'
-    },0); 
+
     
     //SECTION-2 FORESHORE
     /* Boat 
@@ -76,6 +70,18 @@ $(window).scroll(function(){
     var $winHeight  = winHeight();
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
+    
+ 
+    if( welcomeFlag ==1){
+        /* Welcome Div */
+        $('#welcomeDiv').animate({
+            backgroundColor: '#006666',
+            width: $winWidth,
+            height:($winHeight* 30)/100,
+            marginTop: '-5px'
+        },0);         
+       welcomeFlag = 0; 
+    }
     
     
     /* Loads flood sing when reach bg 10*/ 

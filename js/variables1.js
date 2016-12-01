@@ -21,19 +21,19 @@ var $bg13Height = 1496;
 var $bg14Height = 1491;
 
 // load flags for adding BGs to their placeholders
-var bg5Flag = 1;
-var bg6Flag = 1;
-var bg7Flag = 1;
-var bg8Flag = 1;
-var bg9Flag = 1;
-var bg10Flag = 1;
-var bg11Flag = 1;
-var bg12Flag = 1;
-var bg13Flag = 1;
-var bg14Flag = 1;
+var bg5Flag = 1;  var bg5Counter = 0;
+var bg6Flag = 1;  var bg6Counter = 0;
+var bg7Flag = 1;  var bg7Counter = 0;
+var bg8Flag = 1;  var bg8Counter = 0;
+var bg9Flag = 1;  var bg9Counter = 0;
+var bg10Flag = 1; var bg10Counter = 0;
+var bg11Flag = 1; var bg11Counter = 0;
+var bg12Flag = 1; var bg12Counter = 0;
+var bg13Flag = 1; var bg13Counter = 0;
+var bg14Flag = 1; var bg14Counter = 0;
 
 /* ----------------------------------- Load flags for items ----------------------------------*/
-
+var welcomeFlag         = 1;
 var footyPlayersFlag    = 1;
 var footyFlag           = 1;
 var bulldozerFlag       = 1;
@@ -81,6 +81,7 @@ var smallCloud = 60; // make the cloud X% smaller than the big cloud
 /* footy players and footy sizes*/
 var footyPlayersW = 500;
 var footyPlayersH = 333;
+var footyPlayersCounter = 0;
 var footyW = 58;
 var footyH = 51;
 
