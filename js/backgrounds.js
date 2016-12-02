@@ -108,18 +108,10 @@ $(document).ready(function() {
 
 
 
-    });  
-    
-        
 
-   
-    
-/* This takes user to the bottom of the page*/    
-    $("body, html").animate({
-        scrollTop: 20000
-    }, 4000);
-    
-    
+/* This takes user to the bottom of the page  */  
+    $("body, html").animate({ scrollTop: 20000 }, 4000); 
+
     
 });
 

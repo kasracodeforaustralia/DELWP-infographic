@@ -51,12 +51,13 @@ var bikeFlag            = 1;
 var whiteCarFlag        = 1;
 var fireFlag            = 1;
 var fireFightersFlag    = 1;
-
+var car1Flag            = 1;
 var tramFlag            = 1;
 var buildingsFlag       = 1;
+var buildings2Flag      = 1;
 var busFlag             = 1;
 var car2Flag            = 1;
-var buildingsFlag       = 1;
+
 
 
 /* --------------------------- ITEMS ----------------------------------------- */
@@ -122,6 +123,80 @@ var bikeH = 67;
 var whiteCarW = 121;
 var whiteCarH = 68;
 
+ /* Car 1 */
+ var car1W = 186;
+ var car1H = 93;
+ var car1Top = 76.8;
+ var car1Left = 95;
+ var car1Counter=0;
+
+  /* building */
+ var buildingW = 648;
+ var buildingH = 735;
+ var buildingTop = 68.75;
+ var buildingLeft = 7;
+
+/* sold-sign */
+ var soldsignW = 274;
+ var soldsignH = 255;
+ var soldsignTop = 71.15;
+ var soldsignLeft = 11;
+
+
+ /* building-two */
+ var building2W = 431;
+ var building2H = 934;
+ var building2Top = 66.75;
+ var building2Left = 27;
+
+ /* building-three */
+ var building3W = 404;
+ var building3H = 606;
+ var building3Top = 67.70;
+ var building3Left = 15;
+
+ /* flags-building */
+ var flgbuildingW = 818;
+ var flgbuildingH = 742;
+ var flgbuildingTop = 74.138;
+ var flgbuildingLeft = -2.3;
+
+ /* ab-flag */
+ var abflagW = 81;
+ var abflagH = 157;
+ var abflagTop = 74.6;
+ var abflagLeft = 12.3;
+
+/* au-flag */
+ var auflagW = 81;
+ var auflagH = 157;
+ var auflagTop = 75.0;
+ var auflagLeft = 24.4;
+
+ /* apartment-block */
+ var apartblockW = 521;
+ var apartblockH = 422;
+ var apartblockTop = 73.0;
+ var apartblockLeft = -5.3;
+
+/* glass-building */
+ var glassbldngW = 589;
+ var glassbldngH = 586;
+ var glassbldngTop = 73.5;
+ var glassbldngLeft = 27.3;
+
+ /* solar-building */
+ var solarbldngW = 392;
+ var solarbldngH = 540;
+ var solarbldngTop = 74.9;
+ var solarbldngLeft = 56.5;
+
+/* eureka-tower */
+ var eurekaW = 368;
+ var eurekaH = 1287;
+ var eurekaTop = 73.8;
+ var eurekaLeft = 76;
+
 /* Church */
 var churchW = 921;
 var churchH = 755;
@@ -139,8 +214,8 @@ var car2Counter=0;
 /* Bus */
 var busW = 577;
 var busH = 329;
-var busTop = 80.05;
-var busLeft = 44;
+var busTop = 79.75;
+var busLeft = 38;
 var busCounter=0;
 
 /* Tram */

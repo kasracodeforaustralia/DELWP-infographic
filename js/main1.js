@@ -175,9 +175,11 @@ $(window).scroll(function(){
     },0);  
     
 
-    //console.log("PHs height: "+ winHeight());
-    //console.log("topPerc: "+ topPercfunc());
-    //console.log("bg2 top: "+ $('.bg2PH').position().top);
-    //console.log ("scroll top: "+ $(window).scrollTop());
-   
+
+   //console.log("PHs height: "+ winHeight());
+    console.log("topPerc: "+ topPercfunc());
+   /* console.log("bg2 top: "+ $('.bg2PH').position().top);
+    console.log ("scroll top: "+ $(window).scrollTop());*/
+
+    
 });
