@@ -12,61 +12,61 @@ $(document).ready(function() {
     $('.bg5PH').animate({
         width: $winWidth,
         height: ($bg5Height * $WidthPerc)/100
-    }).addClass('bg');
+    });
     
     $('.bg6PH').animate({
         width: $winWidth,
         height: ($bg6Height * $WidthPerc)/100
-    }).addClass('bg'); 
+    }); 
     
     $('.bg7PH').animate({
         width: $winWidth,
         height: ($bg7Height * $WidthPerc)/100
-    }).addClass('bg'); 
+    }); 
     $('.bg8PH').animate({
         width: $winWidth,
         height: ($bg8Height * $WidthPerc)/100
-    }).addClass('bg'); 
+    }); 
     $('.bg9PH').animate({
         width: $winWidth,
         height: ($bg9Height * $WidthPerc)/100
-    }).addClass('bg'); 
+    }); 
     $('.bg10PH').animate({
         width: $winWidth,
         height: ($bg10Height * $WidthPerc)/100
-    }).addClass('bg'); 
+    }); 
     $('.bg11PH').animate({
         width: $winWidth,
         height: ($bg11Height * $WidthPerc)/100
-    }).addClass('bg'); 
+    }); 
     $('.bg12PH').animate({
         width: $winWidth,
         height: ($bg12Height * $WidthPerc)/100
-    }).addClass('bg'); 
+    }); 
     $('.bg13PH').animate({
         width: $winWidth,
         height: ($bg13Height * $WidthPerc)/100
-    }).addClass('bg'); 
+    }); 
     $('.bg14PH').animate({
         width: $winWidth,
         height: ($bg14Height * $WidthPerc)/100
-    }).addClass('bg');     
+    });     
   
     
     
     /* If user scrolls using keyboard, this event handler will fire up to load the bg images */
     $("body").keydown(function(){
         if(($(window).scrollTop() <=                    $('.bg3PH').position().top) && bg5Flag == 1){
-           loadIMG('.bg5PH','img/14bgs/bg5.png','bg5 bg4s7');
+           loadIMG('.bg5PH','img/14bgs/bg5.png','bg5 bg');
            bg5Flag = 0; 
         } 
         if ( ($(window).scrollTop() <= $('.bg4PH').position().top) && bg6Flag == 1){
-           loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg4s7');
+           loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg');
             bg6Flag = 0;
         }  
 
         if ( ($(window).scrollTop() <= $('.bg5PH').position().top) && bg7Flag == 1 ){
-           loadIMG('.bg7PH','img/14bgs/bg7.png','bg7 bg4s7');
+           loadIMG('.bg7PH','img/14bgs/bg7.png','bg7 bg');
             bg7Flag = 0;
         }
 
@@ -128,7 +128,7 @@ $(document).ready(function() {
 $(window).scroll(function(){
 
     
- /* */ 
+ /* bg images will be loading based on the user mouse movement (mouse over something */ 
     
     $( ".bg3" ).mouseover(function() {
             if(bg5Flag == 1){
