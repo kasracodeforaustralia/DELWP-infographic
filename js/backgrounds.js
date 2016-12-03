@@ -106,14 +106,13 @@ $(document).ready(function() {
             bg14Flag = 0;
         }     
 
-
-
+    }); // End of $("body").keydown
+    
 
 /* This takes user to the bottom of the page  */  
-    $("body, html").animate({ scrollTop: 20000 }, 4000); 
-
+    $("body, html").animate({ scrollTop: 20000 }, 4000);     
     
-});
+}); // End of $(document).ready(function...
 
 
 
