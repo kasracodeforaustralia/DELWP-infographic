@@ -36,7 +36,9 @@ body {
 .item {
     position: absolute;
 }
-
+.hiddenItem{
+    display: none;
+}
 .au-flag, .ab-flag, .sold-sign {
     z-index: 20;
 }

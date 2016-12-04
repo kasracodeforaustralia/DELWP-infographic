@@ -133,7 +133,8 @@ $(window).scroll(function(){
            loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg4s7');
            bg6Flag = 0;
         }
-    });  
+    }); 
+    // add church, bus erouka tower and art center, solar building mouseover
 
     $( ".bg5" ).mouseover(function() {
         if(bg7Flag == 1){
@@ -141,6 +142,7 @@ $(window).scroll(function(){
            bg7Flag = 0;
         }
     }); 
+    // glass-building, apartment-block, sold-sign, building and building two mouseover
 
     $( ".bg6" ).mouseover(function() {
         if(bg8Flag == 1){
@@ -148,7 +150,8 @@ $(window).scroll(function(){
            bg8Flag = 0;
         }
     }); 
-
+    // add MCG and train
+    
     $( ".bg7" ).mouseover(function() {
         if(bg9Flag == 1){
            loadIMG('.bg9PH','img/14bgs/bg9.png','bg9 bg');
@@ -176,6 +179,7 @@ $(window).scroll(function(){
            bg12Flag = 0;
         }
     });
+    // footyPlayers mouseover
 
     $( ".bg11" ).mouseover(function() {
         if(bg13Flag == 1){
@@ -190,7 +194,25 @@ $(window).scroll(function(){
            bg14Flag = 0;
         }
     });   
- 
+    
+        $( ".fire" ).mouseover(function() {
+            if(bg14Flag == 1){
+               loadIMG('.bg14PH','img/14bgs/bg14.png','bg14 bg');
+               bg14Flag = 0;
+            }
+        });
+        $( ".fire" ).mouseover(function() {
+            if(bg14Flag == 1){
+               loadIMG('.bg14PH','img/14bgs/bg14.png','bg14 bg');
+               bg14Flag = 0;
+            }
+        });    
+        $( ".firefighters" ).mouseover(function() {
+            if(bg14Flag == 1){
+               loadIMG('.bg14PH','img/14bgs/bg14.png','bg14 bg');
+               bg14Flag = 0;
+            }
+        });
        
     
 });
