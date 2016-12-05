@@ -9,7 +9,7 @@ $(window).scroll(function(){
     var topPerc     = topPercfunc();
 
     
-    if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && birdsFlag == 1 ){
+    if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && birdsFlag == 1 && isBottomPage ==1){
         loadIMG('.birdsPH','img/section-789/gifs/birds.gif','birds item');
         birdsFlag = 0;
     }

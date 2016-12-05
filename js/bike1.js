@@ -8,7 +8,7 @@ $(window).scroll(function(){
     var topPerc     = topPercfunc();
 
     
-    if ( ($(window).scrollTop() <=$('.bg5PH').position().top) && bikeFlag == 1 ){
+    if ( ($(window).scrollTop() <=$('.bg5PH').position().top) && bikeFlag == 1 && isBottomPage ==1){
         loadIMG('.bikePH','img/section-789/bike.png','bike item');
         bikeFlag = 0;
     }    

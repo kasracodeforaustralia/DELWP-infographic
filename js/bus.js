@@ -9,7 +9,7 @@ $(window).scroll(function(){
 
 
     $( ".bg2" ).mouseover(function() {
-        if(busFlag == 1){
+        if(busFlag == 1 && isBottomPage ==1){
            loadIMG('.busPH','img/section-3/bus.png','item bus hiddenItem');
            busFlag = 0;
         }

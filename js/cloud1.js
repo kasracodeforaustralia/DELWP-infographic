@@ -11,7 +11,7 @@ $(window).scroll(function(){
 
     var top = $win.scrollTop();
 
-    if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && cloudFlag == 1 ){
+    if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && cloudFlag == 1 && isBottomPage ==1){
 
         loadIMG('.cloudPH','img/section-789/Cloud.png','cloud item');
         cloudFlag = 0;

@@ -77,7 +77,7 @@ $(window).scroll(function(){
         $('#welcomeDiv').animate({
             backgroundColor: '#006666',
             width: $winWidth,
-            height:($winHeight* 30)/100,
+            height:($winHeight* 10)/100,
             marginTop: '-5px'
         },0);         
        welcomeFlag = 0; 
@@ -174,12 +174,32 @@ $(window).scroll(function(){
        top:  ($winHeight *(41.3) )/100
     },0);  
     
+ 
+    if ( $(window).scrollTop()>= 0.85 * winHeight() ){             isBottomPage = 1;
+        } 
 
 
-   //console.log("PHs height: "+ winHeight());
-    console.log("topPerc: "+ topPercfunc());
-   /* console.log("bg2 top: "+ $('.bg2PH').position().top);
-    console.log ("scroll top: "+ $(window).scrollTop());*/
+
+    console.log("Is bottom: "+ isBottomPage);
+    //console.log("win hight: "+ winHeight());
+    //console.log("top Perc: "+ topPercfunc());
+    //console.log("bg2 top: "+ $('.bg2PH').position().top);
+    //console.log ("-----scroll top: "+ $(window).scrollTop());
 
     
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,7 +10,7 @@ $(window).scroll(function(){
     var topPerc     = topPercfunc();    
         
     
-    if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && kangarookid1Flag == 1 ){
+    if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && kangarookid1Flag == 1 && isBottomPage ==1){
         loadIMG('.kangarookid1PH','img/section-789/gifs/kangaroo1.gif','kangarookid1 item');
         kangarookid1Flag = 0;
         

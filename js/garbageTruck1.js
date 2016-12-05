@@ -10,7 +10,7 @@ $(window).scroll(function(){
     //console.log("topPerc: " + topPerc);
     
     
-    if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && garbageTruckFlag == 1 ){
+    if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && garbageTruckFlag == 1 && isBottomPage ==1){
         loadIMG('.garbageTruckPH','img/section-789/garbagetruck.png','garbageTruck item');
         garbageTruckFlag = 0;
     }

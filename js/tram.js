@@ -9,7 +9,7 @@ $(window).scroll(function(){
 
 
     $( ".bg2" ).mouseover(function() {
-        if(tramFlag == 1){
+        if(tramFlag == 1 && isBottomPage ==1){
            loadIMG('.tramPH','img/section-3/tram.png','item tram hiddenItem');
            tramFlag = 0;
         }

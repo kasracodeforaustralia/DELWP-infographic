@@ -7,13 +7,9 @@ $(window).scroll(function(){
         var $HeightPerc = HeightPerc();
         var topPerc     = topPercfunc();
 
-    if ( ($(window).scrollTop() <=$('.bg3PH').position().top) && car1Flag == 1 && car1Counter == 2){
+    if ( ($(window).scrollTop() <=$('.bg3PH').position().top) && car1Flag == 1 && isBottomPage ==1){
         loadIMG('.car1PH','img/section-4/car1.png','item car1');
         car1Flag = 0;
-    }    
-    if ($(window).scrollTop() <=$('.bg3PH').position().top){
-        car1Counter++;
-        
     }
         
         /* car1   */ 

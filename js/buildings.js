@@ -8,7 +8,7 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc(); 
     
-    if ( ($(window).scrollTop() <= $('.bg2PH').position().top) && buildingsFlag == 1 && car2Counter == 2 ){
+    if ( ($(window).scrollTop() <= $('.bg2PH').position().top) && buildingsFlag == 1 && isBottomPage ==1 ){
 
         loadIMG('.churchPH','img/section-3/church.png','item church');
          buildingsFlag = 0;     
@@ -28,10 +28,7 @@ $(window).scroll(function(){
           
         buildings2Flag = 0;
     }
-    if ($(window).scrollTop() <=$('.bg2PH').position().top){
-        buildingsCounter++;
-        
-    }
+    
 
     /* ---------------- BUILDINGS ---------------- */
 

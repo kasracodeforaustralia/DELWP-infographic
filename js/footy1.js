@@ -13,7 +13,7 @@ $(window).scroll(function(){
     } */
 
     $( ".bg8" ).mouseover(function() {
-        if(footyFlag == 1){
+        if(footyFlag == 1 && isBottomPage ==1){
            loadIMG('.footyPH','img/section-789/footy.png','footy item hiddenItem');
            footyFlag = 0;
         }

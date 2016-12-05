@@ -21,18 +21,18 @@ var $bg13Height = 1496;
 var $bg14Height = 1491;
 
 // load flags for adding BGs to their placeholders
-var bg5Flag = 1;  var bg5Counter = 0;
-var bg6Flag = 1;  var bg6Counter = 0;
-var bg7Flag = 1;  var bg7Counter = 0;
-var bg8Flag = 1;  var bg8Counter = 0;
-var bg9Flag = 1;  var bg9Counter = 0;
-var bg10Flag = 1; var bg10Counter = 0;
-var bg11Flag = 1; var bg11Counter = 0;
-var bg12Flag = 1; var bg12Counter = 0;
-var bg13Flag = 1; var bg13Counter = 0;
-var bg14Flag = 1; var bg14Counter = 0;
+var bg5Flag = 1; 
+var bg6Flag = 1;  
+var bg7Flag = 1; 
+var bg8Flag = 1; 
+var bg9Flag = 1;  
+var bg10Flag = 1;
+var bg11Flag = 1; 
+var bg12Flag = 1; 
+var bg13Flag = 1; 
+var bg14Flag = 1; 
 
-/* ----------------------------------- Load flags for items ----------------------------------*/
+/* ---------- Loading flags for items ------These flags are to prevent loading images for more that one time -----------------*/
 var welcomeFlag         = 1;
 var footyPlayersFlag    = 1;
 var footyFlag           = 1;
@@ -57,7 +57,8 @@ var buildingsFlag       = 1;
 var buildings2Flag      = 1;
 var busFlag             = 1;
 var car2Flag            = 1;
-
+// ----------------
+var isBottomPage        = 0;
 
 
 /* --------------------------- ITEMS ----------------------------------------- */
@@ -272,21 +273,8 @@ function winWidth(){
 of the background image */
 function winHeight(){
     var $winHeight  = 
-      $('.bg1PH').height() 
-    + $('.bg2PH').height() 
-    + $('.bg3PH').height() 
-    + $('.bg4PH').height() 
-    + $('.bg5PH').height()
-    + $('.bg6PH').height()
-    + $('.bg7PH').height()
-    + $('.bg8PH').height()
-    + $('.bg9PH').height()
-    + $('.bg10PH').height()
-    + $('.bg11PH').height()
-    + $('.bg12PH').height()
-    + $('.bg13PH').height()
-    + $('.bg14PH').height();
-    
+        winWidth() * $bgHeight / $bgWidth;
+
     //+ $('#welcomeDiv').height(); 
     
     return $winHeight;

@@ -8,7 +8,7 @@ $(window).scroll(function(){
         
     
     
-    if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && kangarooFlag == 1 ){
+    if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && kangarooFlag == 1 && isBottomPage ==1){
         loadIMG('.kangarooPH','img/section-789/gifs/kangaroo.gif','kangaroo item');
         kangarooFlag = 0;
     }
