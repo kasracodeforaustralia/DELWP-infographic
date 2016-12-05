@@ -182,7 +182,7 @@ $(window).scroll(function(){
 
     //console.log("Is bottom: "+ isBottomPage);
     //console.log("win hight: "+ winHeight());
-    //console.log("top Perc: "+ topPercfunc());
+    console.log("top Perc: "+ topPercfunc());
     //console.log("bg2 top: "+ $('.bg2PH').position().top);
     //console.log ("-----scroll top: "+ $(window).scrollTop());
 

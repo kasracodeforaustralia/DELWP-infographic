@@ -134,7 +134,24 @@ $(window).scroll(function(){
            bg6Flag = 0;
         }
     }); 
-    // add church, bus erouka tower and art center, solar building mouseover
+        $( ".church" ).mouseover(function() {
+            if(bg6Flag == 1 && isBottomPage ==1){
+               loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg4s7');
+               bg6Flag = 0;
+            }
+        }); 
+        $( ".eureka" ).mouseover(function() {
+            if(bg6Flag == 1 && isBottomPage ==1){
+               loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg4s7');
+               bg6Flag = 0;
+            }
+        });
+        $( ".artCenter" ).mouseover(function() {
+            if(bg6Flag == 1 && isBottomPage ==1){
+               loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg4s7');
+               bg6Flag = 0;
+            }
+        }); 
 
     $( ".bg5" ).mouseover(function() {
         if(bg7Flag == 1 && isBottomPage ==1){
