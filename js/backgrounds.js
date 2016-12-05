@@ -159,7 +159,31 @@ $(window).scroll(function(){
            bg7Flag = 0;
         }
     }); 
-    // glass-building, apartment-block, sold-sign, building and building two mouseover
+        $( ".glass-building" ).mouseover(function() {
+            if(bg7Flag == 1 && isBottomPage ==1){
+               loadIMG('.bg7PH','img/14bgs/bg7.png','bg7 bg4s7');
+               bg7Flag = 0;
+            }
+        });
+        $( ".apartment-block" ).mouseover(function() {
+            if(bg7Flag == 1 && isBottomPage ==1){
+               loadIMG('.bg7PH','img/14bgs/bg7.png','bg7 bg4s7');
+               bg7Flag = 0;
+            }
+        });  
+        $( ".building" ).mouseover(function() {
+            if(bg7Flag == 1 && isBottomPage ==1){
+               loadIMG('.bg7PH','img/14bgs/bg7.png','bg7 bg4s7');
+               bg7Flag = 0;
+            }
+        }); 
+        $( ".buiding-two" ).mouseover(function() {
+            if(bg7Flag == 1 && isBottomPage ==1){
+               loadIMG('.bg7PH','img/14bgs/bg7.png','bg7 bg4s7');
+               bg7Flag = 0;
+            }
+        });     
+
 
     $( ".bg6" ).mouseover(function() {
         if(bg8Flag == 1 && isBottomPage ==1){
@@ -167,7 +191,12 @@ $(window).scroll(function(){
            bg8Flag = 0;
         }
     }); 
-    // add MCG and train
+        $( ".mcg" ).mouseover(function() {
+            if(bg8Flag == 1 && isBottomPage ==1){
+               loadIMG('.bg8PH','img/14bgs/bg8.png','bg8 bg');
+               bg8Flag = 0;
+            }
+        }); 
     
     $( ".bg7" ).mouseover(function() {
         if(bg9Flag == 1 && isBottomPage ==1){
@@ -196,7 +225,12 @@ $(window).scroll(function(){
            bg12Flag = 0;
         }
     });
-    // footyPlayers mouseover
+    $( ".footyPlayers" ).mouseover(function() {
+        if(bg12Flag == 1 && isBottomPage ==1){
+           loadIMG('.bg12PH','img/14bgs/bg12.png','bg12 bg');
+           bg12Flag = 0;
+        }
+    });    
 
     $( ".bg11" ).mouseover(function() {
         if(bg13Flag == 1 && isBottomPage ==1){
@@ -212,12 +246,6 @@ $(window).scroll(function(){
         }
     });   
     
-        $( ".fire" ).mouseover(function() {
-            if(bg14Flag == 1 && isBottomPage ==1){
-               loadIMG('.bg14PH','img/14bgs/bg14.png','bg14 bg');
-               bg14Flag = 0;
-            }
-        });
         $( ".fire" ).mouseover(function() {
             if(bg14Flag == 1 && isBottomPage ==1){
                loadIMG('.bg14PH','img/14bgs/bg14.png','bg14 bg');
