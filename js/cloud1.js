@@ -1,3 +1,12 @@
+$(document).ready(function() {             
+     $("body").keydown(function(){
+        if(($(window).scrollTop() <=                    $('.bg9').position().top) && cloudFlag == 1 && isBottomPage ==1){
+            loadIMG('.cloudPH','img/section-789/Cloud.png','cloud item');
+            cloudFlag = 0;
+        } 
+    });
+     
+});
 $(window).scroll(function(){
         
     var $win = $(window);
@@ -11,6 +20,13 @@ $(window).scroll(function(){
 
     var top = $win.scrollTop();
 
+    $( ".bg9" ).mouseover(function() {
+        if(cloudFlag == 1 && isBottomPage ==1){
+            loadIMG('.cloudPH','img/section-789/Cloud.png','cloud item');
+            cloudFlag = 0;
+        }
+    });     
+    
     if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && cloudFlag == 1 && isBottomPage ==1){
 
         loadIMG('.cloudPH','img/section-789/Cloud.png','cloud item');

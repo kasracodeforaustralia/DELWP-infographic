@@ -8,50 +8,18 @@ $(document).ready(function() {
     var $HeightPerc = HeightPerc();
     
 
-    
-    $('.bg5PH').animate({
-        width: $winWidth,
-        height: ($bg5Height * $WidthPerc)/100
-    });
-    
-    $('.bg6PH').animate({
-        width: $winWidth,
-        height: ($bg6Height * $WidthPerc)/100
-    }); 
-    
-    $('.bg7PH').animate({
-        width: $winWidth,
-        height: ($bg7Height * $WidthPerc)/100
-    }); 
-    $('.bg8PH').animate({
-        width: $winWidth,
-        height: ($bg8Height * $WidthPerc)/100
-    }); 
-    $('.bg9PH').animate({
-        width: $winWidth,
-        height: ($bg9Height * $WidthPerc)/100
-    }); 
-    $('.bg10PH').animate({
-        width: $winWidth,
-        height: ($bg10Height * $WidthPerc)/100
-    }); 
-    $('.bg11PH').animate({
-        width: $winWidth,
-        height: ($bg11Height * $WidthPerc)/100
-    }); 
-    $('.bg12PH').animate({
-        width: $winWidth,
-        height: ($bg12Height * $WidthPerc)/100
-    }); 
-    $('.bg13PH').animate({
-        width: $winWidth,
-        height: ($bg13Height * $WidthPerc)/100
-    }); 
-    $('.bg14PH').animate({
-        width: $winWidth,
-        height: ($bg14Height * $WidthPerc)/100
-    });     
-  
+    /* ُCreating Place Holders (PH) for background (bg) images*/
+    $('.bg5PH').animate({ width: $winWidth, height: ($bg5Height * $WidthPerc)/100    });
+    $('.bg6PH').animate({width: $winWidth,height: ($bg6Height * $WidthPerc)/100}); 
+    $('.bg7PH').animate({width: $winWidth,height: ($bg7Height * $WidthPerc)/100}); 
+    $('.bg8PH').animate({width: $winWidth,height: ($bg8Height * $WidthPerc)/100}); 
+    $('.bg9PH').animate({width: $winWidth,height: ($bg9Height * $WidthPerc)/100}); 
+    $('.bg10PH').animate({width: $winWidth,height: ($bg10Height * $WidthPerc)/100}); 
+    $('.bg11PH').animate({ width: $winWidth,height: ($bg11Height * $WidthPerc)/100}); 
+    $('.bg12PH').animate({width: $winWidth,height: ($bg12Height * $WidthPerc)/100}); 
+    $('.bg13PH').animate({width: $winWidth, height: ($bg13Height * $WidthPerc)/100}); 
+    $('.bg14PH').animate({width: $winWidth,height: ($bg14Height * $WidthPerc)/100});     
+    /* ُEnd of creating Place Holders (PH) */
     
     
     /* If user scrolls using keyboard, this event handler will fire up to load the bg images */
@@ -140,7 +108,13 @@ $(window).scroll(function(){
                bg6Flag = 0;
             }
         }); 
-        $( ".eureka" ).mouseover(function() {
+        $( ".eureka-tower" ).mouseover(function() {
+            if(bg6Flag == 1 && isBottomPage ==1){
+               loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg4s7');
+               bg6Flag = 0;
+            }
+        });
+        $( ".solar-building" ).mouseover(function() {
             if(bg6Flag == 1 && isBottomPage ==1){
                loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg4s7');
                bg6Flag = 0;
@@ -151,7 +125,7 @@ $(window).scroll(function(){
                loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg4s7');
                bg6Flag = 0;
             }
-        }); 
+        });    
 
     $( ".bg5" ).mouseover(function() {
         if(bg7Flag == 1 && isBottomPage ==1){

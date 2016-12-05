@@ -1,3 +1,13 @@
+$(document).ready(function() {             
+     $("body").keydown(function(){
+        if(($(window).scrollTop() <=                    $('.bg3').position().top) && car1Flag == 1 && isBottomPage ==1){
+            loadIMG('.car1PH','img/section-4/car1.png','item car1 hiddenItem');
+            car1Flag = 0;
+        } 
+    });
+     
+});
+
 $(window).scroll(function(){
 
         // Responsive width and height of the bg images

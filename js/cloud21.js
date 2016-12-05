@@ -1,3 +1,13 @@
+$(document).ready(function() {             
+     $("body").keydown(function(){
+        if(($(window).scrollTop() <=                    $('.bg9').position().top) && cloud2Flag == 1 && isBottomPage ==1){
+            loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item');
+            cloud2Flag = 0;
+        } 
+    });
+     
+});
+
 $(window).scroll(function(){
     
     var $win = $(window);
@@ -12,9 +22,14 @@ $(window).scroll(function(){
 
     var padTop = (0.85 * ($WidthPerc * cloud2W)/100) ; // This calculation says, the small cloud should always have padding to top like 1.4 times of it's dynamic width value
 
-
+    $( ".bg9" ).mouseover(function() {
+        if(cloud2Flag == 1 && isBottomPage ==1){
+            loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item');
+            cloud2Flag = 0;
+        }
+    });  
+    
     if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && cloud2Flag == 1 && isBottomPage ==1){
-
         loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item');
         cloud2Flag = 0;
     }
