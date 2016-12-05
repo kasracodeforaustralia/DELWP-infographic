@@ -8,14 +8,22 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc(); 
     
-    if ( ($(window).scrollTop() <= $('.bg2PH').position().top) && buildingsFlag == 1 && isBottomPage ==1 ){
+    
+$( ".bg2" ).mouseover(function() {
 
-        loadIMG('.churchPH','img/section-3/church.png','item church');
-         buildingsFlag = 0;     
-    } else if ( ($(window).scrollTop() <= $('.bg3PH').position().top) && buildings2Flag == 1 ){
-        loadIMG('.glassbPH','img/section-4/glass-building.gif','item glass-building');
+  if (buildingsFlag == 1 && isBottomPage ==1 ){
+
+    loadIMG('.churchPH','img/section-3/church.png','item church');
+    buildingsFlag = 0; 
+  }    
+}); 
+
+$( ".bg3" ).mouseover(function() {
+      
+    if (buildings2Flag == 1 && isBottomPage ==1 ){
+        
         loadIMG('.solarbPH','img/section-4/solar-building.png','item solar-building');
-        loadIMG('.eurekaPH','img/section-3/eureka.gif','item eureka-tower');
+        
         loadIMG('.apartblockPH','img/section-4/apartment-block.gif','item apartment-block');
         loadIMG('.auflagPH','img/section-4/au-flag.gif','item au-flag');
         loadIMG('.abflagPH','img/section-4/ab-flag.gif','item ab-flag');
@@ -24,11 +32,19 @@ $(window).scroll(function(){
         loadIMG('.soldsignPH','img/section-5/sold.png','item sold-sign');
         loadIMG('.building2PH','img/section-5/building-two.gif','item building-two');
         loadIMG('.building3PH','img/section-5/building-three.png','item building-three');
-       
-          
+        loadIMG('.glassbPH','img/section-4/glass-building.gif','item glass-building');
+        loadIMG('.eurekaPH','img/section-3/eureka.gif','item eureka-tower');  
         buildings2Flag = 0;
     }
+});
     
+/*$( ".bg4" ).mouseover(function() {
+      
+    if (buildings3Flag == 1 && isBottomPage ==1 ){
+        
+    }
+
+});*/
 
     /* ---------------- BUILDINGS ---------------- */
 
@@ -123,10 +139,10 @@ $(window).scroll(function(){
         top:  ($winHeight * solarbldngTop )/100
     },0); 
     
-    /* glass-building  */
+    /* glass-building  
     if ( topPerc >= 73.0 ) {
         $('.glass-building').css({'display':'none', 'left': '($winWidth  *(glassbldngLeft) )/100', 'top':'($winHeight *(glassbldngTop) )/100'});
-    } else {
+    } else {*/
       $('.glass-building').css({'display':'block' });
         $('.glass-building').animate({
            width: ($WidthPerc * glassbldngW)/100,
@@ -135,7 +151,7 @@ $(window).scroll(function(){
             left: ($winWidth  * glassbldngLeft )/100,
             top:  ($winHeight * glassbldngTop )/100
         },0);
-    } 
+  //  } 
 
   /* eureka-tower */
     if ( topPerc >= 76.1 ){

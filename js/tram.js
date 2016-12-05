@@ -10,7 +10,7 @@ $(window).scroll(function(){
 
     $( ".bg2" ).mouseover(function() {
         if(tramFlag == 1 && isBottomPage ==1){
-           loadIMG('.tramPH','img/section-3/tram.png','item tram hiddenItem');
+           loadIMG('.tramPH','img/section-3/tram.png','item tram');
            tramFlag = 0;
         }
     });    
@@ -18,7 +18,7 @@ $(window).scroll(function(){
         /* tram   */ 
     if ( topPerc >= 86.0 ){
         $('.tram').hide();
-        $('.tram').css({'left': '($winWidth  *(48) )/100', 'top':'($winHeight *(tramTop) )/100'});
+        $('.tram','.tramPH').css({'left': '($winWidth  *(48) )/100', 'top':'($winHeight *(tramTop) )/100'});
 
     } else  if ( 84.0 <= topPerc &&  topPerc < 86.0){ 
         $('.tram').show();
