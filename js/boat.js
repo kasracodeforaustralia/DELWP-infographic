@@ -21,11 +21,10 @@ $(window).scroll(function(){
             },0); 
             
         }else if ( 91.4 <= topPerc &&  topPerc < 91.6 ){
-           // $('#boat').css({'transform':'scale(0.5) rotate(15deg)'});
             $('#boat').animate({
                  width: ($WidthPerc * boatW)/100,
                 height:($WidthPerc * boatH)/100,
-                left: ($winWidth  *(68.5) )/100,
+                left: ($winWidth  *(78.5) )/100,
                 top:  ($winHeight *(90.2) )/100,
                 
                 start: function(){
@@ -38,7 +37,7 @@ $(window).scroll(function(){
              $('#boat').animate({
                  width: ($WidthPerc * boatW)/100,
                 height:($WidthPerc * boatH)/100,
-                left: ($winWidth  *(60.5))/100,
+                left: ($winWidth  *(68.5))/100,
                 top:  ($winHeight *(90.4) )/100,
                 
             }, 0); 
@@ -116,7 +115,52 @@ $(window).scroll(function(){
                 top:  ($winHeight *(93.4) )/100,
               
             }, 0);
-        }else if (topPerc < 91.8) {
+        } else if ( 89.4 <= topPerc &&  topPerc < 89.6 ){
+            $('#boat').css({'transform':'scale(1) skewX(-2deg)'});
+             $('#boat').animate({
+                 width: ($WidthPerc * boatW)/100,
+                height:($WidthPerc * boatH)/100,
+                left: ($winWidth  *(15.0) )/100,
+                top:  ($winHeight *(93.4) )/100,
+              
+            }, 0);
+        } else if ( 89.2 <= topPerc &&  topPerc < 89.4 ){
+            $('#boat').css({'transform':'scale(1) skewX(-2deg)'});
+             $('#boat').animate({
+                 width: ($WidthPerc * boatW)/100,
+                height:($WidthPerc * boatH)/100,
+                left: ($winWidth  *(5.0) )/100,
+                top:  ($winHeight *(93.4) )/100,
+              
+            }, 0);
+        } else if ( 89.0 <= topPerc &&  topPerc < 89.2 ){
+            $('#boat').css({'transform':'scale(1) skewX(-2deg)'});
+             $('#boat').animate({
+                 width: ($WidthPerc * boatW)/100,
+                height:($WidthPerc * boatH)/100,
+                left: ($winWidth  *(0) )/100,
+                top:  ($winHeight *(93.4) )/100,
+              
+            }, 0);
+        } else if ( 88.8 <= topPerc &&  topPerc < 89.0 ){
+            $('#boat').css({'transform':'scale(1) skewX(-2deg)'});
+             $('#boat').animate({
+                 width: ($WidthPerc * boatW)/100,
+                height:($WidthPerc * boatH)/100,
+                left: ($winWidth  *(-5) )/100,
+                top:  ($winHeight *(93.4) )/100,
+              
+            }, 0);
+        } else if ( 88.6 <= topPerc &&  topPerc < 88.8 ){
+            $('#boat').css({'transform':'scale(1) skewX(-2deg)'});
+             $('#boat').animate({
+                 width: ($WidthPerc * boatW)/100,
+                height:($WidthPerc * boatH)/100,
+                left: ($winWidth  *(-15) )/100,
+                top:  ($winHeight *(93.4) )/100,
+              
+            }, 0);
+        } else if (topPerc < 91.8) {
             $('#boat').css({ 'display':'block', 'opacity':'1' });
         }
 

@@ -57,6 +57,8 @@ var buildingsFlag       = 1;
 var buildings2Flag      = 1;
 var busFlag             = 1;
 var car2Flag            = 1;
+
+var buildings3Flag = 1;
 // ----------------
 var isBottomPage        = 0;
 
@@ -215,8 +217,8 @@ var car2Counter=0;
 /* Bus */
 var busW = 577;
 var busH = 329;
-var busTop = 79.75;
-var busLeft = 38;
+var busTop = 79.35;
+var busLeft = 29;
 var busCounter=0;
 
 /* Tram */
@@ -232,7 +234,7 @@ var tramCounter=0;
    var boatW = 133;
    var boatH = 218;
    var boatTop = 90.6;
-   var boatLeft = 80.05;
+   var boatLeft = 82.45;
 
    //SECTION 1 SEA/BAY
    /* Whale */
