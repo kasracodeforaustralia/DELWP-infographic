@@ -85,7 +85,7 @@ $(window).scroll(function(){
     
     
     /* Loads flood sing when reach bg 10*/ 
-    if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && floodSingFlag == 1 ){
+    if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && floodSingFlag == 1 && isBottomPage ==1 ){
             loadIMG('.floodSignPH','img/section-789/gifs/floodSign.gif','floodSign item');
             floodSingFlag = 0;
         }    
@@ -101,7 +101,7 @@ $(window).scroll(function(){
     },0);
    
     /* Loads wind mill when reach bg 10*/ 
-    if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && windMillFlag == 1 ){
+    if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && windMillFlag == 1 && isBottomPage ==1){
             loadIMG('.windMillPH','img/section-789/gifs/windMill.gif','windMill item');
             windMillFlag = 0;
         }    
@@ -115,7 +115,7 @@ $(window).scroll(function(){
     },0); 
  
     /* Loads fire when reach bg 9*/ 
-    if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && fireFlag == 1 ){
+    if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && fireFlag == 1 && isBottomPage ==1){
         loadIMG('.firePH','img/section-789/gifs/fire.gif','fire item');
         fireFlag = 0;
         }    
@@ -130,7 +130,7 @@ $(window).scroll(function(){
     
   
    /* Loads fireFighters when reach bg 9*/ 
-    if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && fireFightersFlag == 1 ){
+    if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && fireFightersFlag == 1 && isBottomPage ==1){
         loadIMG('.firefightersPH','img/section-789/Firefighters.png','firefighters item');
         fireFightersFlag = 0;
     }    
@@ -146,7 +146,7 @@ $(window).scroll(function(){
  
     
     /* Loads footy Players when reach bg 8*/ 
-    if ( ($(window).scrollTop() <=$('.bg8PH').position().top) && footyPlayersFlag == 1 ){
+    if ( ($(window).scrollTop() <=$('.bg8PH').position().top) && footyPlayersFlag == 1 && isBottomPage ==1){
             loadIMG('.footyPlayersPH','img/section-789/footyPlayers.png','footyPlayers item');
             footyPlayersFlag = 0;
         }      
@@ -161,7 +161,7 @@ $(window).scroll(function(){
     
     
    /* Loads buldozer when reach bg 7*/ 
-    if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && bulldozerFlag == 1 ){
+    if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && bulldozerFlag == 1 && isBottomPage ==1){
         loadIMG('.bulldozerPH','img/section-789/bulldozer.png','bulldozer item');
         bulldozerFlag = 0;
     }    
@@ -180,7 +180,7 @@ $(window).scroll(function(){
 
 
 
-    console.log("Is bottom: "+ isBottomPage);
+    //console.log("Is bottom: "+ isBottomPage);
     //console.log("win hight: "+ winHeight());
     //console.log("top Perc: "+ topPercfunc());
     //console.log("bg2 top: "+ $('.bg2PH').position().top);

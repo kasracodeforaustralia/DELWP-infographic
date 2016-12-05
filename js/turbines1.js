@@ -7,7 +7,7 @@ $(window).scroll(function(){
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();    
     
-    if ( ($(window).scrollTop() <= $('.bg10PH').position().top) && turbineFlag == 1 ){
+    if ( ($(window).scrollTop() <= $('.bg10PH').position().top) && turbineFlag == 1 && isBottomPage ==1){
 
         loadIMG('.turbine1PH','img/section-789/gifs/turbine.gif','turbine turbine1 item');
 
