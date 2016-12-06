@@ -1,7 +1,7 @@
 $(document).ready(function() {             
      $("body").keydown(function(){
         if(($(window).scrollTop() <=                    $('.bg9PH').position().top) && cloud2Flag == 1 && isBottomPage ==1){
-            loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item');
+            loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item hiddenItem');
             cloud2Flag = 0;
         } 
     });
@@ -24,18 +24,19 @@ $(window).scroll(function(){
 
     $( ".bg9" ).mouseover(function() {
         if(cloud2Flag == 1 && isBottomPage ==1){
-            loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item');
+            loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item hiddenItem');
             cloud2Flag = 0;
         }
     });  
     
     if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && cloud2Flag == 1 && isBottomPage ==1){
-        loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item');
+        loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item hiddenItem');
         cloud2Flag = 0;
     }
 
     /* cloud2 setting */    
     if (topPerc <= 0.5){
+        $('.cloud2').show();
         $('.cloud2').animate({
             width: (($WidthPerc * cloud2W)/100) *smallCloud/100,
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
@@ -44,6 +45,7 @@ $(window).scroll(function(){
             top:  (top + padTop)
         },0);
     }else if (topPerc >0.5 && topPerc <= 1){
+         $('.cloud2').show();
          $('.cloud2').animate({
             width: (($WidthPerc * cloud2W)/100) *smallCloud/100,
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
@@ -52,6 +54,7 @@ $(window).scroll(function(){
              top:  (top + padTop)
         },0); 
     }else if (topPerc >1 && topPerc <= 1.5){
+         $('.cloud2').show();
          $('.cloud2').animate({
             width: (($WidthPerc * cloud2W)/100) *smallCloud/100,
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
@@ -60,6 +63,7 @@ $(window).scroll(function(){
              top:  (top + padTop)
         },0); 
     }else if (topPerc >1.5 && topPerc <= 2){
+         $('.cloud2').show();
          $('.cloud2').animate({
             width: (($WidthPerc * cloud2W)/100) *smallCloud/100,
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
@@ -77,6 +81,7 @@ $(window).scroll(function(){
              top:  (top + padTop)
         },0); 
     }else if (topPerc > 2.5 && topPerc <=3 ){
+         $('.cloud2').show();
          $('.cloud2').animate({
             width: (($WidthPerc * cloud2W)/100) *smallCloud/100,
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
@@ -85,6 +90,7 @@ $(window).scroll(function(){
              top:  (top + padTop)
         },0); 
     }else if (topPerc >3 && topPerc <= 3.5 ){
+         $('.cloud2').show();
          $('.cloud2').animate({
             width: (($WidthPerc * cloud2W)/100) *smallCloud/100,
             height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
