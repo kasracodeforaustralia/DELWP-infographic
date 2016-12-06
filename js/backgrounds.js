@@ -7,7 +7,6 @@ $(document).ready(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
     
-
     /* ُCreating Place Holders (PH) for background (bg) images*/
     $('.bg5PH').animate({ width: $winWidth, height: ($bg5Height * $WidthPerc)/100    });
     $('.bg6PH').animate({width: $winWidth,height: ($bg6Height * $WidthPerc)/100}); 
@@ -211,7 +210,7 @@ $(window).scroll(function(){
            loadIMG('.bg13PH','img/14bgs/bg13.png','bg13 bg');
            bg13Flag = 0;
         }
-    });   
+    });
 
     $( ".bg12" ).mouseover(function() {
         if(bg14Flag == 1 && isBottomPage ==1){
@@ -232,7 +231,7 @@ $(window).scroll(function(){
                bg14Flag = 0;
             }
         });
-       
+     
     
 });
 

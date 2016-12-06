@@ -16,8 +16,9 @@ body {
 .bg{
     width: 100%;
     height: auto;
+    //text-align: center;
+    vertical-align: middle;
 }
-
 
 .bg4s7{
     width: 100%;
@@ -30,8 +31,12 @@ body {
     height: auto;
     margin-top: -4px;
 }
-
-
+.loading{
+    position: absolute;
+    padding-top: 50%;
+    z-index: -1;
+}
+.bg5PH,.bg6PH,.bg7PH,.bg8PH,.bg9PH,.bg10PH,.bg11PH,.bg12PH,.bg13PH,.bg14PH{text-align: center; vertical-align: middle;}
 /* ---------------------------- ALL ITEMS --------------------------------- */
 .item {
     position: absolute;

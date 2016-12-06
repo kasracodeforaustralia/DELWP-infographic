@@ -9,7 +9,7 @@ $(document).ready(function() {
     var $HeightPerc = HeightPerc();
     
     
-
+    
     
     //SECTION-2 FORESHORE
     /* Boat 
