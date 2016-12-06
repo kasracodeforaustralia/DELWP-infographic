@@ -273,7 +273,25 @@ $(window).scroll(function(){
                 top:  ($winHeight *(71.86) )/100,
                 
             }, 0); 
-        } else if (topPerc < 71.4) {
+        } else if ( 71.2 <= topPerc &&  topPerc < 71.4 ){
+           $('.car1').show();
+             $('.car1').animate({
+                width: ($WidthPerc * car1W)/100,
+                height: ($WidthPerc * car1H)/100,
+                left: ($winWidth  *(-13) )/100,
+                top:  ($winHeight *(71.66) )/100,
+                
+            }, 0); 
+        } else if ( 71.0 <= topPerc &&  topPerc < 71.2 ){
+           $('.car1').show();
+             $('.car1').animate({
+                width: ($WidthPerc * car1W)/100,
+                height: ($WidthPerc * car1H)/100,
+                left: ($winWidth  *(-17) )/100,
+                top:  ($winHeight *(71.66) )/100,
+                
+            }, 0); 
+        } else if (topPerc < 71.0) {
             $('.car1').show();
         }
 

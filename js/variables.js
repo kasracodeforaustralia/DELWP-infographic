@@ -58,9 +58,15 @@ var buildings2Flag      = 1;
 var busFlag             = 1;
 var car2Flag            = 1;
 
+var trainFlag = 1;
+var truck1Flag = 1;
+var tentFlag = 1;
+var campfireFlag = 1;
+
+
 var buildings3Flag = 1;
 // ----------------
-var isBottomPage        = 0;
+var isBottomPage   = 0;
 
 
 /* --------------------------- ITEMS ----------------------------------------- */
@@ -80,7 +86,6 @@ var cloudH = 250;
 var cloud2W = 400;
 var cloud2H = 250;
 var smallCloud = 60; // make the cloud X% smaller than the big cloud
-
 
 /* footy players and footy sizes*/
 var footyPlayersW = 500;
@@ -125,6 +130,30 @@ var bikeH = 67;
 /* White car - the one is infront of the bicycle */
 var whiteCarW = 121;
 var whiteCarH = 68;
+
+/* Tent */
+   var tentW = 383;
+   var tentH = 276;
+   var tentTop = 8.6;
+   var tentLeft = 62;
+
+  /* campfire */
+   var firecampW = 78;
+   var firecampH = 90;
+   var firecampTop = 10.1;
+   var firecampLeft = 48;
+
+/* Train */
+   var trainW = 796;
+   var trainH = 528;
+   var trainTop = 57.39;
+   var trainLeft = -24;
+
+/* Truck 1 */
+var truck1W = 226;
+var truck1H = 172;
+var truck1Top = 67.55;
+var truck1Left = -2;
 
  /* Car 1 */
  var car1W = 186;
@@ -200,6 +229,14 @@ var whiteCarH = 68;
  var eurekaTop = 73.8;
  var eurekaLeft = 76;
 
+ var eurekadisplayed = 0;
+
+ /* arts-centre */
+ var artcW = 736;
+ var artcH = 1009;
+ var artcTop = 74.7;
+ var artcLeft = 38;
+
 /* Church */
 var churchW = 921;
 var churchH = 755;
@@ -261,6 +298,235 @@ var tramCounter=0;
    var sealTop = 96.6;
    var sealLeft = -10;
 
+/* ------------------------------------------------------------------------------- */
+
+  //////    MESSAGES     ////////////////
+  
+    /* msg-1 */
+    var msg1Top = 96.2;
+    var msg1Left = 38;
+
+    /* dot-1 */
+    var dot1Top = 96.8;
+    var dot1Left = 40;
+
+   
+    /* msg-2 */
+    var msg2Top = 92.4;
+    var msg2Left = 14;
+
+    /* dot-2 */
+    var dot2Top = 92.8;
+    var dot2Left = 18;
+
+   
+    /* msg-3 */
+    var msg3Top = 92.8;
+    var msg3Left = 44;
+
+    /* dot-3 */
+    var dot3Top = 93.4;
+    var dot3Left = 44;
+    
+
+    /* msg-4 */
+    var msg4Top = 79.8;
+    var msg4Left = 19;
+
+    /* dot-4 */
+    var dot4Top = 79.8;
+    var dot4Left = 15;
+
+    
+    /* msg-5 */
+    var msg5Top = 75.8;
+    var msg5Left = 14;
+
+    /* dot-5 */
+    var dot5Top = 75.4;
+    var dot5Left = 16;
+
+
+     /* msg-6 */
+    var msg6Top = 75.9;
+    var msg6Left = 54;
+
+    /* dot-6 */
+    var dot6Top = 75.5;
+    var dot6Left = 68;
+
+
+     /* msg-7 */
+    var msg7Top = 73.1;
+    var msg7Left = 12;
+
+    /* dot-7 */
+    var dot7Top = 73.3;
+    var dot7Left = 8;
+
+
+     /* msg-8 */
+    var msg8Top = 71.2;
+    var msg8Left = 27;
+
+    /* dot-8 */
+    var dot8Top = 71.4;
+    var dot8Left = 23.2;
+
+
+     /* msg-9 */
+    var msg9Top = 65.8;
+    var msg9Left = 44;
+
+    /* dot-9 */
+    var dot9Top = 60.0;
+    var dot9Left = 30;
+
+
+     /* msg-10 */
+    var msg10Top = 59.5;
+    var msg10Left = 48;
+
+    /* dot-10 */
+    var dot10Top = 59.1;
+    var dot10Left = 50;
+
+
+     /* msg-11 */
+    var msg11Top = 54.6;
+    var msg11Left = 58;
+
+    /* dot-11 */
+    var dot11Top = 54.9;
+    var dot11Left = 54;
+
+
+     /* msg-12 */
+    var msg12Top = 51.6;
+    var msg12Left = 54;
+
+    /* dot-12 */
+    var dot12Top = 51.8;
+    var dot12Left = 50;
+
+
+     /* msg-13 */
+    var msg13Top = 46.3;
+    var msg13Left = 56;
+
+    /* dot-13 */
+    var dot13Top = 46.4;
+    var dot13Left = 52;
+
+
+     /* msg-14 */
+    var msg14Top = 40.3;
+    var msg14Left = 52;
+
+    /* dot-14 */
+    var dot14Top = 40.4;
+    var dot14Left = 48;
+
+
+    /* msg-15 */
+    var msg15Top = 36.6;
+    var msg15Left = 62;
+
+    /* dot-15 */
+    var dot15Top = 35.8;
+    var dot15Left = 48;
+
+
+   /* msg-16 */
+    var msg16Top = 30.0;
+    var msg16Left = 62;
+
+    /* dot-16 */
+    var dot16Top = 29.6;
+    var dot16Left = 62;
+
+
+    /* msg-17 */
+    var msg17Top = 28.8;
+    var msg17Left = 20;
+
+    /* dot-17 */
+    var dot17Top = 28.8;
+    var dot17Left = 48;
+
+
+    /* msg-18 */
+    var msg18Top = 23.8;
+    var msg18Left = 30;
+
+    /* dot-18 */
+    var dot18Top = 24.0;
+    var dot18Left = 66;
+
+
+     /* msg-19 */
+    var msg19Top = 19.0;
+    var msg19Left = 38;
+
+    /* dot-19 */
+    var dot19Top = 19.2;
+    var dot19Left = 34;
+
+
+      /* msg-20 */
+    var msg20Top = 16.2;
+    var msg20Left = 54;
+
+    /* dot-20 */
+    var dot20Top = 16.9;
+    var dot20Left = 58;
+
+
+    /* msg-21 */
+    var msg21Top = 13.6;
+    var msg21Left = 20;
+
+    /* dot-21 */
+    var dot21Top = 13.2;
+    var dot21Left = 44;
+
+
+    /* msg-22 */
+    var msg22Top = 10.4;
+    var msg22Left = 62;
+
+    /* dot-22 */
+    var dot22Top = 10.0;
+    var dot22Left = 64;
+
+
+     /* msg-23 */
+    var msg23Top = 6.6;
+    var msg23Left = 56;
+
+    /* dot-23 */
+    var dot23Top = 6.8;
+    var dot23Left = 52;
+
+
+     /* msg-24 */
+    var msg24Top = 3.8;
+    var msg24Left = 38;
+
+    /* dot-24 */
+    var dot24Top = 3.4;
+    var dot24Left = 42;
+
+
+      /* msg-25 */
+    var msg25Top = 0.2;
+    var msg25Left = 58;
+
+    /* dot-25 */
+    var dot25Top = 0;
+    var dot25Left = 54;
+
+
 /* ----------------------------------------------------------------- */
 
 /* functions for dynamic variables */
@@ -321,11 +587,8 @@ function loadIMG(objName,IMGurl,className){
     }).attr('src', IMGurl).addClass(className);
        
     return false;    
+
 }
-
-
-
-
 
 
 
