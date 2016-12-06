@@ -33,7 +33,8 @@ $( ".bg3" ).mouseover(function() {
         loadIMG('.building2PH','img/section-5/building-two.gif','item building-two');
         loadIMG('.building3PH','img/section-5/building-three.png','item building-three');
         loadIMG('.glassbPH','img/section-4/glass-building.gif','item glass-building');
-        loadIMG('.eurekaPH','img/section-3/eureka.gif','item eureka-tower');  
+        loadIMG('.eurekaPH','img/section-3/eureka.gif','item eureka-tower');
+        loadIMG('.artscentrePH','img/section-3/artsCentre.png','item arts-centre'); 
         buildings2Flag = 0;
     }
 });
@@ -139,10 +140,10 @@ $( ".bg3" ).mouseover(function() {
         top:  ($winHeight * solarbldngTop )/100
     },0); 
     
-    /* glass-building  
+    /* glass-building  */
     if ( topPerc >= 73.0 ) {
         $('.glass-building').css({'display':'none', 'left': '($winWidth  *(glassbldngLeft) )/100', 'top':'($winHeight *(glassbldngTop) )/100'});
-    } else {*/
+    } else {
       $('.glass-building').css({'display':'block' });
         $('.glass-building').animate({
            width: ($WidthPerc * glassbldngW)/100,
@@ -151,12 +152,11 @@ $( ".bg3" ).mouseover(function() {
             left: ($winWidth  * glassbldngLeft )/100,
             top:  ($winHeight * glassbldngTop )/100
         },0);
-  //  } 
+  } 
 
   /* eureka-tower */
-    if ( topPerc >= 76.1 ){
-        $('.eureka-tower').css({'display':'none', 'left': '($winWidth  *(eurekaLeft) )/100', 'top':'($winHeight *(eurekaTop) )/100'});
-    } else {
+   if (topPerc <= 76.1) {
+    
       $('.eureka-tower').css({'display':'block' });
         $('.eureka-tower').animate({
            width: ($WidthPerc * eurekaW)/100,
@@ -165,16 +165,17 @@ $( ".bg3" ).mouseover(function() {
             left: ($winWidth  * eurekaLeft)/100,
             top:  ($winHeight * eurekaTop)/100
         },0);
+        eurekadisplayed = 1;
     } 
 
-    /* arts-centre 
-    $('#arts-centre').animate({
+    /* arts-centre */
+    $('.arts-centre').animate({
        width: ($WidthPerc * artcW)/100,
        height:($HeightPerc* artcH)/100,
        
         left: ($winWidth  *(artcLeft) )/100,
         top:  ($winHeight *(artcTop) )/100
-    },0); */
+    },0); 
 
   /******** CHURCH **************/
     $(".church").animate({

@@ -7,7 +7,8 @@ $(document).ready(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
     
-
+    /* This takes user to the bottom of the page  */  
+    $("body, html").animate({ scrollTop: 20000 }, 4000);     
     
     $('.bg5PH').animate({
         width: $winWidth,
@@ -106,11 +107,12 @@ $(document).ready(function() {
             bg14Flag = 0;
         }     
 
-    }); // End of $("body").keydown
-    
 
-/* This takes user to the bottom of the page  */  
-    $("body, html").animate({ scrollTop: 20000 }, 4000);     
+        
+    }); // End of $("body").keydown
+        console.log("scroll top "+ $(window).scrollTop());
+        
+       
     
 }); // End of $(document).ready(function...
 

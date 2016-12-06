@@ -15,12 +15,12 @@ $(window).scroll(function(){
         }
     });    
     
-        /* tram   */ 
+        /* tram   
     if ( topPerc >= 86.0 ){
         $('.tram').hide();
         $('.tram','.tramPH').css({'left': '($winWidth  *(48) )/100', 'top':'($winHeight *(tramTop) )/100'});
 
-    } else  if ( 84.0 <= topPerc &&  topPerc < 86.0){ 
+    }  else */ if ( 84.0 <= topPerc &&  topPerc < 86.0){ 
         $('.tram').show();
         $('.tram').animate({
             width: ($WidthPerc * tramW)/100,
