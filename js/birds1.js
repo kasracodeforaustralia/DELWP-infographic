@@ -1,3 +1,12 @@
+$(document).ready(function() {             
+     $("body").keydown(function(){
+        if(($(window).scrollTop() <=                    $('.bg10PH').position().top) && birdsFlag == 1 && isBottomPage ==1){
+            loadIMG('.birdsPH','img/section-789/gifs/birds.gif','birds item');
+            birdsFlag = 0;
+        } 
+    });
+     
+});
 
 $(window).scroll(function(){
 

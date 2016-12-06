@@ -23,7 +23,7 @@ $(window).scroll(function(){
             loadIMG('.whiteCarPH','img/section-789/whiteCar.png','whiteCar item');
             whiteCarFlag = 0;
         }
-        }); 
+    }); 
     $( ".glass-building" ).mouseover(function() {
         if(whiteCarFlag == 1 && isBottomPage ==1){
             loadIMG('.whiteCarPH','img/section-789/whiteCar.png','whiteCar item');
