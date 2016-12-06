@@ -1,6 +1,6 @@
 $(document).ready(function() {             
      $("body").keydown(function(){
-        if(($(window).scrollTop() <=                    $('.bg9').position().top) && cloud2Flag == 1 && isBottomPage ==1){
+        if(($(window).scrollTop() <=                    $('.bg9PH').position().top) && cloud2Flag == 1 && isBottomPage ==1){
             loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item');
             cloud2Flag = 0;
         } 

@@ -1,3 +1,12 @@
+$(document).ready(function() {             
+     $("body").keydown(function(){
+        if(($(window).scrollTop() <=                    $('.bg2').position().top) && tramFlag == 1 && isBottomPage ==1){
+            loadIMG('.tramPH','img/section-3/tram.png','item tram hiddenItem');
+            tramFlag = 0;
+        } 
+    });
+     
+});
 $(window).scroll(function(){
 
     // Responsive width and height of the bg images
@@ -10,7 +19,7 @@ $(window).scroll(function(){
 
     $( ".bg2" ).mouseover(function() {
         if(tramFlag == 1 && isBottomPage ==1){
-           loadIMG('.tramPH','img/section-3/tram.png','item tram');
+           loadIMG('.tramPH','img/section-3/tram.png','item tram hiddenItem');
            tramFlag = 0;
         }
     });    

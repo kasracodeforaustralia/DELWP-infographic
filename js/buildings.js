@@ -1,3 +1,29 @@
+$(document).ready(function() {             
+     $("body").keydown(function(){
+        if(($(window).scrollTop() <=                    $('.bg2').position().top) && buildingsFlag == 1 && isBottomPage ==1){
+            loadIMG('.churchPH','img/section-3/church.png','item church hiddenItem');
+            buildingsFlag = 0;
+        } 
+         
+        if(($(window).scrollTop() <=                    $('.bg3').position().top) && buildings2Flag == 1 && isBottomPage ==1){
+            loadIMG('.solarbPH','img/section-4/solar-building.png','item solar-building');
+
+            loadIMG('.apartblockPH','img/section-4/apartment-block.gif','item apartment-block');
+            loadIMG('.auflagPH','img/section-4/au-flag.gif','item au-flag');
+            loadIMG('.abflagPH','img/section-4/ab-flag.gif','item ab-flag');
+            loadIMG('.flagbldgPH','img/section-4/building-w-flags.png','item flags-building');
+            loadIMG('.buildingPH','img/section-5/building.gif','item building');
+            loadIMG('.soldsignPH','img/section-5/sold.png','item sold-sign');
+            loadIMG('.building2PH','img/section-5/building-two.gif','item building-two');
+            loadIMG('.building3PH','img/section-5/building-three.png','item building-three');
+            loadIMG('.glassbPH','img/section-4/glass-building.gif','item glass-building');
+            loadIMG('.eurekaPH','img/section-3/eureka.gif','item eureka-tower');
+        }          
+         
+    });
+     
+});
+
 $(window).scroll(function(){ 
         /*  ---------------------------------- */
     /* Get width and height of the 2 bg images */
@@ -13,7 +39,7 @@ $( ".bg2" ).mouseover(function() {
 
   if (buildingsFlag == 1 && isBottomPage ==1 ){
 
-    loadIMG('.churchPH','img/section-3/church.png','item church');
+    loadIMG('.churchPH','img/section-3/church.png','item church hiddenItem');
     buildingsFlag = 0; 
   }    
 }); 
