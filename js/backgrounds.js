@@ -93,7 +93,13 @@ $(window).scroll(function(){
                loadIMG('.bg5PH','img/14bgs/bg5.png','bg5 bg4s7');
                bg5Flag = 0;
             }
-        });
+    });
+    $( ".tram" ).mouseover(function() {
+            if(bg5Flag == 1 && isBottomPage ==1){
+               loadIMG('.bg5PH','img/14bgs/bg5.png','bg5 bg4s7');
+               bg5Flag = 0;
+            }
+    });    
 
     $( ".bg4" ).mouseover(function() {
         if(bg6Flag == 1 && isBottomPage ==1){
@@ -101,7 +107,7 @@ $(window).scroll(function(){
            bg6Flag = 0;
         }
     }); 
-        $( ".church" ).mouseover(function() {
+        $( ".flags-building" ).mouseover(function() {
             if(bg6Flag == 1 && isBottomPage ==1){
                loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg4s7');
                bg6Flag = 0;
@@ -155,6 +161,18 @@ $(window).scroll(function(){
                loadIMG('.bg7PH','img/14bgs/bg7.png','bg7 bg4s7');
                bg7Flag = 0;
             }
+        });
+        $( ".buiding-three" ).mouseover(function() {
+            if(bg7Flag == 1 && isBottomPage ==1){
+               loadIMG('.bg7PH','img/14bgs/bg7.png','bg7 bg4s7');
+               bg7Flag = 0;
+            }
+        }); 
+        $( ".sold-sign" ).mouseover(function() {
+            if(bg7Flag == 1 && isBottomPage ==1){
+               loadIMG('.bg7PH','img/14bgs/bg7.png','bg7 bg4s7');
+               bg7Flag = 0;
+            }
         });     
 
 
@@ -185,6 +203,19 @@ $(window).scroll(function(){
         }
     });      
 
+    $( ".whiteCar" ).mouseover(function() {
+        if(bg10Flag == 1 && isBottomPage ==1){
+           loadIMG('.bg10PH','img/14bgs/bg10.png','bg10 bg');
+           bg10Flag = 0;
+        }
+    });
+    $( ".bike" ).mouseover(function() {
+        if(bg10Flag == 1 && isBottomPage ==1){
+           loadIMG('.bg10PH','img/14bgs/bg10.png','bg10 bg');
+           bg10Flag = 0;
+        }
+    });
+    
     $( ".bg9" ).mouseover(function() {
         if(bg11Flag == 1 && isBottomPage ==1){
            loadIMG('.bg11PH','img/14bgs/bg11.png','bg11 bg');
@@ -230,8 +261,9 @@ $(window).scroll(function(){
                loadIMG('.bg14PH','img/14bgs/bg14.png','bg14 bg');
                bg14Flag = 0;
             }
-        });
-     
+        }); 
+    
+   
     
 });
 

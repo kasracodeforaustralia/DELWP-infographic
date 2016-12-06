@@ -11,8 +11,8 @@ $( document ).ready(function() {
     
     
     if ($winWidth < 500){
-        $('.NavScrollBar').css({display: 'none' });
-        $('.slider').css({display: 'none'});
+        $('.NavScrollBar').hide();
+        $('.slider').hide();
          
     }else{
         // set the current map width and height
@@ -24,8 +24,8 @@ $( document ).ready(function() {
         var NavScrollBarOffsetTop = NavScrollBarOffset.top;
         var NavScrollBarOffsetLeft= NavScrollBarOffset.left;    
 
-        $('.NavScrollBar').css({display: 'block' });
-        $('.slider').css({display: 'block'});
+        $('.NavScrollBar').show();
+        $('.slider').show();
         
         /* Scroll Bar Navigation default settings  */
         $('.NavScrollBar').animate({
@@ -51,6 +51,7 @@ $( document ).ready(function() {
        axis: "y"
     });
     
+    
    /*
     $('.slider').mousedown(function() {
         isDragging = true;
@@ -61,8 +62,7 @@ $( document ).ready(function() {
         }
     }) */
     
-    $('.slider').mouseup(function() {
-        
+    $('body').mouseup(function() {
         /* This calclate the position of the 
         slider on scroll bar in terms of percentage */
         SliderPosPrec = ( ( $('.slider').position().top -NavScrollBarOffsetTop) * 100/ mapheight ) ;
@@ -107,14 +107,14 @@ $( window ).resize(function() {
 
     
     if ($winWidth < 500){
-        $('.NavScrollBar').css({display: 'none' });
-        $('.slider').css({display: 'none'});
+        $('.NavScrollBar').hide();
+        $('.slider').hide();
          
     }else{
     
         /* Scroll Bar Navigation default settings  */
-        $('.NavScrollBar').css({display: 'block' });
-        $('.slider').css({display: 'block'});
+        $('.NavScrollBar').show();
+        $('.slider').show();
         
         $('.NavScrollBar').animate({ 
             width: mapWidth,
@@ -159,8 +159,8 @@ $(window).scroll(function(){
     var $winHeight  = winHeight();
 
     if ($winWidth < 500){
-        $('.NavScrollBar').css({display: 'none'});
-        $('.slider').css({display: 'none'});
+        $('.NavScrollBar').hide();
+        $('.slider').hide();
         
         
     }else{    
@@ -179,8 +179,8 @@ $(window).scroll(function(){
 
 
         /* Scroll Bar Navigation default settings  */
-        $('.NavScrollBar').css({display: 'block'});
-        $('.slider').css({display: 'block'});
+        $('.NavScrollBar').show();
+        $('.slider').show();
         
         $('.NavScrollBar').animate({
             opacity:0.7,
@@ -189,11 +189,9 @@ $(window).scroll(function(){
             height:mapheight
         },0); 
 
-        /* Box on the scroll bar dynamic changes  */
-       // $('.slider').css({ display: 'block'},0);
+        /* slider dynamic changes  */
         $('.slider').animate({
             opacity:0.6,
-            //display: 'block',
             width: ($winWidth  *4 /100),
             height:($winWidth  *2.3 /100),
 
