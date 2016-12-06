@@ -1,3 +1,12 @@
+$(document).ready(function() {             
+     $("body").keydown(function(){
+        if(($(window).scrollTop() <=                    $('.bg9PH').position().top) && cloudFlag == 1 && isBottomPage ==1){
+            loadIMG('.cloudPH','img/section-789/Cloud.png','cloud item hiddenItem');
+            cloudFlag = 0;
+        } 
+    });
+     
+});
 $(window).scroll(function(){
         
     var $win = $(window);
@@ -11,9 +20,16 @@ $(window).scroll(function(){
 
     var top = $win.scrollTop();
 
+    $( ".bg9" ).mouseover(function() {
+        if(cloudFlag == 1 && isBottomPage ==1){
+            loadIMG('.cloudPH','img/section-789/Cloud.png','cloud item hiddenItem');
+            cloudFlag = 0;
+        }
+    });     
+    
     if ( ($(window).scrollTop() <=$('.bg9PH').position().top) && cloudFlag == 1 && isBottomPage ==1){
 
-        loadIMG('.cloudPH','img/section-789/Cloud.png','cloud item');
+        loadIMG('.cloudPH','img/section-789/Cloud.png','cloud item hiddenItem');
         cloudFlag = 0;
     }
 
@@ -44,6 +60,7 @@ $(window).scroll(function(){
             top:  (top + padTop)
         },0); 
     }else if (topPerc >1 && topPerc <= 1.5 ){
+        $('.cloud').show();
         $('.cloud').animate({
             width: ($WidthPerc * cloudW)/100,
             height:($WidthPerc * cloudH)/100,
@@ -52,7 +69,8 @@ $(window).scroll(function(){
             top:  (top + padTop)
         },0); 
     }else if (topPerc >1.5 && topPerc <= 2){
-         $('.cloud').animate({
+         $('.cloud').show();
+        $('.cloud').animate({
             width: ($WidthPerc * cloudW)/100,
             height:($WidthPerc * cloudH)/100,
 
@@ -60,7 +78,8 @@ $(window).scroll(function(){
             top:  (top + padTop)
         },0); 
     }else if (topPerc >2 && topPerc <= 2.5){
-         $('.cloud').animate({
+        $('.cloud').show();
+        $('.cloud').animate({
             width: ($WidthPerc * cloudW)/100,
             height:($HeightPerc* cloudH)/100,
 
@@ -68,6 +87,7 @@ $(window).scroll(function(){
             top:  (top + padTop)
         },0); 
     }else if (topPerc > 2.5 && topPerc <=3 ){
+         $('.cloud').show();
          $('.cloud').animate({
             width: ($WidthPerc * cloudW)/100,
             height:($HeightPerc* cloudH)/100,
@@ -76,6 +96,7 @@ $(window).scroll(function(){
              top:  (top + padTop)
         },0); 
     }else if (topPerc >3 && topPerc <= 3.5 ){
+         $('.cloud').show();
          $('.cloud').animate({
             width: ($WidthPerc * cloudW)/100,
             height:($HeightPerc* cloudH)/100,
@@ -84,6 +105,7 @@ $(window).scroll(function(){
             top:  (top + padTop)
         },0); 
     }else if (topPerc > 3.5 && topPerc <= 4 ){
+         $('.cloud').show();
          $('.cloud').animate({
             width: ($WidthPerc * cloudW)/100,
             height:($HeightPerc* cloudH)/100,
@@ -92,6 +114,7 @@ $(window).scroll(function(){
              top:  (top + padTop)
         },0); 
     }else if (topPerc > 4 && topPerc <= 4.5 ){
+         $('.cloud').show();
          $('.cloud').animate({
             width: ($WidthPerc * cloudW)/100,
             height:($HeightPerc* cloudH)/100,

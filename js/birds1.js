@@ -1,3 +1,12 @@
+$(document).ready(function() {             
+     $("body").keydown(function(){
+        if(($(window).scrollTop() <=                    $('.bg10PH').position().top) && birdsFlag == 1 && isBottomPage ==1){
+            loadIMG('.birdsPH','img/section-789/gifs/birds.gif','birds item hiddenItem');
+            birdsFlag = 0;
+        } 
+    });
+     
+});
 
 $(window).scroll(function(){
 
@@ -8,6 +17,12 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();
 
+     $( ".bg10" ).mouseover(function() {
+        if(birdsFlag == 1 && isBottomPage ==1){
+            loadIMG('.birdsPH','img/section-789/gifs/birds.gif','birds item hiddenItem');
+            birdsFlag = 0;
+        }
+    }); 
     
     if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && birdsFlag == 1 && isBottomPage ==1){
         loadIMG('.birdsPH','img/section-789/gifs/birds.gif','birds item');

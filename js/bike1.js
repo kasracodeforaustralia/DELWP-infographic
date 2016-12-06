@@ -1,3 +1,14 @@
+$(document).ready(function() {             
+     $("body").keydown(function(){
+        if(($(window).scrollTop() <=                    $('.bg5PH').position().top) && bikeFlag == 1 && isBottomPage ==1){
+            loadIMG('.bikePH','img/section-789/bike.png','bike item hiddenItem');
+            bikeFlag = 0; 
+        } 
+    });
+     
+});
+
+
 $(window).scroll(function(){
 
     // Responsive width and height of the bg images
@@ -7,11 +18,33 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();
 
-    
-    if ( ($(window).scrollTop() <=$('.bg5PH').position().top) && bikeFlag == 1 && isBottomPage ==1){
+    /* This section is to load the bike image based on the mouse over objects*/
+    $( ".bg5" ).mouseover(function() {
+            if(bikeFlag == 1 && isBottomPage ==1){
+            loadIMG('.bikePH','img/section-789/bike.png','bike item hiddenItem');
+            bikeFlag = 0;
+            }
+        }); 
+    $( ".glass-building" ).mouseover(function() {
+        if(bikeFlag == 1 && isBottomPage ==1){
         loadIMG('.bikePH','img/section-789/bike.png','bike item hiddenItem');
         bikeFlag = 0;
-    }    
+        }
+    }); 
+    $( ".building" ).mouseover(function() {
+            if(bikeFlag == 1 && isBottomPage ==1){
+            loadIMG('.bikePH','img/section-789/bike.png','bike item hiddenItem');
+            bikeFlag = 0;
+            }
+        }); 
+    $( ".building-two" ).mouseover(function() {
+            if(bikeFlag == 1 && isBottomPage ==1){
+            loadIMG('.bikePH','img/section-789/bike.png','bike item hiddenItem');
+            bikeFlag = 0;
+            }
+    });   
+    /* End of loading section */
+ 
 
     if (topPerc <= 37){
         $('.bike').hide();
