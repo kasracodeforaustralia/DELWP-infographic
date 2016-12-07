@@ -122,16 +122,16 @@ $( window ).resize(function() {
         },0); 
 
         /* Box on the scroll bar default settings */
+        
 
         $('.slider').animate({
-                opacity:0.6,
-                width: ($winWidth  *4 /100),
-                height:($winWidth  *2.3 /100),
+            opacity:0.6,
+            width: ($winWidth  *4 /100),
+            height:($winWidth  *2.3 /100),
 
-                left: NavScrollBarOffsetLeft - (1/3*mapWidth),
-                top:  NavScrollBarOffsetTop + ( mapheight * topPerc/100)
-        },0);  
-        
+            left: NavScrollBarOffsetLeft - (1/3*mapWidth),
+            top:  NavScrollBarOffsetTop + ( mapheight * topPerc/100)
+        },0); 
     }
     
     //alert("testing: " + mapheight)
@@ -188,18 +188,32 @@ $(window).scroll(function(){
             width: mapWidth,
             height:mapheight
         },0); 
+        
+        if ($('.slider').position().top <= (NavScrollBarOffsetTop + mapheight - ($winWidth  *2.3 /100)) ){
+            /* slider dynamic changes  */
+            $('.slider').animate({
+                opacity:0.6,
+                width: ($winWidth  *4 /100),
+                height:($winWidth  *2.3 /100),
 
-        /* slider dynamic changes  */
-        $('.slider').animate({
-            opacity:0.6,
-            width: ($winWidth  *4 /100),
-            height:($winWidth  *2.3 /100),
+                left: NavScrollBarOffsetLeft - (1/3*mapWidth),
+                top:  NavScrollBarOffsetTop + ( mapheight * topPerc/100)
+            },0);   
+        } else{
+             $('.slider').animate({
+                opacity:0.6,
+                width: ($winWidth  *4 /100),
+                height:($winWidth  *2.3 /100),
 
-            left: NavScrollBarOffsetLeft - (1/3*mapWidth),
-            top:  NavScrollBarOffsetTop + ( mapheight * topPerc/100)
-        },0);   
+                left: NavScrollBarOffsetLeft - (1/3*mapWidth),
+                top:  (NavScrollBarOffsetTop + mapheight - ($winWidth  *2.3 /100))
+            },0);            
+            
+        }
 
-        // console.log("map top position: " + NavScrollBarOffsetTop);
+        console.log("---Slider top: " + $('.slider').position().top);
+        
+        console.log("Scrollbar Bottom: " + (NavScrollBarOffsetTop + mapheight - ($winWidth  *2.3 /100) ) );
     }
       
     
