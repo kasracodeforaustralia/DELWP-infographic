@@ -166,7 +166,8 @@ $(window).scroll(function(){
     
     // set the current map width and height
     var mapWidth  = $winWidth  *2 /100;
-    var mapheight = $winHeight *3 /100;
+    //var mapheight = $winHeight *3 /100;
+    var mapheight = ($winHeight + welcomeDivHeight)*3 /100;
 
     // Finds the offset of the scroll bar to move the black box based on that
     var NavScrollBarOffset = $('.NavScrollBar').position();
@@ -185,7 +186,7 @@ $(window).scroll(function(){
         height:mapheight
     },0); 
 
-    if ($('.slider').position().top <= (NavScrollBarOffsetTop + mapheight ) ){
+    //if ($('.slider').position().top <= (NavScrollBarOffsetTop + mapheight ) ){
         /* slider dynamic changes  */
         $('.slider').animate({
             opacity:0.6,
@@ -195,7 +196,7 @@ $(window).scroll(function(){
             left: NavScrollBarOffsetLeft - (1/3*mapWidth),
             top:  NavScrollBarOffsetTop + ( mapheight * wholePgHeightPerc/100)
         },0);   
-    } else{
+   // } else{
         console.log("Slider is downer!");
          /*$('.slider').animate({
             opacity:0.6,
@@ -207,7 +208,7 @@ $(window).scroll(function(){
         },0); 
         */
 
-    }
+    //}
 
     //console.log("---Slider top: " + $('.slider').position().top);
 
