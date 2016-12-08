@@ -73,8 +73,7 @@ $( document ).ready(function() {
     
     
     
-    
-  });
+});
 
 
 /*### Separatoring .ready and .resize funcs ###*/
@@ -86,7 +85,7 @@ $( document ).ready(function() {
 /*#####################  ######################*/
 /*#############################################*/
 
-
+/*
 $( window ).resize(function() {
     // Current width and height of the bg images
     var $winWidth   = winWidth();
@@ -112,7 +111,7 @@ $( window ).resize(function() {
          
     }else{
     
-        /* Scroll Bar Navigation default settings  */
+        /* Scroll Bar Navigation default settings  
         $('.NavScrollBar').show();
         $('.slider').show();
         
@@ -121,7 +120,7 @@ $( window ).resize(function() {
             height:mapheight
         },0); 
 
-        /* Box on the scroll bar default settings */
+        /* Box on the scroll bar default settings 
         
 
         $('.slider').animate({
@@ -136,7 +135,7 @@ $( window ).resize(function() {
     
     //alert("testing: " + mapheight)
   });
-
+*/
 
 /*### Separatoring .ready and .resize funcs ###*/
 /*################## ##### ####################*/
@@ -157,65 +156,64 @@ $(window).scroll(function(){
     // Responsive width and height of the bg images
     var $winWidth   = winWidth();
     var $winHeight  = winHeight();
+    var $WidthPerc  = WidthPerc();
+    var $HeightPerc = HeightPerc();
+    var top = $win.scrollTop();
+    var topPerc     = topPercfunc();
 
-    if ($winWidth < 500){
-        $('.NavScrollBar').hide();
-        $('.slider').hide();
-        
-        
-    }else{    
-        var $WidthPerc  = WidthPerc();
-        var $HeightPerc = HeightPerc();
-        var topPerc     = topPercfunc();
+    var welcomeDivHeight = $('#welcomeDiv').height();
+    var wholePgHeightPerc = (top * 100)/($winHeight + welcomeDivHeight);
+    
+    // set the current map width and height
+    var mapWidth  = $winWidth  *2 /100;
+    var mapheight = $winHeight *3 /100;
 
-        // set the current map width and height
-        var mapWidth  = $winWidth  *2 /100;
-        var mapheight = $winHeight *3 /100;
-
-        // Finds the offset of the scroll bar to move the black box based on that
-        var NavScrollBarOffset = $('.NavScrollBar').position();
-        var NavScrollBarOffsetTop = NavScrollBarOffset.top;
-        var NavScrollBarOffsetLeft= NavScrollBarOffset.left;    
+    // Finds the offset of the scroll bar to move the black box based on that
+    var NavScrollBarOffset = $('.NavScrollBar').position();
+    var NavScrollBarOffsetTop = NavScrollBarOffset.top;
+    var NavScrollBarOffsetLeft= NavScrollBarOffset.left;    
 
 
-        /* Scroll Bar Navigation default settings  */
-        $('.NavScrollBar').show();
-        $('.slider').show();
-        
-        $('.NavScrollBar').animate({
-            opacity:0.7,
-            
-            width: mapWidth,
-            height:mapheight
+    /* Scroll Bar Navigation default settings  */
+    //$('.NavScrollBar').show();
+    //$('.slider').show();
+
+    $('.NavScrollBar').animate({
+        opacity:0.7,
+
+        width: mapWidth,
+        height:mapheight
+    },0); 
+
+    if ($('.slider').position().top <= (NavScrollBarOffsetTop + mapheight ) ){
+        /* slider dynamic changes  */
+        $('.slider').animate({
+            opacity:0.6,
+            width: ($winWidth  *4 /100),
+            height:($winWidth  *2.3 /100),
+
+            left: NavScrollBarOffsetLeft - (1/3*mapWidth),
+            top:  NavScrollBarOffsetTop + ( mapheight * wholePgHeightPerc/100)
+        },0);   
+    } else{
+        console.log("Slider is downer!");
+         /*$('.slider').animate({
+            opacity:0.6,
+            width: ($winWidth  *4 /100),
+            height:($winWidth  *2.3 /100),
+
+            left: NavScrollBarOffsetLeft - (1/3*mapWidth),
+            top:  (NavScrollBarOffsetTop + mapheight - ($winWidth  *2.3 /100))
         },0); 
-        
-        if ($('.slider').position().top <= (NavScrollBarOffsetTop + mapheight - ($winWidth  *2.3 /100)) ){
-            /* slider dynamic changes  */
-            $('.slider').animate({
-                opacity:0.6,
-                width: ($winWidth  *4 /100),
-                height:($winWidth  *2.3 /100),
+        */
 
-                left: NavScrollBarOffsetLeft - (1/3*mapWidth),
-                top:  NavScrollBarOffsetTop + ( mapheight * topPerc/100)
-            },0);   
-        } else{
-             $('.slider').animate({
-                opacity:0.6,
-                width: ($winWidth  *4 /100),
-                height:($winWidth  *2.3 /100),
-
-                left: NavScrollBarOffsetLeft - (1/3*mapWidth),
-                top:  (NavScrollBarOffsetTop + mapheight - ($winWidth  *2.3 /100))
-            },0);            
-            
-        }
-
-        console.log("---Slider top: " + $('.slider').position().top);
-        
-        console.log("Scrollbar Bottom: " + (NavScrollBarOffsetTop + mapheight - ($winWidth  *2.3 /100) ) );
     }
-      
+
+    //console.log("---Slider top: " + $('.slider').position().top);
+
+    //console.log("Scrollbar Bottom: " + (NavScrollBarOffsetTop + mapheight  ) );
+    console.log("++Welcome Div: " +welcomeDivHeight);
+     //- ($winWidth  *2.3 /100) 
     
         
  });

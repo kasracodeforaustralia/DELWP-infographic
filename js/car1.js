@@ -31,11 +31,11 @@ $(window).scroll(function(){
         }
     });     
     
-    /* car1   */ 
+    /* car1    
     if ( topPerc >= 77 ){
         $('.car1').show();
         $('.car1').css({'left': '($winWidth  *(car1Left) )/100', 'top':'($winHeight *(car1Top) )/100'});
-    } else  if ( 76.8 <= topPerc &&  topPerc < 77 ){ 
+    } else */ if ( 76.8 <= topPerc &&  topPerc < 77 ){ 
         $('.car1').css({'display': 'block'});
         $('.car1').animate({
             width: ($WidthPerc * car1W)/100,

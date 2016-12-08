@@ -130,7 +130,7 @@ $(window).scroll(function(){
                bg6Flag = 0;
             }
         });
-        $( ".artCenter" ).mouseover(function() {
+        $( ".arts-centre" ).mouseover(function() {
             if(bg6Flag == 1 && isBottomPage ==1){
                loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg4s7');
                bg6Flag = 0;
@@ -247,6 +247,18 @@ $(window).scroll(function(){
            bg13Flag = 0;
         }
     });
+    $( ".windMill" ).mouseover(function() {
+        if(bg13Flag == 1 && isBottomPage ==1){
+           loadIMG('.bg13PH','img/14bgs/bg13.png','bg13 bg');
+           bg13Flag = 0;
+        }
+    });  
+    $( ".floodSing" ).mouseover(function() {
+        if(bg13Flag == 1 && isBottomPage ==1){
+           loadIMG('.bg13PH','img/14bgs/bg13.png','bg13 bg');
+           bg13Flag = 0;
+        }
+    }); 
 
     $( ".bg12" ).mouseover(function() {
         if(bg14Flag == 1 && isBottomPage ==1){

@@ -14,10 +14,10 @@ $(window).scroll(function(){
         }
     });  
 
-        /* truck1   */ 
+        /* truck1    
         if ( topPerc >= 67.8 ){
             $('.truck1').css({'display':'block', 'left': '($winWidth  *(truck1Left) )/100', 'top':'($winHeight *(truck1Top) )/100'});
-        } else  if ( 67.6 <= topPerc &&  topPerc < 67.8 ){ 
+        } else */ if ( 67.6 <= topPerc &&  topPerc < 67.8 ){ 
             $('.truck1').css({'display': 'block'});
             $('.truck1').animate({
                 width: ($WidthPerc * truck1W)/100,
