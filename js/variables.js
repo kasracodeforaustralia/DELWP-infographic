@@ -57,14 +57,16 @@ var buildingsFlag       = 1;
 var buildings2Flag      = 1;
 var busFlag             = 1;
 var car2Flag            = 1;
+
 var trainFlag = 1;
 var truck1Flag = 1;
 var tentFlag = 1;
 var campfireFlag = 1;
 
+
 var buildings3Flag = 1;
 // ----------------
-var isBottomPage        = 0;
+var isBottomPage   = 0;
 
 
 /* --------------------------- ITEMS ----------------------------------------- */
@@ -226,6 +228,7 @@ var truck1Left = -2;
  var eurekaH = 1287;
  var eurekaTop = 73.8;
  var eurekaLeft = 76;
+
  var eurekadisplayed = 0;
 
  /* arts-centre */
@@ -523,6 +526,7 @@ var tramCounter=0;
     var dot25Top = 0;
     var dot25Left = 54;
 
+
 /* ----------------------------------------------------------------- */
 
 /* functions for dynamic variables */
@@ -572,7 +576,6 @@ function HeightPerc(){
 
 
 
-
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 
@@ -583,4 +586,15 @@ function loadIMG(objName,IMGurl,className){
     }).attr('src', IMGurl).addClass(className);
        
     return false;    
+
 }
+
+
+
+
+
+
+
+
+
+

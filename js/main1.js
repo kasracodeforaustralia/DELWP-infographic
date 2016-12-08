@@ -172,23 +172,5 @@ $(window).scroll(function(){
         $(".holder", ".item").hide();
         console.log(" >= 768 width <= 800 "+ $(window).width());
     }
-             
-             
-        
   
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

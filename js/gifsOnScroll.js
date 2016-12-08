@@ -7,13 +7,17 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();    
         
-    
-    /* kangarookid1 truck */ 
-
-    //alert("win width is: " + winWidth());
-
-    
-    /* eureka-tower */
+    //console.log("topPerc: " + topPerc);
+    /* Birds 
+    if ( (topPerc <= 1.5) && (eurekaFlag == 1) ){
+        $('').attr('src',.src);
+        birdsReplayFlag =0;
+        }
+    }else if (topPerc > 1.5 ){
+       birdsReplayFlag =1; 
+    }
+    */
+    /* eureka-tower 
     if (topPerc <= 65){
         eurekaFlag =1;
         
@@ -25,9 +29,9 @@ $(window).scroll(function(){
         }
     }else if (topPerc > 77 ){
        eurekaFlag =1; 
-    }
+    }*/
  
-        /* glass-building and apartment-block */
+        /* glass-building and apartment-block 
     if (topPerc <= 63){
         glassBuildingFlag  =1;
         apartmentBlockFlag =1;
@@ -43,9 +47,9 @@ $(window).scroll(function(){
         glassBuildingFlag  =1;
         apartmentBlockFlag =1;
     }
+    */
     
-    
-    /* building and building-two */
+    /* building and building-two 
     if (topPerc <= 56){
         buildingFlag  =1;
         building2Flag =1;
@@ -61,7 +65,10 @@ $(window).scroll(function(){
         buildingFlag  =1;
         building2Flag =1;
     }
-        
+     */
+    
+    
+    
 });
     
 

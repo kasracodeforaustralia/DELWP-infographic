@@ -1,9 +1,0 @@
-.NavScrollBar{
-    position: fixed;
-    top:35%;
-    left: 2%;    
-    border-radius: 5px;
-    border-style: solid;
-    opacity: 0.7;
-    z-index: 81;
-}

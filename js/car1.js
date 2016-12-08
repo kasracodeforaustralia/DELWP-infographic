@@ -10,17 +10,20 @@
 
 $(window).scroll(function(){
 
-        // Responsive width and height of the bg images
-        var $winWidth   = winWidth();
-        var $winHeight  = winHeight();
-        var $WidthPerc  = WidthPerc();
-        var $HeightPerc = HeightPerc();
-        var topPerc     = topPercfunc();
+    // Responsive width and height of the bg images
+    var $winWidth   = winWidth();
+    var $winHeight  = winHeight();
+    var $WidthPerc  = WidthPerc();
+    var $HeightPerc = HeightPerc();
+    var topPerc     = topPercfunc();
 
-    if ( ($(window).scrollTop() <=$('.bg3PH').position().top) && car1Flag == 1 && isBottomPage ==1){
-        loadIMG('.car1PH','img/section-4/car1.png','item car1');
-        car1Flag = 0;
-    }
+    $( ".bg3" ).mouseover(function() {
+        if(car1Flag == 1 && isBottomPage ==1){
+            loadIMG('.car1PH','img/section-4/car1.png','item car1');
+            car1Flag = 0;
+
+        }
+    });  
         
         /* car1   
         if ( topPerc >= 77 ){
@@ -293,7 +296,8 @@ $(window).scroll(function(){
             }, 0); 
         } else if (topPerc < 71.0) {
             $('.car1').show();
-        }
+    
+    
+   
 
-        
-    });
+});
