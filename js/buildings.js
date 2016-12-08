@@ -76,27 +76,29 @@ $( ".bg3" ).mouseover(function() {
     /* ---------------- BUILDINGS ---------------- */
 
     /***** building ******/
-    $('.building').animate({
-       width: ($WidthPerc * buildingW)/100,
-       height:($HeightPerc* buildingH)/100,
-       
-        left: ($winWidth  * buildingLeft)/100,
-        top:  ($winHeight * buildingTop)/100
-    },0);
+    if ( topPerc <= 68.4 ) {
+        $('.building').css({'display':'block' });
+        $('.building').animate({
+           width: ($WidthPerc * buildingW)/100,
+           height:($HeightPerc* buildingH)/100,
+           
+            left: ($winWidth  * buildingLeft)/100,
+            top:  ($winHeight * buildingTop)/100
+        },0);
+    }
 
     /********** sold-ign **********/
-    $('.sold-sign').animate({
-       width: ($WidthPerc * soldsignW)/100,
-       height:($HeightPerc* soldsignH)/100,
-       
-        left: ($winWidth  * soldsignLeft)/100,
-        top:  ($winHeight * soldsignTop)/100
-    },0);
-
+    if ( topPerc <= 68.2 ) {
+      $('.sold-sign').animate({
+         width: ($WidthPerc * soldsignW)/100,
+         height:($HeightPerc* soldsignH)/100,
+         
+          left: ($winWidth  * soldsignLeft)/100,
+          top:  ($winHeight * soldsignTop)/100
+      },0);
+    }
     /*********** building-two ************/
-    if ( topPerc >= 68.0 ) {
-        $('.building-two').css({'display':'none', 'left': '($winWidth  *(building2Left) )/100', 'top':'($winHeight *(building2Top) )/100'});
-    } else {
+    if ( topPerc <= 68.0 ) {
         $('.building-two').css({'display':'block' });
         $('.building-two').animate({
            width: ($WidthPerc * building2W)/100,
@@ -167,9 +169,8 @@ $( ".bg3" ).mouseover(function() {
     },0); 
     
     /* glass-building  */
-    if ( topPerc >= 73.0 ) {
-        $('.glass-building').css({'display':'none', 'left': '($winWidth  *(glassbldngLeft) )/100', 'top':'($winHeight *(glassbldngTop) )/100'});
-    } else {
+    if ( topPerc <= 73.0) {
+        
       $('.glass-building').css({'display':'block' });
         $('.glass-building').animate({
            width: ($WidthPerc * glassbldngW)/100,
@@ -191,7 +192,7 @@ $( ".bg3" ).mouseover(function() {
             left: ($winWidth  * eurekaLeft)/100,
             top:  ($winHeight * eurekaTop)/100
         },0);
-        eurekadisplayed = 1;
+        //eurekadisplayed = 1;
     } 
 
     /* arts-centre */
