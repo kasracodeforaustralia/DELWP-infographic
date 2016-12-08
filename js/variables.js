@@ -372,11 +372,11 @@ var tramCounter=0;
 
 
      /* msg-9 */
-    var msg9Top = 65.8;
-    var msg9Left = 44;
+    var msg9Top = 63.2;
+    var msg9Left = 34;
 
     /* dot-9 */
-    var dot9Top = 60.0;
+    var dot9Top = 63.4;
     var dot9Left = 30;
 
 
@@ -426,12 +426,12 @@ var tramCounter=0;
 
 
     /* msg-15 */
-    var msg15Top = 36.6;
+    var msg15Top = 36.0;
     var msg15Left = 62;
 
     /* dot-15 */
-    var dot15Top = 35.8;
-    var dot15Left = 48;
+    var dot15Top = 35.6;
+    var dot15Left = 78;
 
 
    /* msg-16 */

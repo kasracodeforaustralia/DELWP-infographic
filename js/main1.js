@@ -8,9 +8,6 @@ $(document).ready(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
     
-    
-    
-    
 });
 
 
@@ -166,14 +163,19 @@ $(window).scroll(function(){
     //console.log("bg2 top: "+ $('.bg2PH').position().top);
     console.log ("-----scroll top: "+ $(window).scrollTop());
 
-    if($(window).scrollTop() == 13523) {
-        $(".holder").hide();
+    if($(window).width() > 800 && $(window).scrollTop() >= 13520) {
+        $(".holder", ".item").hide();
+       // $().hide();
+    }
+
+    if( $(window).width() <= 800 && $(window).width() >= 768 && $(window).scrollTop() >= 7113) {
+        $(".holder", ".item").hide();
+        console.log(" >= 768 width <= 800 "+ $(window).width());
     }
              
              
         
-
-    
+  
 });
 
 

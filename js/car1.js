@@ -1,12 +1,12 @@
-$(document).ready(function() {             
+/*$(document).ready(function() {             
      $("body").keydown(function(){
         if(($(window).scrollTop() <=                    $('.bg3').position().top) && car1Flag == 1 && isBottomPage ==1){
-            loadIMG('.car1PH','img/section-4/car1.png','item car1 hiddenItem');
+            loadIMG('.car1PH','img/section-4/car1.png','item car1');
             car1Flag = 0;
         } 
     });
      
-});
+});*/
 
 $(window).scroll(function(){
 
@@ -18,15 +18,15 @@ $(window).scroll(function(){
         var topPerc     = topPercfunc();
 
     if ( ($(window).scrollTop() <=$('.bg3PH').position().top) && car1Flag == 1 && isBottomPage ==1){
-        loadIMG('.car1PH','img/section-4/car1.png','item car1 hiddenItem');
+        loadIMG('.car1PH','img/section-4/car1.png','item car1');
         car1Flag = 0;
     }
         
-        /* car1   */ 
+        /* car1   
         if ( topPerc >= 77 ){
             $('.car1').show();
             $('.car1').css({'left': '($winWidth  *(car1Left) )/100', 'top':'($winHeight *(car1Top) )/100'});
-        } else  if ( 76.8 <= topPerc &&  topPerc < 77 ){ 
+        }*/  else  if ( 76.8 <= topPerc &&  topPerc < 77 ){ 
             $('.car1').css({'display': 'block'});
             $('.car1').animate({
                 width: ($WidthPerc * car1W)/100,
