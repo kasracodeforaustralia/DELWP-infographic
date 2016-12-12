@@ -16,14 +16,10 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();
 
-
-    $( ".bg2" ).mouseover(function() {
-        if(tramFlag == 1 && isBottomPage ==1){
-           loadIMG('.tramPH','img/section-3/tram.png','item tram hiddenItem');
-           tramFlag = 0;
-        }
-    });    
-    
+    if( ($(window).scrollTop() <=  $('.bg2PH').position().top)  && tramFlag == 1 && isBottomPage ==1){
+       loadIMG('.tramPH','img/section-3/tram.png','item tram hiddenItem');
+       tramFlag = 0;          
+    } 
         /* tram   
     if ( topPerc >= 86.0 ){
         $('.tram').hide();

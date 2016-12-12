@@ -21,16 +21,10 @@ var $bg13Height = 1496;
 var $bg14Height = 1491;
 
 // load flags for adding BGs to their placeholders
-var bg5Flag = 1; 
-var bg6Flag = 1;  
-var bg7Flag = 1; 
-var bg8Flag = 1; 
-var bg9Flag = 1;  
-var bg10Flag = 1;
-var bg11Flag = 1; 
-var bg12Flag = 1; 
-var bg13Flag = 1; 
-var bg14Flag = 1; 
+
+var allBgsFlag = 0;
+var bg5Flag, bg6Flag, bg7Flag, bg8Flag, bg9Flag, bg10Flag, bg11Flag, bg12Flag, bg13Flag, bg14Flag; 
+bg5Flag= bg6Flag= bg7Flag= bg8Flag= bg9Flag= bg10Flag= bg11Flag= bg12Flag= bg13Flag= bg14Flag =1;
 
 /* ---------- Loading flags for items ------These flags are to prevent loading images for more that one time -----------------*/
 var welcomeFlag         = 1;

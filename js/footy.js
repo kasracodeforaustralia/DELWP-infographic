@@ -7,17 +7,12 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();
 
-    /*if ( ($(window).scrollTop() <=$('.bg8PH').position().top) && footyFlag == 1 ){
-        loadIMG('.footyPH','img/section-789/footy.png','footy item');
-        footyFlag = 0;
-    } */
 
-    $( ".bg8" ).mouseover(function() {
-        if(footyFlag == 1 && isBottomPage ==1){
-           loadIMG('.footyPH','img/section-789/footy.png','footy item hiddenItem');
-           footyFlag = 0;
-        }
-    });    
+    if( ($(window).scrollTop() <=  $('.bg8PH').position().top)  && footyFlag == 1 && isBottomPage ==1){
+       loadIMG('.footyPH','img/section-789/footy.png','footy item hiddenItem');
+       footyFlag = 0;
+    } 
+
     
     if (topPerc <= 24){
         //$('.footy').css("opacity", 0);

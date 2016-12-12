@@ -17,14 +17,10 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();
 
-
-    $( ".bg2" ).mouseover(function() {
-        if(busFlag == 1 && isBottomPage ==1){
-           loadIMG('.busPH','img/section-3/bus.png','item bus hiddenItem');
-           busFlag = 0;
-        }
-    });     
-
+    if( ($(window).scrollTop() <=  $('.bg2PH').position().top)  && busFlag == 1 && isBottomPage ==1){
+       loadIMG('.busPH','img/section-3/bus.png','item bus hiddenItem');
+       busFlag = 0;
+    } 
 
         /* bus   */ 
 

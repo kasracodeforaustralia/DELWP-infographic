@@ -17,19 +17,16 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();
 
-    $( ".bg3" ).mouseover(function() {
-        if(car1Flag == 1 && isBottomPage ==1){
-            loadIMG('.car1PH','img/section-4/car1.png','item car1');
-            car1Flag = 0;
-
-        }
-    });  
+    if( ($(window).scrollTop() <=  $('.bg3PH').position().top)  && car1Flag == 1 && isBottomPage ==1){
+        loadIMG('.car1PH','img/section-4/car1.png','item car1');
+        car1Flag = 0;
+    }     
         
         /* car1   
         if ( topPerc >= 77 ){
             $('.car1').show();
             $('.car1').css({'left': '($winWidth  *(car1Left) )/100', 'top':'($winHeight *(car1Top) )/100'});
-        }*/  else  if ( 76.8 <= topPerc &&  topPerc < 77 ){ 
+        }else */ if ( 76.8 <= topPerc &&  topPerc < 77 ){ 
             $('.car1').css({'display': 'block'});
             $('.car1').animate({
                 width: ($WidthPerc * car1W)/100,
@@ -297,7 +294,7 @@ $(window).scroll(function(){
         } else if (topPerc < 71.0) {
             $('.car1').show();
     
-    
+        }
    
 
 });

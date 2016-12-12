@@ -17,35 +17,16 @@ $(window).scroll(function(){
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();
+    
 
     /* This section is to load the bike image based on the mouse over objects*/
-    $( ".bg5" ).mouseover(function() {
-            if(bikeFlag == 1 && isBottomPage ==1){
-            loadIMG('.bikePH','img/section-789/bike.png','bike item hiddenItem');
-            bikeFlag = 0;
-            }
-        }); 
-    $( ".glass-building" ).mouseover(function() {
-        if(bikeFlag == 1 && isBottomPage ==1){
+    
+    if( ($(window).scrollTop() <=  $('.bg5PH').position().top)  && bikeFlag == 1 && isBottomPage == 1){
         loadIMG('.bikePH','img/section-789/bike.png','bike item hiddenItem');
-        bikeFlag = 0;
-        }
-    }); 
-    $( ".building" ).mouseover(function() {
-            if(bikeFlag == 1 && isBottomPage ==1){
-            loadIMG('.bikePH','img/section-789/bike.png','bike item hiddenItem');
-            bikeFlag = 0;
-            }
-        }); 
-    $( ".building-two" ).mouseover(function() {
-            if(bikeFlag == 1 && isBottomPage ==1){
-            loadIMG('.bikePH','img/section-789/bike.png','bike item hiddenItem');
-            bikeFlag = 0;
-            }
-    });   
-    /* End of loading section */
- 
-
+        bikeFlag = 0;    
+    }  
+   /*  End of loading the bike */
+    
     if (topPerc <= 37){
         $('.bike').hide();
     }else if (topPerc > 37 && topPerc <= 38 ){

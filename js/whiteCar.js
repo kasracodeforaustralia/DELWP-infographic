@@ -18,37 +18,12 @@ $(window).scroll(function(){
     var topPerc     = topPercfunc();
 
     /* This section is to load the car image based on the mouse over objects*/
-    $( ".bg5" ).mouseover(function() {
-        if(whiteCarFlag == 1 && isBottomPage ==1){
-            loadIMG('.whiteCarPH','img/section-789/whiteCar.png','whiteCar item hiddenItem');
-            whiteCarFlag = 0;
-        }
-    }); 
-    $( ".glass-building" ).mouseover(function() {
-        if(whiteCarFlag == 1 && isBottomPage ==1){
-            loadIMG('.whiteCarPH','img/section-789/whiteCar.png','whiteCar item hiddenItem');
-            whiteCarFlag = 0;
-        }
-    }); 
-    $( ".building" ).mouseover(function() {
-        if(whiteCarFlag == 1 && isBottomPage ==1){
-            loadIMG('.whiteCarPH','img/section-789/whiteCar.png','whiteCar item hiddenItem');
-            whiteCarFlag = 0;
-        }
-        }); 
-    $( ".building-two" ).mouseover(function() {
-        if(whiteCarFlag == 1 && isBottomPage ==1){
-            loadIMG('.whiteCarPH','img/section-789/whiteCar.png','whiteCar item hiddenItem');
-            whiteCarFlag = 0;
-        }
-    });   
-    /* End of loading section*/    
     
-    
-    if ( ($(window).scrollTop() <=$('.bg5PH').position().top) && whiteCarFlag == 1 && isBottomPage ==1){
+     if( ($(window).scrollTop() <=  $('.bg5PH').position().top)  && whiteCarFlag == 1 && isBottomPage ==1){
         loadIMG('.whiteCarPH','img/section-789/whiteCar.png','whiteCar item hiddenItem');
-        whiteCarFlag = 0;
-    }
+        whiteCarFlag = 0;         
+    }  
+    
 
     if (topPerc <= 37){
         $('.whiteCar').show();

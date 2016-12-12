@@ -9,7 +9,14 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();    
         
-    
+      if( ($(window).scrollTop() <=  $('.bg7PH').position().top)  && kangarookid1Flag == 1 && isBottomPage ==1){
+        loadIMG('.kangarookid1PH','img/section-789/gifs/kangaroo1.gif','kangarookid1 item');
+        kangarookid1Flag = 0;
+          
+        kang1IMG.src ='img/section-789/gifs/kangaroo1.gif';
+        frameCha1 = 1;            
+    } 
+   /* 
     if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && kangarookid1Flag == 1 && isBottomPage ==1){
         loadIMG('.kangarookid1PH','img/section-789/gifs/kangaroo1.gif','kangarookid1 item');
         kangarookid1Flag = 0;
@@ -19,7 +26,7 @@ $(window).scroll(function(){
         frameCha1 = 1;   
             
     }
-
+*/
 
     if (topPerc <= 0.2){
         $('.kangarookid1').hide();

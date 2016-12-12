@@ -62,7 +62,7 @@ $( document ).ready(function() {
         }
     }) */
     
-    $('body').mouseup(function() {
+    $('.slider').mouseup(function() {
         /* This calclate the position of the 
         slider on scroll bar in terms of percentage */
         SliderPosPrec = ( ( $('.slider').position().top -NavScrollBarOffsetTop) * 100/ mapheight ) ;
@@ -186,35 +186,17 @@ $(window).scroll(function(){
         height:mapheight
     },0); 
 
-    //if ($('.slider').position().top <= (NavScrollBarOffsetTop + mapheight ) ){
-        /* slider dynamic changes  */
-        $('.slider').animate({
-            opacity:0.6,
-            width: ($winWidth  *4 /100),
-            height:($winWidth  *2.3 /100),
 
-            left: NavScrollBarOffsetLeft - (1/3*mapWidth),
-            top:  NavScrollBarOffsetTop + ( mapheight * wholePgHeightPerc/100)
-        },0);   
-   // } else{
-        console.log("Slider is downer!");
-         /*$('.slider').animate({
-            opacity:0.6,
-            width: ($winWidth  *4 /100),
-            height:($winWidth  *2.3 /100),
+    /* slider dynamic changes  */
+    $('.slider').animate({
+        opacity:0.6,
+        width: ($winWidth  *4 /100),
+        height:($winWidth  *2.3 /100),
 
-            left: NavScrollBarOffsetLeft - (1/3*mapWidth),
-            top:  (NavScrollBarOffsetTop + mapheight - ($winWidth  *2.3 /100))
-        },0); 
-        */
+        left: NavScrollBarOffsetLeft - (1/3*mapWidth),
+        top:  NavScrollBarOffsetTop + ( mapheight * wholePgHeightPerc/100)
+    },0);   
 
-    //}
 
-    //console.log("---Slider top: " + $('.slider').position().top);
-
-    //console.log("Scrollbar Bottom: " + (NavScrollBarOffsetTop + mapheight  ) );
-    console.log("++Welcome Div: " +welcomeDivHeight);
-     //- ($winWidth  *2.3 /100) 
-    
         
  });

@@ -5,7 +5,7 @@ $(document).ready(function() {
             buildingsFlag = 0;
         } 
          
-        if(($(window).scrollTop() <=                    $('.bg3').position().top) && buildings2Flag == 1 && isBottomPage ==1){
+        if(($(window).scrollTop() <=                    $('.bg3PH').position().top) && buildings2Flag == 1 && isBottomPage ==1){
             loadIMG('.solarbPH','img/section-4/solar-building.png','item solar-building');
 
             loadIMG('.apartblockPH','img/section-4/apartment-block.gif','item apartment-block');
@@ -34,19 +34,13 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc(); 
     
-    
-$( ".bg2" ).mouseover(function() {
+    if( ($(window).scrollTop() <=  $('.bg2PH').position().top)  && buildingsFlag == 1 && isBottomPage ==1){
+        loadIMG('.churchPH','img/section-3/church.png','item church hiddenItem');
+        buildingsFlag = 0;   
+    } 
 
-  if (buildingsFlag == 1 && isBottomPage ==1 ){
 
-    loadIMG('.churchPH','img/section-3/church.png','item church hiddenItem');
-    buildingsFlag = 0; 
-  }    
-}); 
-
-$( ".bg3" ).mouseover(function() {
-      
-    if (buildings2Flag == 1 && isBottomPage ==1 ){
+    if( ($(window).scrollTop() <=  $('.bg3PH').position().top)  && buildings2Flag == 1 && isBottomPage ==1){    
         
         loadIMG('.solarbPH','img/section-4/solar-building.png','item solar-building');
         
@@ -63,15 +57,7 @@ $( ".bg3" ).mouseover(function() {
         loadIMG('.artscentrePH','img/section-3/artsCentre.png','item arts-centre'); 
         buildings2Flag = 0;
     }
-});
     
-/*$( ".bg4" ).mouseover(function() {
-      
-    if (buildings3Flag == 1 && isBottomPage ==1 ){
-        
-    }
-
-});*/
 
     /* ---------------- BUILDINGS ---------------- */
 

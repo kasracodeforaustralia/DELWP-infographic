@@ -30,15 +30,15 @@ $(window).scroll(function(){
             height:($winHeight* 10)/100,
             marginTop: '-5px'
         },0);         
-       welcomeFlag = 0; 
+        welcomeFlag = 0; 
     }
     
     
     /* Loads flood sing when reach bg 10*/ 
     if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && floodSingFlag == 1 && isBottomPage ==1 ){
-            loadIMG('.floodSignPH','img/section-789/gifs/floodSign.gif','floodSign item');
-            floodSingFlag = 0;
-        }    
+        loadIMG('.floodSignPH','img/section-789/gifs/floodSign.gif','floodSign item');
+        floodSingFlag = 0;
+    }    
 
     /* Flooding Sign default css  */
     $('.floodSign').animate({
@@ -52,9 +52,9 @@ $(window).scroll(function(){
    
     /* Loads wind mill when reach bg 10*/ 
     if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && windMillFlag == 1 && isBottomPage ==1){
-            loadIMG('.windMillPH','img/section-789/gifs/windMill.gif','windMill item');
-            windMillFlag = 0;
-        }    
+        loadIMG('.windMillPH','img/section-789/gifs/windMill.gif','windMill item');
+        windMillFlag = 0;
+    }    
 
     $('.windMill').animate({
         width: ($WidthPerc * windMillW)/100,
@@ -97,8 +97,8 @@ $(window).scroll(function(){
     
     /* Loads footy Players when reach bg 8*/ 
     if ( ($(window).scrollTop() <=$('.bg8PH').position().top) && footyPlayersFlag == 1 && isBottomPage ==1){
-            loadIMG('.footyPlayersPH','img/section-789/footyPlayers.png','footyPlayers item');
-            footyPlayersFlag = 0;
+        loadIMG('.footyPlayersPH','img/section-789/footyPlayers.png','footyPlayers item');
+        footyPlayersFlag = 0;
         }      
     
     $('.footyPlayers').animate({
