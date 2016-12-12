@@ -1,6 +1,6 @@
 $(document).ready(function() {             
      $("body").keydown(function(){
-        if(($(window).scrollTop() <=                    $('.bg2').position().top) && buildingsFlag == 1 && isBottomPage ==1){
+        if(($(window).scrollTop() <=                    $('.bg2PH').position().top) && buildingsFlag == 1 && isBottomPage ==1){
             loadIMG('.churchPH','img/section-3/church.png','item church hiddenItem');
             buildingsFlag = 0;
         } 
@@ -35,6 +35,7 @@ $(window).scroll(function(){
     var topPerc     = topPercfunc(); 
     
     if( ($(window).scrollTop() <=  $('.bg2PH').position().top)  && buildingsFlag == 1 && isBottomPage ==1){
+        //alert("church should be loaded now!");
         loadIMG('.churchPH','img/section-3/church.png','item church hiddenItem');
         buildingsFlag = 0;   
     } 
