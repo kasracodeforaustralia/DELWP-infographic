@@ -24,12 +24,29 @@ $(window).scroll(function(){
  
     if( welcomeFlag ==1){
         /* Welcome Div */
-        $('#welcomeDiv').animate({
-            backgroundColor: '#006666',
-            width: $winWidth,
-            height:($winHeight* 10)/100,
-            marginTop: '-5px'
-        },0);         
+        if($win.width()/$win.height() <= 0.8){
+             $('#welcomeDiv').animate({
+                backgroundColor: '#006666',
+                width: $winWidth,
+                height:($winHeight* 12)/100,
+                marginTop: '-5px'
+            },0);          
+        }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
+              $('#welcomeDiv').animate({
+                backgroundColor: '#006666',
+                width: $winWidth,
+                height:($winHeight* 12)/100,
+                marginTop: '-5px'
+            },0);          
+        }else if(1.1 < $win.width()/$win.height()){    
+            $('#welcomeDiv').animate({
+                backgroundColor: '#006666',
+                width: $winWidth,
+                height:($winHeight* 8)/100,
+                marginTop: '-5px'
+            },0);              
+        }
+   
         welcomeFlag = 0; 
     }
     
@@ -162,10 +179,10 @@ $(window).scroll(function(){
 
 
     
-    console.log("Is bottom: "+ isBottomPage);
-    console.log("scrollTop: "+ $(window).scrollTop());
-    console.log("bg2PH top: "+ $('.bg2PH').position().top);
-    //console.log ("-----scroll top: "+ $(window).scrollTop());
+    console.log("width/height: "+ $win.width()/$win.height());
+    //console.log("scrollTop: "+ $(window).scrollTop());
+    //console.log("bg2PH top: "+ $('.bg2PH').position().top);
+    //console.log ("-----scroll top: "+ $(window).height());
 
     if($(window).scrollTop() == 13523) {
         $(".holder").hide();
