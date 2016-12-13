@@ -55,6 +55,7 @@ body {
  #welcomemsg {
     text-align:center; 
     font-size: 200%; 
+     padding-top: 50%;
     color: white;
  }
 
