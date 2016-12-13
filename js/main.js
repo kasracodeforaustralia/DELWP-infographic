@@ -178,33 +178,19 @@ $(window).scroll(function(){
     } 
 
 
-    
+    //console.log("wel Pos: "+ $('#welcomeDiv').position().top);
+    //console.log("scrollTop+win.height: "+ ($(window).scrollTop()+ $(window).height()));
+    //console.log("bg2 top: "+ $('.bg2PH').position().top);
+    console.log ("---top perc: "+ topPercfunc());
+    console.log ("-----scroll top: "+ $(window).scrollTop());
+
     console.log("width/height: "+ $win.width()/$win.height());
-    //console.log("scrollTop: "+ $(window).scrollTop());
-    //console.log("bg2PH top: "+ $('.bg2PH').position().top);
-    //console.log ("-----scroll top: "+ $(window).height());
 
-    if($(window).scrollTop() == 13523) {
+
+    if(isBottomPage == 1 && aredotshidden == 0) {//$(window).scrollTop() == 13523) {
         $(".holder").hide();
+        aredotshidden = 1;
+        console.log ("isBottomPage = 1")
     }
-             
-             
-        
-
-    
+ 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
