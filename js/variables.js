@@ -521,6 +521,10 @@ var tramCounter=0;
     var dot25Top = 0;
     var dot25Left = 54;
 
+    /* feedback button */
+    var feedbackW = 250;
+    var feedbackH = 90;
+
 
 /* ----------------------------------------------------------------- */
 

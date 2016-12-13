@@ -117,15 +117,7 @@ $(window).scroll(function(){
         },0); 
     }else {
         $('.cloud2').hide();
-        /*
-        $('.cloud2').animate({
-            width: (($WidthPerc * cloud2W)/100) *smallCloud/100,
-            height:(($HeightPerc* cloud2H)/100) *smallCloud/100,
-
-            left: ($winWidth  *(1) )/100,
-            top:  (top + padTop)
-        },0); */
     }
 
         
-    });
+});

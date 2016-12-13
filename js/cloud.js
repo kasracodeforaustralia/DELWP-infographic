@@ -139,13 +139,7 @@ $(window).scroll(function(){
         },0); 
     }else {
         $('.cloud').hide();
-        /*$('.cloud').animate({
-            width: ($WidthPerc * cloudW)/100,
-            height:($WidthPerc * cloudH)/100,
 
-            left: ($winWidth  *(1) )/100,
-            top:  (top + padTop)
-        },0);*/
     }
 
 

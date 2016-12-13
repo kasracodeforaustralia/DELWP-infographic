@@ -24,12 +24,29 @@ $(window).scroll(function(){
  
     if( welcomeFlag ==1){
         /* Welcome Div */
-        $('#welcomeDiv').animate({
-            backgroundColor: '#006666',
-            width: $winWidth,
-            height:($winHeight* 10)/100,
-            marginTop: '-5px'
-        },0);         
+        if($win.width()/$win.height() <= 0.8){
+             $('#welcomeDiv').animate({
+                backgroundColor: '#006666',
+                width: $winWidth,
+                height:($winHeight* 12)/100,
+                marginTop: '-5px'
+            },0);          
+        }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
+              $('#welcomeDiv').animate({
+                backgroundColor: '#006666',
+                width: $winWidth,
+                height:($winHeight* 12)/100,
+                marginTop: '-5px'
+            },0);          
+        }else if(1.1 < $win.width()/$win.height()){    
+            $('#welcomeDiv').animate({
+                backgroundColor: '#006666',
+                width: $winWidth,
+                height:($winHeight* 8)/100,
+                marginTop: '-5px'
+            },0);              
+        }
+   
         welcomeFlag = 0; 
     }
     
@@ -154,43 +171,26 @@ $(window).scroll(function(){
 
  
     /* This section sets the isBottomPage flag if 2 conditions are met - first: if we scrolled down 85 percent of the page- second: if we reach to welcomeDiv section */
-    if ($(window).scrollTop()  >= 0.85 * winHeight() ){    
+    if ($(window).scrollTop()  >= 0.95 * winHeight() ){    
         if ( ($(window).scrollTop()+ $(window).height())>= $('#welcomeDiv').position().top){             
             isBottomPage = 1;
         }      
     } 
 
 
-    
     //console.log("wel Pos: "+ $('#welcomeDiv').position().top);
     //console.log("scrollTop+win.height: "+ ($(window).scrollTop()+ $(window).height()));
     //console.log("bg2 top: "+ $('.bg2PH').position().top);
     console.log ("---top perc: "+ topPercfunc());
     console.log ("-----scroll top: "+ $(window).scrollTop());
 
+    console.log("width/height: "+ $win.width()/$win.height());
+
+
     if(isBottomPage == 1 && aredotshidden == 0) {//$(window).scrollTop() == 13523) {
         $(".holder").hide();
         aredotshidden = 1;
         console.log ("isBottomPage = 1")
     }
-             
-             
-        
-
-    
+ 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

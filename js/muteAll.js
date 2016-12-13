@@ -9,7 +9,7 @@ $( document ).ready(function() {
     var topPerc     = topPercfunc();
     
     
-    /* muteAll default settings  */
+    /* muteAll default settings  
     if (muteAll == 1){
         $('.muteAll').animate({
             width: ($WidthPerc * muteW)/100,
@@ -19,9 +19,9 @@ $( document ).ready(function() {
             top:  ($winHeight * (1) )/100
         },0);        
     }
-
+*/
     
-    /* muteAll default settings  */
+    /* muteAll default settings  
     if (muteAll == 0){
         $('.speaker').animate({
             width: ($WidthPerc * speakerW)/100,
@@ -45,11 +45,12 @@ $( document ).ready(function() {
         $(".speaker").css({ display: 'none' });    
         muteAll = 1; 
     });
+    */
     
     /* feedback Button default settings  */
     $('.feedbackBtn').animate({
-        width: ($WidthPerc * feadbackW)/100,
-        height:($HeightPerc* feadbackH)/100, 
+        width: ($WidthPerc * feedbackW)/100,
+        height:($HeightPerc* feedbackH)/100, 
         
         left: ($winWidth  * 85  /100),
         top:  ($winHeight * (0.5) )/100
@@ -69,8 +70,18 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     var topPerc     = topPercfunc();
 
-    var top = $win.scrollTop();
+    //var top = $win.scrollTop();
+    
+    /* feedback Button default settings  */
+    $('.feedbackBtn').animate({
+        width: ($WidthPerc * feedbackW)/100,
+        height:($HeightPerc* feedbackH)/100, 
         
+        left: ($winWidth  * 85  /100),
+        top:  ($win.scrollTop() + ($win.height()*0.5/ 100) )
+    },0); 
+    
+    /*    
     if(muteAll == 1){
         $(".speaker").css({ display: 'none' });
         
@@ -96,16 +107,9 @@ $(window).scroll(function(){
         },0);   
 
     }
-        
+     */   
 
-    /* feedback Button default settings  */
-    $('.feedbackBtn').animate({
-        width: ($WidthPerc * feadbackW)/100,
-        height:($HeightPerc* feadbackH)/100, 
-        
-        left: ($winWidth  * 85  /100),
-        top:  (top + ($win.height()*0.5/ 100) )
-    },0);      
+     
     
 });
 
