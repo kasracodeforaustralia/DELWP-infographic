@@ -14,9 +14,11 @@ $(window).scroll(function(){
 
     /* train   */ 
     if ( topPerc >= 60.0 ){
-        $('.train').css({'display':'block', 'transform': 'rotate(-1deg)', 'left': '($winWidth  *(trainLeft) )/100', 'top':'($winHeight *(trainTop) )/100'});
+        $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)', 'left': '($winWidth  *(trainLeft) )/100', 'top':'($winHeight *(trainTop) )/100'});
     } else  if ( 59.8 <= topPerc &&  topPerc < 60.0 ){ 
-        $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+        $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
         $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -25,7 +27,8 @@ $(window).scroll(function(){
 
         },0); 
     } else  if ( 59.6 <= topPerc &&  topPerc < 59.8 ){ 
-        $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+        $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
         $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -34,7 +37,8 @@ $(window).scroll(function(){
 
         },0); 
     } else  if ( 59.4 <= topPerc &&  topPerc < 59.6 ){ 
-        $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+        $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
         $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -43,7 +47,8 @@ $(window).scroll(function(){
 
         },0); 
     } else  if ( 59.2 <= topPerc &&  topPerc < 59.4 ){ 
-        $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+        $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
         $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -53,7 +58,8 @@ $(window).scroll(function(){
         },0); 
 
     }else if ( 59.0 <= topPerc &&  topPerc < 59.2 ){
-       $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+       $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
         $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -63,7 +69,8 @@ $(window).scroll(function(){
         }, 0); 
 
     }else if ( 58.8 <= topPerc &&  topPerc < 59.0 ){
-         $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+         $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
          $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -73,7 +80,8 @@ $(window).scroll(function(){
         }, 0); 
 
     } else if ( 58.6 <= topPerc &&  topPerc < 58.8 ){
-       $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+       $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
          $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -83,7 +91,8 @@ $(window).scroll(function(){
         }, 0); 
 
     }else if ( 58.4 <= topPerc &&  topPerc < 58.6 ){
-       $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+       $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
          $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -92,7 +101,8 @@ $(window).scroll(function(){
 
         }, 0); 
     }else if ( 58.2 <= topPerc &&  topPerc < 58.4 ){
-       $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+       $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
          $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -101,7 +111,8 @@ $(window).scroll(function(){
 
         }, 0); 
     }else if ( 58.0 <= topPerc &&  topPerc < 58.2 ){
-       $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+       $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
          $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -110,7 +121,8 @@ $(window).scroll(function(){
 
         }, 0); 
     }else if ( 57.8 <= topPerc &&  topPerc < 58.0 ){
-       $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+       $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
          $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -119,7 +131,8 @@ $(window).scroll(function(){
 
         }, 0); 
     } else if ( 57.6 <= topPerc &&  topPerc < 57.8 ){
-       $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+       $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
          $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -128,7 +141,8 @@ $(window).scroll(function(){
 
         }, 0); 
     } else if ( 57.4 <= topPerc &&  topPerc < 57.6 ){
-       $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+       $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
          $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -137,7 +151,8 @@ $(window).scroll(function(){
 
         }, 0); 
     } else if ( 57.2 <= topPerc &&  topPerc < 57.4 ){
-       $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+       $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
          $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -146,7 +161,8 @@ $(window).scroll(function(){
 
         }, 0); 
     } else if ( 57.0 <= topPerc &&  topPerc < 57.2 ){
-       $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+       $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
          $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -155,7 +171,8 @@ $(window).scroll(function(){
 
         }, 0); 
     } else if ( 56.8 <= topPerc &&  topPerc < 57.0 ){
-       $('.train').css({'display': 'block', 'transform': 'rotate(-1deg)'});
+       $('.train').show();
+        $('.train').css({'transform': 'rotate(-1deg)'});
          $('.train').animate({
             width: ($WidthPerc * trainW)/100,
             height: ($WidthPerc * trainH)/100,
@@ -164,7 +181,8 @@ $(window).scroll(function(){
 
         }, 0); 
     } else if (topPerc < 56.8) {
-        $('.train').css({ 'display':'block', 'opacity':'1', 'transform': 'rotate(-1deg)' });
+        $('.train').show();
+        //$('.train').css({'opacity':'1', 'transform': 'rotate(-1deg)' });
     }
 
 

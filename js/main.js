@@ -154,7 +154,7 @@ $(window).scroll(function(){
 
  
     /* This section sets the isBottomPage flag if 2 conditions are met - first: if we scrolled down 85 percent of the page- second: if we reach to welcomeDiv section */
-    if ($(window).scrollTop()  >= 0.85 * winHeight() ){    
+    if ($(window).scrollTop()  >= 0.95 * winHeight() ){    
         if ( ($(window).scrollTop()+ $(window).height())>= $('#welcomeDiv').position().top){             
             isBottomPage = 1;
         }      
@@ -162,9 +162,9 @@ $(window).scroll(function(){
 
 
     
-    //console.log("wel Pos: "+ $('#welcomeDiv').position().top);
-    //console.log("scrollTop+win.height: "+ ($(window).scrollTop()+ $(window).height()));
-    //console.log("bg2 top: "+ $('.bg2PH').position().top);
+    console.log("Is bottom: "+ isBottomPage);
+    console.log("scrollTop: "+ $(window).scrollTop());
+    console.log("bg2PH top: "+ $('.bg2PH').position().top);
     //console.log ("-----scroll top: "+ $(window).scrollTop());
 
     if($(window).scrollTop() == 13523) {
