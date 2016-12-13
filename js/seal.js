@@ -7,10 +7,10 @@ $(window).scroll(function(){
         var $HeightPerc = HeightPerc();
         var topPerc     = topPercfunc();
 
-        /* seal 
+        /* seal */
         if (topPerc >= 95.6){
             $('#seal').css({'display': 'none', 'transform':'scale(0.3)', 'left': '($winWidth * sealLeft)/100', 'top':'($winHeight *(sealTop) )/100'});
-        } else */  if ( topPerc < 95.4  && topPerc >= 95.6 ){
+        } else   if ( topPerc < 95.4  && topPerc >= 95.6 ){
             
             $('#seal').show();
             $('#seal').css({'transform':'scale(0.3)'});

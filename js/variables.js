@@ -61,6 +61,7 @@ var campfireFlag = 1;
 var buildings3Flag = 1;
 // ----------------
 var isBottomPage   = 0;
+var aredotshidden  = 0;
 
 
 /* --------------------------- ITEMS ----------------------------------------- */
@@ -296,13 +297,13 @@ var tramCounter=0;
 
   //////    MESSAGES     ////////////////
   
-    /* msg-1 */
+    /* msg-1 
     var msg1Top = 96.2;
-    var msg1Left = 38;
+    var msg1Left = 38;*/
 
-    /* dot-1 */
+    /* dot-1 
     var dot1Top = 96.8;
-    var dot1Left = 40;
+    var dot1Left = 40;*/
 
    
     /* msg-2 */

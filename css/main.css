@@ -118,9 +118,9 @@ body {
     border-radius: 60px;
     height: 50px;
     width: 50px;
-    -webkit-animation: pulse 2s ease-out;
-    -moz-animation: pulse 2s ease-out;
-    animation: pulse 2s ease-out;
+    -webkit-animation: pulse 1s ease-out;
+    -moz-animation: pulse 1s ease-out;
+    animation: pulse 1s ease-out;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
@@ -198,64 +198,6 @@ body {
         height: 60%;
         background: #006666;
     }*/
-
-
-/* Mobile Phones */
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
-    #welcomemsg {
-        font-size: 100%;
-        width: 75%; 
-    }
-
-    .msg {
-        width: 65%;
-    }
-
-    .msg p { 
-        font-size: 15px;
-    }
-
-    .msg a { 
-        font-size: 12px;
-    }
-
-    /*#welcomeDiv {
-        width: 100%;
-        height: 40%;
-    }*/
-}
-
-/* Tablets Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
- {
-
-    /*#welcomeDiv {
-        width: 100%;
-        height: 50%;
-    }*/
-
-    #welcomemsg {
-        font-size: 100%;
-        width: 75%; 
-    }
-
-    .msg {
-        width: 65%;
-    }
-
-    .msg p { 
-        font-size: 25px;
-    }
-
-    .msg a { 
-        font-size: 18px;
-    }
-}
-
-
 .garbageTruck{
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
@@ -292,4 +234,106 @@ body {
     background-color:blue;
     border-radius: 5px;
 }
+
+#dot-1 {
+    position: absolute;
+    top: 12463.9px;
+    left: 539.6px;
+}
+
+/* Mobile Phones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+    #welcomemsg {
+        font-size: 100%;
+        width: 75%; 
+    }
+
+    .msg {
+        margin: 0 auto;
+        width: 65%;
+    }
+
+    .msg p { 
+        font-size: 12px;
+    }
+
+    .msg a { 
+        font-size: 10px;
+    }
+
+    /*#welcomeDiv {
+        width: 100%;
+        height: 40%;
+    }*/
+}
+
+/* Tablets Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+ {
+
+    /*#welcomeDiv {
+        width: 100%;
+        height: 50%;
+    }*/
+
+    #welcomemsg {
+        font-size: 100%;
+        width: 75%; 
+    }
+
+    .holder {
+        height: 30px;
+        width: 30px;
+    }
+
+    .dot {
+        height: 30px;
+        width: 30px;
+    }
+    .msg {
+        width: 45%;
+    }
+
+    .msg p { 
+        font-size: 12px;
+    }
+
+    .msg a { 
+        font-size: 8px;
+    }
+
+    #dot-1 {
+        top: 7071px;
+        left: 300px;
+    }
+
+    #msg-1 {
+        top: 7042.84px;
+        left: 0px;
+    }
+
+    #dot-2 {
+        top: 6899.61px;
+        left: 300px;
+    }
+
+    #msg-2 {
+        top: 7030.84px;
+        left: 0px;
+    }
+
+    #dot-3 {
+        top: 6683.61px;
+        left: 170.4px;
+    }
+
+    #msg-3 {
+        top: 6655.29px;
+        left: 0px;
+    }
+}
+
 

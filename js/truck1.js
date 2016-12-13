@@ -142,7 +142,7 @@ $(window).scroll(function(){
             width: ($WidthPerc * truck1W)/100,
             height: ($WidthPerc * truck1H)/100,
             left: ($winWidth  *(50) )/100,
-            top:  ($winHeight *(70.0) )/100,
+            top:  ($winHeight *(69.92) )/100,
 
         }, 0); 
     } else if ( 65.0 <= topPerc &&  topPerc < 65.2 ){
@@ -151,7 +151,7 @@ $(window).scroll(function(){
             width: ($WidthPerc * truck1W)/100,
             height: ($WidthPerc * truck1H)/100,
             left: ($winWidth  *(54) )/100,
-            top:  ($winHeight *(70.2) )/100,
+            top:  ($winHeight *(70.08) )/100,
 
         }, 0); 
     } else if ( 64.8 <= topPerc &&  topPerc < 65.0 ){
@@ -160,7 +160,7 @@ $(window).scroll(function(){
             width: ($WidthPerc * truck1W)/100,
             height: ($WidthPerc * truck1H)/100,
             left: ($winWidth  *(58) )/100,
-            top:  ($winHeight *(70.4) )/100,
+            top:  ($winHeight *(70.3) )/100,
 
         }, 0); 
     } else if ( 64.6 <= topPerc &&  topPerc < 64.6 ){

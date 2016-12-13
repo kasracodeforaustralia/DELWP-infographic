@@ -63,7 +63,7 @@ $(window).scroll(function(){
     /* ---------------- BUILDINGS ---------------- */
 
     /***** building ******/
-    if ( topPerc <= 68.4 ) {
+    if ( topPerc <= 69.2 ) {
         $('.building').css({'display':'block' });
         $('.building').animate({
            width: ($WidthPerc * buildingW)/100,
@@ -75,7 +75,7 @@ $(window).scroll(function(){
     }
 
     /********** sold-ign **********/
-    if ( topPerc <= 68.2 ) {
+    if ( topPerc <= 69.0 ) {
       $('.sold-sign').animate({
          width: ($WidthPerc * soldsignW)/100,
          height:($HeightPerc* soldsignH)/100,
@@ -85,7 +85,7 @@ $(window).scroll(function(){
       },0);
     }
     /*********** building-two ************/
-    if ( topPerc <= 68.0 ) {
+    if ( topPerc <= 68.4 ) {
         $('.building-two').css({'display':'block' });
         $('.building-two').animate({
            width: ($WidthPerc * building2W)/100,
