@@ -87,7 +87,7 @@ $(document).ready(function() {
         //console.log("scroll top "+ $(window).scrollTop());
         
     /* This takes user to the bottom of the page  */  
-    $("body, html").animate({ scrollTop: 20000 }, 4000);         
+    $("body, html").animate({ scrollTop: 40000 }, 3000);         
     
 }); // End of $(document).ready(function...
 

@@ -28,8 +28,8 @@ $(window).scroll(function(){
              $('#welcomeDiv').animate({
                 
                 width: $winWidth,
-                height:($winHeight* 12)/100
-            
+                height:($winHeight* 15)/100,
+               
             },0);          
         }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
               $('#welcomeDiv').animate({
