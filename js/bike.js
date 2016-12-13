@@ -9,6 +9,45 @@ $(document).ready(function() {
 });
 
 
+
+/*### Separatoring .ready and .resize funcs ###*/
+/*##############-##-########-##-###############*/
+/*#################---####---##################*/
+/*####################----#####################*/
+/*#####################--######################*/
+/*#############################################*/
+
+
+/* Dynamic css for all items after resizing */
+$( window ).resize(function() {
+  
+    /*  ---------------------------------- */
+    
+    // Responsive width and height of the bg images
+    var $winWidth   = winWidth();
+    var $winHeight  = winHeight();
+    var $WidthPerc  = WidthPerc();
+    var $HeightPerc = HeightPerc();
+    
+    /* bike */
+    $('.bike').show();
+    $('.bike').animate({
+        width: ( ($WidthPerc * bikeW)/100)*120/100,
+        height:( ($HeightPerc* bikeH)/100)*120/100,
+
+        left: ($winWidth  *(27) )/100,
+        top:  ($winHeight *(49.46) )/100
+    },0); 
+    
+});
+    
+/*## Separatoring .resize and onscroll funcs ##*/
+/*##############-##-########-##-###############*/
+/*#################---####---##################*/
+/*####################----#####################*/
+/*#####################--######################*/
+/*#############################################*/ 
+
 $(window).scroll(function(){
 
     // Responsive width and height of the bg images

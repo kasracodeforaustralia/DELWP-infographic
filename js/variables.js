@@ -533,7 +533,7 @@ var tramCounter=0;
 /* This func returns the scalled/dynamic width 
 of the background image */
 function winWidth(){
-    var $winWidth  = $('.bg1').width();
+    var $winWidth  = $(window).width();
     return $winWidth;
 }
 /* This func returns the scalled/dynamic height 

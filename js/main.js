@@ -11,6 +11,58 @@ $(document).ready(function() {
     
 });
 
+/*### Separatoring .ready and .resize funcs ###*/
+/*##############-##-########-##-###############*/
+/*#################---####---##################*/
+/*####################----#####################*/
+/*#####################--######################*/
+/*#############################################*/
+
+
+/* Dynamic css for all items after resizing */
+$( window ).resize(function() {
+  
+    var $win = $(window);
+    // Responsive width and height of the bg images
+    var $winWidth   = winWidth();
+    var $winHeight  = winHeight();
+    var $WidthPerc  = WidthPerc();
+    var $HeightPerc = HeightPerc();
+
+    /* Welcome Div */
+    if($win.width()/$win.height() <= 0.8){
+         $('#welcomeDiv').animate({
+            backgroundColor: '#006666',
+            width: $winWidth,
+            height:($winHeight* 15)/100,
+            marginTop: '-5px'
+        },0);          
+    }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
+        $('#welcomeDiv').animate({
+            backgroundColor: '#006666',
+            width: $winWidth,
+            height:($winHeight* 12)/100,
+            marginTop: '-5px'
+        },0);          
+    }else if(1.1 < $win.width()/$win.height()){ 
+        $('#welcomeDiv').animate({
+            backgroundColor: '#006666',
+            width: $winWidth,
+            height:($winHeight* 8)/100,
+            marginTop: '-5px'
+        },0);              
+    }
+   
+
+    
+});
+    
+/*## Separatoring .resize and onscroll funcs ##*/
+/*##############-##-########-##-###############*/
+/*#################---####---##################*/
+/*####################----#####################*/
+/*#####################--######################*/
+/*#############################################*/ 
 
 
 $(window).scroll(function(){
