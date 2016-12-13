@@ -306,13 +306,13 @@ var tramCounter=0;
     var dot1Left = 40;*/
 
    
-    /* msg-2 */
+    /* msg-2 
     var msg2Top = 92.4;
-    var msg2Left = 14;
+    var msg2Left = 14;*/
 
-    /* dot-2 */
+    /* dot-2 
     var dot2Top = 92.8;
-    var dot2Left = 18;
+    var dot2Left = 18;*/
 
    
     /* msg-3 */

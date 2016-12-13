@@ -193,11 +193,11 @@ body {
 }    
 
 
-/*#welcomeDiv {
-        width: 100%;
-        height: 60%;
+#welcomeDiv {
+        margin-top: -5px;
         background: #006666;
-    }*/
+}
+
 .garbageTruck{
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
@@ -235,11 +235,20 @@ body {
     border-radius: 5px;
 }
 
-#dot-1 {
-    position: absolute;
-    top: 12463.9px;
-    left: 539.6px;
+#feedback_btn {
+    background-color: #dd7c2c;
+    padding: 8px;
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    width: 70px;
+    border-radius: 3px;
+    border: 1px #e49758 solid;
+    color: #ffffff;
+    text-decoration: none;
 }
+
+
 
 /* Mobile Phones */
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
