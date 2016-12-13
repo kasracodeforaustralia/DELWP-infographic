@@ -108,13 +108,15 @@ $( window ).resize(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
 
+    location.reload();
+    /*
     $('.allBgs').animate({ 
         width:  $winWidth, 
         height: $winHeight     
     });
     
     /* ُCreating Place Holders (PH) for background (bg) images*/
-    
+    /*
     $('.bg5PH').animate({ width: $winWidth, height: ($bg5Height * $WidthPerc)/100    });
     $('.bg6PH').animate({width: $winWidth,height: ($bg6Height * $WidthPerc)/100}); 
     $('.bg7PH').animate({width: $winWidth,height: ($bg7Height * $WidthPerc)/100}); 
@@ -126,6 +128,7 @@ $( window ).resize(function() {
     $('.bg13PH').animate({width: $winWidth, height: ($bg13Height * $WidthPerc)/100}); 
     $('.bg14PH').animate({width: $winWidth,height: ($bg14Height * $WidthPerc)/100}); 
     
+    */
     /* ُEnd of creating Place Holders (PH) */    
 
     

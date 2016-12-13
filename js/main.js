@@ -29,6 +29,8 @@ $( window ).resize(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
 
+    //$(document).css("overflow","hidden");
+    
     /* Welcome Div */
     if($win.width()/$win.height() <= 0.8){
          $('#welcomeDiv').animate({
