@@ -8,7 +8,7 @@ $(window).scroll(function(){
     var topPerc     = topPercfunc();    
         
     //console.log("topPerc: " + topPerc);
-    /* Birds 
+    /* Birds */
     if ( (topPerc <= 1.5) && (eurekaFlag == 1) ){
         $('').attr('src',.src);
         birdsReplayFlag =0;
@@ -16,8 +16,8 @@ $(window).scroll(function(){
     }else if (topPerc > 1.5 ){
        birdsReplayFlag =1; 
     }
-    */
-    /* eureka-tower 
+    
+    /* eureka-tower */
     if (topPerc <= 65){
         eurekaFlag =1;
         
@@ -29,9 +29,9 @@ $(window).scroll(function(){
         }
     }else if (topPerc > 77 ){
        eurekaFlag =1; 
-    }*/
+    }
  
-        /* glass-building and apartment-block 
+        /* glass-building and apartment-block */
     if (topPerc <= 63){
         glassBuildingFlag  =1;
         apartmentBlockFlag =1;
@@ -47,7 +47,7 @@ $(window).scroll(function(){
         glassBuildingFlag  =1;
         apartmentBlockFlag =1;
     }
-    */
+    
     
     /* building and building-two 
     if (topPerc <= 56){

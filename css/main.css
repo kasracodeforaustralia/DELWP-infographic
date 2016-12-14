@@ -18,19 +18,26 @@ body {
     height: auto;
     //text-align: center;
     vertical-align: middle;
+    margin-top: 0px;
 }
 
 .bg4s7{
     width: 100%;
     height: auto;
-    margin-top: -1px;
+    margin-top: -2px;
 }
 
 .defLoadedBgs{
     width: 100%;
     height: auto;
-    margin-top: -4px;
+    margin-top: 0px;
 }
+.bg4{ margin-top: -2px;}
+#welcomeDiv {
+    margin-top: -2px;
+    background: #006666;
+}
+
 .loading{
     position: absolute;
     padding-top: 50%;
@@ -192,11 +199,6 @@ body {
  }
 }    
 
-
-#welcomeDiv {
-        margin-top: -5px;
-        background: #006666;
-}
 
 .garbageTruck{
     -ms-transform: rotate(7deg); /* IE 9 */

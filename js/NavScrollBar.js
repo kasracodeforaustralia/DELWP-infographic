@@ -69,9 +69,8 @@ $( document ).ready(function() {
 
         $(window).scrollTop(SliderPosPrec * $winHeight/100);
         //isDragging = false;
-    });   
-    
-    
+    });  
+
     
 });
 
