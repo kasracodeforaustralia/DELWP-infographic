@@ -315,52 +315,52 @@ var tramCounter=0;
     var dot2Left = 18;*/
 
    
-    /* msg-3 */
+    /* msg-3 
     var msg3Top = 92.8;
     var msg3Left = 44;
 
-    /* dot-3 */
+    /* dot-3 
     var dot3Top = 93.4;
     var dot3Left = 44;
     
 
-    /* msg-4 */
+    /* msg-4 
     var msg4Top = 79.8;
     var msg4Left = 19;
 
-    /* dot-4 */
+    /* dot-4 
     var dot4Top = 79.8;
     var dot4Left = 15;
 
     
-    /* msg-5 */
+    /* msg-5 
     var msg5Top = 75.8;
     var msg5Left = 14;
 
-    /* dot-5 */
+    /* dot-5 
     var dot5Top = 75.4;
     var dot5Left = 16;
 
 
-     /* msg-6 */
+     /* msg-6
     var msg6Top = 75.9;
     var msg6Left = 54;
 
-    /* dot-6 */
+    /* dot-6 
     var dot6Top = 75.5;
     var dot6Left = 68;
 
 
-     /* msg-7 */
+     /* msg-7 
     var msg7Top = 73.1;
     var msg7Left = 12;
 
-    /* dot-7 */
+    /* dot-7 
     var dot7Top = 73.3;
     var dot7Left = 8;
 
 
-     /* msg-8 */
+     /* msg-8 
     var msg8Top = 71.2;
     var msg8Left = 27;
 

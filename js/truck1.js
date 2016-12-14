@@ -169,7 +169,7 @@ $(window).scroll(function(){
             width: ($WidthPerc * truck1W)/100,
             height: ($WidthPerc * truck1H)/100,
             left: ($winWidth  *(62) )/100,
-            top:  ($winHeight *(70.6) )/100,
+            top:  ($winHeight *(70.5) )/100,
 
         }, 0); 
     } else if ( 64.4 <= topPerc &&  topPerc < 64.6 ){
@@ -178,7 +178,7 @@ $(window).scroll(function(){
             width: ($WidthPerc * truck1W)/100,
             height: ($WidthPerc * truck1H)/100,
             left: ($winWidth  *(66) )/100,
-            top:  ($winHeight *(70.8) )/100,
+            top:  ($winHeight *(70.7) )/100,
 
         }, 0); 
     } else if ( 64.2 <= topPerc &&  topPerc < 64.4 ){
@@ -187,7 +187,7 @@ $(window).scroll(function(){
             width: ($WidthPerc * truck1W)/100,
             height: ($WidthPerc * truck1H)/100,
             left: ($winWidth  *(70) )/100,
-            top:  ($winHeight *(71.0) )/100,
+            top:  ($winHeight *(70.9) )/100,
 
         }, 0); 
     } else if ( 64.0 <= topPerc &&  topPerc < 64.2 ){
@@ -196,7 +196,7 @@ $(window).scroll(function(){
             width: ($WidthPerc * truck1W)/100,
             height: ($WidthPerc * truck1H)/100,
             left: ($winWidth  *(74) )/100,
-            top:  ($winHeight *(71.2) )/100,
+            top:  ($winHeight *(71.0) )/100,
 
         }, 0); 
     } else if ( 63.8 <= topPerc &&  topPerc < 64.0 ){
@@ -205,7 +205,7 @@ $(window).scroll(function(){
             width: ($WidthPerc * truck1W)/100,
             height: ($WidthPerc * truck1H)/100,
             left: ($winWidth  *(78) )/100,
-            top:  ($winHeight *(71.4) )/100,
+            top:  ($winHeight *(71.2) )/100,
 
         }, 0); 
     } else if ( 63.6 <= topPerc &&  topPerc < 63.8 ){
@@ -214,7 +214,7 @@ $(window).scroll(function(){
             width: ($WidthPerc * truck1W)/100,
             height: ($WidthPerc * truck1H)/100,
             left: ($winWidth  *(82) )/100,
-            top:  ($winHeight *(71.6) )/100,
+            top:  ($winHeight *(71.4) )/100,
 
         }, 0); 
     } else if ( 63.4 <= topPerc &&  topPerc < 63.6 ){
@@ -223,7 +223,7 @@ $(window).scroll(function(){
             width: ($WidthPerc * truck1W)/100,
             height: ($WidthPerc * truck1H)/100,
             left: ($winWidth  * 86 )/100,
-            top:  ($winHeight * 71.8)/100,
+            top:  ($winHeight * 71.6)/100,
 
         }, 0); 
     } else if ( 63.2<= topPerc &&  topPerc < 63.4 ){
@@ -232,20 +232,20 @@ $(window).scroll(function(){
             width: ($WidthPerc * truck1W)/100,
             height: ($WidthPerc * truck1H)/100,
             left: ($winWidth  *(90) )/100,
-            top:  ($winHeight *(72.0) )/100,
+            top:  ($winHeight *(71.8) )/100,
 
         }, 0); 
     } else if ( 63.0 <= topPerc &&  topPerc < 63.2 ){
-       $('.truck1').css({'display': 'block'});
+       $('.truck1').show();
          $('.truck1').animate({
             width: ($WidthPerc * truck1W)/100,
             height: ($WidthPerc * truck1H)/100,
             left: ($winWidth  * 94 )/100,
-            top:  ($winHeight * 72.2)/100,
+            top:  ($winHeight * 72.0)/100,
 
         }, 0); 
     } else if (topPerc < 63.0) {
-        $('.truck1').css({ 'display':'block', 'opacity':'1' });
+        $('.truck1').hide();
     }
 
 
