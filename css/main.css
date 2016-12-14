@@ -16,7 +16,6 @@ body {
 .bg{
     width: 100%;
     height: auto;
-    //text-align: center;
     vertical-align: middle;
     margin-top: 0px;
 }
@@ -256,11 +255,14 @@ body {
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
     #welcomemsg {
         font-size: 100%;
-        width: 75%; 
+        width: 75%;
+        margin: auto; 
     }
 
     .msg {
-        margin: 0 auto;
+        left: 0;
+        right: 0;
+        margin: auto;
         width: 65%;
     }
 
@@ -272,10 +274,21 @@ body {
         font-size: 10px;
     }
 
-    /*#welcomeDiv {
-        width: 100%;
-        height: 40%;
-    }*/
+    .holder {
+        height: 30px;
+        width: 30px;
+    }
+    .pulse {
+        height: 5px;
+        width: 5px;
+    }
+
+    .dot {
+        height: 30px;
+        width: 30px;
+            top: -3px;
+        left: -3px;
+    }
 }
 
 /* Tablets Portrait */
@@ -292,7 +305,11 @@ body {
 
     #welcomemsg {
         font-size: 100%;
-        width: 75%; 
+        width: 75%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto; 
     }
 
     .holder {
@@ -303,48 +320,31 @@ body {
     .dot {
         height: 30px;
         width: 30px;
+            top: -2px;
+        left: -2px;
     }
+
     .msg {
-        width: 45%;
+        width: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
     .msg p { 
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .msg a { 
-        font-size: 8px;
+        font-size: 12px;
     }
 
-    #dot-1 {
-        top: 7071px;
-        left: 300px;
+    #feedback_btn {
+        width: 50px;
+        font-size: 12px;
     }
 
-    #msg-1 {
-        top: 7042.84px;
-        left: 0px;
-    }
-
-    #dot-2 {
-        top: 6899.61px;
-        left: 300px;
-    }
-
-    #msg-2 {
-        top: 7030.84px;
-        left: 0px;
-    }
-
-    #dot-3 {
-        top: 6683.61px;
-        left: 170.4px;
-    }
-
-    #msg-3 {
-        top: 6655.29px;
-        left: 0px;
-    }
+    
 }
 
 
