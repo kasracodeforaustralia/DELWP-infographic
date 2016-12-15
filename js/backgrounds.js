@@ -91,6 +91,55 @@ $(document).ready(function() {
     
 }); // End of $(document).ready(function...
 
+/*### Separatoring .ready and .resize funcs ###*/
+/*##############-##-########-##-###############*/
+/*#################---####---##################*/
+/*####################----#####################*/
+/*#####################--######################*/
+/*#############################################*/
+
+
+/* Dynamic css for all items after resizing */
+$( window ).resize(function() {
+  
+    // Responsive width and height of the bg images
+    var $winWidth   = winWidth();
+    var $winHeight  = winHeight();
+    var $WidthPerc  = WidthPerc();
+    var $HeightPerc = HeightPerc();
+
+    location.reload();
+    /*
+    $('.allBgs').animate({ 
+        width:  $winWidth, 
+        height: $winHeight     
+    });
+    
+    /* ُCreating Place Holders (PH) for background (bg) images*/
+    /*
+    $('.bg5PH').animate({ width: $winWidth, height: ($bg5Height * $WidthPerc)/100    });
+    $('.bg6PH').animate({width: $winWidth,height: ($bg6Height * $WidthPerc)/100}); 
+    $('.bg7PH').animate({width: $winWidth,height: ($bg7Height * $WidthPerc)/100}); 
+    $('.bg8PH').animate({width: $winWidth,height: ($bg8Height * $WidthPerc)/100}); 
+    $('.bg9PH').animate({width: $winWidth,height: ($bg9Height * $WidthPerc)/100}); 
+    $('.bg10PH').animate({width: $winWidth,height: ($bg10Height * $WidthPerc)/100}); 
+    $('.bg11PH').animate({ width: $winWidth,height: ($bg11Height * $WidthPerc)/100}); 
+    $('.bg12PH').animate({width: $winWidth,height: ($bg12Height * $WidthPerc)/100}); 
+    $('.bg13PH').animate({width: $winWidth, height: ($bg13Height * $WidthPerc)/100}); 
+    $('.bg14PH').animate({width: $winWidth,height: ($bg14Height * $WidthPerc)/100}); 
+    
+    */
+    /* ُEnd of creating Place Holders (PH) */    
+
+    
+});
+    
+/*## Separatoring .resize and onscroll funcs ##*/
+/*##############-##-########-##-###############*/
+/*#################---####---##################*/
+/*####################----#####################*/
+/*#####################--######################*/
+/*#############################################*/ 
 
 
 $(window).scroll(function(){
