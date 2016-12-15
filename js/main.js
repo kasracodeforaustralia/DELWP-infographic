@@ -180,6 +180,19 @@ $(window).scroll(function(){
         top:  ($winHeight * (34.2) )/100
     },0);      
     
+    /* Loads tractor when reach bg 7*/ 
+    if ( ($(window).scrollTop() <=$('.bg8PH').position().top) && tractorFlag == 1 && isBottomPage ==1){
+        loadIMG('.tractorPH','img/section-789/tractor.png','tractor item');
+        tractorFlag = 0;
+    }    
+    
+    $('.tractor').animate({
+       width: ( ($WidthPerc * tractorW)/100)*150/100,
+       height:( ($HeightPerc* tractorH)/100)*150/100,
+       
+       left: ($winWidth  *(75) )/100,
+       top:  ($winHeight *(41.3) )/100
+    },0);  
     
    /* Loads buldozer when reach bg 7*/ 
     if ( ($(window).scrollTop() <=$('.bg7PH').position().top) && bulldozerFlag == 1 && isBottomPage ==1){
