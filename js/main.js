@@ -179,19 +179,35 @@ $(window).scroll(function(){
         left: ($winWidth  * (35) )/100,
         top:  ($winHeight * (34.2) )/100
     },0);      
+ 
+    /* Loads cow when reach bg 8*/ 
+    if ( ($(window).scrollTop() <=$('.bg8PH').position().top) && cowFlag == 1 && isBottomPage ==1){
+        loadIMG('.cowPH','img/section-789/cow.png','cow item');
+        cowFlag = 0;
+    }    
     
-    /* Loads tractor when reach bg 7*/ 
+    $('.cow').animate({
+       width: ( ($WidthPerc * cowW)/100)*110/100,
+       height:( ($HeightPerc* cowH)/100)*110/100,
+       
+       left: ($winWidth  *(64) )/100,
+       top:  ($winHeight *(28.5) )/100
+    },0);      
+    
+    /* Loads tractor when reach bg 8*/ 
     if ( ($(window).scrollTop() <=$('.bg8PH').position().top) && tractorFlag == 1 && isBottomPage ==1){
         loadIMG('.tractorPH','img/section-789/tractor.png','tractor item');
         tractorFlag = 0;
     }    
     
     $('.tractor').animate({
-       width: ( ($WidthPerc * tractorW)/100)*150/100,
-       height:( ($HeightPerc* tractorH)/100)*150/100,
+       width: ( ($WidthPerc * tractorW)/100)*110/100,
+       height:( ($HeightPerc* tractorH)/100)*110/100,
        
-       left: ($winWidth  *(75) )/100,
-       top:  ($winHeight *(41.3) )/100
+       /*left: ($winWidth  *(18) )/100,
+       top:  ($winHeight *(25) )/100 */
+       left: ($winWidth  *(59) )/100,
+       top:  ($winHeight *(31.3) )/100
     },0);  
     
    /* Loads buldozer when reach bg 7*/ 

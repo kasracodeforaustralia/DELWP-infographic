@@ -25,8 +25,8 @@ var bg5Flag, bg6Flag, bg7Flag, bg8Flag, bg9Flag, bg10Flag, bg11Flag, bg12Flag, b
 bg5Flag= bg6Flag= bg7Flag= bg8Flag= bg9Flag= bg10Flag= bg11Flag= bg12Flag= bg13Flag= bg14Flag =1;
 
 /* ---------- Loading flags for items ------These flags are to prevent loading images for more that one time -----------------*/
-var welcomeFlag, footyPlayersFlag, footyFlag, bulldozerFlag, tractorFlag, garbageTruckFlag, birdsFlag, turbineFlag, cloudFlag, cloud2Flag, floodSingFlag, windMillFlag, kangarooFlag, kangarookid1Flag, kangarookid2Flag, bikeFlag, whiteCarFlag, fireFlag, fireFightersFlag, car1Flag, tramFlag, buildingsFlag, buildings2Flag, busFlag, car2Flag, trainFlag, truck1Flag, tentFlag, campfireFlag, buildings3Flag;
-welcomeFlag= footyPlayersFlag= footyFlag= bulldozerFlag= tractorFlag= garbageTruckFlag= birdsFlag= turbineFlag= cloudFlag= cloud2Flag= floodSingFlag= windMillFlag= kangarooFlag= kangarookid1Flag= kangarookid2Flag= bikeFlag= whiteCarFlag= fireFlag= fireFightersFlag= car1Flag= tramFlag= buildingsFlag= buildings2Flag= busFlag= car2Flag= trainFlag= truck1Flag= tentFlag= campfireFlag= buildings3Flag=1;
+var welcomeFlag, footyPlayersFlag, footyFlag, bulldozerFlag, cowFlag, tractorFlag, garbageTruckFlag, birdsFlag, turbineFlag, cloudFlag, cloud2Flag, floodSingFlag, windMillFlag, kangarooFlag, kangarookid1Flag, kangarookid2Flag, bikeFlag, whiteCarFlag, fireFlag, fireFightersFlag, car1Flag, tramFlag, buildingsFlag, buildings2Flag, busFlag, car2Flag, trainFlag, truck1Flag, tentFlag, campfireFlag, buildings3Flag;
+welcomeFlag= footyPlayersFlag= footyFlag= cowFlag =bulldozerFlag= tractorFlag= garbageTruckFlag= birdsFlag= turbineFlag= cloudFlag= cloud2Flag= floodSingFlag= windMillFlag= kangarooFlag= kangarookid1Flag= kangarookid2Flag= bikeFlag= whiteCarFlag= fireFlag= fireFightersFlag= car1Flag= tramFlag= buildingsFlag= buildings2Flag= busFlag= car2Flag= trainFlag= truck1Flag= tentFlag= campfireFlag= buildings3Flag=1;
 
 
 // This variable will turn to 1 when the scroll is at the bottom of the page
@@ -54,6 +54,9 @@ var footyW = 58; var footyH = 51;
 
 /* Tractor */
 var tractorW = 150; var tractorH = 150;
+
+/* Cow defaul size */  
+var cowW = 85; var cowH = 71;
 
 /* Bulldozer */
 var bulldozerW = 167; var bulldozerH = 129;
