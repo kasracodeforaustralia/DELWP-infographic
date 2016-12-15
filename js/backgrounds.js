@@ -103,10 +103,10 @@ $(document).ready(function() {
 $( window ).resize(function() {
   
     // Responsive width and height of the bg images
-    var $winWidth   = winWidth();
-    var $winHeight  = winHeight();
-    var $WidthPerc  = WidthPerc();
-    var $HeightPerc = HeightPerc();
+    //var $winWidth   = winWidth();
+    //var $winHeight  = winHeight();
+    //var $WidthPerc  = WidthPerc();
+    //var $HeightPerc = HeightPerc();
 
     location.reload();
     /*
