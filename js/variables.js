@@ -295,110 +295,124 @@ var tramCounter=0;
 
 /* ------------------------------------------------------------------------------- */
 
-  //////    MESSAGES     ////////////////
+  //////    DOTS     ////////////////
+    
+    /* holder */
+    var holderW = 30;
   
-    /* msg-1 
-    var msg1Top = 96.2;
-    var msg1Left = 38;*/
+    /* dots */
+    var dotsW = 50;
+    var dotsTop = -25;
+    
+    /* pulse */
+    var pulseW = 15;
+    var pulseTop = 40;
 
-    /* dot-1 
+
+  //////    MESSAGES     ////////////////
+
+    /* msg-1 */
+    var msg1Top = 96.4;
+    var msg1Left = 38;
+
+    /* dot-1 */
     var dot1Top = 96.8;
-    var dot1Left = 40;*/
+    var dot1Left = 40;
 
    
-    /* msg-2 
+    /* msg-2 */
     var msg2Top = 92.4;
-    var msg2Left = 14;*/
+    var msg2Left = 14;
 
-    /* dot-2 
+    /* dot-2 */
     var dot2Top = 92.8;
-    var dot2Left = 18;*/
+    var dot2Left = 18;
 
    
-    /* msg-3 
-    var msg3Top = 92.8;
-    var msg3Left = 44;
+    /* msg-3 */
+    var msg3Top = 94.0;
+    var msg3Left = 42;
 
-    /* dot-3 
+    /* dot-3 */
     var dot3Top = 93.4;
     var dot3Left = 44;
     
 
-    /* msg-4 
-    var msg4Top = 79.8;
-    var msg4Left = 19;
+    /* msg-4 */
+    var msg4Top = 79.6;
+    var msg4Left = 20;
 
-    /* dot-4 
+    /* dot-4 */
     var dot4Top = 79.8;
     var dot4Left = 15;
 
     
-    /* msg-5 
-    var msg5Top = 75.8;
+    /* msg-5 */
+    var msg5Top = 76.4;
     var msg5Left = 14;
 
-    /* dot-5 
+    /* dot-5 */
     var dot5Top = 75.4;
     var dot5Left = 16;
 
 
-     /* msg-6
-    var msg6Top = 75.9;
-    var msg6Left = 54;
+     /* msg-6*/
+    var msg6Top = 74.5;
+    var msg6Left = 44;
 
-    /* dot-6 
+    /* dot-6 */
     var dot6Top = 75.5;
     var dot6Left = 68;
 
 
-     /* msg-7 
-    var msg7Top = 73.1;
-    var msg7Left = 12;
+     /* msg-7 */
+    var msg7Top = 72.0;
+    var msg7Left = 4;
 
-    /* dot-7 
+    /* dot-7 */
     var dot7Top = 73.3;
     var dot7Left = 8;
 
 
-     /* msg-8 
-    var msg8Top = 71.2;
-    var msg8Left = 27;
+     /* msg-8 */
+    var msg8Top = 71.0;
+    var msg8Left = 18;
 
     /* dot-8 */
-    var dot8Top = 71.4;
-    var dot8Left = 23.2;
+    var dot8Top = 70.4;
+    var dot8Left = 21.2;
 
 
-     /* msg-9 */
+     /* msg-9  MCG */
     var msg9Top = 63.2;
-    var msg9Left = 34;
+    var msg9Left = 32;
 
-    /* dot-9 */
+    /* dot-9  */
     var dot9Top = 63.4;
-    var dot9Left = 30;
+    var dot9Left = 26;
 
 
-     /* msg-10 */
-    var msg10Top = 59.5;
-    var msg10Left = 48;
+     /* msg-10 TRAIN*/
+    var msg10Top = 59.3;
+    var msg10Left = 16;
 
     /* dot-10 */
-    var dot10Top = 59.1;
-    var dot10Left = 50;
+    var dot10Top = 59.3;
+    var dot10Left = 12;
 
 
      /* msg-11 */
-    var msg11Top = 54.6;
-    var msg11Left = 58;
+    var msg11Top = 53.8;
+    var msg11Left = 18;
 
     /* dot-11 */
-    var dot11Top = 54.9;
-    var dot11Left = 54;
+    var dot11Top = 55.2;
+    var dot11Left = 62;
 
 
      /* msg-12 */
-    var msg12Top = 51.6;
-    var msg12Left = 54;
+    var msg12Top = 50.8;
+    var msg12Left = 40;
 
     /* dot-12 */
     var dot12Top = 51.8;
@@ -406,8 +420,8 @@ var tramCounter=0;
 
 
      /* msg-13 */
-    var msg13Top = 46.3;
-    var msg13Left = 56;
+    var msg13Top = 47.0;
+    var msg13Left = 40;
 
     /* dot-13 */
     var dot13Top = 46.4;
@@ -415,26 +429,26 @@ var tramCounter=0;
 
 
      /* msg-14 */
-    var msg14Top = 40.3;
-    var msg14Left = 52;
+    var msg14Top = 40.2;
+    var msg14Left = 28;
 
     /* dot-14 */
-    var dot14Top = 40.4;
-    var dot14Left = 48;
+    var dot14Top = 41.4;
+    var dot14Left = 52;
 
 
     /* msg-15 */
-    var msg15Top = 36.0;
-    var msg15Left = 62;
+    var msg15Top = 36.8;
+    var msg15Left = 22;
 
     /* dot-15 */
-    var dot15Top = 35.6;
-    var dot15Left = 78;
+    var dot15Top = 36.0;
+    var dot15Left = 68;
 
 
    /* msg-16 */
-    var msg16Top = 30.0;
-    var msg16Left = 62;
+    var msg16Top = 30.4;
+    var msg16Left = 32;
 
     /* dot-16 */
     var dot16Top = 29.6;
@@ -442,71 +456,71 @@ var tramCounter=0;
 
 
     /* msg-17 */
-    var msg17Top = 28.8;
-    var msg17Left = 20;
+    var msg17Top = 29.0;
+    var msg17Left = 8;
 
     /* dot-17 */
-    var dot17Top = 28.8;
+    var dot17Top = 28.4;
     var dot17Left = 48;
 
 
     /* msg-18 */
-    var msg18Top = 23.8;
-    var msg18Left = 30;
+    var msg18Top = 23.0;
+    var msg18Left = 24;
 
     /* dot-18 */
-    var dot18Top = 24.0;
+    var dot18Top = 24.1;
     var dot18Left = 66;
 
 
      /* msg-19 */
-    var msg19Top = 19.0;
-    var msg19Left = 38;
+    var msg19Top = 18.6;
+    var msg19Left = 24;
 
     /* dot-19 */
-    var dot19Top = 19.2;
-    var dot19Left = 34;
+    var dot19Top = 19.0;
+    var dot19Left = 18;
 
 
       /* msg-20 */
-    var msg20Top = 16.2;
-    var msg20Left = 54;
+    var msg20Top = 15.4;
+    var msg20Left = 39;
 
     /* dot-20 */
-    var dot20Top = 16.9;
-    var dot20Left = 58;
+    var dot20Top = 16.4;
+    var dot20Left = 53;
 
 
     /* msg-21 */
-    var msg21Top = 13.6;
-    var msg21Left = 20;
+    var msg21Top = 14.1;
+    var msg21Left = 7;
 
     /* dot-21 */
-    var dot21Top = 13.2;
-    var dot21Left = 44;
+    var dot21Top = 13.4;
+    var dot21Left = 46;
 
 
     /* msg-22 */
-    var msg22Top = 10.4;
-    var msg22Left = 62;
+    var msg22Top = 10.6;
+    var msg22Left = 28;
 
     /* dot-22 */
-    var dot22Top = 10.0;
-    var dot22Left = 64;
+    var dot22Top = 9.8;
+    var dot22Left = 60;
 
 
      /* msg-23 */
-    var msg23Top = 6.6;
-    var msg23Left = 56;
+    var msg23Top = 4.8;
+    var msg23Left = 24;
 
     /* dot-23 */
-    var dot23Top = 6.8;
-    var dot23Left = 52;
+    var dot23Top = 6.0;
+    var dot23Left = 48;
 
 
      /* msg-24 */
-    var msg24Top = 3.8;
-    var msg24Left = 38;
+    var msg24Top = 4.0;
+    var msg24Left = 30;
 
     /* dot-24 */
     var dot24Top = 3.4;
@@ -514,12 +528,12 @@ var tramCounter=0;
 
 
       /* msg-25 */
-    var msg25Top = 0.2;
-    var msg25Left = 58;
+    var msg25Top = 0.8;
+    var msg25Left = 28;
 
     /* dot-25 */
     var dot25Top = 0;
-    var dot25Left = 54;
+    var dot25Left = 38;
 
     /* feedback button */
     var feedbackW = 250;

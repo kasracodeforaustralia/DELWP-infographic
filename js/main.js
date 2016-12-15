@@ -82,9 +82,11 @@ $(window).scroll(function(){
              $('#welcomeDiv').animate({
                 
                 width: $winWidth,
-                height:($winHeight* 15)/100,
+                height:($winHeight* 15)/100
                
-            },0);          
+            },0); 
+            
+
         }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
               $('#welcomeDiv').animate({
                 
@@ -238,7 +240,7 @@ $(window).scroll(function(){
     console.log ("---top perc: "+ topPercfunc());
     console.log ("-----scroll top: "+ $(window).scrollTop());
 
-    console.log("width/height: "+ $win.width()/$win.height());
+    //console.log("width/height: "+ $win.width()/$win.height());
 
 
     if(isBottomPage == 1 && aredotshidden == 0) {//$(window).scrollTop() == 13523) {
