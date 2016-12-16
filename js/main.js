@@ -276,6 +276,7 @@ $(window).scroll(function(){
 
     if(isBottomPage == 1 && aredotshidden == 0) {//$(window).scrollTop() == 13523) {
         $(".holder").hide();
+        $(".item").hide();
         aredotshidden = 1;
         console.log ("isBottomPage = 1")
     }
