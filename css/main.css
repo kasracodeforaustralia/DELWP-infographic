@@ -214,7 +214,7 @@ body {
 
 .NavScrollBar{
     position: fixed;
-    top:35%;
+    top:30%;
     left: 2%;    
     border-radius: 5px;
     border-style: solid;

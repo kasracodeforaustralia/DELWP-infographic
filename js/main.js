@@ -2,36 +2,13 @@ $(document).ready(function() {
 
     
     var $win = $(window);
-    
+
     var $winWidth   = winWidth();
     var $winHeight  = winHeight();
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
-  
     
-});
-
-/*### Separatoring .ready and .resize funcs ###*/
-/*##############-##-########-##-###############*/
-/*#################---####---##################*/
-/*####################----#####################*/
-/*#####################--######################*/
-/*#############################################*/
-
-
-/* Dynamic css for all items after resizing */
-$( window ).resize(function() {
-  
-    var $win = $(window);
-    // Responsive width and height of the bg images
-    var $winWidth   = winWidth();
-    var $winHeight  = winHeight();
-    var $WidthPerc  = WidthPerc();
-    var $HeightPerc = HeightPerc();
-
-    //$(document).css("overflow","hidden");
-    
-    /* Welcome Div */
+    /* sets the welcomeDiv height based on the window height
     if($win.width()/$win.height() <= 0.8){
          $('#welcomeDiv').animate({
             backgroundColor: '#006666',
@@ -53,10 +30,38 @@ $( window ).resize(function() {
             height:($winHeight* 8)/100,
             marginTop: '-5px'
         },0);              
-    }
-   
-
+    } */
     
+    /*
+    if(navigator.userAgent.indexOf("Chrome") != -1 ){
+        //alert('Chrome');
+    }else if(navigator.userAgent.indexOf("Firefox") != -1 ){
+         //alert('Firefox');
+    }else {
+      alert('Please use Chrome or Firefox browsers for better compatibility and support.'); 
+    } */
+
+});
+
+/*### Separatoring .ready and .resize funcs ###*/
+/*##############-##-########-##-###############*/
+/*#################---####---##################*/
+/*####################----#####################*/
+/*#####################--######################*/
+/*#############################################*/
+
+
+/* Dynamic css for all items after resizing */
+$( window ).resize(function() {
+  
+    var $win = $(window);
+    // Responsive width and height of the bg images
+    var $winWidth   = winWidth();
+    var $winHeight  = winHeight();
+    var $WidthPerc  = WidthPerc();
+    var $HeightPerc = HeightPerc();
+
+    location.reload();
 });
     
 /*## Separatoring .resize and onscroll funcs ##*/
@@ -75,9 +80,9 @@ $(window).scroll(function(){
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
     
- 
+    /* Welcome Div 
     if( welcomeFlag ==1){
-        /* Welcome Div */
+        
         if($win.width()/$win.height() <= 0.8){
              $('#welcomeDiv').animate({
                 
@@ -85,8 +90,6 @@ $(window).scroll(function(){
                 height:($winHeight* 15)/100
                
             },0); 
-            
-
         }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
               $('#welcomeDiv').animate({
                 
@@ -105,7 +108,7 @@ $(window).scroll(function(){
    
         welcomeFlag = 0; 
     }
-    
+    /*
     
     /* Loads flood sing when reach bg 10*/ 
     if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && floodSingFlag == 1 && isBottomPage ==1 ){
@@ -266,10 +269,9 @@ $(window).scroll(function(){
     //console.log("wel Pos: "+ $('#welcomeDiv').position().top);
     //console.log("scrollTop+win.height: "+ ($(window).scrollTop()+ $(window).height()));
     //console.log("bg2 top: "+ $('.bg2PH').position().top);
-    console.log ("---top perc: "+ topPercfunc());
-    console.log ("-----scroll top: "+ $(window).scrollTop());
+    //console.log ("---top perc: "+ topPercfunc());
+    //console.log ("-----scroll top: "+ $(window).scrollTop());
 
-    //console.log("width/height: "+ $win.width()/$win.height());
 
 
     if(isBottomPage == 1 && aredotshidden == 0) {//$(window).scrollTop() == 13523) {

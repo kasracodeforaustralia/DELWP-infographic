@@ -1,9 +1,0 @@
-.cow{
-    position: absolute;
-    z-index: 72;
-    
-    -webkit-transform: rotateY(40deg); /* Chrome, Safari, Opera */
-    transform: rotateY(40deg);
-    -ms-transform: rotateY(40deg); /* IE 9 */
-
-}
