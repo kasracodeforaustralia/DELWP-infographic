@@ -293,26 +293,30 @@ var tramCounter=0;
    var sealTop = 96.6;
    var sealLeft = -10;
 
+   /* circle */
+   var circleT = 70.7;
+   var circleL = 50;
+
 /* ------------------------------------------------------------------------------- */
 
   //////    DOTS     ////////////////
     
     /* holder */
-    var holderW = 30;
+    var holderW = 50;
   
     /* dots */
     var dotsW = 50;
-    var dotsTop = -25;
+    var dotsTop = -15;
     
     /* pulse */
     var pulseW = 15;
-    var pulseTop = 40;
+    var pulseTop = 25;
 
 
   //////    MESSAGES     ////////////////
 
     /* msg-1 */
-    var msg1Top = 96.4;
+    var msg1Top = 96.1;
     var msg1Left = 38;
 
     /* dot-1 */
@@ -321,7 +325,7 @@ var tramCounter=0;
 
    
     /* msg-2 */
-    var msg2Top = 92.4;
+    var msg2Top = 92.1;
     var msg2Left = 14;
 
     /* dot-2 */
@@ -348,7 +352,7 @@ var tramCounter=0;
 
     
     /* msg-5 */
-    var msg5Top = 76.4;
+    var msg5Top = 76.0;
     var msg5Left = 14;
 
     /* dot-5 */
@@ -357,7 +361,7 @@ var tramCounter=0;
 
 
      /* msg-6*/
-    var msg6Top = 74.5;
+    var msg6Top = 74.7;
     var msg6Left = 44;
 
     /* dot-6 */
@@ -366,7 +370,7 @@ var tramCounter=0;
 
 
      /* msg-7 */
-    var msg7Top = 72.0;
+    var msg7Top = 72.5;
     var msg7Left = 4;
 
     /* dot-7 */
@@ -375,8 +379,8 @@ var tramCounter=0;
 
 
      /* msg-8 */
-    var msg8Top = 71.0;
-    var msg8Left = 18;
+    var msg8Top = 70.0;
+    var msg8Left = 24;
 
     /* dot-8 */
     var dot8Top = 70.4;
@@ -402,8 +406,8 @@ var tramCounter=0;
 
 
      /* msg-11 */
-    var msg11Top = 53.8;
-    var msg11Left = 18;
+    var msg11Top = 54.0;
+    var msg11Left = 38;
 
     /* dot-11 */
     var dot11Top = 55.2;
@@ -428,25 +432,25 @@ var tramCounter=0;
     var dot13Left = 52;
 
 
-     /* msg-14 */
+     /* msg-14 LANDFILL */
     var msg14Top = 40.2;
     var msg14Left = 28;
 
     /* dot-14 */
-    var dot14Top = 41.4;
+    var dot14Top = 40.8;
     var dot14Left = 52;
 
 
-    /* msg-15 */
+    /* msg-15 FOOTY MATCH */
     var msg15Top = 36.8;
-    var msg15Left = 22;
+    var msg15Left = 28;
 
     /* dot-15 */
-    var dot15Top = 36.0;
-    var dot15Left = 68;
+    var dot15Top = 36.4;
+    var dot15Left = 60;
 
 
-   /* msg-16 */
+   /* msg-16 GROUNDWATER */
     var msg16Top = 30.4;
     var msg16Left = 32;
 
@@ -455,35 +459,35 @@ var tramCounter=0;
     var dot16Left = 62;
 
 
-    /* msg-17 */
+    /* msg-17 FLOOR RISK */
     var msg17Top = 29.0;
-    var msg17Left = 8;
+    var msg17Left = 14;
 
     /* dot-17 */
     var dot17Top = 28.4;
     var dot17Left = 48;
 
 
-    /* msg-18 */
-    var msg18Top = 23.0;
-    var msg18Left = 24;
+    /* msg-18 WATER SUPPLIES*/
+    var msg18Top = 23.4;
+    var msg18Left = 30;
 
     /* dot-18 */
     var dot18Top = 24.1;
     var dot18Left = 66;
 
 
-     /* msg-19 */
-    var msg19Top = 18.6;
-    var msg19Left = 24;
+     /* msg-19 FIRE */
+    var msg19Top = 18.8;
+    var msg19Left = 34;
 
     /* dot-19 */
-    var dot19Top = 19.0;
-    var dot19Left = 18;
+    var dot19Top = 19.2;
+    var dot19Left = 28;
 
 
-      /* msg-20 */
-    var msg20Top = 15.4;
+    /* msg-20 PROTECT NATIVE ANIMALS */
+    var msg20Top = 15.6;
     var msg20Left = 39;
 
     /* dot-20 */
@@ -491,27 +495,27 @@ var tramCounter=0;
     var dot20Left = 53;
 
 
-    /* msg-21 */
-    var msg21Top = 14.1;
-    var msg21Left = 7;
+    /* msg-21 PESTS */
+    var msg21Top = 13.8;
+    var msg21Left = 17;
 
     /* dot-21 */
     var dot21Top = 13.4;
     var dot21Left = 46;
 
 
-    /* msg-22 */
+    /* msg-22 CAMPING */
     var msg22Top = 10.6;
-    var msg22Left = 28;
+    var msg22Left = 30;
 
     /* dot-22 */
-    var dot22Top = 9.8;
-    var dot22Left = 60;
+    var dot22Top = 10;
+    var dot22Left = 58;
 
 
-     /* msg-23 */
-    var msg23Top = 4.8;
-    var msg23Left = 24;
+     /* msg-23 MNGT PUBLIC LAND */
+    var msg23Top = 5.0;
+    var msg23Left = 26;
 
     /* dot-23 */
     var dot23Top = 6.0;
