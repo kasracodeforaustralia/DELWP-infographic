@@ -163,10 +163,17 @@ $(document).ready(function() {
         top:  ($winHeight * msg25Top )/100
     },0); 
 
+	
+
+
 
     /****** TOGGLING MESSAGES ******/
 
     $('#dot-1').click(function(){   
+        $('#msg-1').toggle("slow");
+    });
+
+    $('#close-msg1').click(function(){
         $('#msg-1').toggle("slow");
     });
 
@@ -265,7 +272,9 @@ $(document).ready(function() {
         $('#msg-25').toggle("slow");
     });
 
-			
+	
+
+
 });
 
 
@@ -279,11 +288,13 @@ $(window).scroll(function(){
 	var topPerc     = topPercfunc(); 
 	var $WidthPerc  = WidthPerc();
 
+	
+
 	/*$('.holder').animate({
         width: ($WidthPerc * holderW)/100,
         height: ($WidthPerc * holderW)/100
                
-    },0);*/
+    },0);
     $('.dot').animate({
         width: ($WidthPerc *dotsW)/100,
         height: ($WidthPerc *dotsW)/100,
@@ -297,7 +308,7 @@ $(window).scroll(function(){
         left: ( holderW  * pulseTop )/100,
         top:  ( holderW * pulseTop )/100
        
-    },0); 
+    },0); */
 
 		
 	

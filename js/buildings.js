@@ -190,6 +190,7 @@ $(window).scroll(function(){
         left: ($winWidth  *(artcLeft) )/100,
         top:  ($winHeight *(artcTop) )/100
     },0); 
+    $('.circle').css({'left': '($winWidth  *(circleL) )/100', 'top': '($winHeight *(circleT) )/100'});
 
   /******** CHURCH **************/
     $(".church").animate({
