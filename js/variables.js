@@ -31,7 +31,8 @@ welcomeFlag= footyPlayersFlag= footyFlag= cowFlag =bulldozerFlag= tractorFlag= g
 
 // This variable will turn to 1 when the scroll is at the bottom of the page
 var isBottomPage   = 0;
-var aredotshidden  = 0;
+var counter       = 0;
+//var aredotshidden  = 0;
 
 /* -------------- ITEMS --------------------- */
 

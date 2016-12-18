@@ -1,12 +1,12 @@
-/*$(document).ready(function() {             
+$(document).ready(function() {             
      $("body").keydown(function(){
-        if(($(window).scrollTop() <=                    $('.bg3').position().top) && car1Flag == 1 && isBottomPage ==1){
-            loadIMG('.car1PH','img/section-4/car1.png','item car1');
+        if(($(window).scrollTop() <=                    $('.bg3PH').position().top) && car1Flag == 1 && isBottomPage ==1){
+            loadIMG('.car1PH','img/section-4/car1.png','item car1 hiddenItem');
             car1Flag = 0;
         } 
     });
      
-});*/
+});
 
 $(window).scroll(function(){
 
@@ -18,7 +18,7 @@ $(window).scroll(function(){
     var topPerc     = topPercfunc();
 
     if( ($(window).scrollTop() <=  $('.bg3PH').position().top)  && car1Flag == 1 && isBottomPage ==1){
-        loadIMG('.car1PH','img/section-4/car1.png','item car1');
+        loadIMG('.car1PH','img/section-4/car1.png','item car1 hiddenItem');
         car1Flag = 0;
     }     
         

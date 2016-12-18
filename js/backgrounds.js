@@ -114,7 +114,7 @@ $(document).ready(function() {
     
     
     /* This takes user to the bottom of the page  */  
-    $("body, html").animate({ scrollTop: 40000 }, 3000);         
+    $("body, html").animate({ scrollTop: 40000 }, 4000);         
     
 }); // End of $(document).ready(function...
 

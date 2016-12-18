@@ -169,106 +169,132 @@ $(document).ready(function() {
 
     /****** TOGGLING MESSAGES ******/
 
-    $('#dot-1').click(function(){   
+    $('#dot-1').click(function(){ 
+        $(".msg").hide();
         $('#msg-1').toggle("slow");
     });
 
     $('#close-msg1').click(function(){
+        $(".msg").hide();
         $('#msg-1').toggle("slow");
     });
 
     $('#dot-2').click(function(){
+        $(".msg").hide();
         $('#msg-2').toggle("slow");
     });
 
     $('#dot-3').click(function(){
+        $(".msg").hide();
         $('#msg-3').toggle("slow");
     });
 
     $('#dot-4').click(function(){
+        $(".msg").hide();
         $('#msg-4').toggle("slow");
     });
 
     $('#dot-5').click(function(){
+        $(".msg").hide();
         $('#msg-5').toggle("slow");
     });
 
     $('#dot-6').click(function(){
+        $(".msg").hide();
         $('#msg-6').toggle("slow");
     });
 
     $('#dot-7').click(function(){
+        $(".msg").hide();
         $('#msg-7').toggle("slow");
     });
     
     $('#dot-8').click(function(){
+        $(".msg").hide();
         $('#msg-8').toggle("slow");
     });
 
     $('#dot-9').click(function(){
+        $(".msg").hide();
         $('#msg-9').toggle("slow");
     });
     
     $('#dot-10').click(function(){
+        $(".msg").hide();
         $('#msg-10').toggle("slow");
     });
 
     $('#dot-11').click(function(){
+        $(".msg").hide();
         $('#msg-11').toggle("slow");
     });
 
     $('#dot-12').click(function(){
+        $(".msg").hide();
         $('#msg-12').toggle("slow");
     });
 
     $('#dot-13').click(function(){
+        $(".msg").hide();
         $('#msg-13').toggle("slow");
     });
 
     $('#dot-14').click(function(){
+        $(".msg").hide();
         $('#msg-14').toggle("slow");
     });
 
     $('#dot-15').click(function(){
+        $(".msg").hide();
         $('#msg-15').toggle("slow");
     });
 
     $('#dot-16').click(function(){
+        $(".msg").hide();
         $('#msg-16').toggle("slow");
     });
 
     $('#dot-17').click(function(){
+        $(".msg").hide();
         $('#msg-17').toggle("slow");
     });
 
     $('#dot-18').click(function(){
+        $(".msg").hide();
         $('#msg-18').toggle("slow");
     });
 
    $('#dot-19').click(function(){
+        $(".msg").hide();
         $('#msg-19').toggle("slow");
     });
 
     $('#dot-20').click(function(){
+        $(".msg").hide();
         $('#msg-20').toggle("slow");
     });
     $('#dot-21').click(function(){
+        $(".msg").hide();
         $('#msg-21').toggle("slow");
     });
 
     $('#dot-22').click(function(){
-       $('#msg-22').toggle("slow");
+        $(".msg").hide();
+        $('#msg-22').toggle("slow");
     });
 
 	$('#dot-23').click(function(){
+        $(".msg").hide();
         $('#msg-23').toggle("slow");
     });
 
 	$('#dot-24').click(function(){
+        $(".msg").hide();
         $('#msg-24').toggle("slow");
     });
 
 	$('#dot-25').click(function(){
+        $(".msg").hide();
         $('#msg-25').toggle("slow");
     });
 
@@ -277,9 +303,6 @@ $(document).ready(function() {
 
 });
 
-
-
-
 $(window).scroll(function(){
 	//////////MESSAGES ////////////////////
 	
@@ -287,32 +310,8 @@ $(window).scroll(function(){
     var $winHeight  = winHeight();
 	var topPerc     = topPercfunc(); 
 	var $WidthPerc  = WidthPerc();
-
 	
-
-	/*$('.holder').animate({
-        width: ($WidthPerc * holderW)/100,
-        height: ($WidthPerc * holderW)/100
-               
-    },0);
-    $('.dot').animate({
-        width: ($WidthPerc *dotsW)/100,
-        height: ($WidthPerc *dotsW)/100,
-        left: ( holderW  * dotsTop )/100,
-        top:  ( holderW * dotsTop )/100
-       
-    },0);
-    $('.pulse').animate({
-        width: ($WidthPerc *pulseW)/100,
-        height: ($WidthPerc *pulseW)/100,
-        left: ( holderW  * pulseTop )/100,
-        top:  ( holderW * pulseTop )/100
-       
-    },0); */
-
-		
-	
-      if ( 93.0 <= topPerc &&  topPerc < 93.8 ){
+      if ( 93.0 <= topPerc &&  topPerc < 93.8 && isBottomPage == 1){
             $('#dot-1').show();
             $('#dot-1').animate({
                 left: ( $winWidth  * dot1Left )/100,
@@ -320,7 +319,7 @@ $(window).scroll(function(){
             },0); 
        } 
 
-        if ( 91.0 <= topPerc &&  topPerc < 91.8 ){
+        if ( 91.0 <= topPerc &&  topPerc < 91.8 && isBottomPage == 1){
             
             $('#msg-1').hide();
             $('#dot-2').show();
@@ -333,20 +332,20 @@ $(window).scroll(function(){
                 left: ( $winWidth  * dot3Left )/100,
                 top:  ( $winHeight * dot3Top )/100
             },0); 
-        } else if (88.7 <= topPerc &&  topPerc < 88.9) {
+        } else if (88.7 <= topPerc &&  topPerc < 88.9 && isBottomPage == 1) {
             $('#msg-2').hide();
             $('#msg-3').hide(); 
-        } else if ( 78.4 <= topPerc &&  topPerc < 79.0 ){
+        } else if ( 78.4 <= topPerc &&  topPerc < 79.0 && isBottomPage == 1){
             $('#dot-4').show();
             $('#dot-4').animate({
                 left: ( $winWidth  * dot4Left )/100,
                 top:  ( $winHeight * dot4Top )/100
             },0); 
 
-        }  else if (74.4 <= topPerc &&  topPerc < 74.8) {
+        }  else if (74.4 <= topPerc &&  topPerc < 74.8 && isBottomPage == 1) {
             $('#msg-4').hide();
             
-        } else if ( 73.8 <= topPerc &&  topPerc < 74.4 ){
+        } else if ( 73.8 <= topPerc &&  topPerc < 74.4 && isBottomPage == 1){
             $('#dot-5').show();
             $('#dot-5').animate({
                 left: ( $winWidth  * dot5Left )/100,
@@ -358,56 +357,56 @@ $(window).scroll(function(){
                 left: ( $winWidth  * dot6Left )/100,
                 top:  ( $winHeight * dot6Top )/100
             },0);
-        } else if ( 72.4 <= topPerc &&  topPerc < 72.6 ){
+        } else if ( 72.4 <= topPerc &&  topPerc < 72.6 && isBottomPage == 1){
             $('#dot-7').show();
             $('#dot-7').animate({
                 left: ( $winWidth  * dot7Left )/100,
                 top:  ( $winHeight * dot7Top )/100
             },0);
 
-        } else if ( 71.6 <= topPerc &&  topPerc < 71.8 ) {
+        } else if ( 71.6 <= topPerc &&  topPerc < 71.8 && isBottomPage == 1) {
             $('#msg-5').hide();
             $('#msg-6').hide();
-        } else if ( 68.4 <= topPerc &&  topPerc < 68.8 ){
+        } else if ( 68.4 <= topPerc &&  topPerc < 68.8 && isBottomPage == 1){
             $('#dot-8').show();
             $('#dot-8').animate({
                 left: ( $winWidth  * dot8Left )/100,
                 top:  ( $winHeight * dot8Top )/100
             },0);
-        } else if ( 67.5 <= topPerc &&  topPerc < 67.9 ){
+        } else if ( 67.5 <= topPerc &&  topPerc < 67.9 && isBottomPage == 1){
             $('#msg-7').hide();
 
-        } else if ( 66.2 <= topPerc &&  topPerc < 66.4 ) {
+        } else if ( 66.2 <= topPerc &&  topPerc < 66.4 && isBottomPage == 1) {
             $('#msg-8').hide();
             
-        } else if ( 62.8 <= topPerc &&  topPerc < 63.2 ){
+        } else if ( 62.8 <= topPerc &&  topPerc < 63.2 && isBottomPage == 1){
             $('#dot-9').show();
             $('#dot-9').animate({
                 left: ( $winWidth  * dot9Left )/100,
                 top:  ( $winHeight * dot9Top )/100
             },0);
 
-        } else if ( 58.4 <= topPerc &&  topPerc < 58.8 ) {
+        } else if ( 58.4 <= topPerc &&  topPerc < 58.8 && isBottomPage == 1) {
             $('#msg-9').hide();
             
-        } else if ( 58.0 <= topPerc &&  topPerc < 58.6 ){
+        } else if ( 58.0 <= topPerc &&  topPerc < 58.6 && isBottomPage == 1){
             $('#dot-10').show();
             $('#dot-10').animate({
                 left: ( $winWidth  * dot10Left )/100,
                 top:  ( $winHeight * dot10Top )/100
             },0);
 
-        } else if ( 55.4 <= topPerc &&  topPerc < 55.6 ) {
+        } else if ( 55.4 <= topPerc &&  topPerc < 55.6 && isBottomPage == 1) {
             $('#msg-10').hide();
             
-        } else if ( 54.2 <= topPerc &&  topPerc < 54.6 ){
+        } else if ( 54.2 <= topPerc &&  topPerc < 54.6 && isBottomPage == 1){
             $('#dot-11').show();
             $('#dot-11').animate({
                 left: ( $winWidth  * dot11Left )/100,
                 top:  ( $winHeight * dot11Top )/100
             },0);
 
-        } else if ( 51.0 <= topPerc &&  topPerc < 51.4 ){
+        } else if ( 51.0 <= topPerc &&  topPerc < 51.4 && isBottomPage == 1){
             
             $('#dot-12').show();
             $('#dot-12').animate({
@@ -415,13 +414,13 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot12Top )/100
             },0);
 
-        } else if ( 49.8 <= topPerc &&  topPerc < 50.4 ) {
+        } else if ( 49.8 <= topPerc &&  topPerc < 50.4 && isBottomPage == 1) {
             $('#msg-11').hide();
             
-        } else if ( 46.6 <= topPerc &&  topPerc < 46.8 ) {
+        } else if ( 46.6 <= topPerc &&  topPerc < 46.8 && isBottomPage == 1) {
             $('#msg-12').hide();
             
-        } else if ( 44.4 <= topPerc &&  topPerc < 44.6 ){
+        } else if ( 44.4 <= topPerc &&  topPerc < 44.6 && isBottomPage == 1){
             
             $('#dot-13').show();
             $('#dot-13').animate({
@@ -429,10 +428,10 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot13Top )/100
             },0);
 
-        } else if ( 41.4 <= topPerc &&  topPerc < 41.6 ) {
+        } else if ( 41.4 <= topPerc &&  topPerc < 41.6 && isBottomPage == 1) {
             $('#msg-13').hide();
             
-        } else if ( 38.8 <= topPerc &&  topPerc < 39.2 ){
+        } else if ( 38.8 <= topPerc &&  topPerc < 39.2 && isBottomPage == 1){
             
             $('#dot-14').show();
            $('#dot-14').animate({
@@ -440,10 +439,10 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot14Top )/100
             },0);
 
-        } else if ( 36.0 <= topPerc &&  topPerc < 36.2 ) {
+        } else if ( 36.0 <= topPerc &&  topPerc < 36.2 && isBottomPage == 1) {
             $('#msg-14').hide();
             
-        } else if ( 33.4 <= topPerc &&  topPerc < 33.6 ){
+        } else if ( 33.4 <= topPerc &&  topPerc < 33.6 && isBottomPage == 1){
             
             $('#dot-15').show();
             $('#dot-15').animate({
@@ -451,10 +450,10 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot15Top )/100
             },0);
 
-        } else if ( 30.4 <= topPerc &&  topPerc < 30.8 ) {
+        } else if ( 30.4 <= topPerc &&  topPerc < 30.8 && isBottomPage == 1) {
             $('#msg-15').hide();
             
-        } else if ( 26.0 <= topPerc &&  topPerc < 26.8 ){
+        } else if ( 26.0 <= topPerc &&  topPerc < 26.8 && isBottomPage == 1){
             
             $('#dot-16').show();
             $('#dot-16').animate({
@@ -468,10 +467,10 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot17Top )/100
             },0);
 
-        } else if ( 23.4 <= topPerc &&  topPerc < 23.8 ) {
+        } else if ( 23.4 <= topPerc &&  topPerc < 23.8 && isBottomPage == 1) {
             $('#msg-16').hide();
             $('#msg-17').hide();
-        } else if ( 22.6 <= topPerc &&  topPerc < 22.8 ){
+        } else if ( 22.6 <= topPerc &&  topPerc < 22.8 && isBottomPage == 1){
             
             $('#dot-18').show();
             $('#dot-18').animate({
@@ -479,7 +478,7 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot18Top )/100
             },0);
 
-        } else if ( 19.0 <= topPerc &&  topPerc < 20.0 ){
+        } else if ( 19.0 <= topPerc &&  topPerc < 20.0 && isBottomPage == 1){
             
             $('#dot-19').show();
             $('#dot-19').animate({
@@ -487,10 +486,10 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot19Top )/100
             },0);
 
-        } else if ( 18.6 <= topPerc &&  topPerc < 18.8 ) {
+        } else if ( 18.6 <= topPerc &&  topPerc < 18.8 && isBottomPage == 1) {
             $('#msg-18').hide();
             
-        } else if ( 15.6 <= topPerc &&  topPerc < 16.0 ){
+        } else if ( 15.6 <= topPerc &&  topPerc < 16.0 && isBottomPage == 1){
             
             $('#dot-20').show();
             $('#dot-20').animate({
@@ -498,17 +497,17 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot20Top )/100
             },0);
 
-        } else if ( 14.1 <= topPerc &&  topPerc < 14.5 ) {
+        } else if ( 14.1 <= topPerc &&  topPerc < 14.5 && isBottomPage == 1) {
             $('#msg-19').hide();
             
-        } else if ( 10.8 <= topPerc &&  topPerc < 11.4 ) {
+        } else if ( 10.8 <= topPerc &&  topPerc < 11.4 && isBottomPage == 1) {
             $('#msg-20').hide();
             $('#dot-21').show();
             $('#dot-21').animate({
                 left: ( $winWidth  * dot21Left )/100,
                 top:  ( $winHeight * dot21Top )/100
             },0);
-        } else if ( 8.6 <= topPerc &&  topPerc < 9.0 ){
+        } else if ( 8.6 <= topPerc &&  topPerc < 9.0 && isBottomPage == 1){
             $('#msg-21').hide();
             $('#dot-22').show();
             $('#dot-22').animate({
@@ -516,7 +515,7 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot22Top )/100
             },0);
 
-        } else if ( 4.4 <= topPerc &&  topPerc < 5.0 ){
+        } else if ( 4.4 <= topPerc &&  topPerc < 5.0 && isBottomPage == 1){
             $('#msg-22').hide();
             $('#dot-23').show();
             $('#dot-23').animate({
@@ -524,7 +523,7 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot23Top )/100
             },0);
 
-        } else if ( 1.0 <= topPerc &&  topPerc < 2.0 ){
+        } else if ( 1.0 <= topPerc &&  topPerc < 2.0 && isBottomPage == 1){
             $('#msg-23').hide();
             $('#dot-24').show();
            $('#dot-24').animate({
@@ -532,7 +531,7 @@ $(window).scroll(function(){
                 top:  ( $winHeight * dot24Top )/100
             },0);
 			
-        } else if ( 0 <= topPerc &&  topPerc < 0.8 ){
+        } else if ( 0 <= topPerc &&  topPerc < 0.8 && isBottomPage == 1){
         		$('#msg-24').hide();
         		$('#dot-25').show();
 				$('#dot-25').animate({

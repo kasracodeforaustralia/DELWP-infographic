@@ -1,3 +1,13 @@
+$(document).ready(function() {             
+     $("body").keydown(function(){
+        if(($(window).scrollTop() <=                    $('.bg5PH').position().top) && trainFlag == 1 && isBottomPage ==1){
+           loadIMG('.trainPH','img/section-5/train.png','item train hiddenItem');
+           trainFlag = 0; 
+        } 
+    });
+     
+});
+
 $(window).scroll(function(){
 
         // Responsive width and height of the bg images
@@ -8,8 +18,8 @@ $(window).scroll(function(){
     var topPerc     = topPercfunc();
 
     if( ($(window).scrollTop() <=  $('.bg5PH').position().top)  && trainFlag == 1 && isBottomPage ==1){
-           loadIMG('.trainPH','img/section-5/train.png','item train');
-           trainFlag = 0;          
+       loadIMG('.trainPH','img/section-5/train.png','item train hiddenItem');
+       trainFlag = 0;          
     } 
 
     /* train   */ 

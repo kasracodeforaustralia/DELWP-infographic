@@ -1,6 +1,6 @@
 $(document).ready(function() {             
      $("body").keydown(function(){
-        if(($(window).scrollTop() <=                    $('.bg2').position().top) && busFlag == 1 && isBottomPage ==1){
+        if(($(window).scrollTop() <=                    $('.bg2PH').position().top) && busFlag == 1 && isBottomPage ==1){
            loadIMG('.busPH','img/section-3/bus.png','item bus hiddenItem');
            busFlag = 0;
         } 
