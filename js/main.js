@@ -1,13 +1,15 @@
 $(document).ready(function() {
-
-    
     var $win = $(window);
 
     var $winWidth   = winWidth();
     var $winHeight  = winHeight();
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
-    
+ 
+
+    //$(".bg5").load(function(){
+      //  alert("bg5 loaded!");
+    //})
     /* sets the welcomeDiv height based on the window height
     if($win.width()/$win.height() <= 0.8){
          $('#welcomeDiv').animate({
@@ -61,7 +63,7 @@ $( window ).resize(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
 
-    location.reload();
+    //location.reload();
 });
     
 /*## Separatoring .resize and onscroll funcs ##*/
@@ -79,7 +81,11 @@ $(window).scroll(function(){
     var $winHeight  = winHeight();
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
-    
+ 
+    //if($(".bg1").width() > $(".bg2").width() || $(".bg1").width() < $(".bg2").width() ){
+      //     location.reload();
+       //}
+
     /* Welcome Div 
     if( welcomeFlag ==1){
         
@@ -255,31 +261,21 @@ $(window).scroll(function(){
         left: ($winWidth  * firecampLeft)/100,
         top:  ($winHeight * firecampTop)/100
     },0);
-
-
- 
-    /* This section sets the isBottomPage flag if 2 conditions are met - first: if we scrolled down 85 percent of the page- second: if we reach to welcomeDiv section */
-    if ($(window).scrollTop()  >= 0.95 * winHeight() ){    
-        if ( ($(window).scrollTop()+ $(window).height())>= $('#welcomeDiv').position().top){             
-             if(topPercfunc()>=100){
-                counter++;
-                if(counter >= 2){
-                    isBottomPage = 1;
-                }
-            }  
-        }      
-    } 
- 
+    
+    // This if else statement makes usre the user is at the bottom of the pages and then starts loading images based on the user scrol (by setting isBottomFlag to 1)
+    if(topPercfunc()>=100){
+        counter++;
+        if(counter >= 10){
+            isBottomPage = 1;
+        }
+     }
 
     console.log("counter: "+ counter);
     console.log("++isBottomPage: "+ isBottomPage);
-    //console.log("scrollTop+win.height: "+ ($(window).scrollTop()+ $(window).height()));
-    //console.log("bg2 top: "+ $('.bg2PH').position().top);
-    //console.log ("bg14PH: "+ $(".bg14PH").height() );
+    //console.log ("bg1234: "+ ( $('.bg1').height() + $('.bg2').height() +$('.bg3').height() +$('.bg4').height() ) );
+    //console.log ("kkkk: "+ (0.0095 * ( WidthPerc() * ($bg1Height+$bg2Height +$bg3Height +$bg4Height ) ) ) );
     console.log ("-----TopPrec: "+ topPercfunc());
 
-    
-    
 
     /*
     if(isBottomPage == 1 && aredotshidden == 0) {//$(window).scrollTop() == 13523) {
