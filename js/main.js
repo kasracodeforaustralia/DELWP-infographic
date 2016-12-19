@@ -6,43 +6,6 @@ $(document).ready(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
  
-
-    //$(".bg5").load(function(){
-      //  alert("bg5 loaded!");
-    //})
-    /* sets the welcomeDiv height based on the window height
-    if($win.width()/$win.height() <= 0.8){
-         $('#welcomeDiv').animate({
-            backgroundColor: '#006666',
-            width: $winWidth,
-            height:($winHeight* 15)/100,
-            marginTop: '-5px'
-        },0);          
-    }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
-        $('#welcomeDiv').animate({
-            backgroundColor: '#006666',
-            width: $winWidth,
-            height:($winHeight* 12)/100,
-            marginTop: '-5px'
-        },0);          
-    }else if(1.1 < $win.width()/$win.height()){ 
-        $('#welcomeDiv').animate({
-            backgroundColor: '#006666',
-            width: $winWidth,
-            height:($winHeight* 8)/100,
-            marginTop: '-5px'
-        },0);              
-    } */
-    
-    /*
-    if(navigator.userAgent.indexOf("Chrome") != -1 ){
-        //alert('Chrome');
-    }else if(navigator.userAgent.indexOf("Firefox") != -1 ){
-         //alert('Firefox');
-    }else {
-      alert('Please use Chrome or Firefox browsers for better compatibility and support.'); 
-    } */
-
 });
 
 /*### Separatoring .ready and .resize funcs ###*/
@@ -53,7 +16,6 @@ $(document).ready(function() {
 /*#############################################*/
 
 
-/* Dynamic css for all items after resizing */
 $( window ).resize(function() {
   
     var $win = $(window);
@@ -82,40 +44,7 @@ $(window).scroll(function(){
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
  
-    //if($(".bg1").width() > $(".bg2").width() || $(".bg1").width() < $(".bg2").width() ){
-      //     location.reload();
-       //}
-
-    /* Welcome Div 
-    if( welcomeFlag ==1){
-        
-        if($win.width()/$win.height() <= 0.8){
-             $('#welcomeDiv').animate({
-                
-                width: $winWidth,
-                height:($winHeight* 15)/100
-               
-            },0); 
-        }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
-              $('#welcomeDiv').animate({
-                
-                width: $winWidth,
-                height:($winHeight* 12)/100
-                
-            },0);          
-        }else if(1.1 < $win.width()/$win.height()){    
-            $('#welcomeDiv').animate({
-                
-                width: $winWidth,
-                height:($winHeight* 8)/100
-                
-            },0);              
-        }
-   
-        welcomeFlag = 0; 
-    }
-    /*
-    
+ 
     /* Loads flood sing when reach bg 10*/ 
     if ( ($(window).scrollTop() <=$('.bg10PH').position().top) && floodSingFlag == 1 && isBottomPage ==1 ){
         loadIMG('.floodSignPH','img/section-789/gifs/floodSign.gif','floodSign item');
@@ -277,12 +206,4 @@ $(window).scroll(function(){
     console.log ("-----TopPrec: "+ topPercfunc());
 
 
-    /*
-    if(isBottomPage == 1 && aredotshidden == 0) {//$(window).scrollTop() == 13523) {
-        $(".holder").hide();
-        $(".item").hide();
-        aredotshidden = 1;
-        //console.log ("isBottomPage = 1")
-    }*/
- 
 });

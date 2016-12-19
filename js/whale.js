@@ -94,4 +94,4 @@ $(window).scroll(function(){
     }
 
         
-    });
+});
