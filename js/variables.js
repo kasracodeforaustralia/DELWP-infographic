@@ -15,9 +15,13 @@ bg5Flag= bg6Flag= bg7Flag= bg8Flag= bg9Flag= bg10Flag= bg11Flag= bg12Flag= bg13F
 var welcomeFlag, footyPlayersFlag, footyFlag, bulldozerFlag, cowFlag, tractorFlag, garbageTruckFlag, birdsFlag, turbineFlag, cloudFlag, cloud2Flag, floodSingFlag, windMillFlag, kangarooFlag, kangarookid1Flag, kangarookid2Flag, bikeFlag, whiteCarFlag, fireFlag, fireFightersFlag, car1Flag, tramFlag, buildingsFlag, buildings2Flag, busFlag, car2Flag, trainFlag, truck1Flag, tentFlag, campfireFlag, buildings3Flag;
 welcomeFlag= footyPlayersFlag= footyFlag= cowFlag =bulldozerFlag= tractorFlag= garbageTruckFlag= birdsFlag= turbineFlag= cloudFlag= cloud2Flag= floodSingFlag= windMillFlag= kangarooFlag= kangarookid1Flag= kangarookid2Flag= bikeFlag= whiteCarFlag= fireFlag= fireFightersFlag= car1Flag= tramFlag= buildingsFlag= buildings2Flag= busFlag= car2Flag= trainFlag= truck1Flag= tentFlag= campfireFlag= buildings3Flag=1;
 
+var imgLoad = 0;
+var imgBg1, imgBg2, imgBg3, imgBg4, imgWhale, imgWhaleNet, imgBoat, imgScuba, imgSeal, imgMap;
+imgBg1= imgBg2= imgBg3= imgBg4= imgWhale= imgWhaleNet= imgBoat= imgScuba= imgSeal= imgMap = 0;
 
 // This variable will turn to 1 when the scroll is at the bottom of the page
 var isBottomPage   = 0; var counter       = 0;
+var screenSize = "m"; // Small, Medium, and Large
 
 /* -------------- ITEMS --------------------- */
 

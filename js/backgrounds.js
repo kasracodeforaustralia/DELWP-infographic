@@ -87,6 +87,7 @@ $(document).ready(function() {
     if( welcomeFlag ==1){
         
         if($win.width()/$win.height() <= 0.8){
+            screenSize = "s";
              $('#welcomeDiv').animate({
                 
                 width: $winWidth,
@@ -94,13 +95,15 @@ $(document).ready(function() {
                
             },0); 
         }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
+            screenSize = "m";
               $('#welcomeDiv').animate({
                 
                 width: $winWidth,
                 height:($winHeight* 12)/100
                 
             },0);          
-        }else if(1.1 < $win.width()/$win.height()){    
+        }else if(1.1 < $win.width()/$win.height()){  
+            screenSize = "l";
             $('#welcomeDiv').animate({
                 
                 width: $winWidth,
@@ -111,13 +114,24 @@ $(document).ready(function() {
    
         welcomeFlag = 0; 
     }    
-    
-    
+      
     /* This takes user to the bottom of the page  */  
-    $("body, html").animate({ scrollTop: 40000 }, 4000);         
+    $("body, html").animate({ scrollTop: 40000 }, 4000);       
+    
+    window.onload = function() {
+     setTimeout (function () {
+       $("body, html").animate({ scrollTop: 40000 }, 0);      
+     });
+    }  
+    
+    
     
 }); // End of $(document).ready(function...
 
+
+$(window).on('unload', function() {
+   $("body, html").animate({ scrollTop: 40000 }, 4000);
+});
 
 /*##############-##-########-##-###############*/
 /*#################---####---##################*/
@@ -134,12 +148,15 @@ $( window ).resize(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
 
-  $('.allBgs').animate({ 
+    //$(body).css( 'overflow', 'hidden' );
+    
+    $('.allBgs').animate({ 
         width:  $winWidth, 
         height: $winHeight     
     });
     
     /* ُCreating Place Holders (PH) for background (bg) images*/
+    //$('.bg4PH').animate({ width: $winWidth, height: ($bg5Height * $WidthPerc)/100    });
     $('.bg5PH').animate({ width: $winWidth, height: ($bg5Height * $WidthPerc)/100    });
     $('.bg6PH').animate({width: $winWidth,height: ($bg6Height * $WidthPerc)/100}); 
     $('.bg7PH').animate({width: $winWidth,height: ($bg7Height * $WidthPerc)/100}); 
@@ -149,7 +166,39 @@ $( window ).resize(function() {
     $('.bg11PH').animate({ width: $winWidth,height: ($bg11Height * $WidthPerc)/100}); 
     $('.bg12PH').animate({width: $winWidth,height: ($bg12Height * $WidthPerc)/100}); 
     $('.bg13PH').animate({width: $winWidth, height: ($bg13Height * $WidthPerc)/100}); 
-    $('.bg14PH').animate({width: $winWidth,height: ($bg14Height * $WidthPerc)/100});
+    $('.bg14PH').animate({width: $winWidth,height: ($bg14Height * $WidthPerc)/100}); 
+    
+    welcomeFlag = 1;
+    if( welcomeFlag ==1){
+
+        if($win.width()/$win.height() <= 0.8){
+            screenSize = "s";
+             $('#welcomeDiv').animate({
+
+                width: $winWidth,
+                height:($winHeight* 15)/100
+
+            },0); 
+        }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
+            screenSize = "m";
+              $('#welcomeDiv').animate({
+
+                width: $winWidth,
+                height:($winHeight* 12)/100
+
+            },0);          
+        }else if(1.1 < $win.width()/$win.height()){  
+            screenSize = "l";
+            $('#welcomeDiv').animate({
+
+                width: $winWidth,
+                height:($winHeight* 8)/100
+
+            },0);              
+        }
+
+        welcomeFlag = 0; 
+    }  
     
 });
 
@@ -218,6 +267,82 @@ $(window).scroll(function(){
        loadIMG('.bg14PH','img/14bgs/bg14.png','bg14 bg');
        bg14Flag = 0;
     }
- 
+
+/*
+    $(".bg1").each(function(){
+        if(this.complete){
+            if(imgBg1 ==0){
+                imgBg1=1;
+                imgLoad++;
+            }
+        }
+    });
+    $(".bg2").each(function(){
+        if(this.complete){
+            if(imgBg2 ==0){
+                imgBg2=1;
+                imgLoad++;
+            }
+        }
+    });
+    $(".bg3").each(function(){
+        if(this.complete){
+            if(imgBg3 ==0){
+                imgBg3=1;
+                imgLoad++;
+            }
+        }
+    });
+    $(".bg4").each(function(){
+        if(this.complete){
+            if(imgBg4 ==0){
+                imgBg4=1;
+                imgLoad++;
+            }
+        }
+    });
+    $("#whale").each(function(){
+        if(this.complete){
+            if(imgWhale ==0){
+                imgWhale=1;
+                imgLoad++;
+            }
+        }
+    });
+    $("#whaleNet").each(function(){
+        if(this.complete){
+            if(imgWhaleNet ==0){
+                imgWhaleNet=1;
+                imgLoad++;
+            }
+        }
+    });
+    $("#scuba-2").each(function(){
+        if(this.complete){
+            if(imgScuba ==0){
+                imgScuba=1;
+                imgLoad++;
+            }
+        }
+    });
+    $("#seal").each(function(){
+        if(this.complete){
+            if(imgSeal==0){
+                imgSeal=1;
+                imgLoad++;
+            }
+        }
+    });
+    $("#boat").each(function(){
+        if(this.complete){
+            if(imgBoat ==0){
+                imgBoat=1;
+                imgLoad++;
+            }
+        }
+    });
+    console.log("image load: " +imgLoad);
+*/
+
     
 });

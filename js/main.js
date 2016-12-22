@@ -25,8 +25,10 @@ $( window ).resize(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
 
-    //location.reload();
+    alert("page resized!");
+    
 });
+
     
 /*## Separatoring .resize and onscroll funcs ##*/
 /*##############-##-########-##-###############*/
@@ -192,16 +194,22 @@ $(window).scroll(function(){
     },0);
     
     // This if else statement makes usre the user is at the bottom of the pages and then starts loading images based on the user scrol (by setting isBottomFlag to 1)
-    if(topPercfunc()>=100){
+    if(topPercfunc()>=94 && screenSize == "s"){
+        counter++;
+        if(counter >= 2){
+            isBottomPage = 1;
+        }
+     }else if(topPercfunc()>=100 && (screenSize == "m" || screenSize == "l" ) ){
         counter++;
         if(counter >= 10){
             isBottomPage = 1;
         }
      }
+    
 
     console.log("counter: "+ counter);
     console.log("++isBottomPage: "+ isBottomPage);
-    //console.log ("bg1234: "+ ( $('.bg1').height() + $('.bg2').height() +$('.bg3').height() +$('.bg4').height() ) );
+    console.log ("@@@@ screen size: " + screenSize );
     //console.log ("kkkk: "+ (0.0095 * ( WidthPerc() * ($bg1Height+$bg2Height +$bg3Height +$bg4Height ) ) ) );
     console.log ("-----TopPrec: "+ topPercfunc());
 
