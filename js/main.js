@@ -25,7 +25,7 @@ $( window ).resize(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
 
-    alert("page resized!");
+    //alert("page resized!");
     
 });
 
@@ -199,7 +199,12 @@ $(window).scroll(function(){
         if(counter >= 2){
             isBottomPage = 1;
         }
-     }else if(topPercfunc()>=100 && (screenSize == "m" || screenSize == "l" ) ){
+     }else if(topPercfunc()>=100 && screenSize == "m" ){
+        counter++;
+        if(counter >= 10){
+            isBottomPage = 1;
+        }
+     }else if(topPercfunc()>=96 && screenSize == "l" ){
         counter++;
         if(counter >= 10){
             isBottomPage = 1;
@@ -207,11 +212,11 @@ $(window).scroll(function(){
      }
     
 
-    console.log("counter: "+ counter);
-    console.log("++isBottomPage: "+ isBottomPage);
-    console.log ("@@@@ screen size: " + screenSize );
+    // console.log("counter: "+ counter);
+    // console.log("++isBottomPage: "+ isBottomPage);
+    // console.log ("@@@@ screen size: " + screenSize );
     //console.log ("kkkk: "+ (0.0095 * ( WidthPerc() * ($bg1Height+$bg2Height +$bg3Height +$bg4Height ) ) ) );
-    console.log ("-----TopPrec: "+ topPercfunc());
+    // console.log ("-----TopPrec: "+ topPercfunc());
 
 
 });

@@ -13,6 +13,12 @@ body {
     //background: #439B54;
     overflow-x: hidden;
 }
+.spinner{
+    position: absolute;
+    z-index: -1;
+    padding-top: 50%;
+    padding-left: 50%;
+}
 
 /* Toppest background images*/
 .bg{
@@ -74,9 +80,30 @@ body {
     opacity: 0.7;
     z-index: 85;
 }
+.pBar{
+    display: none;
+    position: absolute;
+    width: 250px;
+    height:30px;
+    left: 30%;
+    margin-top: 30%;
+    z-index: 79;
+    content: attr(value);
+}
+.pBar1{
+    //display: none;
+    position: absolute;
+    width: 250px;
+    height:30px;
+    left: 30%;
+    margin-top: 30%;
+    z-index: 101;
+    content: attr(value);
+}
 
-/* ------------------------------- MESSAGES ------------------------------------ */
+/* ---------- MESSAGES ------------ */
 .msg {
+    display: none;
     position: absolute;
     padding: 10px 15px;
     max-width: 450px;
@@ -112,9 +139,10 @@ body {
 }
 
 
-/* ------------------------------- DOTS FOR MESSAGES ------------------------------------ */
+/* ---------------- DOTS FOR MESSAGES -------------------- */
 .holder {
     display: none;
+    padding: 10px;
     margin: 10px auto;
     width: 50px;
     height: 50px;
@@ -122,7 +150,7 @@ body {
     top: 250px;
     left: 680px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 97;
 }
 
 .dot {
@@ -142,7 +170,7 @@ body {
     position: absolute;
     top: -10px;
     left: -10px;
-    z-index: 1;
+    z-index: 98;
     opacity: 0;
     cursor: pointer;
 }
@@ -155,7 +183,7 @@ body {
     -moz-border-radius: 30px;
     border-radius: 30px;
     background-color: #dd7c2c;
-    z-index: 10;
+    z-index: 99;
     position: absolute;
     left: 15px;
     top: 15px;

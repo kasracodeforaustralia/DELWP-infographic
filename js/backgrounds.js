@@ -80,7 +80,105 @@ $(document).ready(function() {
             bg14Flag = 0;
         }     
 
-   
+ 
+
+        // bg 1
+        $.ajax({
+          xhr: function(){
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                  pbBg1 = evt.total;
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg1.png",
+          data: {},
+          success: function(data){
+              progressBarPercentage += pbBg1;
+              $("#pb").val(progressBarPercentage /progressBarTotal * 100); 
+              
+              //console.log("prog percentage1: " + progressBarPercentage);
+              //console.log("prog Total1: " + progressBarTotal); 
+          }
+        
+        });   
+        //10051 + 203118 + 246634 + 436881 = 896684
+         // bg 2  
+        $.ajax({
+          xhr: function(){
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                  pbBg2 = evt.total; 
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg2.png",
+          data: {},
+          success: function(data){
+              progressBarPercentage += pbBg2;
+              $("#pb").val(progressBarPercentage /progressBarTotal * 100); 
+              //console.log("prog percentage2: " + progressBarPercentage);
+              //console.log("prog Total2: " + progressBarTotal);               
+          }
+        
+        }); 
+        
+         // bg 3  
+        $.ajax({
+          xhr: function(){
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                  pbBg3 = evt.total; 
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg3.png",
+          data: {},
+          success: function(data){
+              progressBarPercentage += pbBg3;
+              $("#pb").val(progressBarPercentage /progressBarTotal * 100); 
+              //console.log("prog percentage2: " + progressBarPercentage);
+              //console.log("prog Total2: " + progressBarTotal);               
+          }
+        
+        }); 
+        
+         // bg 4  
+        $.ajax({
+          xhr: function(){
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                  pbBg4 = evt.total; 
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg4.png",
+          data: {},
+          success: function(data){
+              progressBarPercentage += pbBg4;
+              $("#pb").val(progressBarPercentage /progressBarTotal * 100); 
+              //console.log("prog percentage2: " + progressBarPercentage);
+              //console.log("prog Total2: " + progressBarTotal);               
+          }
+        
+        });
+        
+        
+        
+        
+        
     }); // End of $("body").keydown
         //console.log("scroll top "+ $(window).scrollTop());
 
@@ -91,7 +189,7 @@ $(document).ready(function() {
              $('#welcomeDiv').animate({
                 
                 width: $winWidth,
-                height:($winHeight* 15)/100
+                height:($winHeight* 20)/100
                
             },0); 
         }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
@@ -99,7 +197,7 @@ $(document).ready(function() {
               $('#welcomeDiv').animate({
                 
                 width: $winWidth,
-                height:($winHeight* 12)/100
+                height:($winHeight* 13)/100
                 
             },0);          
         }else if(1.1 < $win.width()/$win.height()){  
@@ -107,7 +205,7 @@ $(document).ready(function() {
             $('#welcomeDiv').animate({
                 
                 width: $winWidth,
-                height:($winHeight* 8)/100
+                height:($winHeight* 9)/100
                 
             },0);              
         }
@@ -126,12 +224,21 @@ $(document).ready(function() {
     
     
     
+
+    
+    
+    
+    
+
+    
+    
+    
 }); // End of $(document).ready(function...
 
 
-$(window).on('unload', function() {
-   $("body, html").animate({ scrollTop: 40000 }, 4000);
-});
+//$(window).on('unload', function() {
+  // $("body, html").animate({ scrollTop: 40000 }, 4000);
+//});
 
 /*##############-##-########-##-###############*/
 /*#################---####---##################*/
@@ -176,7 +283,7 @@ $( window ).resize(function() {
              $('#welcomeDiv').animate({
 
                 width: $winWidth,
-                height:($winHeight* 15)/100
+                height:($winHeight* 20)/100
 
             },0); 
         }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
@@ -184,7 +291,7 @@ $( window ).resize(function() {
               $('#welcomeDiv').animate({
 
                 width: $winWidth,
-                height:($winHeight* 12)/100
+                height:($winHeight* 13)/100
 
             },0);          
         }else if(1.1 < $win.width()/$win.height()){  
@@ -192,7 +299,7 @@ $( window ).resize(function() {
             $('#welcomeDiv').animate({
 
                 width: $winWidth,
-                height:($winHeight* 8)/100
+                height:($winHeight* 9)/100
 
             },0);              
         }
@@ -220,129 +327,280 @@ $(window).scroll(function(){
  /* bg images will be loading based on the user mouse movement (mouse over something */ 
     
     if( top <=  $('.bg3PH').position().top  && bg5Flag == 1 && isBottomPage ==1 ){
+       loadIMG('.bg5PH','img/spinner.gif','spinner');
        loadIMG('.bg5PH','img/14bgs/bg5.png','bg5 bg4s7');
-       bg5Flag = 0;        
+       bg5Flag = 0;  
+        
+ 
+        $.ajax({
+          xhr: function()
+          {
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                var percentComplete = evt.loaded / evt.total * 100;
+                  $("#pb5").show();
+                  $("#pb5").val(percentComplete);
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg5.png",
+          data: {},
+          success: function(data){
+              $("#pb5").hide();  
+          }
+        });         
+               
+        
     }
     
     if( top <=  $('.bg4PH').position().top  && bg6Flag == 1 && isBottomPage ==1 ){
        loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg4s7');
-       bg6Flag = 0;     
+       bg6Flag = 0;  
+        
+        $.ajax({
+          xhr: function()
+          {
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                var percentComplete = evt.loaded / evt.total * 100;
+                  $("#pb6").show();
+                  $("#pb6").val(percentComplete);
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg6.png",
+          data: {},
+          success: function(data){
+              $("#pb6").hide();  
+          }
+        });             
+        
     }
      
     if( top <=  $('.bg5PH').position().top  && bg7Flag == 1 && isBottomPage ==1 ){
            loadIMG('.bg7PH','img/14bgs/bg7.png','bg7 bg4s7');
-           bg7Flag = 0;    
+           bg7Flag = 0;   
+            
+            $.ajax({
+              xhr: function()
+              {
+                var xhr = new window.XMLHttpRequest();
+                xhr.addEventListener("progress", function(evt){
+                  if (evt.lengthComputable) {
+                    var percentComplete = evt.loaded / evt.total * 100;
+                      $("#pb7").show();
+                      $("#pb7").val(percentComplete);
+                  }
+                }, false);
+                return xhr;
+              },
+              type: 'POST',
+              url: "img/14bgs/bg7.png",
+              data: {},
+              success: function(data){
+                  $("#pb7").hide();  
+              }
+            });        
+            
+        
     }    
  
     if( top <=  $('.bg6PH').position().top  && bg8Flag == 1 && isBottomPage ==1 ){
        loadIMG('.bg8PH','img/14bgs/bg8.png','bg8 bg');
-       bg8Flag = 0;  
+       bg8Flag = 0; 
+        
+        $.ajax({
+          xhr: function()
+          {
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                var percentComplete = evt.loaded / evt.total * 100;
+                  $("#pb8").show();
+                  $("#pb8").val(percentComplete);
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg8.png",
+          data: {},
+          success: function(data){
+              $("#pb8").hide();  
+          }
+        });        
+        
     }  
 
     if( top <=  $('.bg7PH').position().top  && bg9Flag == 1 && isBottomPage ==1 ){
        loadIMG('.bg9PH','img/14bgs/bg9.png','bg9 bg');
        bg9Flag = 0;
+        
+        $.ajax({
+          xhr: function()
+          {
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                var percentComplete = evt.loaded / evt.total * 100;
+                  $("#pb9").show();
+                  $("#pb9").val(percentComplete);
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg9.png",
+          data: {},
+          success: function(data){
+              $("#pb9").hide();  
+          }
+        });        
+        
     }  
   
     if( top <=  $('.bg8PH').position().top  && bg10Flag == 1 && isBottomPage ==1 ){
        loadIMG('.bg10PH','img/14bgs/bg10.png','bg10 bg');
        bg10Flag = 0;
+        
+        $.ajax({
+          xhr: function()
+          {
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                var percentComplete = evt.loaded / evt.total * 100;
+                  $("#pb10").show();
+                  $("#pb10").val(percentComplete);
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg10.png",
+          data: {},
+          success: function(data){
+             $("#pb10").hide();  
+          }
+        });        
+        
     }    
   
     if( top <=  $('.bg9PH').position().top  && bg11Flag == 1 && isBottomPage ==1 ){
        loadIMG('.bg11PH','img/14bgs/bg11.png','bg11 bg');
        bg11Flag = 0;
+        
+        $.ajax({
+          xhr: function()
+          {
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                var percentComplete = evt.loaded / evt.total * 100;
+                  $("#pb11").show();
+                  $("#pb11").val(percentComplete);
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg11.png",
+          data: {},
+          success: function(data){
+              $("#pb11").hide();  
+          }
+        });         
+        
     }     
    
     if( top <=  $('.bg10PH').position().top  && bg12Flag == 1 && isBottomPage ==1 ){
        loadIMG('.bg12PH','img/14bgs/bg12.png','bg12 bg');
        bg12Flag = 0;
+        
+        $.ajax({
+          xhr: function()
+          {
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                var percentComplete = evt.loaded / evt.total * 100;
+                  $("#pb12").show();
+                  $("#pb12").val(percentComplete);
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg12.png",
+          data: {},
+          success: function(data){
+              $("#pb12").hide();  
+          }
+        });         
+        
     }     
     if( top <=  $('.bg11PH').position().top  &&bg13Flag == 1 && isBottomPage ==1 ){
        loadIMG('.bg13PH','img/14bgs/bg13.png','bg13 bg');
        bg13Flag = 0;
+        
+       $.ajax({
+          xhr: function()
+          {
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                var percentComplete = evt.loaded / evt.total * 100;
+                  $("#pb13").show();
+                  $("#pb13").val(percentComplete);
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg13.png",
+          data: {},
+          success: function(data){
+              $("#pb13").hide();
+          }
+        });         
+        
     }
   
     if( top <=  $('.bg12PH').position().top  &&bg14Flag == 1 && isBottomPage ==1){
        loadIMG('.bg14PH','img/14bgs/bg14.png','bg14 bg');
        bg14Flag = 0;
-    }
-
-/*
-    $(".bg1").each(function(){
-        if(this.complete){
-            if(imgBg1 ==0){
-                imgBg1=1;
-                imgLoad++;
-            }
-        }
-    });
-    $(".bg2").each(function(){
-        if(this.complete){
-            if(imgBg2 ==0){
-                imgBg2=1;
-                imgLoad++;
-            }
-        }
-    });
-    $(".bg3").each(function(){
-        if(this.complete){
-            if(imgBg3 ==0){
-                imgBg3=1;
-                imgLoad++;
-            }
-        }
-    });
-    $(".bg4").each(function(){
-        if(this.complete){
-            if(imgBg4 ==0){
-                imgBg4=1;
-                imgLoad++;
-            }
-        }
-    });
-    $("#whale").each(function(){
-        if(this.complete){
-            if(imgWhale ==0){
-                imgWhale=1;
-                imgLoad++;
-            }
-        }
-    });
-    $("#whaleNet").each(function(){
-        if(this.complete){
-            if(imgWhaleNet ==0){
-                imgWhaleNet=1;
-                imgLoad++;
-            }
-        }
-    });
-    $("#scuba-2").each(function(){
-        if(this.complete){
-            if(imgScuba ==0){
-                imgScuba=1;
-                imgLoad++;
-            }
-        }
-    });
-    $("#seal").each(function(){
-        if(this.complete){
-            if(imgSeal==0){
-                imgSeal=1;
-                imgLoad++;
-            }
-        }
-    });
-    $("#boat").each(function(){
-        if(this.complete){
-            if(imgBoat ==0){
-                imgBoat=1;
-                imgLoad++;
-            }
-        }
-    });
-    console.log("image load: " +imgLoad);
-*/
-
+        
+        $.ajax({
+          xhr: function()
+          {
+            var xhr = new window.XMLHttpRequest();
+            xhr.addEventListener("progress", function(evt){
+              if (evt.lengthComputable) {
+                var percentComplete = evt.loaded / evt.total * 100;
+                  $("#pb14").show();
+                  $("#pb14").val(percentComplete);
+              }
+            }, false);
+            return xhr;
+          },
+          type: 'POST',
+          url: "img/14bgs/bg14.png",
+          data: {},
+          success: function(data){
+              $("#pb14").hide();  
+          }
+        });         
+        
+     }
+    
+    
+    
+    
     
 });

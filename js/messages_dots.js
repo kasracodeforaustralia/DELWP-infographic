@@ -10,157 +10,157 @@ $(document).ready(function() {
     
      /* msg-1 */
     $('#msg-1').animate({ 
-        left: ($winWidth  * msg1Left )/100,
-        top:  ($winHeight * msg1Top )/100
+        left: ( ($winWidth  * dot1Left )/100 + dotsW),
+        top:  ( ($winHeight * dot1Top )/100 + dotsW)
     },0);
     
    /* msg-2 */
     $('#msg-2').animate({ 
-        left: ($winWidth  * msg2Left )/100,
-        top:  ($winHeight * msg2Top )/100
+        left: ( ($winWidth  * dot2Left )/100+ dotsW),
+        top:  ( ($winHeight * dot2Top )/100 + dotsW)
     },0); 
 
     /* msg-3 */
     $('#msg-3').animate({ 
-       left: ($winWidth  * msg3Left )/100,
-        top:  ($winHeight * msg3Top )/100
+       left: ( ($winWidth  * dot3Left )/100 + dotsW),
+        top:  ( ($winHeight * dot3Top )/100 + dotsW)
     },0); 
 
     /* msg-4 */
     $('#msg-4').animate({ 
-        left: ($winWidth  * msg4Left )/100,
-        top:  ($winHeight * msg4Top )/100
+        left: (($winWidth  * dot4Left )/100 + dotsW),
+        top: ( ($winHeight * dot4Top )/100 + dotsW)
     },0); 
     
     /* msg-5 */
     $('#msg-5').animate({ 
-       left: ($winWidth  * msg5Left )/100,
-        top:  ($winHeight * msg5Top )/100
+        left: ( ($winWidth  * dot5Left )/100 + dotsW),
+        top:  ( ($winHeight * dot5Top )/100 + dotsW)
     },0);
 
     /* msg-6 */
     $('#msg-6').animate({ 
-       left: ($winWidth  * msg6Left )/100,
-        top:  ($winHeight * msg6Top )/100
+        left: ( ($winWidth  * dot6Left )/100 -50),
+        top: ( ($winHeight * dot6Top )/100 + dotsW)
     },0); 
     
      /* msg-7 */
     $('#msg-7').animate({ 
-       left: ($winWidth  * msg7Left )/100,
-        top:  ($winHeight * msg7Top )/100
+        left: ( ($winWidth  * dot7Left )/100 + dotsW),
+        top:  ( ($winHeight * dot7Top )/100 + dotsW)
     },0); 
     
 
      /* msg-8 */
     $('#msg-8').animate({ 
-       left: ($winWidth  * msg8Left )/100,
-        top:  ($winHeight * msg8Top )/100
+        left: ( ($winWidth  * dot8Left )/100 + dotsW),
+        top: ( ($winHeight * dot8Top )/100 + dotsW)
     },0); 
 
      /* msg-9 */
     $('#msg-9').animate({ 
        
-        left: ($winWidth  * msg9Left )/100,
-        top:  ($winHeight * msg9Top )/100
+        left: ( ($winWidth  * dot9Left )/100 + dotsW),
+        top:  ( ($winHeight * dot9Top )/100 + dotsW)
     },0); 
     
 
      /* msg-10 */
     $('#msg-10').animate({ 
      
-        left: ($winWidth  * msg10Left )/100,
-        top:  ($winHeight * msg10Top )/100
+        left: (($winWidth  * dot10Left )/100 + dotsW),
+        top:  (($winHeight * dot10Top )/100 + dotsW)
     },0);
 
     /* msg-11 */
     $('#msg-11').animate({ 
-       left: ($winWidth  * msg11Left )/100,
-        top:  ($winHeight * msg11Top )/100
+        left: ( ($winWidth  * dot11Left )/100 + dotsW),
+        top:  ( ($winHeight * dot11Top )/100 + dotsW)
     },0); 
 
      /* msg-12 */
     $('#msg-12').animate({ 
-       left: ($winWidth  * msg12Left )/100,
-        top:  ($winHeight * msg12Top )/100
+        left: ( ($winWidth  * dot12Left )/100 + dotsW),
+        top: ( ($winHeight * dot12Top )/100 + dotsW)
     },0); 
      
 
  	/* msg-13 */
     $('#msg-13').animate({ 
-       left: ($winWidth  * msg13Left )/100,
-        top:  ($winHeight * msg13Top )/100
+        left: ( ($winWidth  * dot13Left )/100 + dotsW),
+        top:  ( ($winHeight * dot13Top )/100 + dotsW)
     },0);
 
     /* msg-14*/
     $('#msg-14').animate({ 
-       left: ($winWidth  * msg14Left )/100,
-        top:  ($winHeight * msg14Top )/100
+        left: (($winWidth  * dot14Left )/100 + dotsW),
+        top: ( ($winHeight * dot14Top )/100 + dotsW)
     },0); 
     
 
      /* msg-15 */
     $('#msg-15').animate({ 
-       left: ($winWidth  * msg15Left )/100,
-        top:  ($winHeight * msg15Top )/100
+       left: ( ($winWidth  * dot15Left )/100 + dotsW),
+        top: ( ($winHeight * dot15Top )/100 + dotsW)
     },0); 
 
     /* msg-16 */
     $('#msg-16').animate({ 
-       left: ($winWidth  * msg16Left )/100,
-        top:  ($winHeight * msg16Top )/100
+       left: ( ($winWidth  * dot16Left )/100 + dotsW),
+        top: ( ($winHeight * dot16Top )/100 + dotsW)
     },0); 
 
    /* msg-17 */
     $('#msg-17').animate({ 
-       left: ($winWidth  * msg17Left )/100,
-        top:  ($winHeight * msg17Top )/100
+       left: ( ($winWidth  * dot17Left )/100 + dotsW),
+        top: ( ($winHeight * dot17Top )/100 + dotsW)
     },0); 
     
      /* msg-18 */
     $('#msg-18').animate({ 
-       left: ($winWidth  * msg18Left )/100,
-        top:  ($winHeight * msg18Top )/100
+       left: (($winWidth  * dot18Left )/100 + dotsW),
+        top: ( ($winHeight * dot18Top )/100 + dotsW)
     },0); 
     
      /* msg-19 */
     $('#msg-19').animate({ 
-       left: ($winWidth  * msg19Left )/100,
-        top:  ($winHeight * msg19Top )/100
+       left: ( ($winWidth  * dot19Left )/100 + dotsW),
+        top: ( ($winHeight * dot19Top )/100 +dotsW)
     },0); 
     
   	/* msg-20 */
     $('#msg-20').animate({ 
-       left: ($winWidth  * msg20Left )/100,
-        top:  ($winHeight * msg20Top )/100
+       left: ( ($winWidth  * dot20Left )/100 + dotsW),
+        top:  ( ($winHeight * dot20Top )/100+ dotsW)
     },0); 
     
      /* msg-21 */
     $('#msg-21').animate({ 
-       	left: ($winWidth  * msg21Left )/100,
-        top:  ($winHeight * msg21Top )/100
+       	left: ( ($winWidth  * dot21Left )/100 + dotsW),
+        top:  ( ($winHeight * dot21Top )/100+ dotsW)
     },0); 
     
      /* msg-22 */
     $('#msg-22').animate({ 
-       	left: ($winWidth  * msg22Left )/100,
-        top:  ($winHeight * msg22Top )/100
+       	left: ( ($winWidth  * dot22Left )/100 + dotsW),
+        top:  ( ($winHeight * dot22Top )/100+ dotsW)
     },0); 
     /* msg-23 */
     $('#msg-23').animate({ 
-       	left: ($winWidth  * msg23Left )/100,
-        top:  ($winHeight * msg23Top )/100
+       	left: ( ($winWidth  * dot23Left )/100 + dotsW),
+        top:  ( ($winHeight * dot23Top )/100 + dotsW)
     },0); 
 
     /* msg-24*/
     $('#msg-24').animate({ 
-       	left: ($winWidth  * msg24Left )/100,
-        top:  ($winHeight * msg24Top )/100
+       	left: ( ($winWidth  * dot24Left )/100 + dotsW),
+        top:  ( ($winHeight * dot24Top )/100 + dotsW)
     },0); 
     
     /*  msg-25 */
     $('#msg-25').animate({ 
-       	left: ($winWidth  * msg25Left )/100,
-        top:  ($winHeight * msg25Top )/100
+       	left: ( ($winWidth  * dot25Left )/100 + dotsW),
+        top:  ( ($winHeight * dot25Top )/100 + dotsW)
     },0); 
 
 	
@@ -170,135 +170,230 @@ $(document).ready(function() {
     /****** TOGGLING MESSAGES ******/
 
     $('#dot-1').click(function(){ 
-        $(".msg").hide();
-        $('#msg-1').toggle("slow");
-    });
-
-    $('#close-msg1').click(function(){
-        $(".msg").hide();
-        $('#msg-1').toggle("slow");
+        if ($('#msg-1').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-1').show("slow");   
+        }
     });
 
     $('#dot-2').click(function(){
-        $(".msg").hide();
-        $('#msg-2').toggle("slow");
+        if ($('#msg-2').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-2').show("slow");  
+        }
+        
     });
 
     $('#dot-3').click(function(){
-        $(".msg").hide();
-        $('#msg-3').toggle("slow");
+        if ($('#msg-3').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-3').show("slow");  
+        }
     });
 
     $('#dot-4').click(function(){
-        $(".msg").hide();
-        $('#msg-4').toggle("slow");
+        if ($('#msg-4').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-4').show("slow");  
+        }
     });
 
     $('#dot-5').click(function(){
-        $(".msg").hide();
-        $('#msg-5').toggle("slow");
+        if ($('#msg-5').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-5').show("slow");  
+        }
     });
 
     $('#dot-6').click(function(){
-        $(".msg").hide();
-        $('#msg-6').toggle("slow");
+        if ($('#msg-6').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-6').show("slow");  
+        }
     });
 
     $('#dot-7').click(function(){
-        $(".msg").hide();
-        $('#msg-7').toggle("slow");
+        if ($('#msg-7').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-7').show("slow");  
+        }
     });
     
     $('#dot-8').click(function(){
-        $(".msg").hide();
-        $('#msg-8').toggle("slow");
+        if ($('#msg-8').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-8').show("slow");  
+        }
     });
 
     $('#dot-9').click(function(){
-        $(".msg").hide();
-        $('#msg-9').toggle("slow");
+        if ($('#msg-9').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-9').show("slow");  
+        }
     });
     
     $('#dot-10').click(function(){
-        $(".msg").hide();
-        $('#msg-10').toggle("slow");
+       if ($('#msg-10').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-10').show("slow");  
+        }
     });
 
     $('#dot-11').click(function(){
-        $(".msg").hide();
-        $('#msg-11').toggle("slow");
+       if ($('#msg-11').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-11').show("slow");  
+        }
     });
 
     $('#dot-12').click(function(){
-        $(".msg").hide();
-        $('#msg-12').toggle("slow");
+       if ($('#msg-12').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-12').show("slow");  
+        }
     });
 
     $('#dot-13').click(function(){
-        $(".msg").hide();
-        $('#msg-13').toggle("slow");
+       if ($('#msg-13').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-13').show("slow");  
+        }
     });
 
     $('#dot-14').click(function(){
-        $(".msg").hide();
-        $('#msg-14').toggle("slow");
+       if ($('#msg-14').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-14').show("slow");  
+        }
     });
 
     $('#dot-15').click(function(){
-        $(".msg").hide();
-        $('#msg-15').toggle("slow");
+       if ($('#msg-15').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-15').show("slow");  
+        }
     });
 
     $('#dot-16').click(function(){
-        $(".msg").hide();
-        $('#msg-16').toggle("slow");
+       if ($('#msg-16').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-16').show("slow");  
+        }
     });
 
     $('#dot-17').click(function(){
-        $(".msg").hide();
-        $('#msg-17').toggle("slow");
+       if ($('#msg-17').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-17').show("slow");  
+        }
     });
 
     $('#dot-18').click(function(){
-        $(".msg").hide();
-        $('#msg-18').toggle("slow");
+       if ($('#msg-18').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-18').show("slow");  
+        }
     });
 
    $('#dot-19').click(function(){
-        $(".msg").hide();
-        $('#msg-19').toggle("slow");
+       if ($('#msg-19').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-19').show("slow");  
+        }
     });
 
     $('#dot-20').click(function(){
-        $(".msg").hide();
-        $('#msg-20').toggle("slow");
+       if ($('#msg-20').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-20').show("slow");  
+        }
     });
     $('#dot-21').click(function(){
-        $(".msg").hide();
-        $('#msg-21').toggle("slow");
+       if ($('#msg-21').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-21').show("slow");  
+        }
     });
 
     $('#dot-22').click(function(){
-        $(".msg").hide();
-        $('#msg-22').toggle("slow");
+       if ($('#msg-22').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-22').show("slow");  
+        }
     });
 
 	$('#dot-23').click(function(){
-        $(".msg").hide();
-        $('#msg-23').toggle("slow");
+       if ($('#msg-23').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-23').show("slow");  
+        }
     });
 
 	$('#dot-24').click(function(){
-        $(".msg").hide();
-        $('#msg-24').toggle("slow");
+       if ($('#msg-24').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-24').show("slow");  
+        }
     });
 
 	$('#dot-25').click(function(){
-        $(".msg").hide();
-        $('#msg-25').toggle("slow");
+       if ($('#msg-25').is(":visible")){
+            $(".msg").hide("slow");
+        }else{
+            $(".msg").hide("slow");
+            $('#msg-25').show("slow");  
+        }
     });
-
-	
+    
 
 
 });
@@ -312,6 +407,7 @@ $(window).scroll(function(){
 	var $WidthPerc  = WidthPerc();
 	
       if ( 93.0 <= topPerc &&  topPerc < 93.8 && isBottomPage == 1){
+
             $('#dot-1').show();
             $('#dot-1').animate({
                 left: ( $winWidth  * dot1Left )/100,
@@ -764,3 +860,7 @@ $(window).scroll(function(){
 
     
 });
+
+function hide(target) {
+    document.getElementById(target).style.display = 'none';
+}

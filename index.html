@@ -51,29 +51,52 @@
         <!--Main Css: body & bg imgs-->
         <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:400,600,700" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet" type="text/css">
-        <!--link href="css/messages.css" rel="stylesheet" type="text/css"-->
           
    	</head>
   	<body>
  
         <div class="allBgs">
-            <div class="bg14PH"><!--img class="loading" src="img/spinner.gif"/--></div>
-            <div class="bg13PH"></div>
-            <div class="bg12PH"></div>
-            <div class="bg11PH"></div>
-            <div class="bg10PH"></div>
-            <div class="bg9PH"></div>
-            <div class="bg8PH"></div>
-            <div class="bg7PH"></div>
-            <div class="bg6PH"></div>
-            <div class="bg5PH"></div>   
+            <div class="bg14PH">
+                 <progress id="pb14" class="pBar" max="100"></progress> 
+            </div>
+            <div class="bg13PH">
+                <progress id="pb13" class="pBar" max="100"></progress>             
+            </div>
+            <div class="bg12PH">
+                <progress id="pb12" class="pBar" max="100"></progress>             
+            </div>
+            <div class="bg11PH">
+                <progress id="pb11" class="pBar" max="100"></progress>             
+            </div>
+            <div class="bg10PH">
+                <progress id="pb10" class="pBar" max="100"></progress>             
+            </div>
+            <div class="bg9PH">
+                 <progress id="pb9" class="pBar" max="100"></progress> 
+            </div>
+            <div class="bg8PH">
+                 <progress id="pb8" class="pBar" max="100"></progress> 
+            </div>
+            <div class="bg7PH">
+                <progress id="pb7" class="pBar" max="100"></progress>             
+            </div>
+            <div class="bg6PH">
+                <progress id="pb6" class="pBar" max="100"></progress>            
+            </div>
+            <div class="bg5PH">
+                <progress id="pb5" class="pBar" max="100"></progress>
+            </div>   
             <div class="bg4PH "><img class="bg bg4" src="img/14bgs/bg4.png"></div>
             <div class="bg3PH "><img class="defLoadedBgs bg bg3" src="img/14bgs/bg3.png"></div>
             <div class="bg2PH "><img class="defLoadedBgs bg bg2" src="img/14bgs/bg2.png"></div>
             <div class="bg1PH "><img class="defLoadedBgs bg bg1" src="img/14bgs/bg1.png"></div>
             
         </div>
-        <div id="welcomeDiv"><div id="welcomemsg"> Hi there! <br/ > Please scroll up to start! </div></div>
+        <div id="welcomeDiv">
+            <div id="welcomemsg"> Hi there! <br/ > Please scroll up to start! 
+            </div>
+            <progress id="pb" class="pBar1" max="100"></progress>
+        </div>
         
         
         <div class="birdsPH"></div>
@@ -149,14 +172,14 @@
 https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngLOEO1wxFNTg/viewform" target="_blank"><img  class="feedbackBtn"> Feedback </a>
 
 
-        <!-- ********************************* MESSAGES  **************************************** -->
-                
+        <!-- *********** MESSAGES  **************** -->
+
         <!-- MSG 25 -->
-        <div class="holder" id="dot-25" style="display: none;">
+        <div class="holder" id="dot-25" >
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-25" style="display: none;">
+        <div class="msg" id="msg-25" >
             <a class="close-msg" onclick="hide('msg-25')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Restoring Victoria as a leader in climate change action</p>
             <a href="http://www.delwp.vic.gov.au/environment-and-wildlife/climate-change/climate-change-framework" target="_blank">>> See more</a>
@@ -167,7 +190,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-24" style="display: none;">
+        <div class="msg" id="msg-24">
             <a class="close-msg" onclick="hide('msg-24')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Reinvigorating the renewal energy industry</p>
             <a href="http://www.delwp.vic.gov.au/energy/renewable-energy/victorias-renewable-energy-targets" target="_blank">>> See more</a>
@@ -178,7 +201,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-23" style="display: none;">
+        <div class="msg" id="msg-23">
             <a class="close-msg" onclick="hide('msg-23')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Partnering with Traditional Owners to incorporate their knowledge and custom into management of public land</p>
             <a href="http://www.delwp.vic.gov.au/__data/assets/pdf_file/0003/321447/DELWP-Aboriginal-Inclusion-Plan_LRpdf.pdf" target="_blank">>> See more</a>
@@ -189,7 +212,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-22" style="display: none;">
+        <div class="msg" id="msg-22">
             <a class="close-msg" onclick="hide('msg-22')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Sustaining healthy parks and forests to provide the natural attractions that underpin the billions of dollars that tourism contributes to the economy</p>
             <a href="http://www.depi.vic.gov.au/forestry-and-land-use/visiting-parks-and-forests" target="_blank">>> See more</a>
@@ -201,7 +224,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-21" style="display: none;">
+        <div class="msg" id="msg-21" >
             <a class="close-msg" onclick="hide('msg-21')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Managing invasive animal pests and weeds</p>
             <a href="http://www.depi.vic.gov.au/environment-and-wildlife/weeds-and-pests" target="_blank">>> See more</a>
@@ -212,7 +235,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-20" style="display: none;">
+        <div class="msg" id="msg-20" >
             <a class="close-msg" onclick="hide('msg-20')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Protecting and managing our native plants and animals</p>
             <a href="http://www.delwp.vic.gov.au/parks-forests-and-crown-land/coasts,-bays-and-marine-areas/coastcare" target="_blank">>> See more</a>
@@ -223,7 +246,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-19" style="display: none;">
+        <div class="msg" id="msg-19" >
             <a class="close-msg" onclick="hide('msg-19')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Working with emergency partners to help Victorian communities prepare for, respond to and recover from emergencies</p>
             <a href="http://www.delwp.vic.gov.au/fire-and-emergencies" target="_blank">>> See more</a>
@@ -234,7 +257,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-18" style="display: none;">
+        <div class="msg" id="msg-18">
             <a class="close-msg" onclick="hide('msg-18')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Managing the delivery of safe and secure water supplies</p>
             <a href="http://www.delwp.vic.gov.au/water" target="_blank">>> See more</a>
@@ -245,7 +268,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-17" style="display: none;">
+        <div class="msg" id="msg-17">
             <a class="close-msg" onclick="hide('msg-17')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Helping communitites manage flood risk</p>
             <a href="http://www.delwp.vic.gov.au/water/new-victorian-floodplain-management-strategy" target="_blank">>> See more</a>
@@ -256,7 +279,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-16" style="display: none;">
+        <div class="msg" id="msg-16">
             <a class="close-msg" onclick="hide('msg-16')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Managing the sustainable use of groundwater</p>
             <a href="http://www.depi.vic.gov.au/water/groundwater/understanding-groundwater" target="_blank">>> See more</a>
@@ -267,7 +290,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-15" style="display: none;">
+        <div class="msg" id="msg-15">
             <a class="close-msg" onclick="hide('msg-15')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Providing oversight and support of 1200 volunteer Committees of Management that manage over 1500 land reserves</p>
             <a href="http://www.delwp.vic.gov.au/__data/assets/pdf_file/0005/353741/CoMs-categorisation-framework-2016-17-On-Board-12.9.16.pdf" target="_blank">>> See more</a>
@@ -278,7 +301,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-14" style="display: none;">
+        <div class="msg" id="msg-14">
             <a class="close-msg" onclick="hide('msg-14')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Supporting waste recovery and minimising the impacts of landfill</p>
             <a href="http://delwp.vic.gov.au/__data/assets/pdf_file/0019/345421/2016-Sustainability-Fund-Priority-Statement.pdf" target="_blank">>> See more</a>
@@ -289,7 +312,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-13" style="display: none;">
+        <div class="msg" id="msg-13">
             <a class="close-msg" onclick="hide('msg-13')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Working with community groups to connect with and care for the environment</p>
             <a href="http://www.depi.vic.gov.au/environment-and-wildlife/community-programs" target="_blank">>> See more</a>
@@ -300,7 +323,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-12" style="display: none;">
+        <div class="msg" id="msg-12">
             <a class="close-msg" onclick="hide('msg-12')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Investing in community infrastructure to support the state's rapidly developing growth areas</p>
             <a href="http://www.delwp.vic.gov.au/local-government/council-funding/growing-suburbs-fund" target="_blank">>> See more</a>
@@ -311,7 +334,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-11" style="display: none;">
+        <div class="msg" id="msg-11">
             <a class="close-msg" onclick="hide('msg-11')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Planning for the future growth of our communities to manage our growing population while maintaining Victoria's liveability</p>
             <a href="http://delwp.vic.gov.au/__data/assets/word_doc/0014/301721/Better-Apartments_A-Discussion-Paper_May-2015.doc" target="_blank">>> See more</a>
@@ -322,7 +345,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-10" style="display: none;">
+        <div class="msg" id="msg-10" >
             <a class="close-msg" onclick="hide('msg-10')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Planning communities with access to transport connections, open space, jobs, services and businesses</p>
             <a href="http://www.delwp.vic.gov.au/planning" target="_blank">>> See more</a>
@@ -333,7 +356,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-9" style="display: none;">
+        <div class="msg" id="msg-9" >
             <a class="close-msg" onclick="hide('msg-9')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Overseeing agencies that manage over 100 major public assets such as MCG</p>
             <a href="http://www.delwp.vic.gov.au/about-us/boards-and-governance/on-board-about-delwp-agencies" target="_blank">>> See more</a>
@@ -344,7 +367,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-8" style="display: none;">
+        <div class="msg" id="msg-8" >
             <a class="close-msg" onclick="hide('msg-8')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Providing property administration and information services</p>
             <a href="http://www.delwp.vic.gov.au/property-and-land-titles" target="_blank">>> See more</a>
@@ -356,7 +379,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-7" style="display: none;">
+        <div class="msg" id="msg-7" >
             <a class="close-msg" onclick="hide('msg-7')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Planning for housing affordability and diversity such as apartment living</p>
             <a href="http://planning-schemes.delwp.vic.gov.au/schemes/vpps/16_SPPF.pdf" target="_blank">>> See more</a>
@@ -368,7 +391,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-6" style="display: none;">
+        <div class="msg" id="msg-6">
             <a class="close-msg" onclick="hide('msg-6')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Quality urban design that is environmentally sustainable, energy efficient and affordable</p>
             <a href="http://www.delwp.vic.gov.au/planning/urban-design-and-development" target="_blank">>> See more</a>
@@ -379,7 +402,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-5" style="display: none;">
+        <div class="msg" id="msg-5">
             <a class="close-msg" onclick="hide('msg-5')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Working with Victoria's 79 local councils to support effective and efficient local government and services</p>
             <a href="http://delwp.vic.gov.au/local-government/guide-to-councils" target="_blank">>> See more</a>
@@ -390,7 +413,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-4" style="display: none;">
+        <div class="msg" id="msg-4">
             <a class="close-msg" onclick="hide('msg-4')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Preserving Victoria's heritage</p>
             <a href="http://www.dtpli.vic.gov.au/heritage" target="_blank">>> See more</a>
@@ -401,7 +424,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-3" style="display: none;">
+        <div class="msg" id="msg-3">
             <a class="close-msg" onclick="hide('msg-3')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Managing environmental water to support healthy waterways</p>
             <a href="http://www.depi.vic.gov.au/water/rivers-estuaries-and-wetlands/strategy-and-planning" target="_blank">>> See more</a>
@@ -412,7 +435,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-2" style="display: none;">
+        <div class="msg" id="msg-2">
             <a class="close-msg" onclick="hide('msg-2')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Restoring beaches and protecting coasts</p>
             <a href="http://delwp.vic.gov.au/parks-forests-and-crown-land/coasts,-bays-and-marine-areas/coastcare-victoria-community-grants-program" target="_blank">>> See more</a>
@@ -423,19 +446,13 @@ https://docs.google.com/forms/d/e/1FAIpQLSdFOUh6rnxTjapqDFfcHL26tM4bWuAydr8AjngL
               <div class="dot"></div>
               <div class="pulse"></div>
         </div>
-        <div class="msg" id="msg-1" style="display: none;">
+        <div class="msg" id="msg-1">
             <a class="close-msg" onclick="hide('msg-1')"><i class="fa fa-times" aria-hidden="true"></i></a>
             <p>Helping whales, seals and dolphins in distress</p>
             <a href="http://www.depi.vic.gov.au/environment-and-wildlife/wildlife/whales-dolphins-and-seals/strandings-and-entanglements" target="_blank">>> See more</a>
         </div>
 
-        <!-- ***************************************************** -->
-   
-        <script>
-            function hide(target) {
-        document.getElementById(target).style.display = 'none';
-    }
-        </script>
+        <!-- ******************************** -->
 
     </body>
 </html>
