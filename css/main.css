@@ -82,23 +82,13 @@ body {
 }
 .pBar{
     display: none;
+    border-radius: 10px;
     position: absolute;
     width: 250px;
     height:30px;
     left: 30%;
     margin-top: 30%;
     z-index: 79;
-    content: attr(value);
-}
-.pBar1{
-    //display: none;
-    position: absolute;
-    width: 250px;
-    height:30px;
-    left: 30%;
-    margin-top: 30%;
-    z-index: 101;
-    content: attr(value);
 }
 
 /* ---------- MESSAGES ------------ */

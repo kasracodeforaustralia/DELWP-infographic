@@ -79,105 +79,6 @@ $(document).ready(function() {
             loadIMG('.bg14PH','img/14bgs/bg14.png','bg14 bg');
             bg14Flag = 0;
         }     
-
- 
-
-        // bg 1
-        $.ajax({
-          xhr: function(){
-            var xhr = new window.XMLHttpRequest();
-            xhr.addEventListener("progress", function(evt){
-              if (evt.lengthComputable) {
-                  pbBg1 = evt.total;
-              }
-            }, false);
-            return xhr;
-          },
-          type: 'POST',
-          url: "img/14bgs/bg1.png",
-          data: {},
-          success: function(data){
-              progressBarPercentage += pbBg1;
-              $("#pb").val(progressBarPercentage /progressBarTotal * 100); 
-              
-              //console.log("prog percentage1: " + progressBarPercentage);
-              //console.log("prog Total1: " + progressBarTotal); 
-          }
-        
-        });   
-        //10051 + 203118 + 246634 + 436881 = 896684
-         // bg 2  
-        $.ajax({
-          xhr: function(){
-            var xhr = new window.XMLHttpRequest();
-            xhr.addEventListener("progress", function(evt){
-              if (evt.lengthComputable) {
-                  pbBg2 = evt.total; 
-              }
-            }, false);
-            return xhr;
-          },
-          type: 'POST',
-          url: "img/14bgs/bg2.png",
-          data: {},
-          success: function(data){
-              progressBarPercentage += pbBg2;
-              $("#pb").val(progressBarPercentage /progressBarTotal * 100); 
-              //console.log("prog percentage2: " + progressBarPercentage);
-              //console.log("prog Total2: " + progressBarTotal);               
-          }
-        
-        }); 
-        
-         // bg 3  
-        $.ajax({
-          xhr: function(){
-            var xhr = new window.XMLHttpRequest();
-            xhr.addEventListener("progress", function(evt){
-              if (evt.lengthComputable) {
-                  pbBg3 = evt.total; 
-              }
-            }, false);
-            return xhr;
-          },
-          type: 'POST',
-          url: "img/14bgs/bg3.png",
-          data: {},
-          success: function(data){
-              progressBarPercentage += pbBg3;
-              $("#pb").val(progressBarPercentage /progressBarTotal * 100); 
-              //console.log("prog percentage2: " + progressBarPercentage);
-              //console.log("prog Total2: " + progressBarTotal);               
-          }
-        
-        }); 
-        
-         // bg 4  
-        $.ajax({
-          xhr: function(){
-            var xhr = new window.XMLHttpRequest();
-            xhr.addEventListener("progress", function(evt){
-              if (evt.lengthComputable) {
-                  pbBg4 = evt.total; 
-              }
-            }, false);
-            return xhr;
-          },
-          type: 'POST',
-          url: "img/14bgs/bg4.png",
-          data: {},
-          success: function(data){
-              progressBarPercentage += pbBg4;
-              $("#pb").val(progressBarPercentage /progressBarTotal * 100); 
-              //console.log("prog percentage2: " + progressBarPercentage);
-              //console.log("prog Total2: " + progressBarTotal);               
-          }
-        
-        });
-        
-        
-        
-        
         
     }); // End of $("body").keydown
         //console.log("scroll top "+ $(window).scrollTop());
@@ -323,8 +224,6 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     
     var top = $(window).scrollTop();
-  
- /* bg images will be loading based on the user mouse movement (mouse over something */ 
     
     if( top <=  $('.bg3PH').position().top  && bg5Flag == 1 && isBottomPage ==1 ){
        loadIMG('.bg5PH','img/spinner.gif','spinner');

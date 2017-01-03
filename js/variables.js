@@ -23,10 +23,6 @@ imgBg1= imgBg2= imgBg3= imgBg4= imgWhale= imgWhaleNet= imgBoat= imgScuba= imgSea
 var isBottomPage   = 0; var counter       = 0;
 var screenSize = "m"; // Small, Medium, and Large
 
-
-var progressBarPercentage = 0;
-var progressBarTotal = 896684;
-var pbBg1, pbBg2, pbBg3, pbBg4;
 /* -------------- ITEMS --------------------- */
 
 /* Birds */
