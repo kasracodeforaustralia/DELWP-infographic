@@ -93,6 +93,15 @@ $(document).ready(function() {
                 height:($winHeight* 20)/100
                
             },0); 
+            
+            // Main Progress bar settings
+            $(".pBar").animate({
+                width: ($winWidth* 50)/100,
+                height:($winWidth* 4)/100,
+                
+                left: ($winWidth* 30)/100
+            });
+            
         }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
             screenSize = "m";
               $('#welcomeDiv').animate({
@@ -100,15 +109,29 @@ $(document).ready(function() {
                 width: $winWidth,
                 height:($winHeight* 13)/100
                 
-            },0);          
+            },0);   
+            // Main Progress bar settings
+            $(".pBar").animate({
+                width: ($winWidth* 40)/100,
+                height:($winWidth* 4)/100,
+                
+                left: ($winWidth* 30)/100
+            }); 
+                        
         }else if(1.1 < $win.width()/$win.height()){  
             screenSize = "l";
             $('#welcomeDiv').animate({
-                
                 width: $winWidth,
                 height:($winHeight* 9)/100
+            },0);  
+            // Main Progress bar settings
+            $(".pBar").animate({
+                width: ($winWidth* 40)/100,
+                height:($winWidth* 4)/100,
                 
-            },0);              
+                left: ($winWidth* 30)/100
+            });
+                        
         }
    
         welcomeFlag = 0; 
@@ -123,16 +146,7 @@ $(document).ready(function() {
      });
     }  
     
-    
-    
-
-    
-    
-    
-    
-
-    
-    
+  
     
 }); // End of $(document).ready(function...
 
@@ -182,26 +196,20 @@ $( window ).resize(function() {
         if($win.width()/$win.height() <= 0.8){
             screenSize = "s";
              $('#welcomeDiv').animate({
-
-                width: $winWidth,
-                height:($winHeight* 20)/100
-
+                 width: $winWidth,
+                 height:($winHeight* 20)/100
             },0); 
         }else if(0.8 < $win.width()/$win.height()  && $win.width()/$win.height() <= 1.1){
             screenSize = "m";
               $('#welcomeDiv').animate({
-
                 width: $winWidth,
                 height:($winHeight* 13)/100
-
             },0);          
         }else if(1.1 < $win.width()/$win.height()){  
             screenSize = "l";
             $('#welcomeDiv').animate({
-
                 width: $winWidth,
                 height:($winHeight* 9)/100
-
             },0);              
         }
 
@@ -224,7 +232,7 @@ $(window).scroll(function(){
     var $HeightPerc = HeightPerc();
     
     var top = $(window).scrollTop();
-    
+  
     if( top <=  $('.bg3PH').position().top  && bg5Flag == 1 && isBottomPage ==1 ){
        loadIMG('.bg5PH','img/spinner.gif','spinner');
        loadIMG('.bg5PH','img/14bgs/bg5.png','bg5 bg4s7');
@@ -303,7 +311,7 @@ $(window).scroll(function(){
               url: "img/14bgs/bg7.png",
               data: {},
               success: function(data){
-                  $("#pb7").hide();  
+                 $("#pb7").hide();  
               }
             });        
             
