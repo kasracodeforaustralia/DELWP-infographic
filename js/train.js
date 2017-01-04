@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 $(window).scroll(function(){
 
-        // Responsive width and height of the bg images
+    // Responsive width and height of the bg images
     var $winWidth   = winWidth();
     var $winHeight  = winHeight();
     var $WidthPerc  = WidthPerc();
@@ -23,7 +23,7 @@ $(window).scroll(function(){
     } 
 
     /* train   */ 
-    if ( topPerc >= 60.0 && isBottomPage==1){
+    if (60.2 <= topPerc && topPerc <60.4 && isBottomPage==1){
         $('.train').show();
         $('.train').css({'transform': 'rotate(-1deg)', 'left': '($winWidth  *(trainLeft) )/100', 'top':'($winHeight *(trainTop) )/100'});
     } else  if ( 59.8 <= topPerc &&  topPerc < 60.0 && isBottomPage==1){ 
@@ -190,7 +190,7 @@ $(window).scroll(function(){
             top:  ($winHeight *(60.66) )/100,
 
         }, 0); 
-    } else if (topPerc < 56.8 && isBottomPage==1) {
+    } else if (56.6<= topPerc && topPerc < 56.8 && isBottomPage==1) {
         $('.train').show();
         //$('.train').css({'opacity':'1', 'transform': 'rotate(-1deg)' });
     }
