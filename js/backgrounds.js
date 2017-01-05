@@ -151,9 +151,6 @@ $(document).ready(function() {
 }); // End of $(document).ready(function...
 
 
-//$(window).on('unload', function() {
-  // $("body, html").animate({ scrollTop: 40000 }, 4000);
-//});
 
 /*##############-##-########-##-###############*/
 /*#################---####---##################*/

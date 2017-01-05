@@ -69,6 +69,9 @@ var firefightersW = 1129; var firefightersH = 320;
 /* Kangaroos variables */
 var kangarooW= 240; var kangarooH= 200;
 var kangarookidScale = 50;  // the kid is 30% smaller
+        // kangaroo kids 2 and 1 
+var kang2IMG = new Image(); var frameCha2 = 0 ;
+var kang1IMG = new Image(); var frameCha1 = 0;
 
 /* bike */
 var bikeW = 52; var bikeH = 67;

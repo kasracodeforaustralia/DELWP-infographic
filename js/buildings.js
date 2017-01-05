@@ -1,5 +1,6 @@
 $(document).ready(function() {             
      $("body").keydown(function(){
+         /*
         if(($(window).scrollTop() <=                    $('.bg2PH').position().top) && buildingsFlag == 1 && isBottomPage ==1){
             loadIMG('.churchPH','img/section-3/church.png','item church hiddenItem');
             buildingsFlag = 0;
@@ -19,7 +20,7 @@ $(document).ready(function() {
             loadIMG('.glassbPH','img/section-4/glass-building.gif','item glass-building');
             loadIMG('.eurekaPH','img/section-3/eureka.gif','item eureka-tower');
         }          
-         
+       */  
     });
      
 });
@@ -201,4 +202,6 @@ $(window).scroll(function(){
         top:  ($winHeight * churchTop)/100
     },0); 
 
+    
+    
   });

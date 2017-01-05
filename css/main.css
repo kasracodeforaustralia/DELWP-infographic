@@ -81,10 +81,36 @@ body {
     z-index: 85;
 }
 .pBar{
-    display: none;
-	border-radius: 5px;    
+    position: absolute;
+    display: none; 
+    //border-radius: 10px;
     margin-top: 30%;
     z-index: 101;
+}
+
+progress {
+	/* Important Thing */
+	-webkit-appearance: none;
+	border: none;
+}
+
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+	background: white;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+	border-radius: 5px;
+}
+
+progress::-moz-progress-bar { 
+    -webkit-appearance: none;
+	border: none;
+	border-radius: 10px;
+	padding: 2px; 
 }
 
 /* ---------- MESSAGES ------------ */

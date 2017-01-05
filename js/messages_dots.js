@@ -163,9 +163,6 @@ $(document).ready(function() {
         top:  ( ($winHeight * dot25Top )/100 + dotsW)
     },0); 
 
-	
-
-
 
     /****** TOGGLING MESSAGES ******/
 

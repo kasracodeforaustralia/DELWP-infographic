@@ -1,11 +1,12 @@
-$(document).ready(function() {             
+$(document).ready(function() {  
+    /*
      $("body").keydown(function(){
         if(($(window).scrollTop() <=                    $('.bg2PH').position().top) && car2Flag == 1 && isBottomPage ==1){
            loadIMG('.car2PH','img/section-3/car2.png','item car2 hiddenItem');
            car2Flag = 0;
         } 
     });
-     
+    */ 
 });
 
 $(window).scroll(function(){

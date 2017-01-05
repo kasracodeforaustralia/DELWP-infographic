@@ -1,11 +1,12 @@
-$(document).ready(function() {             
+$(document).ready(function() {    
+    /*
      $("body").keydown(function(){
         if(($(window).scrollTop() <=                    $('.bg2').position().top) && tramFlag == 1 && isBottomPage ==1){
             loadIMG('.tramPH','img/section-3/tram.png','item tram hiddenItem');
             tramFlag = 0;
         } 
     });
-     
+    */ 
 });
 $(window).scroll(function(){
 
@@ -88,4 +89,4 @@ width: ($WidthPerc * tramW)/100,
     }
 
         
-    });
+});

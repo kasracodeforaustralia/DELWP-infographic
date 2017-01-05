@@ -1,10 +1,11 @@
-$(document).ready(function() {             
+$(document).ready(function() {    
+    /*
      $("body").keydown(function(){
         if(($(window).scrollTop() <=                    $('.bg5PH').position().top) && trainFlag == 1 && isBottomPage ==1){
            loadIMG('.trainPH','img/section-5/train.png','item train hiddenItem');
            trainFlag = 0; 
         } 
-    });
+    }); */
      
 });
 

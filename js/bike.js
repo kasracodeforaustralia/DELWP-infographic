@@ -1,11 +1,11 @@
-$(document).ready(function() {             
+$(document).ready(function() {    /*         
      $("body").keydown(function(){
         if(($(window).scrollTop() <=                    $('.bg5PH').position().top) && bikeFlag == 1 && isBottomPage ==1){
             loadIMG('.bikePH','img/section-789/bike.png','bike item hiddenItem');
             bikeFlag = 0; 
         } 
     });
-     
+     */
 });
 
 
@@ -29,7 +29,7 @@ $( window ).resize(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
     
-    /* bike */
+    /* bike 
     $('.bike').show();
     $('.bike').animate({
         width: ( ($WidthPerc * bikeW)/100)*120/100,
@@ -38,7 +38,7 @@ $( window ).resize(function() {
         left: ($winWidth  *(27) )/100,
         top:  ($winHeight *(49.46) )/100
     },0); 
-    
+    */
 });
     
 /*## Separatoring .resize and onscroll funcs ##*/

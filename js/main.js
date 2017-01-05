@@ -25,7 +25,6 @@ $( window ).resize(function() {
     var $WidthPerc  = WidthPerc();
     var $HeightPerc = HeightPerc();
 
-    //alert("page resized!");
     
 });
 

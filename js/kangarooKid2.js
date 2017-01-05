@@ -1,5 +1,5 @@
-var kang2IMG = new Image();
-var frameCha2 = 0 ;
+//var kang2IMG = new Image();
+//var frameCha2 = 0 ;
 
 $(window).scroll(function(){
 

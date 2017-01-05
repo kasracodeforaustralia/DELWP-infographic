@@ -1,11 +1,12 @@
-$(document).ready(function() {             
+$(document).ready(function() {    
+    /*
      $("body").keydown(function(){
         if(($(window).scrollTop() <=                    $('.bg5PH').position().top) && whiteCarFlag == 1 && isBottomPage ==1){
             loadIMG('.whiteCarPH','img/section-789/whiteCar.png','whiteCar item');
             whiteCarFlag = 0;
         } 
     });
-     
+     */
 });
 
 $(window).scroll(function(){
@@ -122,4 +123,4 @@ $(window).scroll(function(){
     }
 
         
-    });
+});

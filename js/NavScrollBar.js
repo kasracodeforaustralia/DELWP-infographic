@@ -51,17 +51,6 @@ $( document ).ready(function() {
        axis: "y"
     });
     
-    
-   /*
-    $('.slider').mousedown(function() {
-        isDragging = true;
-
-     })
-    .mousemove(function() {
-        if (isDragging == true){
-        }
-    }) */
-    
     $('.slider').mouseup(function() {
         /* This calclate the position of the 
         slider on scroll bar in terms of percentage */
