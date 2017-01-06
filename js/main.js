@@ -541,7 +541,7 @@ $(document).ready(function() {
              $('#welcomeDiv').animate({
                 
                 width: $winWidth,
-                height:($winHeight* 20)/100
+                height:($winHeight* 19)/100
                
             },0); 
             

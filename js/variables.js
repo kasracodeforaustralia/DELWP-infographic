@@ -391,6 +391,10 @@ function loadIMG(objName,IMGurl,className){
 }
 
 
+// This function closes the massage boxes (little cross)
+function hide(target) {
+    document.getElementById(target).style.display = 'none';
+}
 
 
 
