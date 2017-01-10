@@ -3289,12 +3289,8 @@ $(window).scroll(function(){
        loadIMG('.tramPH','img/section-3/tram.png','item tram hiddenItem');
        tramFlag = 0;          
     } 
-        /* tram   
-    if ( topPerc >= 86.0 ){
-        $('.tram').hide();
-        $('.tram','.tramPH').css({'left': '($winWidth  *(48) )/100', 'top':'($winHeight *(tramTop) )/100'});
-
-    }  else */ if ( 84.0 <= topPerc &&  topPerc < 86.0){ 
+        /* tram */  
+     if ( 82.0 <= topPerc &&  topPerc < 86.0){ 
         $('.tram').show();
         $('.tram').animate({
             width: ($WidthPerc * tramW)/100,
@@ -3304,7 +3300,7 @@ $(window).scroll(function(){
 
         },0); 
 
-    } else if ( 83.8 <= topPerc &&  topPerc < 84.0 ){
+    } else if ( 81.8 <= topPerc &&  topPerc < 82.0 ){
        $('.tram').show();
         $('.tram').animate({
   width: ($WidthPerc * tramW)/100,
@@ -3314,7 +3310,7 @@ $(window).scroll(function(){
 
         }, 0); 
 
-    }else if ( 83.6 <= topPerc &&  topPerc < 83.8 ){
+    }else if ( 81.6 <= topPerc &&  topPerc < 81.8 ){
          //$('.tram').css({'display': 'block'});
          $('.tram').animate({
  width: ($WidthPerc * tramW)/100,
@@ -3324,7 +3320,7 @@ $(window).scroll(function(){
 
         }, 0); 
 
-    } else if ( 83.4 <= topPerc &&  topPerc < 83.6 ){
+    } else if ( 81.4 <= topPerc &&  topPerc < 81.6 ){
        //$('.tram').css({'display': 'block'});
          $('.tram').animate({
 width: ($WidthPerc * tramW)/100,
@@ -3334,7 +3330,7 @@ width: ($WidthPerc * tramW)/100,
 
         }, 0); 
 
-    }else if ( 83.2 <= topPerc &&  topPerc < 83.4 ){
+    }else if ( 81.2 <= topPerc &&  topPerc < 81.4 ){
        //$('.tram').css({'display': 'block'});
          $('.tram').animate({
 width: ($WidthPerc * tramW)/100,
@@ -3343,7 +3339,7 @@ width: ($WidthPerc * tramW)/100,
             top:  ($winHeight *(82.95) )/100,
 
         }, 0); 
-    }else if ( 83.0 <= topPerc &&  topPerc < 83.2 ){
+    }else if ( 81.0 <= topPerc &&  topPerc < 81.2 ){
        $('.tram').show();
          $('.tram').animate({
 width: ($WidthPerc * tramW)/100,
@@ -3352,7 +3348,7 @@ width: ($WidthPerc * tramW)/100,
             top:  ($winHeight *(82.75) )/100,
 
         }, 0); 
-    } else if (topPerc < 83.0) {
+    } else if (topPerc < 81.0) {
         //$('.tram').show();
     }
 // ++++++++++++++++++++ boat +++++++++++++++++++++++   

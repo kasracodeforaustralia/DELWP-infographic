@@ -37,9 +37,12 @@ body {
 .defLoadedBgs{
     width: 100%;
     height: auto;
-    margin-top: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 .bg4{ margin-top: -2px;}
+.bg1,.bg2{ margin-top: -1px;}
+
 #welcomeDiv {
     margin-top: -2px;
     background: #006666;
