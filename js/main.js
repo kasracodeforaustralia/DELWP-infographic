@@ -25,8 +25,8 @@ $(document).ready(function() {
     $('.bg14PH').animate({width: $winWidth,height: ($bg14Height * $WidthPerc)/100}); 
     
     /* ُEnd of creating Place Holders (PH) */
-    
-    
+     console.log ("-----TopPrec: "+ topPercfunc());
+
     /* If user scrolls using keyboard, this event handler will fire up to load the bg images */
     /*
     $("body").keydown(function(){
@@ -103,7 +103,7 @@ $(document).ready(function() {
 // ++++++++++++++++ dot and massages ++++++++++++++++++++
    $('#msg-1').animate({ 
         left: ( ($winWidth  * dot1Left )/100 + dotsW),
-        top:  ( ($winHeight * dot1Top )/100 + dotsW)
+        top:  ( ($winHeight * dot1Top )/101 + dotsW)
     },0);
     
    /* msg-2 */
@@ -3920,7 +3920,7 @@ width: ($WidthPerc * tramW)/100,
                 left: ( $winWidth  * dot6Left )/100,
                 top:  ( $winHeight * dot6Top )/100
             },0);
-        } else if ( 72.4 <= topPerc &&  topPerc < 72.6 && isBottomPage == 1){
+        } else if ( 72.0 <= topPerc &&  topPerc < 72.6 && isBottomPage == 1){
             $('#dot-7').show();
             $('#dot-7').animate({
                 left: ( $winWidth  * dot7Left )/100,
@@ -3930,7 +3930,7 @@ width: ($WidthPerc * tramW)/100,
         } else if ( 71.6 <= topPerc &&  topPerc < 71.8 && isBottomPage == 1) {
             $('#msg-5').hide();
             $('#msg-6').hide();
-        } else if ( 68.4 <= topPerc &&  topPerc < 68.8 && isBottomPage == 1){
+        } else if ( 68.4 <= topPerc &&  topPerc < 69.0 && isBottomPage == 1){
             $('#dot-8').show();
             $('#dot-8').animate({
                 left: ( $winWidth  * dot8Left )/100,
@@ -4005,7 +4005,7 @@ width: ($WidthPerc * tramW)/100,
         } else if ( 36.0 <= topPerc &&  topPerc < 36.2 && isBottomPage == 1) {
             $('#msg-14').hide();
             
-        } else if ( 33.4 <= topPerc &&  topPerc < 33.6 && isBottomPage == 1){
+        } else if ( 33.2 <= topPerc &&  topPerc < 33.8 && isBottomPage == 1){
             
             $('#dot-15').show();
             $('#dot-15').animate({
@@ -4033,7 +4033,7 @@ width: ($WidthPerc * tramW)/100,
         } else if ( 23.4 <= topPerc &&  topPerc < 23.8 && isBottomPage == 1) {
             $('#msg-16').hide();
             $('#msg-17').hide();
-        } else if ( 22.6 <= topPerc &&  topPerc < 22.8 && isBottomPage == 1){
+        } else if ( 22.2 <= topPerc &&  topPerc < 22.8 && isBottomPage == 1){
             
             $('#dot-18').show();
             $('#dot-18').animate({
@@ -4052,7 +4052,7 @@ width: ($WidthPerc * tramW)/100,
         } else if ( 18.6 <= topPerc &&  topPerc < 18.8 && isBottomPage == 1) {
             $('#msg-18').hide();
             
-        } else if ( 15.6 <= topPerc &&  topPerc < 16.0 && isBottomPage == 1){
+        } else if ( 15.4 <= topPerc &&  topPerc < 16.0 && isBottomPage == 1){
             
             $('#dot-20').show();
             $('#dot-20').animate({
@@ -4063,7 +4063,7 @@ width: ($WidthPerc * tramW)/100,
         } else if ( 14.1 <= topPerc &&  topPerc < 14.5 && isBottomPage == 1) {
             $('#msg-19').hide();
             
-        } else if ( 10.8 <= topPerc &&  topPerc < 11.4 && isBottomPage == 1) {
+        } else if ( 10.6 <= topPerc &&  topPerc < 11.4 && isBottomPage == 1) {
             $('#msg-20').hide();
             $('#dot-21').show();
             $('#dot-21').animate({

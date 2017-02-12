@@ -7,6 +7,19 @@ h1, h2, h3, h4 {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #525252;
+}
+
+h3 {
+    font-size: 3.3em;
+    
+}
+
+
+
 body {
     margin: 0;
     background: #006666;
@@ -71,8 +84,8 @@ body {
 
  #welcomemsg {
     text-align:center; 
-    font-size: 200%; 
-     padding-top: 55%;
+   
+     padding-top: 45%;
     color: white;
  }
 
@@ -122,11 +135,12 @@ progress::-moz-progress-bar {
     position: absolute;
     padding: 10px 15px;
     max-width: 450px;
-    background-color: #ffffff;
+    background-color: #f26d21;
     opacity: 0.8;
     border-radius: 10px;
-    border: #e49758 2px solid;
+    border: #f37b37 1px solid;
     z-index: 100;
+    color: #ffffff;
 }
 
 .msg p {
@@ -135,15 +149,16 @@ progress::-moz-progress-bar {
 }
 
 .msg a {
-   
+    text-decoration: none;
     text-align: right;
     font-family: 'Source Sans Pro', sans-serif;
     float: right;
-    font-size: 14px;  
+    font-size: 15px;  
+    color: #ffffff;
 }
 
 .msg a:hover {
-    color: #acacac;
+    color: #fce1d2;
  }
 
 .close-msg {
@@ -169,7 +184,7 @@ progress::-moz-progress-bar {
 }
 
 .dot {
-    border: 10px solid #e49758;
+    border: 10px solid #f26d21;
     background: transparent;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
@@ -193,17 +208,28 @@ progress::-moz-progress-bar {
 .pulse {
     width: 10px;
     height: 10px;
-    border: 5px solid #dd7c2c;
+    border: 5px solid #f26d21;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    background-color: #dd7c2c;
+    background-color: #f26d21;
     z-index: 99;
     position: absolute;
     left: 15px;
     top: 15px;
     cursor: pointer;
+    text-shadow: 2px 2px 5px #525252;
 }
+
+/*.pulse:before {
+    content: "\f111";
+    font-family: FontAwesome;
+    left:-5px;
+    position:absolute;
+    top:0;
+    font-size: 2em;
+    color: #dd7c2c;
+}*/
 
 @-moz-keyframes pulse {
  0% {
@@ -289,24 +315,75 @@ progress::-moz-progress-bar {
 }
 
 #feedback_btn {
-    background-color: #dd7c2c;
+    background-color: #f26d21;
     padding: 8px;
     position: fixed;
     top: 5px;
     right: 20px;
-    width: 70px;
+    width: 100px;
     border-radius: 3px;
-    border: 1px #e49758 solid;
+    border: 1px #f26d21 solid;
     color: #ffffff;
     text-decoration: none;
+}
+
+/* scroll up animation */
+
+#scroll-up{
+    font-size: 3.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    animation: bounce 2s infinite;
+ -webkit-animation: bounce 2s infinite;
+ -moz-animation: bounce 2s infinite;
+ -o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+ 40% {-webkit-transform: translateY(-30px);}
+ 60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-30px);}
+ 60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-30px);}
+ 60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-30px);}
+ 60% {transform: translateY(-15px);}
 }
 
 
 
 /* Mobile Phones */
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+
+    h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #525252;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        
+    }
+    #scroll-up{
+        font-size: 1.7em;
+    }
+
+
     #welcomemsg {
-        font-size: 100%;
+        
         width: 75%;
         margin: auto; 
     }
