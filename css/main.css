@@ -59,6 +59,7 @@ body {
 #welcomeDiv {
     margin-top: -2px;
     background: #006666;
+    position: relative;
 }
 
 .loading{
@@ -85,7 +86,7 @@ body {
  #welcomemsg {
     text-align:center; 
    
-     padding-top: 45%;
+    // padding-top: 45%;
     color: white;
  }
 
@@ -386,6 +387,10 @@ progress::-moz-progress-bar {
         
         width: 75%;
         margin: auto; 
+        position: absolute;
+        top: 25%;
+        left: 0;
+        right: 0;
     }
 
     .msg {
@@ -436,6 +441,7 @@ progress::-moz-progress-bar {
         font-size: 100%;
         width: 75%;
         position: absolute;
+        top: 40%;
         left: 0;
         right: 0;
         margin: auto; 
@@ -469,7 +475,7 @@ progress::-moz-progress-bar {
     }
 
     #feedback_btn {
-        width: 50px;
+        width: 70px;
         font-size: 12px;
     }
 

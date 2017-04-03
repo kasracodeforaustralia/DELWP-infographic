@@ -24,8 +24,8 @@ $(document).ready(function() {
     $('.bg13PH').animate({width: $winWidth, height: ($bg13Height * $WidthPerc)/100}); 
     $('.bg14PH').animate({width: $winWidth,height: ($bg14Height * $WidthPerc)/100}); 
     
-    /* ُEnd of creating Place Holders (PH) */
-     console.log ("-----TopPrec: "+ topPercfunc());
+    /* ُEnd of creating Place Holders (PH) 
+     console.log ("-----TopPrec: "+ topPercfunc());*/
 
     /* If user scrolls using keyboard, this event handler will fire up to load the bg images */
     /*
@@ -1671,89 +1671,125 @@ $(window).scroll(function(){
 
     if (topPerc <= 0.2){
         $('.kangaroo').hide();
+    }else if (topPerc > 1 && topPerc <= 2 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($WidthPerc * kangarooH)/100,
+
+            left: ($winWidth  *(60) )/100,
+            top:  ($winHeight *(13.9) )/100
+        },0); 
+    }else if (topPerc > 2 && topPerc <= 3 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($WidthPerc * kangarooH)/100,
+
+            left: ($winWidth  *(56) )/100,
+            top:  ($winHeight *(13.9) )/100
+        },0); 
+    }else if (topPerc > 3 && topPerc <= 4 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($WidthPerc * kangarooH)/100,
+
+            left: ($winWidth  *(50) )/100,
+            top:  ($winHeight *(13.9) )/100
+        },0); 
     }else if (topPerc > 4 && topPerc <= 5 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(82) )/100,
+            left: ($winWidth  *(46) )/100,
             top:  ($winHeight *(13.9) )/100
         },0); 
-    }else if (topPerc >5 && topPerc <= 6 ){
+    }else if (topPerc > 5 && topPerc <= 6 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(75) )/100,
+            left: ($winWidth  *(42) )/100,
+            top:  ($winHeight *(13.9) )/100
+        },0); 
+    }else if (topPerc > 6 && topPerc <= 7 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($WidthPerc * kangarooH)/100,
+
+            left: ($winWidth  *(38) )/100,
             top:  ($winHeight *(14) )/100
         },0); 
-    }else if (topPerc >6 && topPerc <=7){
+    }else if (topPerc > 7 && topPerc <= 8 ){
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(70) )/100,
+            left: ($winWidth  *(34) )/100,
             top:  ($winHeight *(14.1) )/100
         },0); 
-    }else if (topPerc >7 && topPerc <=8){
+    }else if (topPerc > 8 && topPerc <= 9 ){
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(63) )/100,
+            left: ($winWidth  *(30) )/100,
             top:  ($winHeight *(14.3) )/100
         },0); 
-    }else if (topPerc >8 && topPerc <=9 ){
+    }else if (topPerc > 9 && topPerc <= 10 ){
          $('.kangaroo').show();
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(54) )/100,
+            left: ($winWidth  *(26) )/100,
             top:  ($winHeight *(14.2) )/100
-        },0); 
-    }else if (topPerc >9 && topPerc <=10 ){
-         $('.kangaroo').animate({
-            width: ($WidthPerc * kangarooW)/100,
-            height:($HeightPerc* kangarooH)/100,
-
-            left: ($winWidth  *(47) )/100,
-            top:  ($winHeight *(14.3) )/100
         },0); 
     }else if (topPerc >10 && topPerc <=11 ){
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(42) )/100,
-            top:  ($winHeight *(14.5) )/100
+            left: ($winWidth  *(22) )/100,
+            top:  ($winHeight *(14.3) )/100
         },0); 
     }else if (topPerc >11 && topPerc <=12 ){
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(35) )/100,
-            top:  ($winHeight *(14.4) )/100
-        },0); 
-    }else if (topPerc >12 && topPerc <=13 ){
-        $('.kangaroo').show();
-        $('.kangaroo').animate({
-            width: ($WidthPerc * kangarooW)/100,
-            height:($HeightPerc* kangarooH)/100,
-
-            left: ($winWidth  *(27) )/100,
+            left: ($winWidth  *(18) )/100,
             top:  ($winHeight *(14.5) )/100
         },0); 
-    }else if (topPerc >13 && topPerc <= 14 ){
+    }else if (topPerc >12 && topPerc <=13 ){
+         $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($HeightPerc* kangarooH)/100,
+
+            left: ($winWidth  *(14) )/100,
+            top:  ($winHeight *(14.4) )/100
+        },0); 
+    }else if (topPerc >13 && topPerc <=14 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(20) )/100,
+            left: ($winWidth  *(10) )/100,
+            top:  ($winHeight *(14.5) )/100
+        },0); 
+    }else if (topPerc >14 && topPerc <= 15 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($HeightPerc* kangarooH)/100,
+
+            left: ($winWidth  *(6) )/100,
             top:  ($winHeight *(14.6) )/100
         },0); 
     }else if (topPerc >20){
@@ -4146,7 +4182,7 @@ width: ($WidthPerc * tramW)/100,
     // console.log("++isBottomPage: "+ isBottomPage);
     // console.log ("@@@@ screen size: " + screenSize );
     //console.log ("kkkk: "+ (0.0095 * ( WidthPerc() * ($bg1Height+$bg2Height +$bg3Height +$bg4Height ) ) ) );
-    // console.log ("-----TopPrec: "+ topPercfunc());
+     console.log ("-----TopPrec: "+ topPercfunc());
 
 
 });
