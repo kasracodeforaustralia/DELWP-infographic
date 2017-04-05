@@ -192,7 +192,7 @@ progress::-moz-progress-bar {
 }
 
 .dot {
-    border: 10px solid #f26d21;
+    border: 10px solid #ffffff;
     background: transparent;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
@@ -214,13 +214,13 @@ progress::-moz-progress-bar {
 }
 
 .pulse {
-    width: 10px;
-    height: 10px;
-    border: 5px solid  #f26d21;
+    width: 15px;
+    height: 15px;
+    border: 5px solid #ffffff;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    background-color:  #f26d21;
+    background-color: #ffffff;
     z-index: 99;
     position: absolute;
     left: 15px;
@@ -461,10 +461,10 @@ progress::-moz-progress-bar {
     }
 
     .dot {
-        height: 30px;
-        width: 30px;
-            top: -2px;
-        left: -2px;
+            height: 50px;
+        width: 50px;
+        top: -7px;
+        left: -7px;
     }
 
     .msg {
