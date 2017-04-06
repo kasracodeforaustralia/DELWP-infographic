@@ -208,7 +208,7 @@ var sealW = 435; var sealH = 267; var sealTop = 96.6; var sealLeft = -10;
     //var msg5Top = 76.0;    var msg5Left = 14;
 
     /* dot-5 */
-    var dot5Top = 75.4;    var dot5Left = 16;
+    var dot5Top = 76.4;    var dot5Left = 16;
 
      /* msg-6*/
     //var msg6Top = 74.7;    var msg6Left = 44;
