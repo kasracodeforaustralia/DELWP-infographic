@@ -24,7 +24,7 @@ body {
     margin: 0;
     background: #006666;
     //background: #439B54;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .spinner{
     position: absolute;
