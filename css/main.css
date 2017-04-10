@@ -420,6 +420,8 @@ progress::-moz-progress-bar {
     .pulse {
         height: 5px;
         width: 5px;
+        top: 15px;
+        left: 14px;
     }
 
     .dot {

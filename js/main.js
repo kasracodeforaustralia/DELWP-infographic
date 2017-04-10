@@ -1450,106 +1450,197 @@ $(window).scroll(function(){
         frameCha2 = 1;            
     } 
 
-    if (topPerc <= 0.2){
+   if (topPerc >= 16){
         $('.kangarookid2').hide();
-    }else if (topPerc > 4 && topPerc <= 5 ){
+    }else if (topPerc >= 15.8 && topPerc < 16 ){
         $('.kangarookid2').show();
         $('.kangarookid2').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:( ($WidthPerc * kangarooH)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
 
-            left: ($winWidth  *(75) )/100,
-            top:  ($winHeight *(15.4) )/100
-        },0); 
-    }else if (topPerc >5 && topPerc <= 6 ){
+            left: ($winWidth  *(4) )/100,
+            top:  ($winHeight *(14.0) )/100
+        }, 200); 
+    }else if (topPerc >= 15.6 && topPerc < 15.8 ){
         $('.kangarookid2').show();
         $('.kangarookid2').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:(($WidthPerc * kangarooH)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+            left: ($winWidth  *(8) )/100,
+            top:  ($winHeight *(14.4) )/100
+        }, 200); 
+    }else if (topPerc >= 15.4 && topPerc < 15.6 ){
+        $('.kangarookid2').show();
+        $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+            left: ($winWidth  *(10) )/100,
+            top:  ($winHeight *(14.8) )/100
+        }, 200); 
+      
+    }else if (topPerc >= 15.2 && topPerc < 15.4 ){
+        $('.kangarookid2').show();
+        $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(16) )/100,
+            top:  ($winHeight *(14.2) )/100
+        }, 200); 
+    }else if (topPerc >= 15.0 && topPerc < 15.2 ){
+        $('.kangarookid2').show();
+        $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(20) )/100,
+            top:  ($winHeight *(13.4) )/100
+        }, 200); 
+    }else if (topPerc >= 14.8 && topPerc < 15.0 ){
+        $('.kangarookid2').show();
+        $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(24) )/100,
+            top:  ($winHeight *(13.4) )/100
+        }, 200); 
+    }else if (topPerc >= 14.6 && topPerc < 14.8 ){
+        $('.kangarookid2').show();
+         $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(28) )/100,
+            top:  ($winHeight *(13.8) )/100
+        }, 200); 
+
+    }else if (topPerc >= 14.4 && topPerc < 14.6 ){
+        $('.kangarookid2').show();
+         $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(32) )/100,
+            top:  ($winHeight *(14.4) )/100
+        }, 200); 
+    }else if (topPerc >= 14.2 && topPerc < 14.4 ){
+         $('.kangarookid2').show();
+         $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+            left: ($winWidth  *(36) )/100,
+            top:  ($winHeight *(14.8) )/100
+        }, 200); 
+    }else if ( 14.0 <= topPerc && topPerc <  14.2 ){
+        $('.kangarookid2').show();
+         $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+            left: ($winWidth  *(40) )/100,
+            top:  ($winHeight *(14.6) )/100
+        }, 200); 
+    }else if (13.6 <= topPerc && topPerc < 14 ){
+        $('.kangarookid2').show();
+         $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(44) )/100,
+            top:  ($winHeight *(14.2) )/100
+        }, 200); 
+    }else if ( 13.2 <= topPerc && topPerc < 13.6 ){
+        $('.kangarookid2').show();
+         $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(50) )/100,
+            top:  ($winHeight *(14.8) )/100
+        },200); 
+    }else if ( 12.8 <= topPerc && topPerc < 13.2 ){
+        $('.kangarookid2').show();
+         $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(56) )/100,
+            top:  ($winHeight *(15.2) )/100
+        }, 200); 
+    }else if (topPerc > 12.4 && topPerc <= 12.8 ){
+        $('.kangarookid2').show();
+        $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(64) )/100,
+            top:  ($winHeight *(14.8) )/100
+        },100); 
+    }else if (topPerc > 11.8 && topPerc <= 12.4 ){
+        $('.kangarookid2').show();
+        $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
 
             left: ($winWidth  *(68) )/100,
-            top:  ($winHeight *(15.5) )/100
-        },0); 
-    }else if (topPerc >6 && topPerc <=7){
-         $('.kangarookid2').animate({
-            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:(($WidthPerc * kangarooH)/100)*kangarookidScale/100,
-
-            left: ($winWidth  *(60) )/100,
-            top:  ($winHeight *(15.3) )/100
-        },0); 
-    }else if (topPerc >7 && topPerc <=8){
+            top:  ($winHeight *(14.6) )/100
+        }, 200); 
+    }else if (topPerc > 11.4 && topPerc <= 11.8 ){
         $('.kangarookid2').show();
         $('.kangarookid2').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:( ($HeightPerc* kangarooH)/100)*kangarookidScale/100,
-
-            left: ($winWidth  *(53) )/100,
-            top:  ($winHeight *(15.2) )/100
-        },0); 
-    }else if (topPerc >8 && topPerc <=9 ){
-         $('.kangarookid2').animate({
-            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
 
-            left: ($winWidth  *(45) )/100,
-            top:  ($winHeight *(15.6) )/100
-        },0); 
-    }else if (topPerc >9 && topPerc <=10 ){
-         $('.kangarookid2').animate({
-            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
-
-            left: ($winWidth  *(38) )/100,
-            top:  ($winHeight *(15.4) )/100
-        },0); 
-    }else if (topPerc >10 && topPerc <=11 ){
-         $('.kangarookid2').animate({
-            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
-
-            left: ($winWidth  *(30) )/100,
-            top:  ($winHeight *(15.6) )/100
-        },0); 
-    }else if (topPerc >11 && topPerc <=12 ){
-         $('.kangarookid2').animate({
-            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
-
-            left: ($winWidth  *(22) )/100,
-            top:  ($winHeight *(15.7) )/100
-        },0); 
-    }else if (topPerc >12 && topPerc <=13 ){
+            left: ($winWidth  *(72) )/100,
+            top:  ($winHeight *(14.4) )/100
+        }, 200); 
+    }else if (topPerc > 10.8 && topPerc <= 11.4 ){
         $('.kangarookid2').show();
-        if (frameCha2 == 1){
-           $('.kangarookid2').attr('src',kang2IMG.src);
-            frameCha2=0;
-        }
         $('.kangarookid2').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
 
-            left: ($winWidth  *(17) )/100,
-            top:  ($winHeight *(15.5) )/100
-        },0); 
-    }else if (topPerc >13 && topPerc <= 14 ){
+            left: ($winWidth  *(76) )/100,
+            top:  ($winHeight *(14.2) )/100
+        },200); 
+    }else if (topPerc > 10.4 && topPerc <= 10.8 ){
         $('.kangarookid2').show();
-        /* This if statement changes the rhythm of the kangaroo kid animation  */ 
-        if (frameCha2 == 1){
-           $('.kangarookid2').attr('src',kang2IMG.src);
-            frameCha2=0;
-        }
-        /* ----------------------------------- */
-         $('.kangarookid2').animate({
+        $('.kangarookid2').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
 
-            left: ($winWidth  *(11) )/100,
-            top:  ($winHeight *(15.3) )/100
-        },0); 
-    }else if (topPerc >20){
-        $('.kangarookid2').hide();
-    }   
+            left: ($winWidth  *(80) )/100,
+            top:  ($winHeight *(13.6) )/100
+        }, 200); 
+    }else if (topPerc > 10.2 && topPerc <= 10.4 ){
+        $('.kangarookid2').show();
+        $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(86) )/100,
+            top:  ($winHeight *(13.2) )/100
+        },200); 
+    }else if (topPerc > 9.8 && topPerc <= 10.2 ){
+        $('.kangarookid2').show();
+        $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+            left: ($winWidth  *(92) )/100,
+            top:  ($winHeight *(13.6) )/100
+        }, 200); 
+    }else if (topPerc > 9.6 && topPerc <= 9.8 ){
+        $('.kangarookid2').show();
+        $('.kangarookid2').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+            left: ($winWidth  *(98) )/100,
+            top:  ($winHeight *(14.2) )/100
+        },200); 
+    }else if (topPerc < 9.6){
+        $('.kangarookid2').show();
+    }
+
     
   // ++++++++++++++KangarooKid1 +++++++++++++++++++++   
         
@@ -1561,107 +1652,199 @@ $(window).scroll(function(){
         frameCha1 = 1;            
     }
 
-    if (topPerc <= 0.2){
+           
+    if (topPerc >= 16){
         $('.kangarookid1').hide();
-    }else if (topPerc > 4 && topPerc <= 5 ){
-        $('.kangarookid1').show();
-        $('.kangarookid1').animate({
-            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:( ($WidthPerc * kangarooH)/100)*kangarookidScale/100,
-
-            left: ($winWidth  *(82) )/100,
-            top:  ($winHeight *(13.8) )/100
-        },0); 
-    }else if (topPerc >5 && topPerc <= 6 ){
-        $('.kangarookid1').show();
-        $('.kangarookid1').animate({
-            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:(($WidthPerc * kangarooH)/100)*kangarookidScale/100,
-
-            left: ($winWidth  *(80) )/100,
-            top:  ($winHeight *(13.5) )/100
-        },0); 
-    }else if (topPerc >6 && topPerc <=7){
-        $('.kangarookid1').show();
-        $('.kangarookid1').animate({
-            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:(($WidthPerc * kangarooH)/100)*kangarookidScale/100,
-
-            left: ($winWidth  *(70) )/100,
-            top:  ($winHeight *(13.6) )/100
-        },0); 
-    }else if (topPerc >7 && topPerc <=8){
-         $('.kangarookid1').animate({
-            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:( ($HeightPerc* kangarooH)/100)*kangarookidScale/100,
-
-            left: ($winWidth  *(62) )/100,
-            top:  ($winHeight *(13.7) )/100
-        },0); 
-    }else if (topPerc >8 && topPerc <=9 ){
-         $('.kangarookid1').animate({
-            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
-
-            left: ($winWidth  *(53) )/100,
-            top:  ($winHeight *(13.7) )/100
-        },0); 
-    }else if (topPerc >9 && topPerc <=10 ){
-         $('.kangarookid1').animate({
-            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
-
-            left: ($winWidth  *(47) )/100,
-            top:  ($winHeight *(14.2) )/100
-        },0); 
-    }else if (topPerc >10 && topPerc <=11 ){
+    }else if (topPerc >= 15.8 && topPerc < 16 ){
         $('.kangarookid1').show();
         $('.kangarookid1').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
 
-            left: ($winWidth  *(42) )/100,
-            top:  ($winHeight *(14.4) )/100
-        },0); 
-    }else if (topPerc >11 && topPerc <=12 ){
-         if (frameCha1 == 1){
-            $('.kangarookid1').attr('src',kang1IMG.src);
-            frameCha1 =0;
-         } 
-         $('.kangarookid1').animate({
+            left: ($winWidth  *(4) )/100,
+            top:  ($winHeight *(15.0) )/100
+        },100); 
+    }else if (topPerc >= 15.6 && topPerc < 15.8 ){
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+            left: ($winWidth  *(8) )/100,
+            top:  ($winHeight *(15.4) )/100
+        }, 100); 
+    }else if (topPerc >= 15.4 && topPerc < 15.6 ){
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+            left: ($winWidth  *(10) )/100,
+            top:  ($winHeight *(15.8) )/100
+        },100); 
+      
+    }else if (topPerc >= 15.2 && topPerc < 15.4 ){
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
 
-            left: ($winWidth  *(35) )/100,
-            top:  ($winHeight *(14.3) )/100
-        },0); 
-    }else if (topPerc >12 && topPerc <=13 ){
-         $('.kangarookid1').animate({
-            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
-            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
-
-            left: ($winWidth  *(27) )/100,
-            top:  ($winHeight *(14.2) )/100
-        },0); 
-    }else if (topPerc >13 && topPerc <= 14 ){
+            left: ($winWidth  *(16) )/100,
+            top:  ($winHeight *(16.2) )/100
+        },100); 
+    }else if (topPerc >= 15.0 && topPerc < 15.2 ){
         $('.kangarookid1').show();
         $('.kangarookid1').animate({
             width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
             height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
 
             left: ($winWidth  *(20) )/100,
-            top:  ($winHeight *(14.4) )/100
-        },0); 
-    }else if (topPerc >14 && topPerc <= 15 ){
+            top:  ($winHeight *(16.4) )/100
+        },100); 
+    }else if (topPerc >= 14.8 && topPerc < 15.0 ){
         $('.kangarookid1').show();
-        /* This if statement changes the rhythm of the kangaroo kid animation  */ 
-        if (frameCha1 == 1){
-           $('.kangarookid1').attr('src',kang1IMG.src);
-            frameCha1 =0;
-        }    
-    }else if (topPerc >20){        
-       $('.kangarookid1').hide();
+        $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(24) )/100,
+            top:  ($winHeight *(16.4) )/100
+        },100); 
+    }else if (topPerc >= 14.6 && topPerc < 14.8 ){
+        $('.kangarookid1').show();
+         $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(28) )/100,
+            top:  ($winHeight *(15.8) )/100
+        },100); 
+
+    }else if (topPerc >= 14.4 && topPerc < 14.6 ){
+        $('.kangarookid1').show();
+         $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(32) )/100,
+            top:  ($winHeight *(15.4) )/100
+        },100); 
+    }else if (topPerc >= 14.2 && topPerc < 14.4 ){
+         $('.kangarookid1').show();
+         $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+            left: ($winWidth  *(36) )/100,
+            top:  ($winHeight *(14.8) )/100
+        }, 100); 
+    }else if ( 14.0 <= topPerc && topPerc <  14.2 ){
+        $('.kangarookid1').show();
+         $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+            left: ($winWidth  *(40) )/100,
+            top:  ($winHeight *(14.6) )/100
+        },100); 
+    }else if (13.6 <= topPerc && topPerc < 14 ){
+        $('.kangarookid1').show();
+         $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(44) )/100,
+            top:  ($winHeight *(14.2) )/100
+        }, 100); 
+    }else if ( 13.2 <= topPerc && topPerc < 13.6 ){
+        $('.kangarookid1').show();
+         $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(50) )/100,
+            top:  ($winHeight *(14.8) )/100
+        },100); 
+    }else if ( 12.8 <= topPerc && topPerc < 13.2 ){
+        $('.kangarookid1').show();
+         $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(56) )/100,
+            top:  ($winHeight *(15.2) )/100
+        }, 100); 
+    }else if (topPerc > 12.4 && topPerc <= 12.8 ){
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(64) )/100,
+            top:  ($winHeight *(15.8) )/100
+        },100); 
+    }else if (topPerc > 11.8 && topPerc <= 12.4 ){
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(68) )/100,
+            top:  ($winHeight *(14.8) )/100
+        }, 100); 
+    }else if (topPerc > 11.4 && topPerc <= 11.8 ){
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(72) )/100,
+            top:  ($winHeight *(14.6) )/100
+        }, 100); 
+    }else if (topPerc > 10.8 && topPerc <= 11.4 ){
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(76) )/100,
+            top:  ($winHeight *(14.2) )/100
+        },100); 
+    }else if (topPerc > 10.4 && topPerc <= 10.8 ){
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(80) )/100,
+            top:  ($winHeight *(13.6) )/100
+        }, 100); 
+    }else if (topPerc > 10.2 && topPerc <= 10.4 ){
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+
+            left: ($winWidth  *(86) )/100,
+            top:  ($winHeight *(14.2) )/100
+        },100); 
+    }else if (topPerc > 9.8 && topPerc <= 10.2 ){
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+            left: ($winWidth  *(92) )/100,
+            top:  ($winHeight *(13.6) )/100
+        }, 100); 
+    }else if (topPerc > 9.6 && topPerc <= 9.8 ){
+        $('.kangarookid1').show();
+        $('.kangarookid1').animate({
+            width: (($WidthPerc * kangarooW)/100)*kangarookidScale/100,
+            height:(($HeightPerc* kangarooH)/100)*kangarookidScale/100,
+            left: ($winWidth  *(98) )/100,
+            top:  ($winHeight *(14.2) )/100
+        },100); 
+    }else if (topPerc < 9.6){
+        $('.kangarookid1').show();
     }
+
+
 // ++++++++++++++Kangaroo +++++++++++++++++++++  
     
     if( ($(window).scrollTop() <=  $('.bg7PH').position().top)  && kangarooFlag == 1 && isBottomPage ==1){
@@ -1669,131 +1852,190 @@ $(window).scroll(function(){
         kangarooFlag = 0;
     } 
 
-    if (topPerc <= 0.2){
+    if (topPerc >= 16){
         $('.kangaroo').hide();
-    }else if (topPerc > 1 && topPerc <= 2 ){
+    }else if (topPerc >= 15.8 && topPerc < 16 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(60) )/100,
-            top:  ($winHeight *(13.9) )/100
+            left: ($winWidth  *(2) )/100,
+            top:  ($winHeight *(17.0) )/100
         },0); 
-    }else if (topPerc > 2 && topPerc <= 3 ){
+    }else if (topPerc >= 15.6 && topPerc < 15.8 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(56) )/100,
-            top:  ($winHeight *(13.9) )/100
+            left: ($winWidth  *(6) )/100,
+            top:  ($winHeight *(16.8) )/100
         },0); 
-    }else if (topPerc > 3 && topPerc <= 4 ){
+    }else if (topPerc >= 15.4 && topPerc < 15.6 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(50) )/100,
-            top:  ($winHeight *(13.9) )/100
+            left: ($winWidth  *(10) )/100,
+            top:  ($winHeight *(16.5) )/100
         },0); 
-    }else if (topPerc > 4 && topPerc <= 5 ){
+    }else if (topPerc >= 15.2 && topPerc < 15.4 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(46) )/100,
-            top:  ($winHeight *(13.9) )/100
+            left: ($winWidth  *(14) )/100,
+            top:  ($winHeight *(16.2) )/100
         },0); 
-    }else if (topPerc > 5 && topPerc <= 6 ){
+    }else if (topPerc >= 15.0 && topPerc < 15.2 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(42) )/100,
-            top:  ($winHeight *(13.9) )/100
+            left: ($winWidth  *(18) )/100,
+            top:  ($winHeight *(15.6) )/100
         },0); 
-    }else if (topPerc > 6 && topPerc <= 7 ){
+    }else if (topPerc >= 14.8 && topPerc < 15.0 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(38) )/100,
-            top:  ($winHeight *(14) )/100
+            left: ($winWidth  *(22) )/100,
+            top:  ($winHeight *(15.2) )/100
         },0); 
-    }else if (topPerc > 7 && topPerc <= 8 ){
+    }else if (topPerc >= 14.6 && topPerc < 14.8 ){
+        $('.kangaroo').show();
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(34) )/100,
-            top:  ($winHeight *(14.1) )/100
+            left: ($winWidth  *(28) )/100,
+            top:  ($winHeight *(14.8) )/100
         },0); 
-    }else if (topPerc > 8 && topPerc <= 9 ){
+    }else if (topPerc >= 14.4 && topPerc < 14.6 ){
+        $('.kangaroo').show();
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(30) )/100,
-            top:  ($winHeight *(14.3) )/100
+            left: ($winWidth  *(32) )/100,
+            top:  ($winHeight *(14.2) )/100
         },0); 
-    }else if (topPerc > 9 && topPerc <= 10 ){
+    }else if (topPerc >= 14.2 && topPerc < 14.4 ){
          $('.kangaroo').show();
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(26) )/100,
-            top:  ($winHeight *(14.2) )/100
+            left: ($winWidth  *(38) )/100,
+            top:  ($winHeight *(13.8) )/100
         },0); 
-    }else if (topPerc >10 && topPerc <=11 ){
+    }else if ( 14.0 <= topPerc && topPerc <  14.2 ){
+        $('.kangaroo').show();
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(22) )/100,
+            left: ($winWidth  *(42) )/100,
             top:  ($winHeight *(14.3) )/100
         },0); 
-    }else if (topPerc >11 && topPerc <=12 ){
+    }else if (13.6 <= topPerc && topPerc < 14 ){
+        $('.kangaroo').show();
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(18) )/100,
+            left: ($winWidth  *(48) )/100,
             top:  ($winHeight *(14.5) )/100
         },0); 
-    }else if (topPerc >12 && topPerc <=13 ){
+    }else if ( 13.2 <= topPerc && topPerc < 13.6 ){
+        $('.kangaroo').show();
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(14) )/100,
-            top:  ($winHeight *(14.4) )/100
+            left: ($winWidth  *(54) )/100,
+            top:  ($winHeight *(14.2) )/100
         },0); 
-    }else if (topPerc >13 && topPerc <=14 ){
+    }else if ( 12.8 <= topPerc && topPerc < 13.2 ){
+        $('.kangaroo').show();
+         $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($HeightPerc* kangarooH)/100,
+
+            left: ($winWidth  *(58) )/100,
+            top:  ($winHeight *(14.2) )/100
+        },0); 
+    }else if (topPerc > 12.4 && topPerc <= 12.8 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(10) )/100,
-            top:  ($winHeight *(14.5) )/100
+            left: ($winWidth  *(62) )/100,
+            top:  ($winHeight *(13.8) )/100
         },0); 
-    }else if (topPerc >14 && topPerc <= 15 ){
+    }else if (topPerc > 11.8 && topPerc <= 12.4 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(6) )/100,
+            left: ($winWidth  *(66) )/100,
+            top:  ($winHeight *(13.8) )/100
+        },0); 
+    }else if (topPerc > 11.4 && topPerc <= 11.8 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($HeightPerc* kangarooH)/100,
+
+            left: ($winWidth  *(72) )/100,
             top:  ($winHeight *(14.6) )/100
         },0); 
-    }else if (topPerc >20){
-        $('.kangaroo').hide();
+    }else if (topPerc > 10.8 && topPerc <= 11.4 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($HeightPerc* kangarooH)/100,
+
+            left: ($winWidth  *(78) )/100,
+            top:  ($winHeight *(14.2) )/100
+        },0); 
+    }else if (topPerc > 10.4 && topPerc <= 10.8 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($HeightPerc* kangarooH)/100,
+
+            left: ($winWidth  *(88) )/100,
+            top:  ($winHeight *(14.6) )/100
+        },0); 
+    }else if (topPerc > 10.2 && topPerc <= 10.4 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($HeightPerc* kangarooH)/100,
+
+            left: ($winWidth  *(92) )/100,
+            top:  ($winHeight *(14.2) )/100
+        },0); 
+    }else if (topPerc > 9.8 && topPerc <= 10.2 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($HeightPerc* kangarooH)/100,
+
+            left: ($winWidth  *(98) )/100,
+            top:  ($winHeight *(13.6) )/100
+        },0); 
+    }else if (topPerc < 9.8){
+        $('.kangaroo').show();
     }
 // ++++++++++++++ Footy +++++++++++++++++++++  
     if( ($(window).scrollTop() <=  $('.bg8PH').position().top)  && footyFlag == 1 && isBottomPage ==1){
