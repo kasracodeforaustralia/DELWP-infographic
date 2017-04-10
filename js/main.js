@@ -2063,7 +2063,7 @@ $(window).scroll(function(){
     }else if (topPerc < 9.8){
         $('.kangaroo').show();
     }
-    
+
 // ++++++++++++++ Footy +++++++++++++++++++++
     if( ($(window).scrollTop() <=  $('.bg8PH').position().top)  && footyFlag == 1 && isBottomPage ==1){
        loadIMG('.footyPH','img/section-789/footy.png','footy item hiddenItem');
@@ -4383,7 +4383,7 @@ width: ($WidthPerc * tramW)/100,
                 top:  ( $winHeight * dot22Top )/100
             },0);
 
-        } else if ( 4.4 <= topPerc &&  topPerc < 5.0 && isBottomPage == 1){
+        } else if ( 4.4 <= topPerc &&  topPerc < 5.6 && isBottomPage == 1){
             $('#msg-22').hide();
             $('#dot-23').show();
             $('#dot-23').animate({
