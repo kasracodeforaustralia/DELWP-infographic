@@ -592,6 +592,7 @@ $(document).ready(function() {
 
     if ($winWidth < 1000){
         $('.arrows').show();
+        $(".slider").draggable({ disabled: true });
     }
     $('#arrow-up').click(function(){
         console.log('Scroll Top: -40px');
@@ -603,7 +604,11 @@ $(document).ready(function() {
     });
     /* This takes user to the bottom of the page  */
     $("body, html").animate({ scrollTop: 40000 }, 4000, function(){
-        $("body").css("overflow", "hidden");
+      if ($winWidth < 1000){
+          $("body").css("overflow", "hidden");
+      }else{
+          $("body").css("overflow", "auto");
+      }
     });
 
     window.onload = function() {
