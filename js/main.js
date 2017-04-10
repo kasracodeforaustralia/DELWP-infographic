@@ -591,17 +591,19 @@ $(document).ready(function() {
     }
 
     if ($winWidth < 1000){
+        $("body").css("overflow", "hidden");
         $('.arrows').show();
         $(".slider").draggable({ disabled: true });
     }
-    $('#arrow-up').click(function(){
-        console.log('Scroll Top: -40px');
-        $("body, html").animate({ scrollTop: ($(window).scrollTop()-40) });
+    $('#arrow-up').click(function() {
+          $("body, html").scrollTop(($(window).scrollTop()-40));
+      });
+
+    $('#arrow-down').click(function() {
+           $("body, html").scrollTop(($(window).scrollTop()+40));
     });
-    $('#arrow-down').click(function(){
-        console.log('Scroll Top: +40px');
-        $("body, html").animate({ scrollTop: ($(window).scrollTop()+40) });
-    });
+
+
     /* This takes user to the bottom of the page  */
     $("body, html").animate({ scrollTop: 40000 }, 4000, function(){
       if ($winWidth < 1000){
