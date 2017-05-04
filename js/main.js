@@ -1144,7 +1144,7 @@ $(window).scroll(function(){
             height:($HeightPerc* birdsH)/100,
 
             left: ($winWidth  *(0) )/100,
-            top:  ($winHeight *(0) )/100
+            top:  ($winHeight *(-0.5) )/100
         },0);            
     }else if (topPerc >1.42){
          $('.birds').hide();
@@ -1175,16 +1175,16 @@ $(window).scroll(function(){
         height:(($HeightPerc* turbineH)/100) *60 /100,
 
         left: ($winWidth  *(18) )/100,
-        top:  ($winHeight *(1.8) )/100
+        top:  ($winHeight *(2.2) )/100
     },0); 
 
 
     $('.turbine2').animate({
-        width: (($WidthPerc * turbineW)/100) *120 /100,
-        height:(($HeightPerc* turbineH)/100) *120 /100,
+        width: (($WidthPerc * turbineW)/100) *100 /100,
+        height:(($HeightPerc* turbineH)/100) *100 /100,
 
         left: ($winWidth  *(27) )/100,
-        top:  ($winHeight *(1.5) )/100
+        top:  ($winHeight *(2) )/100
     },0);
 
     $('.turbine3').animate({
@@ -1192,15 +1192,15 @@ $(window).scroll(function(){
         height:( (($HeightPerc* turbineH)/100 ) *70 /100),
 
         left: ($winWidth  *(40) )/100,
-        top:  ($winHeight *(1.65) )/100
+        top:  ($winHeight *(1.95) )/100
     },0);
 
     $('.turbine4').animate({
-        width: (($WidthPerc * turbineW)/100) *105 /100,
-        height:(($HeightPerc* turbineH)/100) *105 /100,
+        width: (($WidthPerc * turbineW)/100) *95 /100,
+        height:(($HeightPerc* turbineH)/100) *95 /100,
 
         left: ($winWidth  *(50) )/100,
-        top:  ($winHeight *(1.5) )/100
+        top:  ($winHeight *(1.8) )/100
     },0);
 
     $('.turbine5').animate({
@@ -1208,7 +1208,7 @@ $(window).scroll(function(){
         height:(($HeightPerc* turbineH)/100) *75 /100,
 
         left: ($winWidth  *(62) )/100,
-        top:  ($winHeight *(1.3) )/100
+        top:  ($winHeight *(2) )/100
     },0);
 
     $('.turbine6').animate({
@@ -1216,7 +1216,7 @@ $(window).scroll(function(){
         height:(($HeightPerc* turbineH)/100) *95 /100,
 
         left: ($winWidth  *(73) )/100,
-        top:  ($winHeight *(1.6) )/100
+        top:  ($winHeight *(2.2) )/100
     },0);  
        
  // +++++++++++++++ cloud2 ++++++++++++++++++++++++
