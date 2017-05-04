@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     var $win = $(window);
 
@@ -24,82 +25,7 @@ $(document).ready(function() {
     $('.bg13PH').animate({width: $winWidth, height: ($bg13Height * $WidthPerc)/100}); 
     $('.bg14PH').animate({width: $winWidth,height: ($bg14Height * $WidthPerc)/100}); 
     
-    /* ُEnd of creating Place Holders (PH) 
-     console.log ("-----TopPrec: "+ topPercfunc());*/
-
-    /* If user scrolls using keyboard, this event handler will fire up to load the bg images */
-    /*
-    $("body").keydown(function(){
-        if(($(window).scrollTop() <=                    $('.bg3PH').position().top) && bg5Flag == 1 && isBottomPage ==1){
-           loadIMG('.bg5PH','img/14bgs/bg5.png','bg5 bg');
-           bg5Flag = 0; 
-        } 
-        if ( ($(window).scrollTop() <= $('.bg4PH').position().top) && bg6Flag == 1 && isBottomPage ==1){
-           loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg');
-            bg6Flag = 0;
-        }  
-
-        if ( ($(window).scrollTop() <= $('.bg5PH').position().top) && bg7Flag == 1 && isBottomPage ==1){
-           loadIMG('.bg7PH','img/14bgs/bg7.png','bg7 bg');
-            bg7Flag = 0;
-        }
-
-        if ( ($(window).scrollTop() <= $('.bg6PH').position().top) && bg8Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg8PH','img/14bgs/bg8.png','bg8 bg');
-            bg8Flag = 0;
-        }
-
-        if ( ($(window).scrollTop() <= $('.bg7PH').position().top) && bg9Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg9PH','img/14bgs/bg9.png','bg9 bg');
-            bg9Flag = 0; 
-        }
-
-
-        if ( ($(window).scrollTop() <= $('.bg8PH').position().top) && bg10Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg10PH','img/14bgs/bg10.png','bg10 bg');
-            bg10Flag = 0;
-        }
-
-        if ( ($(window).scrollTop() <= $('.bg9PH').position().top) && bg11Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg11PH','img/14bgs/bg11.png','bg11 bg');
-            bg11Flag = 0;
-        } 
-
-        if ( ($(window).scrollTop() <= $('.bg10PH').position().top) && bg12Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg12PH','img/14bgs/bg12.png','bg12 bg');
-            bg12Flag = 0;
-        }
-
-        if ( ($(window).scrollTop() <= $('.bg11PH').position().top) &&bg13Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg13PH','img/14bgs/bg13.png','bg13 bg');
-            bg13Flag = 0;
-        }
-
-        if ( ($(window).scrollTop() <= $('.bg12PH').position().top) && bg14Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg14PH','img/14bgs/bg14.png','bg14 bg');
-            bg14Flag = 0;
-        }    
-        
-// ------------------ All Items -------------------
-//++++++++++++++ Birds key down +++++++++                
-        if(($(window).scrollTop() <=                    $('.bg10PH').position().top) && birdsFlag == 1 && isBottomPage ==1){
-            loadIMG('.birdsPH','img/section-789/gifs/birds.gif','birds item hiddenItem');
-            birdsFlag = 0;
-        }         
-//++++++++++++++ cloud2 key down +++++++++  
-        if(($(window).scrollTop() <=                    $('.bg9PH').position().top) && cloud2Flag == 1 && isBottomPage ==1){
-            loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item hiddenItem');
-            cloud2Flag = 0;
-        }
-//++++++++++++++ cloud key down +++++++++          
-        if(($(window).scrollTop() <=                    $('.bg9PH').position().top) && cloudFlag == 1 && isBottomPage ==1){
-            loadIMG('.cloudPH','img/section-789/Cloud.png','cloud item hiddenItem');
-            cloudFlag = 0;
-        }         
-        
-        
-    }); // End of $("body").keydown
-*/
+    
 // ++++++++++++++++ dot and massages ++++++++++++++++++++
    $('#msg-1').animate({ 
         left: ( ($winWidth  * dot1Left )/100 + dotsW),
@@ -4186,3 +4112,4 @@ width: ($WidthPerc * tramW)/100,
 
 
 });
+
